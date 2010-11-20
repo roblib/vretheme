@@ -8,7 +8,7 @@ margin: 0 auto;
 height: 32px;
 padding: 0px;
 border: 1px solid #1e4877;
-border-bottom: 1px solid #346b96;
+/* border-bottom: 1px solid #346b96; */
 }
 
 #header .column.W #superfish {
@@ -48,13 +48,14 @@ white-space: normal;
 padding:0 1px 0 0;
 }
 
-#header #superfish li.last {
+#header #superfish ul li.last {
 border-right: none;
 }
 
-#navigation #superfish ul li.expanded.first { 
+#navigation #superfish { 
 border-left: 1px solid #346B96;
 }
+
 
 /* this is the inset look you see on the menu items */ 
 
