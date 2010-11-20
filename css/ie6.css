@@ -368,15 +368,8 @@ padding-right:0;
 float:none;
 }
 
-#superfish .menu li li{
-z-index: 3;
-}
 
-#main-wrapper {
-z-index: 2;
-}
-
-#footer {
-z-index: 1;
+#navigation .section {
+position:relative; 
 }
 

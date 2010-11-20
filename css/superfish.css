@@ -17,14 +17,6 @@ bottom: 0;
 position: absolute;
 }
 
-#navigation #superfish {
-float: left;
-}
-
-#navigation #superfish {
-float: left;
-width: 960px;
-}
 
 #header #superfish {
 }
@@ -56,8 +48,12 @@ white-space: normal;
 padding:0 1px 0 0;
 }
 
-#superfish li.last {
+#header #superfish li.last {
 border-right: none;
+}
+
+#navigation #superfish ul li.expanded.first { 
+border-left: 1px solid #346B96;
 }
 
 /* this is the inset look you see on the menu items */ 
@@ -196,8 +192,9 @@ outline:0;
 #superfish .menu li.sfHover,
 #superfish .menu a:focus, 
 #superfish .menu a:hover, 
-#superfish .menu a:active {
-z-index:10;
+#superfish .menu a:active,
+#superfish .menu a {
+z-index:20;
 }
 
 .sf-sub-indicator {
