@@ -360,6 +360,35 @@
 
       <?php print $sidebar_second; ?>
 
+
+ <?php if($mainbottom_first || $mainbottom_second || $mainbottom_third || $mainbottom_fourth) : ?>
+    <div style="clear:both"></div>
+    <div id="mainbottom-wrapper" class="in<?php print (bool) $mainbottom_first + (bool) $mainbottom_second + (bool) $mainbottom_third + (bool) $mainbottom_fourth; ?>"><div class="section">
+          <?php if($mainbottom_first) : ?>
+          <div class="column S">
+            <?php print $mainbottom_first; ?>
+          </div>
+          <?php endif; ?>
+          <?php if($mainbottom_second) : ?>
+          <div class="column T">
+            <?php print $mainbottom_second; ?>
+          </div>
+          <?php endif; ?>
+          <?php if($mainbottom_third) : ?>
+          <div class="column U">
+            <?php print $mainbottom_third; ?>
+          </div>
+          <?php endif; ?>
+          <?php if($mainbottom_fourth) : ?>
+          <div class="column V">
+            <?php print $mainbottom_fourth; ?>
+          </div>
+          <?php endif; ?>          
+      <div style="clear:both"></div>
+    </div></div> <!-- /.section, /#mainbottom-wrapper -->
+    <?php endif; ?>
+
+
     </div></div> <!-- /#main, /#main-wrapper -->
 <div id="bottom">
  <?php if($bottom_first || $bottom_second || $bottom_third || $bottom_fourth) : ?>

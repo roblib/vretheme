@@ -474,6 +474,39 @@ padding-right:15px;
 }
 
 
+/* Bottom first + Bottom second + Bottom third +  Bottom fourth regions
+-------------------------------------------------------------- */
+
+#mainbottom-wrapper {
+}
+
+#mainbottom-wrapper .column {
+float: left;
+}
+
+#mainbottom-wrapper.in1 .column {
+width: 100%;
+}
+
+#mainbottom-wrapper.in2 .column {
+width: 50%;
+}
+
+#mainbottom-wrapper.in3 .column {
+width: 33.3%;
+}
+
+#mainbottom-wrapper.in4 .column {
+width: 25%;
+}
+
+#mainbottom-wrapper .block {
+padding-left:15px;
+padding-right:15px;
+}
+
+
+
 /* Bottom */
 
 #bottom {
