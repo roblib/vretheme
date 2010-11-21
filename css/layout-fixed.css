@@ -22,6 +22,7 @@
  * Body
  */
 body {
+
 }
 
 #page-wrapper,
@@ -37,7 +38,7 @@ body {
 }
 
 
-#topbar, #header div.section, #feature div.section, #preface-wrapper div.section, #navigation div.section, #featured div.section, #messages, #main, #bottom-wrapper div.section, #footer, #closure {
+#topbar, #header div.section, #feature div.section, #preface-wrapper div.section, #navigation div.section, #featured div.section, #messages, #main, #mainbottom-wrapper div.section, #bottom-wrapper div.section, #footer, #closure {
 margin-left:auto;
 margin-right:auto;
 width:960px;

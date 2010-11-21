@@ -361,7 +361,12 @@
       <?php print $sidebar_second; ?>
 
 
- <?php if($mainbottom_first || $mainbottom_second || $mainbottom_third || $mainbottom_fourth) : ?>
+
+
+
+    </div><!-- /#main -->
+    
+     <?php if($mainbottom_first || $mainbottom_second || $mainbottom_third || $mainbottom_fourth) : ?>
     <div style="clear:both"></div>
     <div id="mainbottom-wrapper" class="in<?php print (bool) $mainbottom_first + (bool) $mainbottom_second + (bool) $mainbottom_third + (bool) $mainbottom_fourth; ?>"><div class="section">
           <?php if($mainbottom_first) : ?>
@@ -387,9 +392,8 @@
       <div style="clear:both"></div>
     </div></div> <!-- /.section, /#mainbottom-wrapper -->
     <?php endif; ?>
-
-
-    </div></div> <!-- /#main, /#main-wrapper -->
+    
+    </div> <!-- /#main, /#main-wrapper -->
 <div id="bottom">
  <?php if($bottom_first || $bottom_second || $bottom_third || $bottom_fourth) : ?>
     <div style="clear:both"></div>

@@ -38,7 +38,7 @@ body {
 
   /* Use a 12px base font size with a 16px line height */
   font-size: 0.75em; /* 16px x .75 = 12px */
-  line-height: 1.333em; /* 12px x 1.333 = 16px */
+  line-height: 1.5em; /* 12px x 1.5 = 18px */
 
   /* Use a 14px base font size with a 18px line height */
    font-size: 0.875em; /* 16px x .875 = 14px 
@@ -167,7 +167,7 @@ ol {
 .block ul,
 .item-list ul /* Drupal overrides */ {
   margin: 1em 0;
-  padding: 0 0 0 2em; /* LTR */
+  padding: 0 0 0 1em; /* LTR */
 }
 
 ul ul, ul ol,
@@ -185,8 +185,8 @@ li {
 }
 
 .item-list ul li /* Drupal override */ {
-  margin: 0;
-  padding: 0;
+  margin:0;
+  padding:0;
   list-style: inherit;
 }
 
@@ -194,7 +194,7 @@ ul.menu li,
 li.expanded,
 li.collapsed,
 li.leaf /* Drupal override */ {
-  margin: 0;
+  margin: 0.15em 0 0.15em 0.5em;
   padding: 0;
 }
 

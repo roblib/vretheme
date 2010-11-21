@@ -131,11 +131,6 @@ margin:0;
 padding:5px 15px;
 }
 
-.block ul, .item-list ul {
-margin:1em 0;
-padding:0 0 0 1.3em;
-}
-
 /* Highlight Blocks */
 .region-highlight .block {
 background-color:#F4F4F4;
