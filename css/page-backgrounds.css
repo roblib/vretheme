@@ -26,11 +26,16 @@ background: none repeat scroll 0 0 #292929;
 }
 
 #navigation {
-background: #1e4877; 
+background:none repeat scroll 0 0 #003366;
+border-top:1px solid #2B6AA0;
+}
+
+#feature {
+background:none repeat scroll 0 0 #F0F0F0;
 }
 
 #preface-wrapper {
-background:none repeat scroll 0 0 #F0F0F0;
+background:none repeat scroll 0 0 #fff;
 }
 
 #main-wrapper {
@@ -38,10 +43,7 @@ background: none repeat scroll 0 0 #fff;
 }
 
 #header {
-background: #3b93d1; /* for non-css3 browsers */
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2277bc', endColorstr='#2377bc'); /* for IE */
-background: -webkit-gradient(linear, left top, left bottom, from(#2277bc), to(#2377bc)); /* for webkit browsers */
-background: -moz-linear-gradient(top,  #2277bc,  #2377bc); /* for firefox 3.6+ */
+background: none repeat scroll 0 0 #002255; /* for non-css3 browsers */
 }
 
 #headerbg { /* if you wish to use a non image gradient background modify the colors in hdr.svg */

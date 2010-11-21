@@ -41,8 +41,8 @@ body {
   line-height: 1.333em; /* 12px x 1.333 = 16px */
 
   /* Use a 14px base font size with a 18px line height */
-  /* font-size: 0.875em; /* 16px x .875 = 14px */
-  /* line-height: 1.286em; /* 14px x 1.286 = 18px */
+   font-size: 0.875em; /* 16px x .875 = 14px 
+   line-height: 1.286em; /* 14px x 1.286 = 18px 
 }
 
 body,
@@ -141,8 +141,17 @@ fieldset {
 }
 
 blockquote {
-  margin: 1em 2em;
+  background: url(../images/open-quote.png) no-repeat 0 0;
+  font: italic;
+  margin: 1em 0.5em;
 }
+
+blockquote p {
+  background: url(../images/close-quote.png) no-repeat right bottom;
+  margin-left: 2.2em;
+  padding-right: 1.5em;
+}
+
 
 /*
  * Lists
@@ -224,6 +233,68 @@ a:focus {
 }
 
 a:active {
+}
+
+/*
+ * Link Colors
+ *
+ * The order of link states are based on Eric Meyer's article:
+ * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
+ */
+
+a:link {
+}
+
+a:visited {
+}
+
+a:hover,
+a:focus {
+}
+
+a:active {
+}
+
+#header a:link {
+color: #99CCFF
+}
+
+#header a:visited {
+color: #99CCFF
+}
+
+#header a:hover,
+#header a:focus {
+color: #fff
+}
+
+#header a:active {
+color: #fff
+}
+
+#header li  a.active,  {
+color: #fff
+}
+
+#footer a:link {
+color: #99CCFF
+}
+
+#footer a:visited {
+color: #99CCFF
+}
+
+#footer a:hover,
+#footer a:focus {
+color: #fff
+}
+
+#footer a:active {
+color: #fff
+}
+
+#footer li  a.active,  {
+color: #fff
 }
 
 /*

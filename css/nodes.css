@@ -9,6 +9,9 @@
 
 
 .node /* Node wrapper */ {
+border-bottom:1px solid #BBBBBB;
+margin:0.5em 0 1em;
+padding-bottom:1em;
 }
 
 .node-sticky /* A sticky node (displayed before others in a list) */ {
@@ -67,6 +70,7 @@
 }
 
 .node .submitted /* The "posted by" information */ {
+color:#999999;
 }
 
 .node .terms /* Node terms (taxonomy) */ {

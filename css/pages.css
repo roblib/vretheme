@@ -63,7 +63,7 @@ body {
 #logo /* Wrapping link for logo */ {
   float: left; /* LTR */
   margin: 0;
-  margin: 10px 10px 10px 0px;
+  margin: 0px 15px 15px 15px;
 }
 
 #logo img {
@@ -73,25 +73,25 @@ body {
 #name-and-slogan /* Wrapper for website name and slogan */ {
 float:left;
 position:absolute;
-top:36%;
+top:5%;
 }
 
 h1#site-name,
 div#site-name /* The name of the website */ {
   margin: 0;
   font-size: 2em;
-  line-height: 1.3em;
+  line-height: 1em;
 }
 
 #site-name a:link,
 #site-name a:visited {
-  color: #000;
+  color: #fff;
   text-decoration: none;
 }
 
 #site-name a:hover,
 #site-name a:focus {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 #site-slogan /* The slogan (or tagline) of a website */ {

@@ -10,6 +10,10 @@
   margin-bottom: 1em;
 }
 
+#feature .block-region, #feature .block {
+margin: 0;
+}
+
 .block.region-odd /* Zebra striping for each block in the region */ {
 }
 
@@ -29,6 +33,8 @@
 }
 
 .block h2.title /* Block title */ {
+padding-top: 0.667em;
+margin-bottom: 0.667em;
 }
 
 .block .content /* Block's content wrapper */ {
@@ -95,3 +101,48 @@
 float: right;
 top: 0;
 }
+
+/* Sidebar blocks */
+
+.region-sidebar-first .block, .region-sidebar-second .block {
+margin-bottom:10px;
+}
+
+.region-sidebar-first .block h2.title, .region-sidebar-second  .block h2.title {
+background:none repeat scroll 0 0 #E6E6E6;
+border-left:1px solid #DDDDDD;
+border-right:1px solid #BBBBBB;
+border-top:1px solid #DDDDDD;
+font-size:1.3em;
+margin:0;
+padding:5px 10px;
+}
+
+.region-sidebar-first .block div.content, .region-sidebar-second .block div.content {
+background-color:#F4F4F4;
+border-color:#DDDDDD #BBBBBB #BBBBBB #DDDDDD;
+border-right:1px solid #BBBBBB;
+border-style:solid;
+border-width:1px;
+}
+
+.region-sidebar-first .block .content, .region-sidebar-second  .block .content {
+margin:0;
+padding:5px 15px;
+}
+
+.block ul, .item-list ul {
+margin:1em 0;
+padding:0 0 0 1.3em;
+}
+
+/* Highlight Blocks */
+.region-highlight .block {
+background-color:#F4F4F4;
+border-color:#DDDDDD #BBBBBB #BBBBBB #DDDDDD;
+border-style:solid;
+border-width:1px;
+margin:0 0 1.5em;
+padding: 0.1em 1.2em 0.5em;
+}
+

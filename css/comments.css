@@ -14,6 +14,13 @@
 }
 
 .comment /* Wrapper for a single comment */ {
+background-color:#F4F4F4;
+border-color:#DDDDDD #BBBBBB #BBBBBB #DDDDDD;
+border-right:1px solid #BBBBBB;
+border-style:solid;
+border-width:1px;
+margin-bottom:1em;
+padding: 1em 1em 0 1em;
 }
 
 .comment-preview /* Preview of the comment before submitting new or updated comment */ {
@@ -61,6 +68,7 @@
 }
 
 .comment .submitted /* The "posted by" information */ {
+color:#999999;
 }
 
 .comment .content /* Comment's content wrapper */ {

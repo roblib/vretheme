@@ -237,8 +237,6 @@
 
     </div></div></div> <!-- /.section, /#header -->
 
-
-
       <?php if ($primary_links || $navigation): ?>
         <div id="navigation"><div class="section clearfix">
           <?php print theme(array('links__system_main_menu', 'links'), $primary_links,
@@ -254,6 +252,12 @@
           ?>
 
           <?php print $navigation; ?>
+        </div></div> <!-- /.section, /#navigation -->
+      <?php endif; ?>
+
+      <?php if ($feature): ?>
+        <div id="feature"><div class="section clearfix">
+          <?php print $feature; ?>
         </div></div> <!-- /.section, /#navigation -->
       <?php endif; ?>
 
@@ -284,8 +288,8 @@
     </div></div> <!-- /.section, /#preface-wrapper -->
     <?php endif; ?>
 
-    <div id="main-wrapper"><div id="main" class="clearfix<?php if ($primary_links || $navigation) { print ' with-navigation'; } ?> <?php if ($preface_first || $preface_second || $preface_third || $preface_fourth) { print ' with-preface'; } ?>">
 
+    <div id="main-wrapper"><div id="main" class="clearfix<?php if ($primary_links || $navigation) { print ' with-navigation'; } ?> <?php if ($preface_first || $preface_second || $preface_third || $preface_fourth) { print ' with-preface'; } ?>">
 
       <div id="content" class="column"><div class="section">
 
@@ -357,7 +361,7 @@
       <?php print $sidebar_second; ?>
 
     </div></div> <!-- /#main, /#main-wrapper -->
-
+<div id="bottom">
  <?php if($bottom_first || $bottom_second || $bottom_third || $bottom_fourth) : ?>
     <div style="clear:both"></div>
     <div id="bottom-wrapper" class="in<?php print (bool) $bottom_first + (bool) $bottom_second + (bool) $bottom_third + (bool) $bottom_fourth; ?>"><div class="section">
@@ -461,7 +465,7 @@
   <?php print $closure; ?>
  </div>
 </div>
-
+</div><!-- /#bottom -->
   </div></div> <!-- /#page, /#page-wrapper -->
 
 </body>

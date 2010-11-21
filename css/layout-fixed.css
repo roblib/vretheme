@@ -37,7 +37,7 @@ body {
 }
 
 
-#topbar, #header div.section, #preface-wrapper div.section, #navigation div.section, #featured div.section, #messages, #main, #bottom-wrapper div.section, #footer, #closure {
+#topbar, #header div.section, #feature div.section, #preface-wrapper div.section, #navigation div.section, #featured div.section, #messages, #main, #bottom-wrapper div.section, #footer, #closure {
 margin-left:auto;
 margin-right:auto;
 width:960px;
@@ -48,6 +48,7 @@ width:960px;
  * Header
  */
 #header {
+color: #fff;
 }
 
 #header .section {
@@ -72,6 +73,7 @@ width:960px;
   min-height:500px;
   height:auto !important;
   height:500px;
+  padding: 15px 0 15px 0;
 }
 
 /*
@@ -288,9 +290,20 @@ margin:0;
 }
 
 #topbar.section ul.menu li {
-margin:0 0 0 0.5em;
+margin:0 0.5em 0 0;
 }
 
+#topbar .block-menu .content {
+background: #000;
+padding: 3px 0 3px 7px;
+}
+
+/* Feature */
+
+#topbar .block {
+padding-left:15px;
+padding-right:15px;
+}
 
 /* Header first + Header second
 -------------------------------------------------------------- */
@@ -313,6 +326,18 @@ float: right;
 position:absolute; top:36%; right: 0;
 }
 
+#headercontent .block {
+padding-left:15px;
+padding-right:15px;
+}
+
+
+/* Feature */
+
+#feature .block {
+padding-left:15px;
+padding-right:15px;
+}
 
 /* Preface first + Preface second + Preface third +  Preface fourth regions
 -------------------------------------------------------------- */
@@ -446,6 +471,13 @@ width: 50%;
 #content-bottom-wrapper .block {
 padding-left:15px;
 padding-right:15px;
+}
+
+
+/* Bottom */
+
+#bottom {
+color: #fff;
 }
 
 /* Bottom first + Bottom second + Bottom third +  Bottom fourth regions
@@ -583,7 +615,7 @@ padding-right:15px;
 
 .column.R .footersidebar {
   margin: 0 20px 0 0; /* LTR */
-  padding: 0;
+  padding: 0 0 0 15px;
 }
 
 .column.R ul.links li {
