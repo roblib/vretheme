@@ -62,7 +62,6 @@ body {
 
 #logo /* Wrapping link for logo */ {
   float: left; /* LTR */
-  margin: 0;
   margin: 15px 15px 15px 15px;
 }
 

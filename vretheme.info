@@ -26,6 +26,9 @@ base theme = zen
   ; an /extremely/ useful feature. See the excellent Drupal 6 Theme Guide at
   ; http://drupal.org/node/171209 for more details.
 stylesheets[all][]   = css/custom.css
+stylesheets[all][]   = css/corporate.css
+; stylesheets[all][]   = css/elegant.css
+; stylesheets[all][]   = css/designer.css
 stylesheets[all][]   = css/superfish.css
 stylesheets[all][]   = css/html-reset.css
 stylesheets[all][]   = css/wireframes.css

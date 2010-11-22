@@ -16,7 +16,6 @@ body {
 }
 
 body.front, body.not-front {
-background: none repeat scroll 0 0 #292929;
 }
 
 #page-wrapper {
@@ -26,36 +25,20 @@ background: none repeat scroll 0 0 #292929;
 }
 
 #navigation {
-background:none repeat scroll 0 0 #003366;
-border-top:1px solid #2B6AA0;
 }
 
 #feature {
-background:none repeat scroll 0 0 #F0F0F0;
 }
 
 #preface-wrapper {
-background:none repeat scroll 0 0 #fff;
 }
 
 #main-wrapper {
-background: none repeat scroll 0 0 #fff;
 }
 
 #header {
-background: none repeat scroll 0 0 #002255; /* for non-css3 browsers */
 }
 
-#headerbg { /* if you wish to use a non image gradient background modify the colors in hdr.svg */
-background: #2391d1; /* for compliant browsers */
-position: absolute;
-top: 0;
-left: 0;
-z-index: -9999;
-overflow: hidden;
-width: 100%;
-height: 130px;
-}
 
 #topbar-wrapper {
 
