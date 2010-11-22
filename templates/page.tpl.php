@@ -239,7 +239,11 @@
 
       <?php if ($primary_links || $navigation): ?>
         <div id="navigation"><div class="section clearfix">
-          <?php print theme(array('links__system_main_menu', 'links'), $primary_links,
+      <!-- PRIMARY -->
+      <div id="<?php print $primary_links ? 'nav' : 'superfish' ; ?>">
+        <?php 
+					     if ($primary_links) {
+		          print theme(array('links__system_main_menu', 'links'), $primary_links,
             array(
               'id' => 'main-menu',
               'class' => 'links clearfix menu',
@@ -248,10 +252,14 @@
               'text' => t('Main menu'),
               'level' => 'h2',
               'class' => 'element-invisible',
-            ));
-          ?>
+            )); 
+				      }
+				      elseif (!empty($navigation)) {
+				        print $navigation;
+				      }
+        ?>
+      </div> <!-- /primary -->
 
-          <?php print $navigation; ?>
         </div></div> <!-- /.section, /#navigation -->
       <?php endif; ?>
 
