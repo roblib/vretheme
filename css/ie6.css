@@ -93,8 +93,20 @@ padding-bottom: 5px;
 }
 
 #topbar-wrapper .block {
-padding-left:0;
-padding-right:0;
+padding-left:0px;
+padding-right:0px;
+}
+
+#topbar {
+width: 945px;
+}
+
+#main {
+width: 930px;
+}
+
+#footer {
+width: 930px;
 }
 
 

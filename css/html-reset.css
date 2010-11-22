@@ -243,58 +243,62 @@ a:active {
  */
 
 a:link {
+  text-decoration: none;
 }
 
 a:visited {
+  text-decoration: none;
 }
 
 a:hover,
 a:focus {
+  text-decoration: none;
 }
 
 a:active {
+
 }
 
 #header a:link {
-color: #99CCFF
+color: #000000
 }
 
 #header a:visited {
-color: #99CCFF
+color: #000000
 }
 
 #header a:hover,
 #header a:focus {
-color: #fff
+color: #000000
 }
 
 #header a:active {
-color: #fff
+color: #000000
 }
 
 #header li  a.active,  {
-color: #fff
+color: #000000
 }
 
 #footer a:link {
-color: #99CCFF
+color: #000000
 }
 
 #footer a:visited {
-color: #99CCFF
+color: #000000
 }
 
 #footer a:hover,
 #footer a:focus {
-color: #fff
+color: #000000
 }
 
 #footer a:active {
-color: #fff
+color: #000000
 }
 
 #footer li  a.active,  {
-color: #fff
+color: #000000
 }
 
 /*

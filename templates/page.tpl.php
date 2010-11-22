@@ -155,8 +155,6 @@
 </head>
 
 <body class="<?php print $classes; ?>">
-
-
   <?php if ($primary_links): ?>
     <div id="skip-link"><a href="#main-menu"><?php print t('Jump to Navigation'); ?></a></div>
   <?php endif; ?>
@@ -230,10 +228,11 @@
           <?php endif; ?>         
           
       <div style="clear:both"></div>
-    </div> <!-- /#preface-wrapper -->
-    <?php endif; ?>
 
       <?php print $header; ?>
+
+</div> <!-- /#preface-wrapper -->
+    <?php endif; ?>
 
     </div></div></div> <!-- /.section, /#header -->
 
@@ -262,7 +261,7 @@
 
         </div></div> <!-- /.section, /#navigation -->
       <?php endif; ?>
-
+<div id="sitecontent-wrapper"><div id="sitecontent">
       <?php if ($feature): ?>
         <div id="feature"><div class="section clearfix">
           <?php print $feature; ?>
@@ -337,6 +336,7 @@
         <div id="content-area">
           <?php print $content; ?>
         </div>
+        <?php print $content_middle; ?>        
         <?php print $content_bottom; ?>
  <?php if($content_bottom1 || $content_bottom2) : ?>
     <div style="clear:both"></div>
@@ -363,14 +363,8 @@
 
       </div></div> <!-- /.section, /#content -->
 
-      
       <?php print $sidebar_first; ?>
-
       <?php print $sidebar_second; ?>
-
-
-
-
 
     </div><!-- /#main -->
     
@@ -401,8 +395,8 @@
     </div></div> <!-- /.section, /#mainbottom-wrapper -->
     <?php endif; ?>
     
-    </div> <!-- /#main, /#main-wrapper -->
-<div id="bottom">
+    </div> <!-- /#main, /#main-wrapper -->        </div></div> <!-- /#sitecontent-wrapper, /#sitecontent -->
+<div id="bottom"><div class="section">
  <?php if($bottom_first || $bottom_second || $bottom_third || $bottom_fourth) : ?>
     <div style="clear:both"></div>
     <div id="bottom-wrapper" class="in<?php print (bool) $bottom_first + (bool) $bottom_second + (bool) $bottom_third + (bool) $bottom_fourth; ?>"><div class="section">
@@ -499,14 +493,13 @@
 
  </div></div> <!-- /#footer, /#footer-wrapper -->
     <?php endif; ?>
-
 <div id="closure-wrapper">
  <div id="closure">
   <?php print $page_closure; ?>
   <?php print $closure; ?>
  </div>
 </div>
-</div><!-- /#bottom -->
+</div></div><!-- /#bottom, /.section  -->
   </div></div> <!-- /#page, /#page-wrapper -->
 
 </body>

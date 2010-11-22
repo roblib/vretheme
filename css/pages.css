@@ -84,13 +84,10 @@ div#site-name /* The name of the website */ {
 
 #site-name a:link,
 #site-name a:visited {
-  color: #fff;
-  text-decoration: none;
 }
 
 #site-name a:hover,
 #site-name a:focus {
-  text-decoration: none;
 }
 
 #site-slogan /* The slogan (or tagline) of a website */ {

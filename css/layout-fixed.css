@@ -37,8 +37,13 @@ body {
 #page {
 }
 
+#pageexceptfooter {
+position: absolute;
+}
 
-#topbar, #header div.section, #feature div.section, #preface-wrapper div.section, #navigation div.section, #featured div.section, #messages, #main, #mainbottom-wrapper div.section, #bottom-wrapper div.section, #footer, #closure {
+#topbar, #headercontent-wrapper div.section, #feature div.section, 
+#preface-wrapper div.section, #navigation div.section, #sitecontent, 
+#featured div.section, #messages, #main, #mainbottom-wrapper div.section, #bottom, #bottom-wrapper, #footer-wrapper,  #closure {
 margin-left:auto;
 margin-right:auto;
 width:960px;
@@ -74,7 +79,7 @@ color: #fff;
   min-height:500px;
   height:auto !important;
   height:500px;
-  padding: 15px 0 15px 0;
+  padding: 15px 15px 15px 15px;
 }
 
 /*
@@ -83,26 +88,26 @@ color: #fff;
 #content,
 .no-sidebars #content {
   float: left; /* LTR */
-  width: 960px;
+  width: 930px;
   margin-left: 0; /* LTR */
   margin-right: -960px; /* LTR */ /* Negative value of #content's width + left margin. */
   padding: 0; /* DO NOT CHANGE. Add padding or margin to #content .section. */
 }
 
 .sidebar-first #content {
-  width: 760px;
+  width: 730px;
   margin-left: 200px; /* LTR */ /* The width of .region-sidebar-first. */
   margin-right: -960px; /* LTR */ /* Negative value of #content's width + left margin. */
 }
 
 .sidebar-second #content {
-  width: 760px;
+  width: 730px;
   margin-left: 0; /* LTR */
   margin-right: -760px; /* LTR */ /* Negative value of #content's width + left margin. */
 }
 
 .two-sidebars #content {
-  width: 560px;
+  width: 530px;
   margin-left: 200px; /* LTR */ /* The width of .region-sidebar-first */
   margin-right: -760px; /* LTR */ /* Negative value of #content's width + left margin. */
 }
@@ -176,8 +181,8 @@ color: #fff;
 .region-sidebar-second {
   float: left; /* LTR */
   width: 200px;
-  margin-left: 760px; /* LTR */ /* Width of content + sidebar-first. */
-  margin-right: -960px; /* LTR */ /* Negative value of .region-sidebar-second's width + left margin. */
+  margin-left: 730px; /* LTR */ /* Width of content + sidebar-first. */
+  margin-right: -930px; /* LTR */ /* Negative value of .region-sidebar-second's width + left margin. */
   padding: 0; /* DO NOT CHANGE. Add padding or margin to .region-sidebar-second .section. */
 }
 
@@ -267,7 +272,7 @@ margin: 0 0 0 0.5em;
 }
 
 #topbar .block {
-
+padding: 0;
 }
 
 /*
@@ -295,7 +300,6 @@ margin:0 0.5em 0 0;
 }
 
 #topbar .block-menu .content {
-background: #000;
 padding: 3px 0 3px 7px;
 }
 
@@ -324,7 +328,6 @@ height: 100%;
 #headercontent-wrapper .column.X {
 text-align: right;
 float: right;
-position:absolute; top:36%; right: 0;
 }
 
 #headercontent .block {
@@ -379,22 +382,22 @@ padding-right:15px;
  */
  
 .no-sidebars #content-top-wrapper {
-  width: 960px;
+  width: 930px;
   margin-left: 0;
 }
 
 .sidebar-first #content-top-wrapper {
-  width: 760px;
+  width: 730px;
   margin-left: 0;
 }
 
 .sidebar-second #content-top-wrapper {
-  width: 760px;
+  width: 730px;
   margin-left: 0;
 }
 
 .two-sidebars #content-top-wrapper {
-  width: 560px;
+  width: 530px;
   margin-left: 0;
 }
 
@@ -435,22 +438,22 @@ padding-left: 7.5px;
  */
  
 .no-sidebars #content-bottom-wrapper {
-  width: 960px;
+  width: 930px;
   margin-left: 0;
 }
 
 .sidebar-first #content-bottom-wrapper {
-  width: 760px;
+  width: 730px;
   margin-left: 0;
 }
 
 .sidebar-second #content-bottom-wrapper {
-  width: 760px;
+  width: 730px;
   margin-left: 0;
 }
 
 .two-sidebars #content-bottom-wrapper {
-  width: 560px;
+  width: 530px;
   margin-left: 0;
 }
 
@@ -522,8 +525,7 @@ padding-right:15px;
 
 /* Bottom */
 
-#bottom {
-color: #fff;
+#bottom .section {
 }
 
 /* Bottom first + Bottom second + Bottom third +  Bottom fourth regions
@@ -654,15 +656,16 @@ padding-right:15px;
   float: left; /* LTR */
   width: 200px;
   margin-top: 5px;
-  margin-left: 0; /* LTR */
+  margin-left: 15px; /* LTR */
   margin-right: -200px; /* LTR */ /* Negative value of .region-sidebar-first's width + left margin. */
   padding: 0; /* DO NOT CHANGE. Add padding or margin to .region-sidebar-first .section. */
 }
 
 .column.R .footersidebar {
   margin: 0 20px 0 0; /* LTR */
-  padding: 0 0 0 15px;
+  padding: 0 0 0 0px;
 }
+
 
 .column.R ul.links li {
 display: list-item;
