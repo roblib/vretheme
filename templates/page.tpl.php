@@ -366,7 +366,7 @@
     </div><!-- /#main -->
     
      <?php if($mainbottom_first || $mainbottom_second || $mainbottom_third || $mainbottom_fourth) : ?>
-    <div style="clear:both"></div>
+    <div style="clear:both"></div>   <div id="preface-hr"></div>
     <div id="mainbottom-wrapper" class="in<?php print (bool) $mainbottom_first + (bool) $mainbottom_second + (bool) $mainbottom_third + (bool) $mainbottom_fourth; ?>"><div class="section">
           <?php if($mainbottom_first) : ?>
           <div class="column S">
@@ -428,6 +428,7 @@
       
  <?php if($footer_preface_first || $footer_preface_second || $footer_preface_third) : ?>
     <div style="clear:both"></div>
+ 
     <div id="footer-preface-wrapper" class="in<?php print (bool) $footer_preface_first + (bool) $footer_preface_second + (bool) $footer_preface_third; ?> "><div class="section">
           <?php if($footer_preface_first) : ?>
           <div class="column M">

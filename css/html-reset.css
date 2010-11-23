@@ -138,6 +138,11 @@ fieldset {
   margin: 1em 0;
 }
 
+#feature p {
+margin: 0;
+padding: 1em 0;
+}
+
 blockquote {
   background: url(../images/open-quote.png) no-repeat 0 0;
   font: italic;
