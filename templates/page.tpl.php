@@ -192,13 +192,15 @@
 
  <?php if($logo || $site_name || $site_slogan || $header_first || $header_second) : ?>
     <div style="clear:both"></div>
+	<div id="headercontent-wrapper-bg">
     <div id="headercontent-wrapper" class="in<?php print (bool) $header_first + (bool) $header_second;?> le<?php print (bool) $logo + (bool) $site_name + (bool) $site_slogan + (bool) $header_first;?> ri<?php print (bool) $primary_links  + (bool) $header_second?>"><div class="section">
-
           <?php if($header_first || $logo || $site_name || $site_slogan) : ?>
       <?php if ($logo): ?>
+      	<div id="sitelogo">
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
+        </div>	
       <?php endif; ?>
-          <div class="column W">
+
       <?php if ($site_name || $site_slogan): ?>
         <div id="name-and-slogan">
           <?php if ($site_name): ?>
@@ -212,30 +214,24 @@
               </h1>
             <?php endif; ?>
           <?php endif; ?>
+
           <?php if ($site_slogan): ?>
             <div id="site-slogan"><?php print $site_slogan; ?></div>
           <?php endif; ?>
         </div> <!-- /#name-and-slogan -->
       <?php endif; ?>
 
-            <?php print $header_first; ?>
-          </div>
-          <?php endif; ?>
-          <?php if($header_second) : ?>
-          <div class="column X">
-            <?php print $header_second; ?>
-	 </div>
-          <?php endif; ?>         
-          
-      <div style="clear:both"></div>
-
+      <?php if ($search_box): ?>
+        <div id="search-box"><?php print $search_box; ?></div>
+      <?php endif; ?>
+      <?php endif; ?>
       <?php print $header; ?>
 
 </div> <!-- /#preface-wrapper -->
     <?php endif; ?>
 
     </div></div></div> <!-- /.section, /#header -->
-
+</div><!-- /#headercontent-wrapper-bg -->
       <?php if ($primary_links || $navigation): ?>
         <div id="navigation"><div class="section clearfix">
       <!-- PRIMARY -->
@@ -293,6 +289,7 @@
           <?php endif; ?>          
       <div style="clear:both"></div>
     </div></div> <!-- /.section, /#preface-wrapper -->
+    <div id="preface-hr"></div>
     <?php endif; ?>
 
 
@@ -493,14 +490,15 @@
 
  </div></div> <!-- /#footer, /#footer-wrapper -->
     <?php endif; ?>
+</div></div><!-- /#bottom, /.section  -->
+  </div></div> <!-- /#page, /#page-wrapper -->
+<?php if($closure-wrapper) : ?>
 <div id="closure-wrapper">
  <div id="closure">
   <?php print $page_closure; ?>
   <?php print $closure; ?>
  </div>
 </div>
-</div></div><!-- /#bottom, /.section  -->
-  </div></div> <!-- /#page, /#page-wrapper -->
-
+<?php endif; ?>
 </body>
 </html>

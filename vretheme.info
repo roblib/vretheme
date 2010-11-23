@@ -25,11 +25,6 @@ base theme = zen
   ; You can also override any of Zen's stylesheets or any module's stylesheets,
   ; an /extremely/ useful feature. See the excellent Drupal 6 Theme Guide at
   ; http://drupal.org/node/171209 for more details.
-stylesheets[all][]   = css/custom.css
-; stylesheets[all][]   = css/corporate.css
-; stylesheets[all][]   = css/elegant.css
-stylesheets[all][]   = css/designer.css
-stylesheets[all][]   = css/superfish.css
 stylesheets[all][]   = css/html-reset.css
 stylesheets[all][]   = css/wireframes.css
 stylesheets[all][]   = css/layout-fixed.css
@@ -47,6 +42,11 @@ stylesheets[all][]   = css/comments.css
 stylesheets[all][]   = css/forms.css
 stylesheets[all][]   = css/fields.css
 stylesheets[print][] = css/print.css
+stylesheets[all][]   = css/superfish.css
+stylesheets[all][]   = css/designer.css
+; stylesheets[all][]   = css/corporate.css
+; stylesheets[all][]   = css/elegant.css
+stylesheets[all][]   = css/custom.css
 ; stylesheets[handheld][] = css/mobile.css
 ; stylesheets[only screen and (max-device-width: 480px)][] = css/iphone.css
 

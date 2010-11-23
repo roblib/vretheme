@@ -37,13 +37,11 @@ body {
 #page {
 }
 
-#pageexceptfooter {
-position: absolute;
-}
 
 #topbar, #headercontent-wrapper div.section, #feature div.section, 
 #preface-wrapper div.section, #navigation div.section, #sitecontent, 
-#featured div.section, #messages, #main, #mainbottom-wrapper div.section, #bottom, #bottom-wrapper, #footer-wrapper,  #closure {
+#featured div.section, #messages, #main, #mainbottom-wrapper div.section, 
+#bottom, #bottom-wrapper, #footer-wrapper,  #closure {
 margin-left:auto;
 margin-right:auto;
 width:960px;
@@ -58,7 +56,10 @@ color: #fff;
 }
 
 #header .section {
+}
 
+#headercontent-wrapper {
+color: 000;
 }
 
 #search-box {
@@ -241,6 +242,7 @@ color: #fff;
 /* Topbar first + Topbar middle + Topbar last regions */
 
 #topbar-wrapper {
+font-size:12px;
 }
 
 #topbar-wrapper .column {
