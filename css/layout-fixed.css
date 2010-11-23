@@ -80,7 +80,7 @@ color: 000;
   min-height:500px;
   height:auto !important;
   height:500px;
-  padding: 15px 15px 15px 15px;
+  padding: 0;
 }
 
 /*
@@ -89,26 +89,26 @@ color: 000;
 #content,
 .no-sidebars #content {
   float: left; /* LTR */
-  width: 930px;
+  width: 960px;
   margin-left: 0; /* LTR */
   margin-right: -960px; /* LTR */ /* Negative value of #content's width + left margin. */
   padding: 0; /* DO NOT CHANGE. Add padding or margin to #content .section. */
 }
 
 .sidebar-first #content {
-  width: 730px;
+  width: 760px;
   margin-left: 200px; /* LTR */ /* The width of .region-sidebar-first. */
   margin-right: -960px; /* LTR */ /* Negative value of #content's width + left margin. */
 }
 
 .sidebar-second #content {
-  width: 730px;
+  width: 760px;
   margin-left: 0; /* LTR */
   margin-right: -760px; /* LTR */ /* Negative value of #content's width + left margin. */
 }
 
 .two-sidebars #content {
-  width: 530px;
+  width: 560px;
   margin-left: 200px; /* LTR */ /* The width of .region-sidebar-first */
   margin-right: -760px; /* LTR */ /* Negative value of #content's width + left margin. */
 }
@@ -182,8 +182,8 @@ color: 000;
 .region-sidebar-second {
   float: left; /* LTR */
   width: 200px;
-  margin-left: 730px; /* LTR */ /* Width of content + sidebar-first. */
-  margin-right: -930px; /* LTR */ /* Negative value of .region-sidebar-second's width + left margin. */
+  margin-left: 760px; /* LTR */ /* Width of content + sidebar-first. */
+  margin-right: -960px; /* LTR */ /* Negative value of .region-sidebar-second's width + left margin. */
   padding: 0; /* DO NOT CHANGE. Add padding or margin to .region-sidebar-second .section. */
 }
 
@@ -609,7 +609,7 @@ float: left;
 
 #footer-preface-wrapper.in1 .column {
 width: 100%;
-}
+} 
 
 #footer-preface-wrapper.in2 .column {
 width: 50%;
@@ -658,7 +658,7 @@ padding-right:15px;
   float: left; /* LTR */
   width: 200px;
   margin-top: 5px;
-  margin-left: 15px; /* LTR */
+  margin-left: 0px; /* LTR */
   margin-right: -200px; /* LTR */ /* Negative value of .region-sidebar-first's width + left margin. */
   padding: 0; /* DO NOT CHANGE. Add padding or margin to .region-sidebar-first .section. */
 }
@@ -668,27 +668,6 @@ padding-right:15px;
   padding: 0 0 0 0px;
 }
 
-
-.column.R ul.links li {
-display: list-item;
-list-style-type: none;
-padding:0 0 0.5em 0;
-}
-
-.column.R ul.menu  {
-border:medium none;
-list-style:none outside none;
-text-align:left;
-}
-
-.column.R ul {
-list-style-type:none;
-}
-
-.column.R ul, .column.R ol {
-margin-left:0;
-padding-left: 0em;
-}
 
 
 

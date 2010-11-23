@@ -6,6 +6,10 @@
  */
 
 
+.block-region {
+color: #000; 
+}
+
 .block /* Block wrapper */ {
   margin-bottom: 1em;
 }

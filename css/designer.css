@@ -1,5 +1,22 @@
 /* $Id: corporate.css,v 0.1 2010/11/22 02:16:49 krisbulman Exp $ */
 
+body,
+caption,
+th,
+td,
+input,
+textarea,
+select,
+option,
+legend,
+fieldset {
+  font-family: Century Gothic, Helvetica, Arial, "Nimbus Sans L", sans-serif;
+}
+
+#footer {
+  font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
+}
+
 #sitelogo {
 width:100%;
 text-align:center;
@@ -22,7 +39,7 @@ height: 2px;
 width: 50%;
 border-top: 2px solid #336686;
 margin-left: auto;
-margin-right: auto;
+margin-right: auto; 
 margin-top: 15px;
 margin-bottom: 15px;
 }
@@ -131,6 +148,8 @@ color: #fff;
 
 #footer {
 background: url(../images/footermic.png) no-repeat bottom right transparent; 
+min-height: 125px;
+height:auto !important;
 height: 125px;
 }
 
@@ -235,22 +254,27 @@ color: #000
 
 #footer a:link {
 color: #fff
+text-decoration: underline;
 }
 
 #footer a:visited {
+text-decoration: underline;
 color: #fff
 }
 
 #footer a:hover,
 #footer a:focus {
+text-decoration: underline;
 color: #fff
 }
 
 #footer a:active {
+text-decoration: underline;
 color: #fff
 }
 
 #footer li  a.active,  {
+text-decoration: underline;
 color: #fff
 }
 

@@ -21,7 +21,7 @@ body {
 }
 
 #main-wrapper, 
-#footer-wrapper {
+#footer-wrapper { 
   zoom: 1; /* Otherwise with a liquid layout, sidebars disappear when resizing the windows in IE6 */
 }
 
@@ -101,9 +101,6 @@ padding-right:0px;
 width: 945px;
 }
 
-#main {
-width: 930px;
-}
 
 
 /* Preface region

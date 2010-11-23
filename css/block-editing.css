@@ -21,9 +21,9 @@ div.block.with-block-editing div.edit {
   top: 0;
   z-index: 40;
   border: 1px solid #eee;
-  padding: 0 2px;
+  padding: 0 2px; 
   font-size: 0.75em;
-  background-color: #fff;
+  background-color: #a5a5a5;
 }
 
 div.block.with-block-editing:hover div.edit {
