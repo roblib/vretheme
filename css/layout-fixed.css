@@ -114,8 +114,8 @@ color: 000;
 }
 
 #content .section {
-  margin: 0;
-  padding: 0;
+margin:15px;
+padding:0;
 }
 
 
@@ -172,8 +172,8 @@ color: 000;
 }
 
 .region-sidebar-first .section {
-  margin: 0 20px 0 0; /* LTR */
-  padding: 0;
+margin:15px 0 15px 15px;
+padding:0;
 }
 
 /*
@@ -188,7 +188,7 @@ color: 000;
 }
 
 .region-sidebar-second .section {
-  margin: 0 0 0 20px; /* LTR */
+  margin: 15px 15px 15px 0px; /* LTR */
   padding: 0;
 }
 
@@ -349,6 +349,7 @@ padding-right:15px;
 -------------------------------------------------------------- */
 
 #preface-wrapper {
+padding-top: 15px;
 }
 
 #preface-wrapper .column {
@@ -357,6 +358,7 @@ float: left;
 
 #preface-wrapper.in1 .column {
 width: 100%;
+float: none;
 }
 
 #preface-wrapper.in2 .column {
@@ -407,6 +409,11 @@ padding-right:15px;
 
 /* Content Top 1 + Content Top 2
 -------------------------------------------------------------- */
+
+#content #content-top-wrapper .section {
+margin:0;
+}
+
 
 #content-top-wrapper {
 margin: 0 auto;
@@ -463,6 +470,10 @@ padding-left: 7.5px;
 
 /* Content Bottom 1 + Content Bottom 2
 -------------------------------------------------------------- */
+
+#content #content-bottom-wrapper .section {
+margin:0;
+}
 
 #content-bottom-wrapper {
 margin: 0 auto;
@@ -566,20 +577,18 @@ padding-right:15px;
  */
 
 .with-sidebar-footer #footer-content {
-  width: 760px;
-  margin-left: 200px; /* LTR */ /* The width of .region-sidebar-first. */
-  margin-right: -960px; /* LTR */ /* Negative value of #content's width + left margin. */
+margin-left:230px;
+margin-right:-940px;
+width:710px;
 }
-
 
 #footer-content {
-  float: left; /* LTR */
-  width: 960px;
-  margin-left: 0; /* LTR */
-  margin-right: -960px; /* LTR */ /* Negative value of #content's width + left margin. */
-  padding: 0; /* DO NOT CHANGE. Add padding or margin to #content .section. */
+float:left;
+margin-left:0;
+margin-right:-960px;
+padding:0;
+width:960px;
 }
-
 
 #footer-content .section {
   margin: 0;
@@ -594,13 +603,11 @@ padding-right:15px;
 -------------------------------------------------------------- */
 
 .with-sidebar-footer #footer-preface-wrapper {
-width: 760px;
-margin-left: 0;
+margin:0 auto 0 20px;
 }
 
 #footer-preface-wrapper {
-width:960px;
-margin: 0 auto;
+margin:0 auto;
 }
 
 #footer-preface-wrapper .column {
@@ -609,6 +616,7 @@ float: left;
 
 #footer-preface-wrapper.in1 .column {
 width: 100%;
+float: none;
 } 
 
 #footer-preface-wrapper.in2 .column {
@@ -630,19 +638,24 @@ padding-right:15px;
 -------------------------------------------------------------- */
 
 #footer-content-bottom-wrapper {
-margin: 0 auto;
+margin:0 auto 0 20px;
 }
 
+
 #footer-content-bottom-wrapper .column {
-float: left;
+float:left;
 }
 
 #footer-content-bottom-wrapper.in1 .column {
-width: 100%;
+width:100%;
 }
 
-#footer-content-bottom-wrapper.in2 .column {
-width: 50%;
+#footer-content-bottom-wrapper.in2 .column.P {
+width:80%;
+}
+
+#footer-content-bottom-wrapper.in2 .column.Q {
+width:20%;
 }
 
 #footer-content-bottom-wrapper .block {
@@ -654,20 +667,27 @@ padding-right:15px;
 /*
  * First sidebar footer
  */
+ 
 .column.R {
-  float: left; /* LTR */
-  width: 200px;
-  margin-top: 5px;
-  margin-left: 0px; /* LTR */
-  margin-right: -200px; /* LTR */ /* Negative value of .region-sidebar-first's width + left margin. */
-  padding: 0; /* DO NOT CHANGE. Add padding or margin to .region-sidebar-first .section. */
+border-right:2px solid;
+float:left;
+margin:15px -210px 15px 0;
+padding:0;
+width:230px;
 }
 
 .column.R .footersidebar {
-  margin: 0 20px 0 0; /* LTR */
-  padding: 0 0 0 0px;
+margin:0;
+padding:0;
 }
 
+.column.R .footersidebar .block {
+margin-bottom:0;
+}
 
+.column.R .footersidebar .section {
+margin:0 0 0 15px;
+z-index:99;
+}
 
 

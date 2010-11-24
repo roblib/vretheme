@@ -216,7 +216,11 @@ ul.links li {
 }
 
 .region-content-bottom /* Wrapper for any blocks placed in the "content bottom" region */ {
-margin:1.5em 0 1em;
+margin:1.5em 0 0 0;
+}
+
+#content-bottom-wrapper {
+margin: 0em 0 1em 0;
 }
 
 /*

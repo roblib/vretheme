@@ -145,9 +145,11 @@ padding: 0.1em 1.2em 0.5em;
 }
 
 div.admin .left {
-margin-left:0.25em;
+margin-left:0.2em;
+width:48%;
 }
 
 div.admin .right {
 margin-right:0.2em;
+width:48%;
 }

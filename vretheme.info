@@ -51,8 +51,8 @@ stylesheets[all][]   = css/custom.css
 ; stylesheets[only screen and (max-device-width: 480px)][] = css/iphone.css
 
   ; Set the conditional stylesheets that are processed by IE.
-conditional-stylesheets[if IE][all][]       = css/ie.css
 conditional-stylesheets[if lte IE 6][all][] = css/ie6.css
+conditional-stylesheets[if IE][all][]       = css/ie.css
 conditional-stylesheets[if lte IE 7][all][] = css/ie7.css
 
   ; Optionally add some JavaScripts to your theme.
@@ -99,7 +99,6 @@ regions[bottom_first]   = Bottom 1
 regions[bottom_second]  = Bottom 2
 regions[bottom_third]   = Bottom 3
 regions[bottom_fourth]  = Bottom 4
-regions[footer]         = Footer
 regions[sidebar_footer] = Footer sidebar
 regions[footer_preface_first] = Footer 1
 regions[footer_preface_second] = Footer 2

@@ -152,9 +152,6 @@ padding-left:0;
 padding-right:0;
 }
 
-.with-navigation #preface-wrapper { 
-margin-top: 2.8em; /* Set this to the same value as the navigation bar. */
-} 
 
 
 /* Content Top region
@@ -390,8 +387,16 @@ padding-top: 5px;
 padding-bottom: 5px;
 }
 
-#footer-content-bottom-wrapper.in2 .column {
-width: 45.65%;
+#footer-content-bottom-wrapper.in2 .column.P {
+width: 70.65%;
+margin-right: 1%;
+margin-left: 1%;
+padding-top: 5px;
+padding-bottom: 5px;
+}
+
+#footer-content-bottom-wrapper.in2 .column.Q {
+width: 18.65%;
 margin-right: 1%;
 margin-left: 1%;
 padding-top: 5px;
@@ -424,6 +429,6 @@ float:none;
 
 
 #navigation .section {
-position:relative; 
+
 }
 

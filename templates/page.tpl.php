@@ -119,6 +119,7 @@
   <?php print $scripts; ?>
 <!--[if IE 6]>
         <script type="text/javascript" src="<?php print $base_path . $directory; ?>/js/jquery.pngFix.js"></script>
+		<link type="text/css" rel="stylesheet" media="all" href="<?php print $base_path . $directory; ?>/css/ie6.css" />
 <![endif]-->
 <!--[if IE 6]>
 <script type="text/javascript">
@@ -290,6 +291,7 @@
       <div style="clear:both"></div>
     </div></div> <!-- /.section, /#preface-wrapper -->
     <div id="preface-hr"></div>
+    <div style="clear:both"></div>
     <?php endif; ?>
 
 
