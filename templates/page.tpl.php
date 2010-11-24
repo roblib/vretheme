@@ -153,6 +153,7 @@
         });
   });
 </script>
+
 </head>
 
 <body class="<?php print $classes; ?>">
@@ -498,9 +499,9 @@
 <div id="closure-wrapper">
  <div id="closure">
   <?php print $page_closure; ?>
-  <?php print $closure; ?>
  </div>
 </div>
 <?php endif; ?>
+  <?php print $closure; ?>
 </body>
 </html>
