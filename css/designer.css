@@ -34,7 +34,7 @@ margin: 0;
 display: none;
 }
 
-#preface-hr {
+#hr {
 height: 2px;
 width: 50%;
 border-top: 2px solid #336686;
@@ -45,7 +45,7 @@ margin-bottom: 15px;
 }
 
 .node {
-border-bottom:2px solid #336686;
+border-bottom:1px solid #336686;
 }
 
 /**
@@ -65,7 +65,6 @@ background: url(../images/pageshadow.png) repeat-y top center #571605;
 }
 
 #page {
-
 }
 
 #topbar-wrapper {
@@ -192,21 +191,31 @@ color:#FFFFFF;
 }
 
 /* Link Colors */
-a:link {
-color: #336686
+
+#footer a:link {
+color: #fff;
+text-decoration: underline;
 }
 
-a:visited {
-color: #336686
+#footer a:visited {
+text-decoration: underline;
+color: #fff;
 }
 
-a:hover,
-a:focus {
-color: #336686
+#footer a:hover,
+#footer a:focus {
+text-decoration: underline;
+color: #fff;
 }
 
-a:active {
-color: #336686
+#footer a:active {
+text-decoration: underline;
+color: #fff;
+}
+
+#footer li a.active,  {
+text-decoration: underline;
+color: #fff;
 }
 
 #header a:link {
@@ -252,41 +261,36 @@ color: #000
 }
 
 
-#footer a:link {
-color: #fff
-text-decoration: underline;
+
+a:link {
+color: #336686
 }
 
-#footer a:visited {
-text-decoration: underline;
-color: #fff
+a:visited {
+color: #336686
 }
 
-#footer a:hover,
-#footer a:focus {
-text-decoration: underline;
-color: #fff
+a:hover,
+a:focus {
+color: #336686
 }
 
-#footer a:active {
-text-decoration: underline;
-color: #fff
+a:active {
+color: #336686
 }
 
-#footer li  a.active,  {
-text-decoration: underline;
-color: #fff
-}
+
+
 
 /* blocks */
 
-#preface-wrapper .block h2.title, #mainbottom-wrapper .block h2.title {
+#preface-wrapper .block h2.title {
 background: url(../images/h2bullet.png) no-repeat 0 0.86em;
 padding-left: 1.2em;
 color: #336686;
 }
 
-#content-top-wrapper h2, .region-content-top h2.title, .region-content-bottom .block h2.title, #content-bottom-wrapper .block h2.title {
+#mainbottom-wrapper .block h2.title, #content-top-wrapper h2, .region-content-top h2.title, .region-content-bottom .block h2.title, #content-bottom-wrapper .block h2.title {
 background: url(../images/h2bullet-small.png) no-repeat 0 0.9199em;
 padding-left: 1em;
 color: #255720;
@@ -353,3 +357,70 @@ text-transform:uppercase;
 #nav, #superfish {
 height:32px;
 }
+
+
+/* Preface first + Preface second + Preface third +  Preface fourth regions
+-------------------------------------------------------------- */
+
+#preface-wrapper {
+padding-top: 15px;
+}
+
+#preface-wrapper .column {
+float: left;
+}
+
+#preface-wrapper.in1 .column {
+width: 100%;
+float: none;
+}
+
+#preface-wrapper.in2 .column {
+width: 50%;
+}
+
+#preface-wrapper.in3 .column {
+width: 33.3%;
+}
+
+#preface-wrapper.in4 .column {
+width: 25%;
+}
+
+#preface-wrapper .block {
+padding-left:30px;
+padding-right:30px;
+}
+
+/* Bottom first + Bottom second + Bottom third +  Bottom fourth regions
+-------------------------------------------------------------- */
+
+#mainbottom-wrapper {
+padding-bottom: 15px;
+}
+
+#mainbottom-wrapper .column {
+float: left;
+}
+
+#mainbottom-wrapper.in1 .column {
+width: 100%;
+}
+
+#mainbottom-wrapper.in2 .column {
+width: 50%;
+}
+
+#mainbottom-wrapper.in3 .column {
+width: 33.3%;
+}
+
+#mainbottom-wrapper.in4 .column {
+width: 25%;
+}
+
+#mainbottom-wrapper .block {
+padding-left:30px;
+padding-right:30px;
+}
+

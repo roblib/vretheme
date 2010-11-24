@@ -290,7 +290,6 @@
           <?php endif; ?>          
       <div style="clear:both"></div>
     </div></div> <!-- /.section, /#preface-wrapper -->
-    <div id="preface-hr"></div>
     <div style="clear:both"></div>
     <?php endif; ?>
 
@@ -368,7 +367,7 @@
     </div><!-- /#main -->
     
      <?php if($mainbottom_first || $mainbottom_second || $mainbottom_third || $mainbottom_fourth) : ?>
-    <div style="clear:both"></div>   <div id="preface-hr"></div>
+    <div style="clear:both"></div>
     <div id="mainbottom-wrapper" class="in<?php print (bool) $mainbottom_first + (bool) $mainbottom_second + (bool) $mainbottom_third + (bool) $mainbottom_fourth; ?>"><div class="section">
           <?php if($mainbottom_first) : ?>
           <div class="column S">
