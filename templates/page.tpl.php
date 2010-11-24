@@ -452,20 +452,15 @@
     <?php endif; ?>
       
       
- <?php if($footer_content_bottom1 || $footer_content_bottom2) : ?>
+ <?php if($footer) : ?>
     <div style="clear:both"></div>
-    <div id="footer-content-bottom-wrapper" class="in<?php print (bool) $footer_content_bottom1 + (bool) $footer_content_bottom2; ?>"><div class="section">
-          <?php if($footer_content_bottom1) : ?>
+    <div id="footer-content-bottom-wrapper" class="in<?php print (bool) $footer; ?>"><div class="section">
+          <?php if($footer) : ?>
           <div class="column P">
         <?php if ($footer_message): ?>
           <div id="footer-message"><?php print $footer_message; ?></div>
         <?php endif; ?>          
-            <?php print $footer_content_bottom1; ?>
-          </div>
-          <?php endif; ?>
-          <?php if($footer_content_bottom2) : ?>
-          <div class="column Q">
-            <?php print $footer_content_bottom2; ?>
+            <?php print $footer; ?>
           </div>
           <?php endif; ?>
       <div style="clear:both"></div>

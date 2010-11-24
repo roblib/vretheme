@@ -59,3 +59,15 @@ min-width: 13em;
 #superfish li {
 word-wrap: break-word;
 }
+
+.block-search input.form-submit, #islandora-solr-simple-search-form input.form-submit {
+width: 24px;
+font-size: 0; 
+color: #875420;
+text-align: right;
+}
+
+#islandora-solr-simple-search-form .search-advanced input.form-submit {
+width: 34px;
+text-indent: 0;
+}
