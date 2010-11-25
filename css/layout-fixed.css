@@ -212,12 +212,11 @@ padding:0;
  */
 #header,
 #content,
-#navigation,
 .region-sidebar-first,
 .region-sidebar-second,
 #footer,
 .region-page-closure {
-  overflow: visible;
+  overflow: hidden;
   word-wrap: break-word; /* A very nice CSS3 property */
 }
 
