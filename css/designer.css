@@ -10,11 +10,11 @@ select,
 option,
 legend,
 fieldset {
-  font-family: Century Gothic, Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  /* font-family: Century Gothic, Helvetica, Arial, "Nimbus Sans L", sans-serif; */
 }
 
 #footer {
-  font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  /* font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif; */
 }
 
 #sitelogo {
@@ -71,7 +71,7 @@ background: url(../images/pageshadow.png) repeat-y top center #571605;
 }
 
 #topbar-wrapper .section{ 
-background: url(../images/topbarbg.png) repeat-x 0 0 #7396AC;
+/* background: url(../images/topbarbg.png) repeat-x 0 0 #7396AC; */
 }
 
 #navigation {
@@ -79,7 +79,6 @@ background:none repeat scroll 0 0 transparent;
 }
 
 #navigation .section {
-background: url(../images/navbg.png) repeat-x 0 0 #456173;
 }
 
 #sitecontent-wrapper {
@@ -90,8 +89,11 @@ background: none repeat scroll 0 0 #fff;
 }
 
 #feature {
-background: url(../images/ivfeatured.jpg) no-repeat 0 -1px #e6e6e6;
-height: 217px;
+}
+
+.front #feature {
+/* background: url(../images/ivfeatured.jpg) no-repeat 0 -1px #e6e6e6; */
+/* height: 217px; */
 }
 
 #preface-wrapper {
@@ -118,25 +120,25 @@ background: none repeat scroll 0 0 transparent; /* for non-css3 browsers */
 }
 
 #headercontent-wrapper-bg {
-background: url(../images/headerbg.jpg) repeat-x top center #e1e1e1; 
+/* background: url(../images/headerbg.jpg) repeat-x top center #e1e1e1; */
 }
 
 #headercontent-wrapper {
 border-top:1px solid #000;
-background: url(../images/pageshadow.png) repeat-y top center transparent; 
+background: url(../images/pageshadow.png) repeat-y top center transparent;
 border-bottom:1px solid #000;
 }
 
 #headercontent-wrapper .section {
 border-left:1px solid #000;
 border-right:1px solid #000;
-height: 152px;
-background: url(../images/headercontentbg.jpg) repeat-x top center #e1e1e1; 
+/* height: 152px; */
+/* background: url(../images/headercontentbg.jpg) repeat-x top center #e1e1e1; */
 }
 
 
 #bottom {
-background: url(../images/footerbg.png) repeat-x bottom left #1c536f; 
+/* background: url(../images/footerbg.png) repeat-x bottom left #1c536f; */
 color: #fff;
 }
 
@@ -146,7 +148,7 @@ color: #fff;
 
 
 #footer {
-background: url(../images/footermic.png) no-repeat bottom right transparent; 
+/* background: url(../images/footermic.png) no-repeat bottom right transparent; */
 min-height: 125px;
 height:auto !important;
 height: 125px;
@@ -263,8 +265,6 @@ color: #000
 color: #000
 }
 
-
-
 a:link {
 color: #336686
 }
@@ -282,62 +282,57 @@ a:active {
 color: #336686
 }
 
-
-
-
 /* blocks */
 
 #preface-wrapper .block h2.title {
-background: url(../images/h2bullet.png) no-repeat 0 0.86em;
-padding-left: 1.2em;
-color: #336686;
+/* background: url(../images/h2bullet.png) no-repeat 0 0.86em; */
+/* padding-left: 1.2em; */ 
+/* color: #336686; */
 }
 
 #mainbottom-wrapper .block h2.title, #content-top-wrapper h2, .region-content-top h2.title, .region-content-bottom .block h2.title, #content-bottom-wrapper .block h2.title {
-background: url(../images/h2bullet-small.png) no-repeat 0 0.9199em;
-padding-left: 1em;
-color: #255720;
+/* background: url(../images/h2bullet-small.png) no-repeat 0 0.9199em; */
+/* padding-left: 1em; */
+/* color: #255720; */
 }
-
-
 
 /* superfish.css */
 
-
-
 #nav ul.menu li.active-trail, #nav ul.menu li:hover, #nav .menu li li:hover, #nav .menu li li li:hover, #superfish ul.menu li.active-trail, #superfish ul.menu li:hover, #superfish .menu li li:hover, #superfish .menu li li li:hover {
--moz-background-clip:border;
--moz-background-inline-policy:continuous;
--moz-background-origin:padding;
 background:#1A3444 none repeat-x scroll 0 0;
 }
+
 #nav li, #superfish li {
 border-right:1px solid #000000;
 }
+
 #header #superfish ul li.last {
 border-right:medium none;
 }
+
 #navigation #nav, #navigation #superfish {
 border-left:1px solid #000000;
 }
+
 #superfish .menu li li, #superfish .menu li li li {
--moz-background-clip:border;
--moz-background-inline-policy:continuous;
--moz-background-origin:padding;
 background:#1F3E52 none repeat scroll 0 0;
 border-bottom:1px solid #1A3444;
 border-top:1px solid #415C6D;
 }
+
 #superfish .menu li li:hover, #superfish .menu li li li:hover {
 border-top:1px solid #002942;
 }
+
 #superfish .menu li li li {
 border-left:1px solid #1A3444;
 border-right:1px solid #1A3444;
 }
+
 #nav li a, #superfish li a, #nav .menu a, #nav .menu a:visited, #superfish .menu a, #superfish .menu a:visited {
 color:#FFFFFF;
 }
+
 #nav .menu a, #nav .menu a:visited, #superfish .menu a, #superfish .menu a:visited {
 color:#FFFFFF;
 font-size:12px;
@@ -346,9 +341,11 @@ padding-right:30px;
 padding-top:10px;
 text-decoration:none;
 }
+
 #superfish .menu li:hover ul, #superfish .menu li.sfHover ul {
 top:32px;
 }
+
 #nav li a, #superfish li a {
 color:#FFFFFF;
 font-size:12px;
@@ -357,6 +354,7 @@ padding:7px 29px 0;
 text-decoration:none;
 text-transform:uppercase;
 }
+
 #nav, #superfish {
 height:32px;
 }
@@ -379,11 +377,15 @@ float: none;
 }
 
 #preface-wrapper.in2 .column {
-width: 50%;
+/* width: 50%; */
 }
 
-#preface-wrapper.in3 .column {
+#preface-wrapper.in2 .column.C {
 width: 33.3%;
+}
+
+#preface-wrapper.in3 .column.D {
+width: 66.7%;
 }
 
 #preface-wrapper.in4 .column {
@@ -461,7 +463,7 @@ width: 24px;
 cursor: pointer;
 text-indent: -9999px;
 border: none;
-background: url(../images/greenblue-mag_glass.png) no-repeat left top;
+background: url(../images/mag_glass/grey-mag_glass.png) no-repeat left top; /* color options are greenblue brown */
 display: inline;
 float: left;
 clear: right;
