@@ -456,21 +456,25 @@
  <?php endif; ?>  
   </div></div> <!-- /.section, /#footer-content -->
 
-          <?php if($sidebar_footer || $secondary_links): ?>
+          <?php if( $secondary_links || $sidebar_footer): ?>
           <div class="column R"><div class="footersidebar">
-        <?php print theme(array('links__system_secondary_menu', 'links'), $secondary_links,
-          array(
-            'id' => 'secondary-menu',
-            'class' => 'links clearfix sidebar',
-          ),
-          array(
-            'text' => t('Secondary menu'),
-            'level' => 'h2',
-            'class' => 'element-invisible',
-          ));
-        ?>
-            <?php print $sidebar_footer; ?>
-            
+        <?php 
+        if ($secondary_links) {
+		          print theme(array('links__system_main_menu', 'links'), $secondary_links,
+            array(
+              'id' => 'secondary-menu',
+              'class' => 'links clearfix menu',
+            ),
+            array(
+              'text' => t('Secondary menu'),
+              'level' => 'h2',
+              'class' => 'element-invisible',
+            )); 
+				      }
+				      elseif (!empty($sidebar_footer)) {
+				        print $sidebar_footer;
+				      }
+        ?>  
           </div></div>
           <?php endif; ?>
 
