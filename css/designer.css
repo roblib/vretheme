@@ -157,6 +157,11 @@ height: 125px;
 #footer .section {
 }
 
+#footer-content-bottom-wrapper .section {
+border-top: 1px solid #dfdfdf; 
+}
+
+
 #footer p {
 padding: 0;
 margin: 0;
@@ -421,11 +426,6 @@ padding-left:30px;
 padding-right:30px;
 }
 
-/* Footer */
-
-.column.P {
-border-top: 1px solid #dfdfdf; 
-}
 
 
 /* Search Block */
