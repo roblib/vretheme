@@ -166,7 +166,7 @@
 <div style="clear:both"></div>
     <div id="header">
 
-<?php if($topbar_left || $topbar_right || $search_box) : ?>
+<?php if($topbar_left || $topbar_right || $search_box): ?>
     <div id="topbar-wrapper" class="in<?php print (bool) $topbar_left + (bool) $topbar_right; ?>">
     	 <div id="topbar" class="section clearfix">
           <?php if($topbar_left) : ?>
@@ -192,11 +192,11 @@
 
 <div class="section clearfix">
 
- <?php if($logo || $site_name || $site_slogan || $header_first || $header_second) : ?>
+ <?php if($logo || $site_name || $site_slogan || $header_first || $header_second): ?>
     <div style="clear:both"></div>
 	<div id="headercontent-wrapper-bg">
     <div id="headercontent-wrapper" class="in<?php print (bool) $header_first + (bool) $header_second;?> le<?php print (bool) $logo + (bool) $site_name + (bool) $site_slogan + (bool) $header_first;?> ri<?php print (bool) $primary_links  + (bool) $header_second?>"><div class="section">
-          <?php if($header_first || $logo || $site_name || $site_slogan) : ?>
+          <?php if($header_first || $logo || $site_name || $site_slogan): ?>
       <?php if ($logo): ?>
       	<div id="sitelogo">
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
@@ -266,25 +266,25 @@
         </div></div> <!-- /.section, /#navigation -->
       <?php endif; ?>
 
- <?php if($preface_first || $preface_second || $preface_third || $preface_fourth) : ?>
+ <?php if($preface_first || $preface_second || $preface_third || $preface_fourth): ?>
     <div style="clear:both"></div>
     <div id="preface-wrapper" class="in<?php print (bool) $preface_first + (bool) $preface_second + (bool) $preface_third + (bool) $preface_fourth; ?> "><div class="section">
-          <?php if($preface_first) : ?>
+          <?php if($preface_first): ?>
           <div class="column C">
             <?php print $preface_first; ?>
           </div>
           <?php endif; ?>
-          <?php if($preface_second) : ?>
+          <?php if($preface_second): ?>
           <div class="column D">
             <?php print $preface_second; ?>
           </div>
           <?php endif; ?>
-          <?php if($preface_third) : ?>
+          <?php if($preface_third): ?>
           <div class="column E">
             <?php print $preface_third; ?>
           </div>
           <?php endif; ?>
-          <?php if($preface_fourth) : ?>
+          <?php if($preface_fourth): ?>
           <div class="column F">
             <?php print $preface_fourth; ?>
           </div>
@@ -315,10 +315,10 @@
         <?php endif; ?>
         <?php print $help; ?>
         <?php print $content_top; ?>
- <?php if($content_top1 || $content_top2) : ?>
+ <?php if($content_top1 || $content_top2): ?>
     <div style="clear:both"></div>
     <div id="content-top-wrapper" class="in<?php print (bool) $content_top1 + (bool) $content_top2; ?>"><div class="section">
-          <?php if($content_top1) : ?>
+          <?php if($content_top1): ?>
           <div class="column Z">
             <?php print $content_top1; ?>
           </div>
@@ -337,15 +337,15 @@
         </div>
         <?php print $content_middle; ?>        
         <?php print $content_bottom; ?>
- <?php if($content_bottom1 || $content_bottom2) : ?>
+ <?php if($content_bottom1 || $content_bottom2): ?>
     <div style="clear:both"></div>
     <div id="content-bottom-wrapper" class="in<?php print (bool) $content_bottom1 + (bool) $content_bottom2; ?>"><div class="section">
-          <?php if($content_bottom1) : ?>
+          <?php if($content_bottom1): ?>
           <div class="column G">
             <?php print $content_bottom1; ?>
           </div>
           <?php endif; ?>
-          <?php if($content_bottom2) : ?>
+          <?php if($content_bottom2): ?>
           <div class="column H">
             <?php print $content_bottom2; ?>
           </div>
@@ -367,25 +367,25 @@
 
     </div><!-- /#main -->
     
-     <?php if($mainbottom_first || $mainbottom_second || $mainbottom_third || $mainbottom_fourth) : ?>
+     <?php if($mainbottom_first || $mainbottom_second || $mainbottom_third || $mainbottom_fourth): ?>
     <div style="clear:both"></div>
     <div id="mainbottom-wrapper" class="in<?php print (bool) $mainbottom_first + (bool) $mainbottom_second + (bool) $mainbottom_third + (bool) $mainbottom_fourth; ?>"><div class="section">
-          <?php if($mainbottom_first) : ?>
+          <?php if($mainbottom_first): ?>
           <div class="column S">
             <?php print $mainbottom_first; ?>
           </div>
           <?php endif; ?>
-          <?php if($mainbottom_second) : ?>
+          <?php if($mainbottom_second): ?>
           <div class="column T">
             <?php print $mainbottom_second; ?>
           </div>
           <?php endif; ?>
-          <?php if($mainbottom_third) : ?>
+          <?php if($mainbottom_third): ?>
           <div class="column U">
             <?php print $mainbottom_third; ?>
           </div>
           <?php endif; ?>
-          <?php if($mainbottom_fourth) : ?>
+          <?php if($mainbottom_fourth): ?>
           <div class="column V">
             <?php print $mainbottom_fourth; ?>
           </div>
@@ -396,25 +396,25 @@
     
     </div> <!-- /#main, /#main-wrapper -->        </div></div> <!-- /#sitecontent-wrapper, /#sitecontent -->
 <div id="bottom"><div class="section">
- <?php if($bottom_first || $bottom_second || $bottom_third || $bottom_fourth) : ?>
+ <?php if($bottom_first || $bottom_second || $bottom_third || $bottom_fourth): ?>
     <div style="clear:both"></div>
     <div id="bottom-wrapper" class="in<?php print (bool) $bottom_first + (bool) $bottom_second + (bool) $bottom_third + (bool) $bottom_fourth; ?>"><div class="section">
-          <?php if($bottom_first) : ?>
+          <?php if($bottom_first): ?>
           <div class="column I">
             <?php print $bottom_first; ?>
           </div>
           <?php endif; ?>
-          <?php if($bottom_second) : ?>
+          <?php if($bottom_second): ?>
           <div class="column J">
             <?php print $bottom_second; ?>
           </div>
           <?php endif; ?>
-          <?php if($bottom_third) : ?>
+          <?php if($bottom_third): ?>
           <div class="column K">
             <?php print $bottom_third; ?>
           </div>
           <?php endif; ?>
-          <?php if($bottom_fourth) : ?>
+          <?php if($bottom_fourth): ?>
           <div class="column L">
             <?php print $bottom_fourth; ?>
           </div>
@@ -428,21 +428,21 @@
 <div id="footer-wrapper"><div id="footer" class="clearfix<?php if ($sidebar_footer || $secondary_links) { print ' with-sidebar-footer'; } ?>">
       <div id="footer-content" class="column"><div class="section">
       
- <?php if($footer_preface_first || $footer_preface_second || $footer_preface_third) : ?>
+ <?php if($footer_preface_first || $footer_preface_second || $footer_preface_third): ?>
     <div style="clear:both"></div>
  
     <div id="footer-preface-wrapper" class="in<?php print (bool) $footer_preface_first + (bool) $footer_preface_second + (bool) $footer_preface_third; ?> "><div class="section">
-          <?php if($footer_preface_first) : ?>
+          <?php if($footer_preface_first): ?>
           <div class="column M">
             <?php print $footer_preface_first; ?>
           </div>
           <?php endif; ?>
-          <?php if($footer_preface_second) : ?>
+          <?php if($footer_preface_second): ?>
           <div class="column N">
             <?php print $footer_preface_second; ?>
           </div>
           <?php endif; ?>
-          <?php if($footer_preface_third) : ?>
+          <?php if($footer_preface_third): ?>
           <div class="column O">
             <?php print $footer_preface_third; ?>
           </div>
@@ -452,23 +452,21 @@
     <?php endif; ?>
       
       
- <?php if($footer || $footer_message) : ?>
+ <?php if($footer || $footer_message): ?>
     <div style="clear:both"></div>
     <div id="footer-content-bottom-wrapper" class="in<?php print (bool) $footer; ?>"><div class="section">
-          <?php if($footer) : ?>
           <div class="column P">
         <?php if ($footer_message): ?>
           <div id="footer-message"><?php print $footer_message; ?></div>
         <?php endif; ?>          
             <?php print $footer; ?>
           </div>
-          <?php endif; ?>
       <div style="clear:both"></div>
     </div></div> <!-- /.section, /#content-bottom-wrapper -->
  <?php endif; ?>  
   </div></div> <!-- /.section, /#footer-content -->
 
-          <?php if($sidebar_footer || $secondary_links) : ?>
+          <?php if($sidebar_footer || $secondary_links): ?>
           <div class="column R"><div class="footersidebar">
           	<?php print theme(array('links__system_secondary_menu', 'links'), $secondary_links,
           	array(
@@ -490,7 +488,7 @@
     <?php endif; ?>
 </div></div><!-- /#bottom, /.section  -->
   </div></div> <!-- /#page, /#page-wrapper -->
-<?php if($closure-wrapper) : ?>
+<?php if($closure-wrapper): ?>
 <div id="closure-wrapper">
  <div id="closure">
   <?php print $page_closure; ?>
