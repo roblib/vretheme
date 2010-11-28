@@ -177,8 +177,7 @@
         <div id="search-box"><?php print $search_box; ?></div>
       <?php endif; ?>
             <?php print $topbar_right; ?>
-          </div>
-
+      	  </div>
       <div style="clear:both"></div>
     </div></div> <!-- ./topbar, /#topbar-wrapper -->
           <?php endif; ?>
@@ -479,7 +478,7 @@
     <?php endif; ?>
 </div></div><!-- /#bottom, /.section  -->
   </div></div> <!-- /#page, /#page-wrapper -->
-<?php if($closure-wrapper): ?>
+<?php if($page_closure): ?>
 <div id="closure-wrapper">
  <div id="closure">
   <?php print $page_closure; ?>
