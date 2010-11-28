@@ -258,6 +258,7 @@ width: 50%;
 
 #topbar-wrapper .column.B {
 text-align:right;
+float: right;
 }
 
 #topbar-wrapper .column.A .block {
@@ -275,6 +276,13 @@ margin: 0.2em 0 0 0.5em;
 #topbar .block {
 padding: 0;
 }
+
+#topbar #search-box {
+padding: 0 15px 0 15px;
+margin: 0.1em 0 0 0;
+}
+
+
 
 /*
  * Topbar Navigation
