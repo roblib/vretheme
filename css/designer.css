@@ -72,7 +72,8 @@ background: url(../images/pageshadow.png) repeat-y top center #571605;
 
 #topbar-wrapper .section{ 
 /* background: url(../images/topbarbg.png) repeat-x 0 0 #7396AC; */
-height: 25px;
+height: 27px;
+background: #6787A1;
 }
 
 #topbar {
