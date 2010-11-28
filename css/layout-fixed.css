@@ -602,7 +602,7 @@ width:960px;
 -------------------------------------------------------------- */
 
 .with-sidebar-footer #footer-preface-wrapper {
-margin:0 auto 0 20px;
+margin:0 auto 0 25px;
 }
 
 #footer-preface-wrapper {
@@ -627,8 +627,8 @@ width: 33.3%;
 }
 
 #footer-preface-wrapper .block {
-padding-left:5px;
-padding-right:5px;
+padding-left:0px;
+padding-right:0px;
 }
 
 
@@ -637,7 +637,7 @@ padding-right:5px;
 -------------------------------------------------------------- */
 
 #footer-content-bottom-wrapper {
-margin:0 auto 0 20px;
+margin:0 auto 0 25px;
 }
 
 
@@ -650,8 +650,8 @@ width:100%;
 }
 
 #footer-content-bottom-wrapper .block {
-padding-left:5px;
-padding-right:5px;
+padding-left:0px;
+padding-right:0px;
 }
 
 
