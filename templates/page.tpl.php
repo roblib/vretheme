@@ -413,7 +413,7 @@
     </div></div> <!-- /.section, /#bottom-wrapper -->
     <?php endif; ?>
  
-    <?php if ($secondary_links || $sidebar_footer || $footer_message || $footer_preface_first || $footer_preface_second || $footer_preface_third || $footer): ?>
+    <?php if ($footer_preface_first || $footer_preface_second || $footer_preface_third || $footer || $footer_message || $secondary_links || $sidebar_footer): ?>
       <div style="clear:both"></div>
 <div id="footer-wrapper"><div id="footer" class="clearfix<?php if ($sidebar_footer || $secondary_links) { print ' with-sidebar-footer'; } ?>">
       <div id="footer-content" class="column"><div class="section">

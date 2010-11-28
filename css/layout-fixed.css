@@ -677,7 +677,7 @@ padding:0;
 margin-bottom:0;
 }
 
-.column.R .footersidebar .section {
+.column.R .footersidebar .section, .footersidebar #secondary-menu {
 margin:0 0 0 15px;
 z-index:99;
 }
