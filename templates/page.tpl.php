@@ -468,17 +468,17 @@
 
           <?php if($sidebar_footer || $secondary_links): ?>
           <div class="column R"><div class="footersidebar">
-          	<?php print theme(array('links__system_secondary_menu', 'links'), $secondary_links,
-          	array(
-            	'id' => 'secondary-menu',
-            	'class' => 'links clearfix sidebaer',
-          	),
-          	array(
-            	'text' => t('Secondary menu'),
-            	'level' => 'h2',
-            	'class' => 'element-invisible',
-          	));
-          	?>          
+        <?php print theme(array('links__system_secondary_menu', 'links'), $secondary_links,
+          array(
+            'id' => 'secondary-menu',
+            'class' => 'links clearfix sidebar',
+          ),
+          array(
+            'text' => t('Secondary menu'),
+            'level' => 'h2',
+            'class' => 'element-invisible',
+          ));
+        ?>
             <?php print $sidebar_footer; ?>
             
           </div></div>
