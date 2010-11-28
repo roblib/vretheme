@@ -377,15 +377,7 @@ float: none;
 }
 
 #preface-wrapper.in2 .column {
-/* width: 50%; */
-}
-
-#preface-wrapper.in2 .column.C {
-width: 33.3%;
-}
-
-#preface-wrapper.in3 .column.D {
-width: 66.7%;
+width: 50%;
 }
 
 #preface-wrapper.in4 .column {
