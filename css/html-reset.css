@@ -203,7 +203,7 @@ ul.menu li,
 li.expanded, 
 li.collapsed,
 li.leaf /* Drupal override */ {
-  margin: 0.2em 0 0.2em 0.5em;
+  margin: 0.15em 0 0.15em 0.5em;
   padding: 0;
 }
 
@@ -259,6 +259,15 @@ padding: 0;
 #bottom ul.menu li,#bottom li.expanded, #bottom li.collapsed, #bottom li.leaf,  .footersidebar ul.links li {
 margin-left: 0;
 padding-left: 0;
+}
+
+
+#bottom .footersidebar ul.menu li,
+#bottom .footersidebar li.expanded, 
+#bottom .footersidebar li.collapsed,
+#bottom .footersidebar li.leaf /* Drupal override */ {
+  margin: 0.25em 0 0.25em 0.5em;
+  padding: 0;
 }
 
 #bottom ul.menu, .footersidebar ul.links {
