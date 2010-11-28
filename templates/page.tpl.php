@@ -456,8 +456,9 @@
  <?php endif; ?>  
   </div></div> <!-- /.section, /#footer-content -->
 
+
           <?php if( $secondary_links || $sidebar_footer): ?>
-          <div class="column R"><div class="footersidebar">
+          <div class="column R"><div class="section clearfix"><div class="<?php print $secondary_links ? 'footersidebar' : 'footersidebar' ; ?>">
         <?php 
         if ($secondary_links) {
 		          print theme(array('links__system_main_menu', 'links'), $secondary_links,
@@ -475,7 +476,7 @@
 				        print $sidebar_footer;
 				      }
         ?>  
-          </div></div>
+          </div></div></div>
           <?php endif; ?>
 
  </div></div> <!-- /#footer, /#footer-wrapper -->
