@@ -602,11 +602,11 @@ width:960px;
 -------------------------------------------------------------- */
 
 .with-sidebar-footer #footer-preface-wrapper {
-margin:0 auto 0 25px;
+margin:0 25px 0 25px;
 }
 
 #footer-preface-wrapper {
-margin:0 auto;
+margin:0 25px 0 25px;
 }
 
 #footer-preface-wrapper .column {
@@ -637,7 +637,7 @@ padding-right:0px;
 -------------------------------------------------------------- */
 
 #footer-content-bottom-wrapper {
-margin:0 auto 0 25px;
+margin:0 25px 0 25px;
 }
 
 
