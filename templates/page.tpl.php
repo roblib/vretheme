@@ -166,29 +166,22 @@
 <div style="clear:both"></div>
     <div id="header">
 
-<?php if($topbar_left || $topbar_right || $search_box): ?>
+ <?php if($topbar_left || $topbar_right || $search_box): ?>
     <div id="topbar-wrapper" class="in<?php print (bool) $topbar_left + (bool) $topbar_right; ?>">
     	 <div id="topbar" class="section clearfix">
-          <?php if($topbar_left) : ?>
           <div class="column A">
             <?php print $topbar_left; ?>
           </div>
-          <?php endif; ?>
-          <?php if($topbar_right) : ?>
           <div class="column B">
-
       <?php if ($search_box): ?>
         <div id="search-box"><?php print $search_box; ?></div>
       <?php endif; ?>
-
             <?php print $topbar_right; ?>
-
-
           </div>
-          <?php endif; ?>
+
       <div style="clear:both"></div>
     </div></div> <!-- ./topbar, /#topbar-wrapper -->
-<?php endif; ?>
+          <?php endif; ?>
 
 <div class="section clearfix">
 
@@ -223,9 +216,7 @@
         </div> <!-- /#name-and-slogan -->
       <?php endif; ?>
 
-      <?php if ($search_box): ?>
-        <div id="search-box"><?php print $search_box; ?></div>
-      <?php endif; ?>
+
       <?php endif; ?>
       <?php print $header; ?>
 
