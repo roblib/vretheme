@@ -246,6 +246,7 @@ font-size:12px;
 
 #topbar-wrapper .column {
 float: left;
+margin: 0.1em 0 0.1em 0;
 }
 
 #topbar-wrapper.in1 .column {
@@ -275,6 +276,7 @@ margin: 0.2em 0 0 0.5em;
 
 #topbar .block {
 padding: 0;
+margin-bottom:0;
 }
 
 #topbar #search-box {
@@ -288,27 +290,27 @@ margin: 0.1em 0 0 0;
  * Topbar Navigation
  */
 
-#topbar.section h2.title {
+#topbar-wrapper h2.title {
 display: none;
 }
 
-#topbar.section ul {
+#topbar-wrapper ul {
 padding:0; 
 margin:0;
 }
 
-#topbar.section li {
+#topbar-wrapper li {
 list-style-type: none;
 display:inline; 
 padding:0; 
 margin:0;
 }
 
-#topbar.section ul.menu li {
+#topbar-wrapper ul.menu li {
 margin:0 0.5em 0 0;
 }
 
-#topbar .block-menu .content {
+#topbar-wrapper .block-menu .content {
 padding: 3px 0 3px 7px;
 }
 
@@ -605,6 +607,10 @@ width:960px;
 
 #footer-wrapper {
   position: relative;
+}
+
+#footer {
+padding-bottom: 1em;
 }
 
 /* Preface first + Preface second + Preface third +  Preface fourth regions

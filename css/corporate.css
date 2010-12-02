@@ -37,7 +37,7 @@ background:none repeat scroll 0 0 #fff;
 }
 
 #main-wrapper {
-background: none repeat scroll 0 0 #fff;
+
 }
 
 #main {
@@ -54,6 +54,7 @@ background: none repeat scroll 0 0 #002255; /* for non-css3 browsers */
 }
 
 #sitecontent-wrapper {
+background: #fff;
 }
 
 #sitecontent{

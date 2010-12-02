@@ -61,7 +61,7 @@ background: none repeat scroll 0 0 #571605;
 }
 
 #page-wrapper {
-background: url(../images/pageshadow.png) repeat-y top center #571605;
+background: url(../images/pageshadow.png) repeat-y top center transparent;
 }
 
 #page {
@@ -72,8 +72,6 @@ background: url(../images/pageshadow.png) repeat-y top center #571605;
 
 #topbar-wrapper .section{ 
 /* background: url(../images/topbarbg.png) repeat-x 0 0 #7396AC; */
-height: 27px;
-background: #6787A1;
 }
 
 #topbar {
@@ -133,14 +131,10 @@ background: #c9c9c9;
 }
 
 #headercontent-wrapper {
-border-top:1px solid #000;
 background: url(../images/pageshadow.png) repeat-y top center transparent;
-border-bottom:1px solid #000;
 }
 
 #headercontent-wrapper .section {
-border-left:1px solid #000;
-border-right:1px solid #000;
 height: 150px; /* be sure to override this in your theme.css */
 /* background: url(../images/headercontentbg.jpg) repeat-x top center #e1e1e1; */
 background:  #fdfdfd; 
@@ -160,16 +154,13 @@ background: #1C536f;
 
 #footer {
 /* background: url(../images/footermic.png) no-repeat bottom right transparent; */
-min-height: 125px; /* override these height settings in your theme.css */
-height:auto !important;
-height: 125px;
+
 }
 
 #footer .section {
 }
 
 #footer-content-bottom-wrapper .section {
-border-top: 1px solid #dfdfdf; 
 }
 
 
@@ -446,11 +437,15 @@ margin: 0px;
 float: left;
 }
   
-#islandora-solr-simple-search-form .form-item label, #search-box .form-item label  { 
+#islandora-solr-simple-search-form .form-item label,
+#search-box .form-item label,
+#search-block-form .form-item label	{ 
  color: #fff; /* Wrapper for the search form */
 }  
   
-#islandora-solr-simple-search-form .form-item input, #search-box .form-item input {
+#islandora-solr-simple-search-form .form-item input, 
+#search-box .form-item input,
+#search-block-form .form-item input  {
   margin: 1px 5px 0 0;
   width: 180px;
   border: 1px solid #2E5067;
@@ -460,7 +455,10 @@ float: left;
   font-size: 11.5pt;
 }
 
-#islandora-solr-simple-search-form input.form-submit, #search-form input.form-submit, #search-box input.form-submit  {
+#islandora-solr-simple-search-form input.form-submit, 
+#search-form input.form-submit, 
+#search-box input.form-submit,
+#search-block-form input.form-submit {
 height: 24px;
 width: 24px;
 cursor: pointer;
@@ -475,7 +473,9 @@ clear: right;
 #islandora-solr-simple-search-form  .block-search .form-item  textarea:focus, 
 #islandora-solr-simple-search-form  .block-search .form-item  textarea:focus input:focus, 
 #search-form  .block-search .form-item  textarea:focus, 
-#search-form  .block-search .form-item  textarea:focus input:focus
+#search-form  .block-search .form-item  textarea:focus input:focus,
+#search-block-form .block-search .form-item  textarea:focus,
+#search-block-form .block-search .form-item  textarea:focus  input:focus	
 {
   border: 2px solid #2E5067;
 }

@@ -51,7 +51,8 @@ stylesheets[all][]   = css/superfish.css
 stylesheets[all][]   = css/designer.css
 ; stylesheets[all][]   = css/corporate.css
 ; stylesheets[all][]   = css/elegant.css
-stylesheets[all][]   = css/islandvoices.css
+; stylesheets[all][]   = css/islandvoices.css
+stylesheets[all][]   = css/islandarchives.css
 stylesheets[all][]   = css/custom.css
 ; stylesheets[handheld][] = css/mobile.css
 ; stylesheets[only screen and (max-device-width: 480px)][] = css/iphone.css
@@ -76,6 +77,7 @@ scripts[] = js/hoverIntent.js
   ; To add a new region, copy Zen's page.tpl.php to your sub-theme's directory,
   ; add a line line to this file, and then add the new variable to your
   ; page.tpl.php template.
+regions[topbar_top]    = Topbar top
 regions[topbar_left]    = Topbar left
 regions[topbar_right]   = Topbar right
 regions[header_first]   = Header 1
