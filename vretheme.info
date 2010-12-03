@@ -26,9 +26,8 @@ base theme = zen
   ; an /extremely/ useful feature. See the excellent Drupal 6 Theme Guide at
   ; http://drupal.org/node/171209 for more details.
   
-  ; only one css file of these 3 can be enabled at a time: designer.css, 
-  ; corporate.css or elegant.css. if all of these 3 are disabled, you will 
-  ; see the base look, which can also be used. 
+  ; This is the base subtheme for zen, use the sub sub theme called designer
+  ; to change the look, and/or use it as a base to create new sub sub themes or sub sub sub themes
   
 stylesheets[all][]   = css/html-reset.css
 stylesheets[all][]   = css/wireframes.css
@@ -48,12 +47,12 @@ stylesheets[all][]   = css/forms.css
 stylesheets[all][]   = css/fields.css
 stylesheets[print][] = css/print.css
 stylesheets[all][]   = css/superfish.css
-stylesheets[all][]   = css/designer.css
+; stylesheets[all][]   = css/designer.css
 ; stylesheets[all][]   = css/corporate.css
 ; stylesheets[all][]   = css/elegant.css
 ; stylesheets[all][]   = css/islandvoices.css
 ; stylesheets[all][]   = css/islandarchives.css
-stylesheets[all][]   = css/custom.css
+; stylesheets[all][]   = css/custom.css
 ; stylesheets[handheld][] = css/mobile.css
 ; stylesheets[only screen and (max-device-width: 480px)][] = css/iphone.css
 
