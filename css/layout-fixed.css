@@ -38,7 +38,7 @@ body {
 }
 
 
-#topbar, #headercontent-wrapper div.section, #feature div.section, 
+.region-topbar-top, #topbar, #headercontent-wrapper div.section, #feature div.section, 
 #preface-wrapper div.section, #navigation div.section, #sitecontent, 
 #featured div.section, #messages, #main, #mainbottom-wrapper div.section, 
 #bottom, #bottom-wrapper, #footer-wrapper,  #closure {
