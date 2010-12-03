@@ -154,3 +154,24 @@ function vretheme_preprocess_block(&$vars, $hook) {
 // */
 
 
+/**
+* Theme override for theme_menu_item()
+*/
+function phptemplate_menu_item($link, $has_children, $menu = '', $in_active_trail = FALSE, $extra_class = NULL) {
+  $class = ($menu ? 'expanded' : ($has_children ? 'collapsed' : 'leaf'));
+  if (!empty($extra_class)) {
+    $class .= ' '. $extra_class;
+  }
+  if ($in_active_trail) {
+    $class .= ' active-trail';
+  }
+ 
+  // Add unique identifier
+  static $item_id = 0;
+  $item_id += 1;
+  $id .= '' . 'menu-item-custom-id-' . $item_id;
+  // Add semi-unique class
+  $class .= ' ' . preg_replace("/[^a-zA-Z0-9]/", "", strip_tags($link));
+ 
+  return '<li class="'. $class .'" id="' . $id . '">'. $link . $menu ."</li>\n";
+}

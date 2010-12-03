@@ -125,10 +125,6 @@ background: url(../images/horizt-shadow.png) repeat-x scroll bottom left transpa
 background: transparent;
 }
 
-.front #feature {
-height: 217px;
-}
-
 #headercontent-wrapper-bg {
 background: transparent;
 }
@@ -142,8 +138,16 @@ height: 171px;
 background: url(../images/islandarchives/headerbg.jpg) repeat-x top center transparent; 
 }
 
-#sitecontent-wrapper {
+.front #sitecontent-wrapper {
 background: url(../images/islandarchives/sitecontentbg.jpg) no-repeat scroll top left transparent;
+}
+
+.front #content-area {
+margin-top: 500px;
+}
+
+.node {
+border-bottom:0px solid #336686;
 }
 
 #sitecontent {
@@ -168,7 +172,7 @@ margin: 0;
 }
 
 #footer {
-background: #d1a76b;
+background: #D1A76B;
 }
 
 #preface-wrapper .block h2.title {
@@ -288,22 +292,46 @@ color: #fff
 
 
 a:link {
-color: #3d1202
+color: #3d1202;
 }
 
 a:visited {
-color: #3d1202
+color: #3d1202;
 }
 
 a:hover,
 a:focus {
-color: #3d1202
+color: #fff;
 }
 
 a:active {
-color: #3d1202
+color: #fff;
 }
 
+li a.active {
+    color:  #fff;
+}
+
+.tabs a:link {
+color: #000;
+}
+
+.tabs a:visited {
+color: #000;
+}
+
+.tabs a:hover,
+.tabs a:focus {
+color: #000;
+}
+
+.tabs a:active {
+color: #000;
+}
+
+.tabs li a.active {
+    color:  #000;
+}
 
 /* Search Block */
 
@@ -368,5 +396,181 @@ display: none;
     display: none;
 }
 
+ .block div.content {
+    background-color: transparent;
+    border-color: none;
+    border-width: 0px;
+}
+
+.region-sidebar-first #block-menu-menu-island-stubs.block div.content {
+    background-color: transparent; 
+    border-color: #DDDDDD #BBBBBB #BBBBBB #DDDDDD;
+    border-width: 0px;
+    padding: 5px 5px;
+}
+
+.region-sidebar-first .block div.content, .region-sidebar-second .block div.content, div.admin-panel .body {
+    background-color: #d5a96a;
+    border-color: #D8B584 #905E2F #905E2F #D8B584;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.region-sidebar-first .block h2.title, .region-sidebar-second .block h2.title, div.admin-panel h3 {
+    background: none repeat scroll 0 0 #C5995F;
+    border-left: 1px solid #D8B584;
+    border-right: 1px solid #905E2F;
+    border-top: 1px solid #D8B584;
+    margin: 0;
+    padding: 5px 10px;
+}
 
 
+#sitecontent-wrapper h2, h3 {
+    color: #372312;
+}
+
+#sitecontent-wrapper h1.title,
+#sitecontent-wrapper h2.title {
+	text-transform:uppercase;
+}
+
+
+h2 {
+font-size:1.3em;
+line-height:1.2em;
+}
+
+h1 {
+font-size:1.75em;
+line-height:1.3em;
+}
+
+#block-menu-menu-island-stubs ul {
+    margin-left: 0;
+    padding-left: 0em;
+    list-style-type: none;
+    list-style: none;
+}
+
+#block-menu-menu-island-stubs ul {
+text-transform: uppercase;
+}
+
+#block-menu-menu-island-stubs li.leaf {
+list-style-type: none;
+padding: 0;
+list-style-image: none;
+border-bottom: 1px solid #000;
+}
+
+#block-menu-menu-island-stubs li.first {
+border-top: 1px solid #000;
+}
+
+#block-menu-menu-island-stubs ul.menu li.leaf {
+    background-position: left center;
+    background-repeat: no-repeat;
+    height: 47px;
+    padding-left: 62px;
+}
+
+#block-menu-menu-island-stubs ul.menu li.IslandLives {
+    background-image: url("../images/islandarchives/islandlives-menu.png");
+}
+
+#block-menu-menu-island-stubs ul.menu li.IslandNewspapers {
+    background-image: url("../images/islandarchives/islandnewspapers-menu.png");
+}
+
+#block-menu-menu-island-stubs ul.menu li.IslandVoices {
+    background-image: url("../images/islandarchives/islandvoices-menu.png");
+}
+
+#block-menu-menu-island-stubs ul.menu li.IslandStories {
+    background-image: url("../images/islandarchives/islandstories-menu.png");
+}
+
+#block-menu-menu-island-stubs ul.menu li.IslandImages {
+    background-image: url("../images/islandarchives/islandimages-menu.png");
+}
+
+#block-menu-menu-island-stubs ul.menu li.IslandImagined {
+    background-image: url("../images/islandarchives/islandimagined-menu.png");
+}
+
+
+#block-menu-menu-island-stubs {
+    font-size: 1.1em;
+    line-height: 1em;
+}
+
+
+#block-menu-menu-island-stubs ul li a {
+margin-left: 5px;
+position: relative;
+top: 30%;
+}
+
+/*
+ * Content
+ */
+.sidebar-first #content {
+  width: 660px;
+  margin-left: 300px; /* LTR */ /* The width of .region-sidebar-first. */
+  margin-right: -960px; /* LTR */ /* Negative value of #content's width + left margin. */
+}
+
+.sidebar-second #content {
+  width: 760px;
+  margin-left: 0; /* LTR */
+  margin-right: -760px; /* LTR */ /* Negative value of #content's width + left margin. */
+}
+
+.two-sidebars #content {
+  width: 460px;
+  margin-left: 300px; /* LTR */ /* The width of .region-sidebar-first */
+  margin-right: -760px; /* LTR */ /* Negative value of #content's width + left margin. */
+}
+
+#content .section {
+margin:30px;
+padding:0;
+}
+
+/*
+ * First sidebar
+ */
+.region-sidebar-first {
+  float: left; /* LTR */
+  width: 300px;
+  margin-left: 0; /* LTR */
+  margin-right: -300px; /* LTR */ /* Negative value of .region-sidebar-first's width + left margin. */
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to .region-sidebar-first .section. */
+}
+
+.region-sidebar-first .section {
+margin:30px 0 30px 30px;
+padding:0;
+}
+
+/*
+ * Second sidebar
+ */
+.region-sidebar-second {
+  float: left; /* LTR */
+  width: 200px;
+  margin-left: 760px; /* LTR */ /* Width of content + sidebar-first. */
+  margin-right: -960px; /* LTR */ /* Negative value of .region-sidebar-second's width + left margin. */
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to .region-sidebar-second .section. */
+}
+
+.region-sidebar-second .section {
+  margin: 30px 30px 30px 0px; /* LTR */
+  padding: 0;
+}
+
+
+ul.menu li, li.expanded, li.collapsed, li.leaf {
+    margin: 0.15em 0 0.15em 0;
+    }

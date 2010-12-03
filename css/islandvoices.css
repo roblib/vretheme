@@ -66,3 +66,7 @@ background: url(../images/mag_glass/greenblue-mag_glass.png) no-repeat left top;
 h1.title, h2.title, h3.title {
 font-weight: normal;
 }
+
+.node {
+border-bottom:1px solid #336686;
+}
