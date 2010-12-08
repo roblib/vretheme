@@ -1,0 +1,5 @@
+This is the designer sub sub theme for vretheme, use this as a base to create
+sub sub sub themes, this one in particular is good for psd to drupal themes, 
+much like islandarchives, islandimagined, islandvoices, etc
+
+This theme relies on zen2 (6.x-2.0) and the sub theme called Designer (name will change)
