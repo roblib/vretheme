@@ -47,11 +47,6 @@ stylesheets[all][]   = css/forms.css
 stylesheets[all][]   = css/fields.css
 stylesheets[print][] = css/print.css
 stylesheets[all][]   = css/superfish.css
-; stylesheets[all][]   = css/designer.css
-; stylesheets[all][]   = css/corporate.css
-; stylesheets[all][]   = css/elegant.css
-; stylesheets[all][]   = css/islandvoices.css
-; stylesheets[all][]   = css/islandarchives.css
 ; stylesheets[all][]   = css/custom.css
 ; stylesheets[handheld][] = css/mobile.css
 ; stylesheets[only screen and (max-device-width: 480px)][] = css/iphone.css
@@ -65,7 +60,7 @@ conditional-stylesheets[if IE][all][]       = css/ie.css
 ; scripts[] = js/script.js
 scripts[] = js/superfish.js
 scripts[] = js/hoverIntent.js
-
+scripts[if IE 6] = js/jquery.pngFix.js
 
   ; The regions defined in Zen's default page.tpl.php file.  The name in
   ; brackets is the name of the variable in the page.tpl.php file, (e.g.

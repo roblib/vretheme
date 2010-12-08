@@ -118,9 +118,6 @@
   <?php print $styles; ?>
   <?php print $scripts; ?>
 <!--[if IE 6]>
-        <script type="text/javascript" src="<?php print $base_path . $directory; ?>/js/jquery.pngFix.js"></script>
-<![endif]-->
-<!--[if IE 6]>
 <script type="text/javascript">
     jQuery(document).ready(function($) {
         $(document).pngFix();
