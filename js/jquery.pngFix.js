@@ -77,7 +77,7 @@ jQuery.fn.pngFix = function(settings) {
 			strNewHTML += '<span '+imgId+imgClass+imgTitle+imgAlt;
 			strNewHTML += 'style="position:relative;white-space:pre-line;display:inline-block;background:transparent;'+imgAlign+imgHand;
 			strNewHTML += 'width:' + jQuery(this).width() + 'px;' + 'height:' + jQuery(this).height() + 'px;';
-			strNewHTML += 'filter:progid:DXImageTransform.Microsoft.AlphaImageLoader' + '(src=\'' + jQuery(this).attr('src') + '\', sizingMethod=\'scale\');';
+			strNewHTML += 'filter:progid:DXImageTransform.Microsoft.AlphaImageLoader' + '(src=\'' + jQuery(this).attr('src') + '\', sizingMethod=\'crop\');';
 			strNewHTML += imgStyle+'"></span>';
 			if (prevStyle != ''){
 				strNewHTML = '<span style="position:relative;display:inline-block;'+prevStyle+imgHand+'width:' + jQuery(this).width() + 'px;' + 'height:' + jQuery(this).height() + 'px;'+'">' + strNewHTML + '</span>';
@@ -94,14 +94,14 @@ jQuery.fn.pngFix = function(settings) {
 			if(bgIMG.indexOf(".png")!=-1){
 				var iebg = bgIMG.split('url("')[1].split('")')[0];
 				jQuery(this).css('background-image', 'none');
-				jQuery(this).get(0).runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + iebg + "',sizingMethod='scale')";
+				jQuery(this).get(0).runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + iebg + "',sizingMethod='crop')";
 			}
 		});
 		
 		//fix input with png-source
 		jQuery(this).find("input[src$=.png]").each(function() {
 			var bgIMG = jQuery(this).attr('src');
-			jQuery(this).get(0).runtimeStyle.filter = 'progid:DXImageTransform.Microsoft.AlphaImageLoader' + '(src=\'' + bgIMG + '\', sizingMethod=\'scale\');';
+			jQuery(this).get(0).runtimeStyle.filter = 'progid:DXImageTransform.Microsoft.AlphaImageLoader' + '(src=\'' + bgIMG + '\', sizingMethod=\'crop\');';
    		jQuery(this).attr('src', settings.blankgif)
 		});
 	

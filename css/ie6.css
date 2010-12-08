@@ -321,7 +321,7 @@ padding-right: 30px;
 #footer-content,
 .column.R .footersidebar /* Floating divs */ {
   display: inline; /* display inline or double your floated margin! [1] */
-  overflow: hidden; /* in ie6, overflow auto is broken [2] and so is overflow visible [3] */
+  overflow: visible; /* in ie6, overflow auto is broken [2] and so is overflow visible [3] */
   overflow-y: visible;
 }
 
