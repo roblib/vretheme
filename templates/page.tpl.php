@@ -163,7 +163,7 @@
     <div id="header">
 
  <?php if($topbar_top || $topbar_left || $topbar_right || $search_box): ?>
-    <div id="topbar-wrapper" class="in<?php print (bool) $topbar_left + (bool) $topbar_right; ?>">
+    <div id="topbar-wrapper" class="in<?php print (bool) $topbar_left + (bool) $topbar_right + (bool) $search_box; ?>">
     	 <?php print $topbar_top; ?><div style="clear:both"></div>
     	 <div id="topbar" class="section clearfix">
           <div class="column A">

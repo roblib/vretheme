@@ -17,6 +17,14 @@ fieldset {
   /* font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif; */
 }
 
+
+#sitecontent {
+margin-left:auto;
+margin-right:auto;
+width:960px;
+}
+
+
 #sitelogo {
 width:100%;
 text-align:center;

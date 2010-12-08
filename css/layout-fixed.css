@@ -39,7 +39,7 @@ body {
 
 
 .region-topbar-top, #topbar, #headercontent-wrapper div.section, #feature div.section, 
-#preface-wrapper div.section, #navigation div.section, #sitecontent, 
+#preface-wrapper div.section, #navigation div.section, 
 #featured div.section, #messages, #main, #mainbottom-wrapper div.section, 
 #bottom, #bottom-wrapper, #footer-wrapper,  #closure {
 margin-left:auto;
@@ -253,7 +253,8 @@ margin: 0.1em 0 0.1em 0;
 width: 100%;
 }
 
-#topbar-wrapper.in2 .column {
+#topbar-wrapper.in2 .column,
+#topbar-wrapper.in3 .column {
 width: 50%;
 }
 
