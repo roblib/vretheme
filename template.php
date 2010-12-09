@@ -175,3 +175,9 @@ function phptemplate_menu_item($link, $has_children, $menu = '', $in_active_trai
  
   return '<li class="'. $class .'" id="' . $id . '">'. $link . $menu ."</li>\n";
 }
+
+// change default file field size from 60 to 40
+function phptemplate_file($element){
+  $element['#size'] = 40;
+  return theme_file($element);
+}
