@@ -1,8 +1,7 @@
 /* $Id: corporate.css,v 0.1 2010/11/22 02:16:49 krisbulman Exp $ */
 
 #logo /* Wrapping link for logo */ {
-  float: left; /* LTR */
-  margin: 15px 15px 15px 15px;
+
 }
 
 /**
@@ -24,7 +23,7 @@ background: none repeat scroll 0 0 #292929;
 }
 
 #navigation {
-background:none repeat scroll 0 0 #003366;
+background: url(../images/1pxlight.png) repeat 0 0 transparent; 
 border-top:1px solid #2B6AA0;
 }
 
@@ -44,13 +43,27 @@ background:none repeat scroll 0 0 #fff;
 }
 
 #header {
-background: none repeat scroll 0 0 #002255; /* for non-css3 browsers */
+  background: none repeat scroll 0 0 #002255; /* for non-css3 browsers */
+
+}
+
+h1#site-name, div#site-name {
+}
+
+#name-and-slogan {
+  padding: 0;
 }
 
 #topbar-wrapper {
 }
 
 #header .section {
+}
+
+#floater {
+}
+
+#sitelogo {
 }
 
 #sitecontent-wrapper {
@@ -72,6 +85,10 @@ background: #fff;
 }
 
 #feature {
+}
+
+#topbar-wrapper {
+background: url(../images/1pxdark.png) repeat 0 0 transparent; 
 }
 
 #topbar {

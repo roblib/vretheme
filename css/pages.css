@@ -60,25 +60,42 @@ body {
 #header .section {
 }
 
+#header-site-info-inner {
+
+}
+
+#sitelogo a img{
+vertical-align: bottom;
+display: block;
+margin-bottom: 0;
+padding-bottom: 0;
+}
+
 #logo /* Wrapping link for logo */ {
-  float: left; /* LTR */
-  margin: 15px 15px 15px 15px;
+	float: left;
+    margin: 0 15px 0 0;
+    padding: 0;
 }
 
 #logo img {
-  vertical-align: middle;
 }
 
 #name-and-slogan /* Wrapper for website name and slogan */ {
-float:left;
-margin-top: 28px;
+float: left;
+}
+
+#site-name, #slogan {
+    display: block;
+}
+
+#site-name {
+  font-size: 200%;
+  line-height: 130%;
 }
 
 h1#site-name,
 div#site-name /* The name of the website */ {
   margin: 0;
-  font-size: 2em;
-  line-height: 1em;
 }
 
 #site-name a:link,
@@ -90,6 +107,16 @@ div#site-name /* The name of the website */ {
 }
 
 #site-slogan /* The slogan (or tagline) of a website */ {
+    font-size: 100%;
+    margin-top: -5px;
+}
+
+#header-site-info.block {
+    margin-bottom: 0;
+}
+
+#header-site-info {
+    width: auto;
 }
 
 .region-header /* Wrapper for any blocks placed in the header region */ {

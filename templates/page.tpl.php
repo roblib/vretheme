@@ -186,14 +186,20 @@
 	<div id="headercontent-wrapper-bg">
     <div id="headercontent-wrapper" class="in<?php print (bool) $header_first + (bool) $header_second;?> le<?php print (bool) $logo + (bool) $site_name + (bool) $site_slogan + (bool) $header_first;?> ri<?php print (bool) $primary_links  + (bool) $header_second?>"><div class="section">
           <?php if($header_first || $logo || $site_name || $site_slogan): ?>
+
+<div id="headercontent-inner" class="clearfix">
+<div id="header-site-info">
+<div id="header-site-info-inner">
       <?php if ($logo): ?>
-      	<div id="sitelogo">
+      	<div id="sitelogo" >
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
-        </div>	
+        </div>     
       <?php endif; ?>
 
       <?php if ($site_name || $site_slogan): ?>
-        <div id="name-and-slogan">
+      
+      
+        <div id="name-and-slogan" class="clearfix">
           <?php if ($site_name): ?>
             <?php if ($title): ?>
               <div id="site-name"><strong>
@@ -211,12 +217,14 @@
           <?php endif; ?>
         </div> <!-- /#name-and-slogan -->
       <?php endif; ?>
-
+</div></div>  <!-- /#header-site-info, #header-site-info-inner -->
 
       <?php endif; ?>
       <?php print $header; ?>
 
 </div> <!-- /#preface-wrapper -->
+
+</div> <!-- /#headercontent-inner -->
     <?php endif; ?>
 
     </div></div></div> <!-- /.section, /#header -->

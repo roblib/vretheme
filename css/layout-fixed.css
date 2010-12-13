@@ -246,11 +246,15 @@ font-size:12px;
 
 #topbar-wrapper .column {
 float: left;
-margin: 0.1em 0 0.1em 0;
+
 }
 
 #topbar-wrapper.in1 .column {
 width: 100%;
+}
+
+#topbar-wrapper.in1 .column.B {
+display: none;
 }
 
 #topbar-wrapper.in2 .column,
@@ -266,13 +270,11 @@ float: right;
 #topbar-wrapper .column.A .block {
 display: inline;
 float: left;
-margin: 0 0.5em 0 0;
 }
 
 #topbar-wrapper .column.B .block {
 display: inline;
 float: right;
-margin: 0.2em 0 0 0.5em;
 }
 
 #topbar .block {
@@ -284,8 +286,6 @@ margin-bottom:0;
 padding: 0 15px 0 15px;
 margin: 0.1em 0 0 0;
 }
-
-
 
 /*
  * Topbar Navigation
@@ -308,11 +308,11 @@ margin:0;
 }
 
 #topbar-wrapper ul.menu li {
-margin:0 0.5em 0 0;
+
 }
 
 #topbar-wrapper .block-menu .content {
-padding: 3px 0 3px 7px;
+
 }
 
 /* Feature */
@@ -324,6 +324,10 @@ padding-right:15px;
 
 /* Header first + Header second
 -------------------------------------------------------------- */
+
+#headercontent-inner {
+padding: 30px 0;
+}
 
 #headercontent-wrapper {
 position:relative;
