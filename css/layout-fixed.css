@@ -241,7 +241,8 @@ padding:0;
 /* Topbar first + Topbar middle + Topbar last regions */
 
 #topbar-wrapper {
-font-size:12px;
+font-size:90%;
+line-height: 2em;
 }
 
 #topbar-wrapper .column {
