@@ -135,7 +135,7 @@ padding-bottom: 5px;
 }
 
 #preface-wrapper.in4 .column {
-width: 21.7%;
+width: 21.5%;
 margin-right: 1%;
 margin-left: 1%;
 padding-top: 5px;
@@ -218,15 +218,15 @@ padding-right:0;
 /* Bottom region
 -------------------------------------------------------------- */
 
-#bottom-wrapper {
+#bottomcontent-wrapper {
 padding-top:5px;
 }
 
-#bottom-wrapper .column {
+#bottomcontent-wrapper .column {
 float: left;
 }
 
-#bottom-wrapper.in1 .column {
+#bottomcontent-wrapper.in1 .column {
 width: 98%;
 margin-right: 1%;
 margin-left: 1%;
@@ -234,7 +234,7 @@ padding-top: 5px;
 padding-bottom: 5px;
 }
 
-#bottom-wrapper.in2 .column {
+#bottomcontent-wrapper.in2 .column {
 width: 45.65%;
 margin-right: 1%;
 margin-left: 1%;
@@ -242,7 +242,7 @@ padding-top: 5px;
 padding-bottom: 5px;
 }
 
-#bottom-wrapper.in3 .column {
+#bottomcontent-wrapper.in3 .column {
 width: 29%;
 margin-right: 1%;
 margin-left: 1%;
@@ -250,15 +250,15 @@ padding-top: 5px;
 padding-bottom: 5px;
 }
 
-#bottom-wrapper.in4 .column {
-width: 21.7%;
+#bottomcontent-wrapper.in4 .column {
+width: 21.5%;
 margin-right: 1%;
 margin-left: 1%;
 padding-top: 5px;
 padding-bottom: 5px;
 }
 
-#bottom-wrapper .block {
+#bottomcontent-wrapper .block {
 padding-left:0;
 padding-right:0;
 }
@@ -299,7 +299,7 @@ padding-bottom: 5px;
 }
 
 #mainbottom-wrapper.in4 .column {
-width: 21.7%;
+width: 21.5%;
 margin-right: 1%;
 margin-left: 1%;
 padding-top: 5px;

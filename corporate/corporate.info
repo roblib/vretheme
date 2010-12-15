@@ -76,7 +76,7 @@ stylesheets[all][]   = css/corporate.css
   ; To add a new region, copy Zen's page.tpl.php to your sub-theme's directory,
   ; add a line line to this file, and then add the new variable to your
   ; page.tpl.php template.
-regions[topbar_top]    = Topbar top
+; regions[topbar_top]    = Topbar top
 regions[topbar_left]    = Topbar left
 regions[topbar_right]   = Topbar right
 regions[header_first]   = Header 1
@@ -106,7 +106,7 @@ regions[bottom_first]   = Bottom 1
 regions[bottom_second]  = Bottom 2
 regions[bottom_third]   = Bottom 3
 regions[bottom_fourth]  = Bottom 4
-regions[sidebar_footer] = Footer sidebar
+; regions[sidebar_footer] = Footer sidebar
 regions[footer_preface_first] = Footer 1
 regions[footer_preface_second] = Footer 2
 regions[footer_preface_third] = Footer 3

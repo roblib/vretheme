@@ -1,7 +1,60 @@
 /* $Id: corporate.css,v 0.1 2010/11/22 02:16:49 krisbulman Exp $ */
 
-#logo /* Wrapping link for logo */ {
 
+body,
+caption,
+th,
+td,
+input,
+textarea,
+select,
+option,
+legend,
+fieldset {
+  /* The following font family declarations are based on the Microsoft core web
+   * fonts which are common fonts available on most computer systems. The DejaVu
+   * fonts are commonly available on Linux systems where the MS fonts are less
+   * common. Tahoma and Helvetica are also widely available.
+   *
+   * A user's web browser will look at the comma-separated list and will
+   * attempt to use each font in turn until it finds one that is available
+   * on the user's computer. The final "generic" font (sans-serif or serif)
+   * hints at what type of font to use if the web browser doesn't find any
+   * of the fonts in the list.
+
+  font-family: "Times New Roman", Times, Georgia, "DejaVu Serif", serif;
+  font-family: Times, "Times New Roman", Georgia, "DejaVu Serif", serif;
+  font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+
+  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+  font-family: Tahoma, Verdana, "DejaVu Sans", sans-serif;
+  font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+
+  font-family: "Courier New", "DejaVu Sans Mono", monospace;
+
+   */
+
+  font-family:"Lucida Grande",Verdana,"Bitstream Vera Sans",Arial,sans-serif !important;
+}
+
+#skip-link,
+#page {
+  /*
+   * To use a 12px font size on the page, delete the 14px declarations.
+   * to use a 14px font size on the page, delete the 12px declarations.
+   */
+
+  /* Use a 12px base font size with a 16px line height */
+  font-size: 0.75em; /* 16px x .75 = 12px */
+  line-height: 1.5em; /* 12px x 1.5 = 18px */
+
+
+}
+
+
+
+#logo /* Wrapping link for logo */ {
 }
 
 /**
@@ -10,10 +63,11 @@
  */
 
 body {
+color: #545454;
 }
 
 body.front, body.not-front {
-background: none repeat scroll 0 0 #292929;
+background: none repeat scroll 0 0 #4e5359;
 }
 
 #page-wrapper {
@@ -22,17 +76,71 @@ background: none repeat scroll 0 0 #292929;
 #page {
 }
 
+#headercontent-wrapper {
+}
+
+#topbar .block-menu {
+background: #000;
+-moz-border-radius-bottomright: 5px 5px;
+border-bottom-right-radius: 5px 5px;
+-moz-border-radius-bottomleft: 5px 5px;
+border-bottom-left-radius: 5px 5px;
+}
+
+#topbar .block {
+    margin-bottom: 0;
+    padding: 0;
+}
+
+#topbar ul {
+    margin: 0 0.4em 0 0.4em;
+}
+
+#topbar-wrapper ul.menu li {
+    margin: 0 0.4em 0 0.4em;
+}
+
+#topbar-wrapper {
+background: none repeat-x bottom left transparent; 
+border-top: 2px solid #000;
+}
+
 #navigation {
-background: url(../images/1pxlight.png) repeat 0 0 transparent; 
-border-top:1px solid #2B6AA0;
+background: none repeat-x 0 0 transparent; 
+padding-top: 1px;
+}
+
+#sitecontent-wrapper {
+ border-top: 1px solid #fff;
+ background: url(../images/sitecontent-bg.png) repeat-x 0 0 #fff; 
+ border-bottom: 1px solid #000;
+}
+
+#mainbottom-wrapper {
+    background: none repeat scroll 0 0 transparent;
+}
+
+#bottom-wrapper {
+ border-top: 1px solid #444;
+}
+
+#closure-wrapper {
+background: #000;
+border-top: 1px solid #777;
 }
 
 #feature {
-background:none repeat scroll 0 0 #F0F0F0;
+background: url(../images/1pxgradient.png) repeat scroll bottom left #0087a2;
+color: #fff;
 }
 
+#feature .section {
+background:none repeat scroll 0 0 transparent;
+}
+
+
 #preface-wrapper {
-background:none repeat scroll 0 0 #fff;
+background:none repeat scroll 0 0 transparent;
 }
 
 #main-wrapper {
@@ -43,8 +151,7 @@ background:none repeat scroll 0 0 #fff;
 }
 
 #header {
-  background: none repeat scroll 0 0 #002255; /* for non-css3 browsers */
-
+  background: none repeat-x scroll bottom left transparent; 
 }
 
 h1#site-name, div#site-name {
@@ -66,9 +173,6 @@ h1#site-name, div#site-name {
 #sitelogo {
 }
 
-#sitecontent-wrapper {
-background: #fff;
-}
 
 #sitecontent{
 }
@@ -77,6 +181,59 @@ background: #fff;
 }
 
 #footer .section {
+}
+
+#headercontent-inner {
+    padding: 15px 0;
+}
+
+.region-sidebar-first .section {
+	margin: 15px 0 15px 0;
+	padding:0;
+}
+
+.region-sidebar-second .section {
+	margin: 15px 0 15px 0;
+	padding:0;
+}
+
+
+#topbar .block {
+padding-left:0px;
+padding-right:0px;
+}
+
+#topbar ul {
+
+}
+
+#topbar #search-box {
+margin:0;
+padding:0 0 0 15px;
+}
+
+/* block bgs */
+
+.region-sidebar-first .block h2.title, .region-sidebar-second .block h2.title, div.admin-panel h3 {
+background: transparent none repeat scroll 0 0;
+border: 0;
+}
+
+.region-sidebar-first .block div.content, .region-sidebar-second .block div.content, div.admin-panel .body, .comment.odd {
+background-color:#F4F4F4;
+border-color:#efefef #E8E8E9 #E8E8E9 #efefef;
+border-style:solid;
+border-width:1px;
+}
+
+.comment {
+background-color: transparent;
+border: 0;
+}
+
+.region-sidebar-first .block .content, .region-sidebar-second .block .content {
+margin:0;
+padding:2px 15px;
 }
 
 /* text colors */
@@ -88,7 +245,6 @@ background: #fff;
 }
 
 #topbar-wrapper {
-background: url(../images/1pxdark.png) repeat 0 0 transparent; 
 }
 
 #topbar {
@@ -109,24 +265,32 @@ color:#FFFFFF;
 
 /* Link Colors */
 a:link {
+color: #5c6da3;
 }
 
 a:visited {
+color: #5c6da3;
 }
 
 a:hover,
 a:focus {
+text-decoration: underline;
 }
 
 a:active {
+color: #000;
+}
+
+li a.active {
+color:#000;
 }
 
 #header a:link {
-color: #99CCFF
+color: #FFF
 }
 
 #header a:visited {
-color: #99CCFF
+color: #FFF
 }
 
 #header a:hover,
@@ -143,11 +307,11 @@ color: #fff
 }
 
 #footer a:link {
-color: #99CCFF
+color: #ade2ff
 }
 
 #footer a:visited {
-color: #99CCFF
+color: #ade2ff
 }
 
 #footer a:hover,
@@ -163,12 +327,6 @@ color: #fff
 color: #fff
 }
 
-
-
-
-
-
-
 /* superfish.css */
 
 #nav ul.menu  li.active-trail,
@@ -179,23 +337,28 @@ color: #fff
 #superfish ul.menu  li:hover, 
 #superfish .menu li li:hover, 
 #superfish .menu li li li:hover {
-    background: #1C426C;
+    background: #358b9e;
 }
 
 #nav li, #superfish li {
-border-right: 1px solid #346B96;
+border-right: 0px solid #ccc;
+}
+
+#superfish .menu li {
+    background: none repeat scroll 0 0 #D7D7D7;
+    margin-right: 5px;
 }
 
 #header #superfish ul li.last {
-border-right: none;
+border-right:  0px solid #ccc;
 }
 
 #navigation #nav, #navigation #superfish { 
-border-left: 1px solid #346B96;
+border-left: 0px solid #ccc;
 }
 
 #superfish .menu li li, #superfish .menu li li li {
-background: #1e4877;
+background: #f4f4f4;
 border-bottom:1px solid #143055; 
 border-top:1px solid #265B8C;
 }
@@ -206,6 +369,6 @@ border-right:1px solid #143055;
 }
 
 #nav li a, #superfish li a, #nav .menu a, #nav .menu a:visited, #superfish .menu a, #superfish .menu a:visited {
-color:#fff;
+color:#000;
 }
 

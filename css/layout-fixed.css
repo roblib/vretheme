@@ -41,7 +41,7 @@ body {
 .region-topbar-top, #topbar, #headercontent-wrapper div.section, #feature div.section, 
 #preface-wrapper div.section, #navigation div.section, 
 #featured div.section, #messages, #main, #mainbottom-wrapper div.section, 
-#bottom, #bottom-wrapper, #footer-wrapper,  #closure {
+#bottom, #bottomcontent-wrapper, #footer-wrapper,  #closure {
 margin-left:auto;
 margin-right:auto;
 width:960px;
@@ -210,7 +210,7 @@ padding:0;
 /*
  * Prevent overflowing content
  */
-#header,
+
 #content,
 .region-sidebar-first,
 .region-sidebar-second,
@@ -220,7 +220,7 @@ padding:0;
   word-wrap: break-word; /* A very nice CSS3 property */
 }
 
-#navigation {
+#header, #navigation {
   overflow: visible; /* May need to be removed if using a dynamic drop-down menu */
 }
 
@@ -283,9 +283,9 @@ float: right;
 margin-bottom:0;
 }
 
-#topbar #search-box {
-padding: 0 15px 0 15px;
-margin: 0.1em 0 0 0;
+#header #search-box {
+padding: 0;
+margin: 13px 0 0 0;
 }
 
 /*
@@ -323,7 +323,7 @@ padding-left:15px;
 padding-right:15px;
 }
 
-/* Header first + Header second
+/* Header Left + Header Right
 -------------------------------------------------------------- */
 
 #headercontent-inner {
@@ -334,17 +334,29 @@ padding: 30px 0;
 position:relative;
 }
 
-#headercontent-wrapper .column {
+#headercontent-wrapper .column.HeaderLeft {
 float: left;
 }
 
-#headercontent-wrapper .column.W {
-height: 100%;
-}
-
-#headercontent-wrapper .column.X {
+#headercontent-wrapper .column.HeaderRight {
 text-align: right;
 float: right;
+}
+
+#headercontent-wrapper.in1 .column {
+width: 100%;
+}
+
+#headercontent-wrapper.in1 .HeaderRight {
+display: none;
+}
+
+#headercontent-wrapper.in2 .column,
+#headercontent-wrapper.in3 .column,
+#headercontent-wrapper.le2 .column,
+#headercontent-wrapper.le3 .column
+{
+width: 50%;
 }
 
 #headercontent .block {
@@ -522,6 +534,7 @@ padding-left: 7.5px;
 -------------------------------------------------------------- */
 
 #mainbottom-wrapper {
+padding-bottom: 15px;
 }
 
 #mainbottom-wrapper .column {
@@ -559,30 +572,30 @@ padding-right:15px;
 /* Bottom first + Bottom second + Bottom third +  Bottom fourth regions
 -------------------------------------------------------------- */
 
-#bottom-wrapper {
+#bottomcontent-wrapper {
 }
 
-#bottom-wrapper .column {
+#bottomcontent-wrapper .column {
 float: left;
 }
 
-#bottom-wrapper.in1 .column {
+#bottomcontent-wrapper.in1 .column {
 width: 100%;
 }
 
-#bottom-wrapper.in2 .column {
+#bottomcontent-wrapper.in2 .column {
 width: 50%;
 }
 
-#bottom-wrapper.in3 .column {
+#bottomcontent-wrapper.in3 .column {
 width: 33.3%;
 }
 
-#bottom-wrapper.in4 .column {
+#bottomcontent-wrapper.in4 .column {
 width: 25%;
 }
 
-#bottom-wrapper .block {
+#bottomcontent-wrapper .block {
 padding-left:15px;
 padding-right:15px;
 }

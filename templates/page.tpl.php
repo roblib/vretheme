@@ -160,6 +160,7 @@
   <div id="page-wrapper"><div id="page">
 
 <div style="clear:both"></div>
+   <div id="headerandfeature"> 
     <div id="header">
 
  <?php if($topbar_top || $topbar_left || $topbar_right || $search_box): ?>
@@ -170,9 +171,6 @@
             <?php print $topbar_left; ?>
           </div>
           <div class="column B">
-      <?php if ($search_box): ?>
-        <div id="search-box"><?php print $search_box; ?></div>
-      <?php endif; ?>
             <?php print $topbar_right; ?>
       	  </div>
       <div style="clear:both"></div>
@@ -188,17 +186,15 @@
           <?php if($header_first || $logo || $site_name || $site_slogan): ?>
 
 <div id="headercontent-inner" class="clearfix">
-<div id="header-site-info">
+<div class="column HeaderLeft">
+<div id="header-site-info" class="clearfix">
 <div id="header-site-info-inner">
       <?php if ($logo): ?>
       	<div id="sitelogo" >
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
         </div>     
       <?php endif; ?>
-
       <?php if ($site_name || $site_slogan): ?>
-      
-      
         <div id="name-and-slogan" class="clearfix">
           <?php if ($site_name): ?>
             <?php if ($title): ?>
@@ -218,7 +214,14 @@
         </div> <!-- /#name-and-slogan -->
       <?php endif; ?>
 </div></div>  <!-- /#header-site-info, #header-site-info-inner -->
-
+      <?php print $header_first; ?>      
+</div><!-- /#header-left -->
+<div class="column HeaderRight">
+      <?php if ($search_box): ?>
+        <div id="search-box"><?php print $search_box; ?></div>
+      <?php endif; ?>
+      <?php print $header_second; ?>
+</div><!-- /#header-right -->
       <?php endif; ?>
       <?php print $header; ?>
 
@@ -228,7 +231,7 @@
     <?php endif; ?>
 
     </div></div></div> <!-- /.section, /#header -->
-</div><!-- /#headercontent-wrapper-bg -->
+    
       <?php if ($primary_links || $navigation): ?>
         <div id="navigation"><div class="section clearfix">
       <!-- PRIMARY -->
@@ -253,13 +256,19 @@
       </div> <!-- /primary -->
 
         </div></div> <!-- /.section, /#navigation -->
-      <?php endif; ?>
-<div id="sitecontent-wrapper"><div id="sitecontent">
+      <?php endif; ?>    
+
+</div><!-- /#header -->
+
       <?php if ($feature): ?>
         <div id="feature"><div class="section clearfix">
           <?php print $feature; ?>
-        </div></div> <!-- /.section, /#navigation -->
+        </div></div> <!-- /.section, /#feature -->
       <?php endif; ?>
+    
+</div><!-- /#headerandfeature -->
+
+<div id="sitecontent-wrapper"><div id="sitecontent">
 
  <?php if($preface_first || $preface_second || $preface_third || $preface_fourth): ?>
     <div style="clear:both"></div>
@@ -390,10 +399,10 @@
     <?php endif; ?>
     
     </div> <!-- /#main, /#main-wrapper -->        </div></div> <!-- /#sitecontent-wrapper, /#sitecontent -->
-<div id="bottom"><div class="section">
+<div id="bottom-wrapper"><div id="bottom"><div class="section">
  <?php if($bottom_first || $bottom_second || $bottom_third || $bottom_fourth): ?>
     <div style="clear:both"></div>
-    <div id="bottom-wrapper" class="in<?php print (bool) $bottom_first + (bool) $bottom_second + (bool) $bottom_third + (bool) $bottom_fourth; ?>"><div class="section">
+    <div id="bottomcontent-wrapper" class="in<?php print (bool) $bottom_first + (bool) $bottom_second + (bool) $bottom_third + (bool) $bottom_fourth; ?>"><div class="section">
           <?php if($bottom_first): ?>
           <div class="column I">
             <?php print $bottom_first; ?>
@@ -415,7 +424,7 @@
           </div>
           <?php endif; ?>          
       <div style="clear:both"></div>
-    </div></div> <!-- /.section, /#bottom-wrapper -->
+    </div></div> <!-- /.section, /#bottomcontent-wrapper -->
     <?php endif; ?>
  
     <?php if ($footer_preface_first || $footer_preface_second || $footer_preface_third || $footer || $footer_message || $secondary_links || $sidebar_footer): ?>
@@ -486,7 +495,7 @@
 
  </div></div> <!-- /#footer, /#footer-wrapper -->
     <?php endif; ?>
-</div></div><!-- /#bottom, /.section  -->
+</div></div></div><!-- /#bottom, /.section, /#bottom-wrapper  -->
   </div></div> <!-- /#page, /#page-wrapper -->
 <?php if($page_closure): ?>
 <div id="closure-wrapper">
