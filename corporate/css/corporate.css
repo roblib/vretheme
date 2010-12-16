@@ -57,6 +57,10 @@ fieldset {
 #logo /* Wrapping link for logo */ {
 }
 
+#logo img {
+height: 50px;
+}
+
 /**
  * @file
  * Page Background Styling
@@ -106,8 +110,9 @@ border-top: 2px solid #000;
 }
 
 #navigation {
-background: none repeat-x 0 0 transparent; 
-padding-top: 1px;
+background: none repeat-x 0 0 #000; 
+border-bottom: 5px solid #6C8BA0;
+border-top: 5px solid #000;
 }
 
 #sitecontent-wrapper {
@@ -122,15 +127,15 @@ padding-top: 1px;
 
 #bottom-wrapper {
  border-top: 1px solid #444;
+ background: url(../images/1pxlight.png)  repeat-x bottom left transparent; 
 }
 
 #closure-wrapper {
 background: #000;
-border-top: 1px solid #777;
 }
 
 #feature {
-background: url(../images/1pxgradient.png) repeat scroll bottom left #0087a2;
+background: none repeat scroll bottom left #6C8BA0;
 color: #fff;
 }
 
@@ -151,7 +156,11 @@ background:none repeat scroll 0 0 transparent;
 }
 
 #header {
-  background: none repeat-x scroll bottom left transparent; 
+  background: none repeat-x bottom left transparent; 
+}
+
+#headercontent-wrapper-bg {
+  background: url(../images/1pxlight.png)  repeat-x bottom left transparent; 
 }
 
 h1#site-name, div#site-name {
@@ -184,7 +193,7 @@ h1#site-name, div#site-name {
 }
 
 #headercontent-inner {
-    padding: 15px 0;
+    padding:  20px 0 20px 0;
 }
 
 .region-sidebar-first .section {
@@ -219,7 +228,7 @@ background: transparent none repeat scroll 0 0;
 border: 0;
 }
 
-.region-sidebar-first .block div.content, .region-sidebar-second .block div.content, div.admin-panel .body, .comment.odd {
+.region-sidebar-first .block div.content, .region-sidebar-second .block div.content, div.admin-panel .body  {
 background-color:#F4F4F4;
 border-color:#efefef #E8E8E9 #E8E8E9 #efefef;
 border-style:solid;
@@ -337,7 +346,7 @@ color: #fff
 #superfish ul.menu  li:hover, 
 #superfish .menu li li:hover, 
 #superfish .menu li li li:hover {
-    background: #358b9e;
+    background: #6c8ba0;
 }
 
 #nav li, #superfish li {
@@ -345,12 +354,49 @@ border-right: 0px solid #ccc;
 }
 
 #superfish .menu li {
-    background: none repeat scroll 0 0 #D7D7D7;
+    background: none repeat scroll 0 0 transparent;
     margin-right: 5px;
+    
+}
+
+#superfish .menu li {
+-moz-border-radius-topright: 5px;
+border-top-right-radius: 5px;
+-moz-border-radius-topleft: 5px;
+border-top-left-radius: 5px;
+}
+
+#superfish .menu li li {
+-moz-border-radius-topright: 0;
+border-top-right-radius: 0;
+-moz-border-radius-topleft: 0;
+border-top-left-radius: 0;
+}
+
+a > .sf-sub-indicator {
+    background-position: 0 100px;
+    top: 0.8em;
+}
+
+a:focus > .sf-sub-indicator, a:hover > .sf-sub-indicator, a:active > .sf-sub-indicator, li:hover > a > .sf-sub-indicator, li.sfHover > a > .sf-sub-indicator {
+    background-position: -10px 100px;
+}
+
+#nav .menu a, #nav .menu a:visited, #superfish .menu a, #superfish .menu a:visited {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#superfish .menu a.sf-with-ul,
+#superfish .menu a {
+    min-width: 1px;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 #header #superfish ul li.last {
 border-right:  0px solid #ccc;
+
 }
 
 #navigation #nav, #navigation #superfish { 
@@ -358,7 +404,7 @@ border-left: 0px solid #ccc;
 }
 
 #superfish .menu li li, #superfish .menu li li li {
-background: #f4f4f4;
+background: #85ABC4;
 border-bottom:1px solid #143055; 
 border-top:1px solid #265B8C;
 }
@@ -369,6 +415,6 @@ border-right:1px solid #143055;
 }
 
 #nav li a, #superfish li a, #nav .menu a, #nav .menu a:visited, #superfish .menu a, #superfish .menu a:visited {
-color:#000;
+color:#fff;
 }
 
