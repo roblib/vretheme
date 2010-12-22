@@ -250,16 +250,11 @@ float: left;
 
 }
 
-#topbar-wrapper.in1 .column {
+#topbar-wrapper.tb1 .column {
 width: 100%;
 }
 
-#topbar-wrapper.in1 .column.B {
-display: none;
-}
-
-#topbar-wrapper.in2 .column,
-#topbar-wrapper.in3 .column {
+#topbar-wrapper.tb2 .column {
 width: 50%;
 }
 
@@ -343,20 +338,25 @@ text-align: right;
 float: right;
 }
 
-#headercontent-wrapper.in1 .column {
+#headercontent-wrapper.hf1 .column.HeaderLeft,
+#headercontent-wrapper.hf2 .column.HeaderLeft,
+#headercontent-wrapper.hf3 .column.HeaderLeft,
+#headercontent-wrapper.hf4 .column.HeaderLeft {
+width: 60%;
+}
+
+#headercontent-wrapper.hf1.hs1 .column.HeaderRight,
+#headercontent-wrapper.hf2.hs1 .column.HeaderRight,
+#headercontent-wrapper.hf3.hs1 .column.HeaderRight,
+#headercontent-wrapper.hf4.hs1 .column.HeaderRight {
+width: 40%;
+}
+
+#headercontent-wrapper.hf1.hs0 .column,
+#headercontent-wrapper.hf2.hs0 .column,
+#headercontent-wrapper.hf3.hs0 .column,
+#headercontent-wrapper.hf4.hs0 .column {
 width: 100%;
-}
-
-#headercontent-wrapper.in1 .HeaderRight {
-display: none;
-}
-
-#headercontent-wrapper.in2 .column,
-#headercontent-wrapper.in3 .column,
-#headercontent-wrapper.le2 .column,
-#headercontent-wrapper.le3 .column
-{
-width: 50%;
 }
 
 #headercontent .block {

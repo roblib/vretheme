@@ -161,18 +161,22 @@
 
 <div style="clear:both"></div>
    <div id="headerandfeature"> 
-    <div id="header">
+    <div id="header" class="tb<?php print (bool) $topbar_left + (bool) $topbar_right; ?>">
 
- <?php if($topbar_top || $topbar_left || $topbar_right || $search_box): ?>
-    <div id="topbar-wrapper" class="in<?php print (bool) $topbar_left + (bool) $topbar_right + (bool) $search_box; ?>">
+ <?php if($topbar_top || $topbar_left || $topbar_right): ?>
+    <div id="topbar-wrapper" class="tb<?php print (bool) $topbar_left + (bool) $topbar_right; ?>">
     	 <?php print $topbar_top; ?><div style="clear:both"></div>
     	 <div id="topbar" class="section clearfix">
+          <?php if ($topbar_left): ?>
           <div class="column A">
             <?php print $topbar_left; ?>
           </div>
+          <?php endif; ?>
+         <?php if ($topbar_right): ?>
           <div class="column B">
             <?php print $topbar_right; ?>
       	  </div>
+      	   <?php endif; ?>
       <div style="clear:both"></div>
     </div></div> <!-- ./topbar, /#topbar-wrapper -->
           <?php endif; ?>
@@ -182,10 +186,10 @@
  <?php if($logo || $site_name || $site_slogan || $header_first || $header_second): ?>
     <div style="clear:both"></div>
 	<div id="headercontent-wrapper-bg">
-    <div id="headercontent-wrapper" class="in<?php print (bool) $header_first + (bool) $header_second;?> le<?php print (bool) $logo + (bool) $site_name + (bool) $site_slogan + (bool) $header_first;?> ri<?php print (bool) $primary_links  + (bool) $header_second?>"><div class="section">
+    <div id="headercontent-wrapper" class="hf<?php print (int)(bool) $header_first + (int)(bool) $logo + (int)(bool) $site_name + (int)(bool) $site_slogan;?> hs<?php print (int)(bool) $header_second;?>"><div class="section">
           <?php if($header_first || $logo || $site_name || $site_slogan): ?>
 
-<div id="headercontent-inner" class="clearfix">
+<div id="headercontent-inner" class="clearfix tbl<?php print (bool) $topbar_left; ?>  tbr<?php print (bool) $topbar_right; ?>">
 <div class="column HeaderLeft">
 <div id="header-site-info" class="clearfix">
 <div id="header-site-info-inner">
