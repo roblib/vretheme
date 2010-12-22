@@ -76,6 +76,8 @@ scripts[if IE 6] = js/jquery.pngFix.js
   ; To add a new region, copy Zen's page.tpl.php to your sub-theme's directory,
   ; add a line line to this file, and then add the new variable to your
   ; page.tpl.php template.
+regions[sidebar_first]  = Sidebar 1
+regions[sidebar_second] = Sidebar 2
 regions[topbar_top]    = Topbar top
 regions[topbar_left]    = Topbar left
 regions[topbar_right]   = Topbar right
@@ -88,8 +90,6 @@ regions[preface_first]  = Preface 1
 regions[preface_second] = Preface 2
 regions[preface_third]  = Preface 3
 regions[preface_fourth] = Preface 4
-regions[sidebar_first]  = Sidebar 1
-regions[sidebar_second] = Sidebar 2
 regions[highlight]      = Highlighted content
 regions[content_top]    = Content top
 regions[content_top1]    = Content top left

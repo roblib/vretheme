@@ -431,20 +431,20 @@ color: #fff
 border-right: 0px solid #ccc;
 }
 
-#superfish .menu li {
+#superfish .menu li, #nav .menu li {
     background: none repeat scroll 0 0 transparent;
     margin-right: 5px;
     
 }
 
-#superfish .menu li {
+#superfish .menu li, #nav .menu li {
 -moz-border-radius-topright: 5px;
 border-top-right-radius: 5px;
 -moz-border-radius-topleft: 5px;
 border-top-left-radius: 5px;
 }
 
-#superfish .menu li li {
+#superfish .menu li li, #nav .menu li li  {
 -moz-border-radius-topright: 0;
 border-top-right-radius: 0;
 -moz-border-radius-topleft: 0;
