@@ -36,6 +36,7 @@ fieldset {
    */
 
   font-family:"Lucida Grande",Verdana,"Bitstream Vera Sans",Arial,sans-serif !important;
+
 }
 
 #skip-link,
@@ -89,7 +90,7 @@ background: none repeat scroll 0 0 #4e5359;
 }
 
 #topbar .block {
-    margin-bottom: 0;
+    margin-bottom: 0.4em;
     padding: 0;
 }
 
@@ -113,7 +114,7 @@ border-top: 2px solid #000;
 #navigation {
 background: none repeat-x 0 0 #000; 
 border-bottom: 5px solid #6C8BA0;
-border-top: 5px solid #000;
+border-top: 3px solid #000;
 }
 
 #sitecontent-wrapper {
@@ -128,11 +129,11 @@ border-top: 5px solid #000;
 
 #bottom-wrapper {
  border-top: 1px solid #444;
- background: url(../images/1pxlight.png)  repeat-x bottom left transparent; 
 }
 
 #closure-wrapper {
 background: #000;
+background: url(../images/1pxlight.png)  repeat-x top left transparent; 
 }
 
 #feature {
@@ -275,6 +276,19 @@ padding-right:0px;
 #topbar #search-box {
 margin:0;
 padding:0 0 0 15px;
+}
+
+#topbar .form-item {
+display:inline;
+margin-right: 0.5em;
+}
+
+#topbar .form-item label {
+display:inline;
+}
+
+#topbar #user-login-form .item-list {
+display: none;
 }
 
 /* block bgs */
@@ -495,4 +509,6 @@ border-right:1px solid #143055;
 #nav li a, #superfish li a, #nav .menu a, #nav .menu a:visited, #superfish .menu a, #superfish .menu a:visited {
 color:#fff;
 }
+
+
 
