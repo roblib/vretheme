@@ -132,8 +132,7 @@ border-top: 3px solid #000;
 }
 
 #closure-wrapper {
-background: #000;
-background: url(../images/1pxlight.png)  repeat-x top left transparent; 
+background: url(../images/1pxlight.png)  repeat-x top left #000; 
 }
 
 #feature {
