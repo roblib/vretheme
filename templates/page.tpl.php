@@ -113,10 +113,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language; ?>" lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>">
 
 <head>
+
   <title><?php print $head_title; ?></title>
   <?php print $head; ?>
   <?php print $styles; ?>
   <?php print $scripts; ?>
+  
+  
 <!--[if IE 6]>
 <script type="text/javascript">
     jQuery(document).ready(function($) {
@@ -124,6 +127,7 @@
     });
 </script>
 <![endif]-->
+
 
 <script>
     //http://www.vancelucas.com/blog/fixing-ie7-z-index-issues-with-jquery/
@@ -168,12 +172,12 @@
     	 <?php print $topbar_top; ?><div style="clear:both"></div>
     	 <div id="topbar" class="section clearfix">
           <?php if ($topbar_left): ?>
-          <div class="column A">
+          <div class="column TopbarLeft">
             <?php print $topbar_left; ?>
           </div>
           <?php endif; ?>
          <?php if ($topbar_right): ?>
-          <div class="column B">
+          <div class="column TopbarRight">
             <?php print $topbar_right; ?>
       	  </div>
       	   <?php endif; ?>
@@ -221,9 +225,6 @@
       <?php print $header_first; ?>      
 </div><!-- /#header-left -->
 <div class="column HeaderRight">
-      <?php if ($search_box): ?>
-        <div id="search-box"><?php print $search_box; ?></div>
-      <?php endif; ?>
       <?php print $header_second; ?>
 </div><!-- /#header-right -->
       <?php endif; ?>
@@ -237,8 +238,10 @@
     </div></div></div> <!-- /.section, /#header -->
     
       <?php if ($primary_links || $navigation): ?>
-        <div id="navigation"><div class="section clearfix">
+        <div id="navigation" class="nbl<?php print (int)(bool) $navigation + (int)(bool) $primary_links;?> nbr<?php print (int)(bool) $navbar_right + (int)(bool) $search_box;?>"><div class="section clearfix">
+    <div id="navbar-wrapper" class="nbl<?php print (int)(bool) $navigation + (int)(bool) $primary_links;?> nbr<?php print (int)(bool) $navbar_right + (int)(bool) $search_box;?>">
       <!-- PRIMARY -->
+      <div class="column NavbarLeft">
       <div id="<?php print $primary_links ? 'nav' : 'superfish' ; ?>">
         <?php 
 					     if ($primary_links) {
@@ -257,10 +260,22 @@
 				        print $navigation;
 				      }
         ?>
-      </div> <!-- /primary -->
+      </div></div> <!-- /primary, /#NavbarLeft -->
+
+      <?php if ($navbar_right || $search_box): ?>
+          <div class="column NavbarRight">
+        	<?php if ($search_box): ?>
+       			<div id="search-box"><?php print $search_box; ?></div>
+     		<?php endif; ?>
+     		<?php print $navbar_right; ?>
+      	  </div>
+      <?php endif; ?>
+	  </div>
 
         </div></div> <!-- /.section, /#navigation -->
-      <?php endif; ?>    
+      <?php endif; ?>
+
+
 
 </div><!-- /#header -->
 
@@ -278,22 +293,22 @@
     <div style="clear:both"></div>
     <div id="preface-wrapper" class="in<?php print (bool) $preface_first + (bool) $preface_second + (bool) $preface_third + (bool) $preface_fourth; ?> "><div class="section">
           <?php if($preface_first): ?>
-          <div class="column C">
+          <div class="column PrefaceFirst">
             <?php print $preface_first; ?>
           </div>
           <?php endif; ?>
           <?php if($preface_second): ?>
-          <div class="column D">
+          <div class="column PrefaceSecond">
             <?php print $preface_second; ?>
           </div>
           <?php endif; ?>
           <?php if($preface_third): ?>
-          <div class="column E">
+          <div class="column PrefaceThird">
             <?php print $preface_third; ?>
           </div>
           <?php endif; ?>
           <?php if($preface_fourth): ?>
-          <div class="column F">
+          <div class="column PrefaceFourth">
             <?php print $preface_fourth; ?>
           </div>
           <?php endif; ?>          
@@ -327,12 +342,12 @@
     <div style="clear:both"></div>
     <div id="content-top-wrapper" class="in<?php print (bool) $content_top1 + (bool) $content_top2; ?>"><div class="section">
           <?php if($content_top1): ?>
-          <div class="column Z">
+          <div class="column ContentTop1">
             <?php print $content_top1; ?>
           </div>
           <?php endif; ?>
           <?php if($content_top2) : ?>
-          <div class="column Y">
+          <div class="column ContentTop2">
             <?php print $content_top2; ?>
           </div>
           <?php endif; ?>
@@ -349,12 +364,12 @@
     <div style="clear:both"></div>
     <div id="content-bottom-wrapper" class="in<?php print (bool) $content_bottom1 + (bool) $content_bottom2; ?>"><div class="section">
           <?php if($content_bottom1): ?>
-          <div class="column G">
+          <div class="column ContentBottom1">
             <?php print $content_bottom1; ?>
           </div>
           <?php endif; ?>
           <?php if($content_bottom2): ?>
-          <div class="column H">
+          <div class="column ContentBottom2">
             <?php print $content_bottom2; ?>
           </div>
           <?php endif; ?>
@@ -379,22 +394,22 @@
     <div style="clear:both"></div>
     <div id="mainbottom-wrapper" class="in<?php print (bool) $mainbottom_first + (bool) $mainbottom_second + (bool) $mainbottom_third + (bool) $mainbottom_fourth; ?>"><div class="section">
           <?php if($mainbottom_first): ?>
-          <div class="column S">
+          <div class="column MainBottomFirst">
             <?php print $mainbottom_first; ?>
           </div>
           <?php endif; ?>
           <?php if($mainbottom_second): ?>
-          <div class="column T">
+          <div class="column MainBottomSecond">
             <?php print $mainbottom_second; ?>
           </div>
           <?php endif; ?>
           <?php if($mainbottom_third): ?>
-          <div class="column U">
+          <div class="column MainBottomThird">
             <?php print $mainbottom_third; ?>
           </div>
           <?php endif; ?>
           <?php if($mainbottom_fourth): ?>
-          <div class="column V">
+          <div class="column MainBottomFourth">
             <?php print $mainbottom_fourth; ?>
           </div>
           <?php endif; ?>          
@@ -404,29 +419,40 @@
     
     </div> <!-- /#main, /#main-wrapper -->        </div></div> <!-- /#sitecontent-wrapper, /#sitecontent -->
 <div id="bottom-wrapper"><div id="bottom"><div class="section">
- <?php if($bottom_first || $bottom_second || $bottom_third || $bottom_fourth): ?>
+ <?php if($bottom_first || $bottom_second || $bottom_third || $bottom_fourth || $bottom_fifth || $bottom_sixth): ?>
     <div style="clear:both"></div>
-    <div id="bottomcontent-wrapper" class="in<?php print (bool) $bottom_first + (bool) $bottom_second + (bool) $bottom_third + (bool) $bottom_fourth; ?>"><div class="section">
+    <div id="bottomcontent-wrapper" class="in<?php print (bool) $bottom_first + (bool) $bottom_second + (bool) $bottom_third + (bool) $bottom_fourth + (bool) $bottom_fifth + (bool) $bottom_sixth; ?>"><div class="section">
           <?php if($bottom_first): ?>
-          <div class="column I">
+          <div class="column BottomFirst">
             <?php print $bottom_first; ?>
           </div>
           <?php endif; ?>
           <?php if($bottom_second): ?>
-          <div class="column J">
+          <div class="column BottomSecond">
             <?php print $bottom_second; ?>
           </div>
           <?php endif; ?>
           <?php if($bottom_third): ?>
-          <div class="column K">
+          <div class="column BottomThird">
             <?php print $bottom_third; ?>
           </div>
           <?php endif; ?>
           <?php if($bottom_fourth): ?>
-          <div class="column L">
+          <div class="column BottomFourth">
             <?php print $bottom_fourth; ?>
           </div>
+          <?php endif; ?>
+          <?php if($bottom_fifth): ?>
+          <div class="column BottomFifth">
+            <?php print $bottom_fifth; ?>
+          </div>
+          <?php endif; ?>
+          <?php if($bottom_sixth): ?>
+          <div class="column BottomSixth">
+            <?php print $bottom_sixth; ?>
+          </div>
           <?php endif; ?>          
+
       <div style="clear:both"></div>
     </div></div> <!-- /.section, /#bottomcontent-wrapper -->
     <?php endif; ?>
@@ -441,17 +467,17 @@
  
     <div id="footer-preface-wrapper" class="in<?php print (bool) $footer_preface_first + (bool) $footer_preface_second + (bool) $footer_preface_third; ?> "><div class="section">
           <?php if($footer_preface_first): ?>
-          <div class="column M">
+          <div class="column FooterPrefaceFirst">
             <?php print $footer_preface_first; ?>
           </div>
           <?php endif; ?>
           <?php if($footer_preface_second): ?>
-          <div class="column N">
+          <div class="column FooterPrefaceSecond">
             <?php print $footer_preface_second; ?>
           </div>
           <?php endif; ?>
           <?php if($footer_preface_third): ?>
-          <div class="column O">
+          <div class="column FooterPrefaceThird">
             <?php print $footer_preface_third; ?>
           </div>
           <?php endif; ?>        
@@ -463,7 +489,7 @@
  <?php if($footer || $footer_message): ?>
     <div style="clear:both"></div>
     <div id="footer-content-bottom-wrapper" class="in<?php print (bool) $footer; ?>"><div class="section">
-          <div class="column P">
+          <div class="column Footer">
         <?php if ($footer_message): ?>
           <div id="footer-message"><?php print $footer_message; ?></div>
         <?php endif; ?>          
@@ -476,7 +502,7 @@
 
 
           <?php if( $secondary_links || $sidebar_footer): ?>
-          <div class="column R"><div class="section clearfix"><div class="<?php print $secondary_links ? 'footersidebar' : 'footersidebar' ; ?>">
+          <div class="column SidebarFooter"><div class="section clearfix"><div class="<?php print $secondary_links ? 'footersidebar' : 'footersidebar' ; ?>">
         <?php 
         if ($secondary_links) {
 		          print theme(array('links__system_main_menu', 'links'), $secondary_links,

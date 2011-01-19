@@ -57,6 +57,7 @@ border-right: none;
 
 #navigation #nav, #navigation #superfish { 
 border-left: 1px solid #346B96;
+width: 100%;
 }
 
 /* this is the inset look you see on the menu items */ 
