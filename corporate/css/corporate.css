@@ -36,6 +36,7 @@ fieldset {
    */
 
   font-family:"Lucida Grande",Verdana,"Bitstream Vera Sans",Arial,sans-serif !important;
+  
 
 }
 
@@ -51,6 +52,50 @@ fieldset {
   line-height: 1.5em; /* 12px x 1.5 = 18px */
 
 
+}
+
+
+/*
+ * Headings
+ */
+h1 {
+  font-size: 1.5em;
+  line-height: 1.3em;
+  margin-top: 0;
+  margin-bottom: 0.5em; /* 0.5em is equavalent to 1em in the page's base font.
+                           Remember, a margin specified in ems is relative to
+                           the element's font-size, not to the pages' base
+                           font size. So, for example, if we want a 1em margin
+                           (relative to the base font), we have to divide that
+                           length by the element's font-size:
+                           1em / 2em = 0.5em */
+}
+
+h2 {
+  font-size: 1.2em;
+  line-height: 1.3em;
+  margin-top: 0.667em; /* Equivalent to 1em in the page's base font: 1 / 1.5 = 0.667em */
+  margin-bottom: 0.667em;
+}
+
+h2.block-title {
+    font-size: 1.1em;
+}
+
+h3 {
+  font-size: 1.1em;
+  line-height: 1.3em;
+  margin-top: 0.769em; /* Equivalent to 1em in the page's base font: 1 / 1.3 = 0.769 */
+  margin-bottom: 0.769em;
+}
+
+h4,
+h5,
+h6 {
+  font-size: 1em;
+  line-height: 1.3em;
+  margin-top: 0.909em; /* Equivalent to 1em in the page's base font: 1 / 1.1 = 0.909 */
+  margin-bottom: 0.909em;
 }
 
 
@@ -439,16 +484,81 @@ color: #fff
 
 /* superfish.css */
 
+#nav .menu li a:link, 
+#superfish .menu li a:link {
+color: #ccc;
+}
+
+#nav .menu li a:visited, 
+#superfish .menu li a:visited {
+color: #ccc;
+}
+
+#nav .menu li li a:visited, 
+#superfish .menu li li a:visited {
+color: #fff;
+}
+
+#nav .menu li a:active, 
+#superfish .menu li a:active,
+#nav .menu li a.active, 
+#superfish .menu li a.active {
+color: #fff;
+}
+
+#nav .menu li li a:link, 
+#nav .menu li li li a:link,
+#superfish .menu li li a:link, 
+#superfish .menu li li li a:link {
+color: #fff;
+}
+
+#nav .menu li a:hover, 
+#superfish .menu li a:hover,
+#nav .menu li.sfHover a:link,
+#superfish .menu li.sfHover a:link {
+color: #fff;
+}
+
+
 #nav ul.menu  li.active-trail,
 #nav ul.menu  li:hover, 
 #nav .menu li li:hover, 
 #nav .menu li li li:hover,
+#nav ul.menu  li:visited, 
+#nav .menu li li:visited, 
+#nav .menu li li li:visited,
 #superfish ul.menu  li.active-trail,
 #superfish ul.menu  li:hover, 
 #superfish .menu li li:hover, 
-#superfish .menu li li li:hover {
+#superfish .menu li li li:hover,
+#superfish ul.menu  li:visited, 
+#superfish .menu li li:visited, 
+#superfish .menu li li li:visited {
     background: #6c8ba0;
+    color: fff;
 }
+
+
+#superfish .menu li li, #superfish .menu li li li {
+background: #85ABC4;
+border-bottom:1px solid #6C8BA0; 
+border-top:1px solid #638093;
+}
+
+#superfish .menu li li li {
+border-left:1px solid #638093; 
+border-right:1px solid #638093; 
+}
+
+#header #superfish ul li.last {
+border-right:  0px solid #ccc;
+}
+
+#navigation #nav, #navigation #superfish { 
+border-left: 0px solid #ccc;
+}
+
 
 #nav li, #superfish li {
 border-right: 0px solid #ccc;
@@ -456,8 +566,7 @@ border-right: 0px solid #ccc;
 
 #superfish .menu li, #nav .menu li {
     background: none repeat scroll 0 0 transparent;
-    margin-right: 5px;
-    
+    margin-right: 5px;  
 }
 
 #superfish .menu li, #nav .menu li {
@@ -495,29 +604,111 @@ a:focus > .sf-sub-indicator, a:hover > .sf-sub-indicator, a:active > .sf-sub-ind
     padding-right: 1em;
 }
 
-#header #superfish ul li.last {
-border-right:  0px solid #ccc;
-
-}
-
-#navigation #nav, #navigation #superfish { 
-border-left: 0px solid #ccc;
-}
-
-#superfish .menu li li, #superfish .menu li li li {
-background: #85ABC4;
-border-bottom:1px solid #143055; 
-border-top:1px solid #265B8C;
-}
-
-#superfish .menu li li li {
-border-left:1px solid #143055; 
-border-right:1px solid #143055; 
-}
 
 #nav li a, #superfish li a, #nav .menu a, #nav .menu a:visited, #superfish .menu a, #superfish .menu a:visited {
-color:#fff;
 }
+
+
+/* Search Block */
+
+#google-cse-searchbox-form .form-item,
+#islandora-solr-simple-search-form .form-item {
+margin: 0px;
+float: left;
+}
+  
+#google-cse-searchbox-form .form-item label,
+#islandora-solr-simple-search-form .form-item label,
+#search-box .form-item label,
+#search-block-form .form-item label	{ 
+ color: #fff; /* Wrapper for the search form */
+}  
+  
+#google-cse-searchbox-form .form-item input,
+#islandora-solr-simple-search-form .form-item input, 
+#search-box .form-item input,
+#search-block-form .form-item input  {
+  margin: 1px 0px 0 0;
+  width: 180px;
+  display: inline;
+  height: 17px;
+  font-size: 9.5pt;
+  color: #CCC;
+  -moz-border-radius: 3px;
+  border-top-right: 3px;
+  -moz-border-radius: 3px;
+  border-top-left: 3px;
+   padding-left: 5px;
+  border: 1px solid #000;
+  -moz-box-shadow:0 1px 0 #444444;
+  background: #666666 none repeat scroll 0 0;
+}
+
+#google-cse-searchbox-form .form-item input:hover,
+#islandora-solr-simple-search-form .form-item input:hover, 
+#search-box .form-item input:hover,
+#search-block-form .form-item input:hover  {
+background: #777 none repeat scroll 0 0;
+color: #FFFFFF;
+}
+
+#google-cse-searchbox-form .form-item input:focus,
+#islandora-solr-simple-search-form .form-item input:focus, 
+#search-box .form-item input:focus,
+#search-block-form .form-item input:focus  {
+-moz-box-shadow: 0 0 3px #000000;
+background:#EEEEEE none repeat scroll 0 0;
+border:1px solid #EEEEEE;
+color:#333333;
+outline-color:-moz-use-text-color;
+outline-style:none;
+outline-width:medium;
+text-shadow:0 1px 0 #FFFFFF;
+}
+
+
+#google-cse-searchbox-form  input.form-submit, 
+#islandora-solr-simple-search-form input.form-submit, 
+#search-form input.form-submit, 
+#search-box input.form-submit,
+#search-block-form input.form-submit {
+height: 21px;
+width: 21px;
+cursor: pointer;
+text-indent: -9999px;
+border: none;
+/* background: url(../images/mag_glass/grey-mag_glass.png) no-repeat left top;  */
+display: none;
+clear: right;
+}
+  
+#google-cse-searchbox-form  .block-search .form-item  textarea:focus,
+#islandora-solr-simple-search-form  .block-search .form-item  textarea:focus, 
+#islandora-solr-simple-search-form  .block-search .form-item  textarea:focus input:focus, 
+#search-form  .block-search .form-item  textarea:focus, 
+#search-form  .block-search .form-item  textarea:focus input:focus,
+#search-block-form .block-search .form-item  textarea:focus,
+#search-block-form .block-search .form-item  textarea:focus  input:focus	
+{
+  border: 2px solid #2E5067;
+}
+
+#google-cse-searchbox-form label,
+#islandora-solr-simple-search-form label, #search-form label {
+    display: none;
+}
+
+
+.prefaceimage img{
+border:12px solid #dbdbdb;
+height:1%;
+}
+
+.prefaceimage img:hover{
+border:12px solid #e3e3e3;
+height:1%;
+}
+
 
 
 

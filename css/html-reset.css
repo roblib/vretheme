@@ -434,8 +434,12 @@ display:block;
 }
 
 .block-menu h2.title {
+}
+
+#header .block-menu h2.title {
 display: none;
 }
+
 
 /*
  * Link Colors
