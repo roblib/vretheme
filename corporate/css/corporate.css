@@ -461,6 +461,30 @@ color: #fff
 color: #fff
 }
 
+
+#bottom a:link {
+color: #ccc
+}
+
+#bottom a:visited {
+color: #ccc
+}
+
+#bottom a:hover,
+#bottom a:focus {
+color: #fff
+}
+
+#bottom a:active {
+color: #fff
+}
+
+#bottom li  a.active,  {
+color: #fff
+}
+
+
+
 #footer a:link {
 color: #ade2ff
 }

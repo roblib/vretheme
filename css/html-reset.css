@@ -380,6 +380,47 @@ dd {
   padding: 0;
 }
 
+#bottomcontent-wrapper ul{
+list-style-type: none;
+list-style-image: none;
+}
+
+#bottomcontent-wrapper .block-aggregator ul li{
+padding-bottom: 0.2em;
+}
+
+#aggregator .feed-item-title {
+font-size: 1.1em;
+}
+
+#aggregator .feed-item {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1em;
+}
+
+#aggregator .feed-item-date {
+	color: #888;
+	font-size: 90%;
+}
+
+#aggregator .feed-url,
+#aggregator .feed-updated,
+#aggregator .feed-item-categories {
+	color: #888;
+	font-size: 95%;
+}
+
+#aggregator .feed-item-title a{
+text-decoration: none;
+}
+
+#aggregator .feed-item-title a:hover{
+text-decoration: none;
+}
+
+#bottom .item-list ul li {
+padding:0 0 0.2em;
+}
 
 
 /*
