@@ -104,7 +104,7 @@ padding-right:0px;
 #headercontent-wrapper.hf2 .column.HeaderLeft,
 #headercontent-wrapper.hf3 .column.HeaderLeft,
 #headercontent-wrapper.hf4 .column.HeaderLeft{
-width: 55.65%;
+width: 65.65%;
 margin-right: 1%;
 margin-left: 1%;
 }
@@ -113,7 +113,7 @@ margin-left: 1%;
 #headercontent-wrapper.hf2.hs1 .column.HeaderRight,
 #headercontent-wrapper.hf3.hs1 .column.HeaderRight,
 #headercontent-wrapper.hf4.hs1 .column.HeaderRight {
-width: 35.65%;
+width: 25.65%;
 margin-right: 1%;
 margin-left: 1%;
 padding-top: 0;

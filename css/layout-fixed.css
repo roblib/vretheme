@@ -416,14 +416,14 @@ float: right;
 #headercontent-wrapper.hf2 .column.HeaderLeft,
 #headercontent-wrapper.hf3 .column.HeaderLeft,
 #headercontent-wrapper.hf4 .column.HeaderLeft {
-width: 60%;
+width: 75%;
 }
 
 #headercontent-wrapper.hf1.hs1 .column.HeaderRight,
 #headercontent-wrapper.hf2.hs1 .column.HeaderRight,
 #headercontent-wrapper.hf3.hs1 .column.HeaderRight,
 #headercontent-wrapper.hf4.hs1 .column.HeaderRight {
-width: 40%;
+width: 25%;
 }
 
 #headercontent-wrapper.hf1.hs0 .column,
