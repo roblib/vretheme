@@ -144,6 +144,10 @@ border-top: 3px solid #000;
 background: url(../images/1pxlight.png)  repeat-x top left #000; 
 }
 
+#closure {
+border-top: 0px solid #BBBBBB;
+}
+
 #feature {
 background: none repeat scroll bottom left #6C8BA0;
 color: #fff;
