@@ -490,9 +490,6 @@
     <div style="clear:both"></div>
     <div id="footer-content-bottom-wrapper" class="in<?php print (bool) $footer; ?>"><div class="section">
           <div class="column Footer">
-        <?php if ($footer_message): ?>
-          <div id="footer-message"><?php print $footer_message; ?></div>
-        <?php endif; ?>          
             <?php print $footer; ?>
           </div>
       <div style="clear:both"></div>
@@ -527,10 +524,13 @@
     <?php endif; ?>
 </div></div></div><!-- /#bottom, /.section, /#bottom-wrapper  -->
   </div></div> <!-- /#page, /#page-wrapper -->
-<?php if($page_closure): ?>
+<?php if($page_closure || $footer_message): ?>
 <div id="closure-wrapper">
  <div id="closure">
   <?php print $page_closure; ?>
+        <?php if ($footer_message): ?>
+          <div id="footer-message"><?php print $footer_message; ?></div>
+        <?php endif; ?>
  </div>
 </div>
 <?php endif; ?>

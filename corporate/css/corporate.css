@@ -123,6 +123,7 @@ border-top: 3px solid #000;
 
 #navigation .section {
     background-color: transparent;
+    line-height: 0.83em;
 }
 
 #sitecontent-wrapper {
