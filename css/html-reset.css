@@ -613,3 +613,19 @@ fieldset {
   margin: 1em 0;
   padding: 0.4em;
 }
+
+
+/* custom */ 
+
+.float-right-front {
+float: right;
+margin-top: -25px;
+}
+
+.float-right {
+float: right
+}
+
+.float-left {
+float: left
+}
