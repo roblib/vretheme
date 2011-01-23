@@ -114,7 +114,7 @@ color: 000;
 }
 
 #content .section {
-margin:15px;
+margin:10px;
 padding:0;
 }
 
@@ -241,7 +241,7 @@ margin: 0;
 }
 
 .region-sidebar-first .section {
-margin:10px 0 10px 10px;
+margin:10px;
 padding:0;
 }
 
@@ -257,7 +257,7 @@ padding:0;
 }
 
 .region-sidebar-second .section {
-  margin: 10px 10px 10px 0px; /* LTR */
+  margin: 10px; /* LTR */
   padding: 0;
 }
 

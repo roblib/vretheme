@@ -191,11 +191,6 @@ background: url(../images/1pxlight.png)  repeat-x top left #000;
 
 #closure {
 border-top: 0px solid #BBBBBB;
-padding-top: 1em;
-}
-
-#closure .block {
-margin-bottom: 0.5em;
 }
 
 #feature {
@@ -255,6 +250,10 @@ h1#site-name, div#site-name {
 
 #name-and-slogan {
     padding: 0 10px 0 15px;
+}
+
+#site-name {
+    text-shadow: 0px 1px 2px #3B3B3B;
 }
 
 #sitelogo {
@@ -664,8 +663,9 @@ float: left;
   font-size: 9.5pt;
   color: #CCC;
   -moz-border-radius: 3px;
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
+  border-top-right: 3px;
+  -moz-border-radius: 3px;
+  border-top-left: 3px;
    padding-left: 5px;
   border: 1px solid #000;
   -moz-box-shadow:0 1px 0 #444444;
@@ -729,10 +729,12 @@ clear: right;
 
 .prefaceimage img{
 border:12px solid #dbdbdb;
+height:1%;
 }
 
 .prefaceimage img:hover{
 border:12px solid #e3e3e3;
+height:1%;
 }
 
 
