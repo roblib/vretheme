@@ -163,7 +163,7 @@ border-top: 2px solid #000;
 #navigation {
 background: none repeat-x 0 0 #000; 
 border-bottom: 5px solid #6C8BA0;
-border-top: 3px solid #000;
+border-top: 0px solid #000;
 }
 
 #navigation .section {
@@ -598,10 +598,6 @@ border-right: 0px solid #ccc;
 }
 
 #superfish .menu li, #nav .menu li {
--moz-border-radius-topright: 5px;
-border-top-right-radius: 5px;
--moz-border-radius-topleft: 5px;
-border-top-left-radius: 5px;
 }
 
 #superfish .menu li li, #nav .menu li li  {
