@@ -779,12 +779,10 @@ clear: right;
 
 .prefaceimage img{
 border:12px solid #dbdbdb;
-height:1%;
 }
 
 .prefaceimage img:hover{
 border:12px solid #e3e3e3;
-height:1%;
 }
 
 /* fedora overrides */
