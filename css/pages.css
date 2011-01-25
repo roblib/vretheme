@@ -351,3 +351,9 @@ margin: 0em 0 1em 0;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
 }
+
+/* search styling */
+
+.search-results .search-info {
+color:#777;
+}
