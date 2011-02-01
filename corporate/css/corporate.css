@@ -188,12 +188,13 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#292929', endC
 }
 
 #closure-wrapper {
-background: url(../images/1pxlight.png)  repeat-x top left #000; 
 }
 
 #closure {
-border-top: 0px solid #BBBBBB;
-color: #555;
+border-top: 1px solid #2b2b2b;
+color: #afafaf;
+background: url(../images/1pxlight.png)  repeat-x top left transparent; 
+padding: 0.5em;
 }
 
 #feature {
@@ -284,6 +285,15 @@ margin:0;
 margin:0;
 }
 
+.SidebarFooter {
+border-right:1px solid #2b2b2b;
+float:left;
+height:80%;
+margin:15px -210px 15px 0;
+padding:0;
+width:210px;
+background: url(../images/1pxlight.png)  repeat-y top right transparent; 
+}
 
 
 #header {

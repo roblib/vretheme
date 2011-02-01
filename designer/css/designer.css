@@ -44,6 +44,7 @@ margin-right: auto;
 #logo {
 float: none;
 margin: 0;
+border: 0;
 
 }
 
@@ -97,6 +98,10 @@ background: url(../images/pageshadow.png) repeat-y top center transparent;
 background: #336686;
 }
 
+#topbar .form-item label {
+display:none;
+}
+
 #navigation {
 background:none repeat scroll 0 0 transparent;
 }
@@ -113,9 +118,10 @@ background: none repeat scroll 0 0 #fff;
 }
 
 #feature {
+background: transparent;
 }
 
-#feature {
+#feature .section {
 /* background: url(../images/ivfeatured.jpg) no-repeat 0 -1px #e6e6e6; */
 /* height: 217px; */ 
 background: #e6e6e6;
@@ -209,6 +215,10 @@ header {
 #navigation{
 }
 
+#navbar-wrapper {
+background-color:transparent;
+}
+
 #preface-wrapper{
 }
 
@@ -220,6 +230,9 @@ color:#FFFFFF;
 }
 
 #closure {
+border: 0px;
+background-image: none;
+color: #ccc;
 }
 
 /* Link Colors */
@@ -322,69 +335,26 @@ color: #336686
 /* color: #255720; */
 }
 
-/* superfish.css */
-
-#nav ul.menu li.active-trail, #nav ul.menu li:hover, #nav .menu li li:hover, #nav .menu li li li:hover, #superfish ul.menu li.active-trail, #superfish ul.menu li:hover, #superfish .menu li li:hover, #superfish .menu li li li:hover {
-background:#1A3444 none repeat-x scroll 0 0;
+#navigation {
+height: 32px;
 }
 
-#nav li, #superfish li {
-border-right:1px solid #000000;
+#navbar-wrapper {
+margin-left:0px;
+margin-right:0px;
+}
+
+#header #superfish ul li {
+border-right:1px solid #346B96;
 }
 
 #header #superfish ul li.last {
-border-right:medium none;
+border-right:1px solid #346B96;
 }
 
-#navigation #nav, #navigation #superfish {
-border-left:1px solid #000000;
+#topbar-wrapper .column.TopbarRight .block {
+float:right;
 }
-
-#superfish .menu li li, #superfish .menu li li li {
-background:#1F3E52 none repeat scroll 0 0;
-border-bottom:1px solid #1A3444;
-border-top:1px solid #415C6D;
-}
-
-#superfish .menu li li:hover, #superfish .menu li li li:hover {
-border-top:1px solid #002942;
-}
-
-#superfish .menu li li li {
-border-left:1px solid #1A3444;
-border-right:1px solid #1A3444;
-}
-
-#nav li a, #superfish li a, #nav .menu a, #nav .menu a:visited, #superfish .menu a, #superfish .menu a:visited {
-color:#FFFFFF;
-}
-
-#nav .menu a, #nav .menu a:visited, #superfish .menu a, #superfish .menu a:visited {
-color:#FFFFFF;
-font-size:12px;
-padding-left:30px;
-padding-right:30px;
-padding-top:10px;
-text-decoration:none;
-}
-
-#superfish .menu li:hover ul, #superfish .menu li.sfHover ul {
-top:32px;
-}
-
-#nav li a, #superfish li a {
-color:#FFFFFF;
-font-size:12px;
-font-weight:bold;
-padding:7px 29px 0;
-text-decoration:none;
-text-transform:uppercase;
-}
-
-#nav, #superfish {
-height:32px;
-}
-
 
 /* Preface first + Preface second + Preface third +  Preface fourth regions
 -------------------------------------------------------------- */
