@@ -22,6 +22,10 @@ li a.active {
 .region-navigation {
 }
 
+#navigation h2.title {
+display: none;
+}
+
 /*
  * Primary and Secondary menu links
  */

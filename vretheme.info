@@ -2,8 +2,8 @@
 
 
   ; The name and description of the theme used on the admin/build/themes page.
-name        = VRE Theme
-description = Read the <a href="http://drupal.org/node/629510">online docs</a> or the included README.txt on how to create a Zen sub-theme.
+name        = VRE Theme - Basic
+description = This is a table-less Zen sub-theme with very few colors.
 
   ; The screenshot used on the admin/build/themes page.
 screenshot = screenshot.png
