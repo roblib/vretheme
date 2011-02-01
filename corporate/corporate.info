@@ -2,7 +2,7 @@
 
 
   ; The name and description of the theme used on the admin/build/themes page.
-name        = corporate
+name        = VRETheme - Corporate
 description = This is a table-less fixed-width Zen sub sub theme based on VRETheme.  
 
   ; The screenshot used on the admin/build/themes page.
