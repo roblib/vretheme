@@ -280,13 +280,17 @@ padding:0;
  * Prevent overflowing content
  */
 
-#content,
+
 .region-sidebar-first,
 .region-sidebar-second,
 #footer,
 .region-page-closure {
   overflow: hidden;
   word-wrap: break-word; /* A very nice CSS3 property */
+}
+
+#content {
+overflow: visible;
 }
 
 #header, #navigation {
