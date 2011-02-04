@@ -138,23 +138,23 @@ form tbody th {
 
 /* Search Block */
 
-#google-cse-searchbox-form .form-item,
-#islandora-solr-simple-search-form .form-item {
+#header #google-cse-searchbox-form .form-item,
+#header #islandora-solr-simple-search-form .form-item {
 margin: 0px;
 float: left;
 }
   
-#google-cse-searchbox-form .form-item label,
-#islandora-solr-simple-search-form .form-item label,
-#search-box .form-item label,
-#search-block-form .form-item label	{ 
+#header #google-cse-searchbox-form .form-item label,
+#header #islandora-solr-simple-search-form .form-item label,
+#header #search-box .form-item label,
+#header #search-block-form .form-item label	{ 
  color: #fff; /* Wrapper for the search form */
 }  
   
-#google-cse-searchbox-form .form-item input,
-#islandora-solr-simple-search-form .form-item input, 
-#search-box .form-item input,
-#search-block-form .form-item input  {
+#header #google-cse-searchbox-form .form-item input,
+#header #islandora-solr-simple-search-form .form-item input, 
+#header #search-box .form-item input,
+#header #search-block-form .form-item input  {
   margin: 1px 0px 0 0;
   width: 180px;
   border: 1px solid #2E5067;
@@ -169,11 +169,11 @@ float: left;
    padding-left: 5px;
 }
 
-#google-cse-searchbox-form  input.form-submit, 
-#islandora-solr-simple-search-form input.form-submit, 
-#search-form input.form-submit, 
-#search-box input.form-submit,
-#search-block-form input.form-submit {
+#header #google-cse-searchbox-form  input.form-submit, 
+#header #islandora-solr-simple-search-form input.form-submit, 
+#header #search-form input.form-submit, 
+#header #search-box input.form-submit,
+#header #search-block-form input.form-submit {
 height: 21px;
 width: 21px;
 cursor: pointer;
@@ -184,19 +184,19 @@ display: none;
 clear: right;
 }
   
-#google-cse-searchbox-form  .block-search .form-item  textarea:focus,
-#islandora-solr-simple-search-form  .block-search .form-item  textarea:focus, 
-#islandora-solr-simple-search-form  .block-search .form-item  textarea:focus input:focus, 
-#search-form  .block-search .form-item  textarea:focus, 
-#search-form  .block-search .form-item  textarea:focus input:focus,
-#search-block-form .block-search .form-item  textarea:focus,
-#search-block-form .block-search .form-item  textarea:focus  input:focus	
+#header #google-cse-searchbox-form  .block-search .form-item  textarea:focus,
+#header #islandora-solr-simple-search-form  .block-search .form-item  textarea:focus, 
+#header #islandora-solr-simple-search-form  .block-search .form-item  textarea:focus input:focus, 
+#header #search-form  .block-search .form-item  textarea:focus, 
+#header #search-form  .block-search .form-item  textarea:focus input:focus,
+#header #search-block-form .block-search .form-item  textarea:focus,
+#header #search-block-form .block-search .form-item  textarea:focus  input:focus	
 {
   border: 2px solid #2E5067;
 }
 
-#google-cse-searchbox-form label,
-#islandora-solr-simple-search-form label, #search-form label {
+#header #google-cse-searchbox-form label,
+#header #islandora-solr-simple-search-form label, #search-form label {
     display: none;
 }
 
