@@ -500,6 +500,26 @@ color: #fff
 color: #fff
 }
 
+#closure a:link {
+color: #efefef
+}
+
+#closure a:visited {
+color: #efefef
+}
+
+#closure a:hover,
+#closure a:focus {
+color: #efefef
+}
+
+#closure a:active {
+color: #efefef
+}
+
+#closure li  a.active,  {
+color: #efefef
+}
 
 
 #footer a:link {

@@ -2,3 +2,7 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+#content-fedora table td{
+text-align: center;
+}
