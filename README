@@ -1,1 +1,14 @@
-VRETheme is a sub theme reliant on the Zen 6.x-2.0 release, in order to use this theme, you must have Zen 2 already placed in your themes directory. If you use Zen 1 with this theme, it will break badly.. you were warned. VRETheme is meant to be a basic theme, and it has reliant 2 sub sub theme options called corporate and designer. These sub sub sub themes are built off of VRETheme to create styled sites based on a good basic template. This theme is being created for an academic library Virtual Research Environment that uses Drupal for the front end. 
+Requirements: Zen 2.0! You must have Zen 6.x-2.0 in your themes directory prior to enabling this theme. http://drupal.org/project/zen
+
+How to get:
+
+    * 0.75 ALPHA VRETheme tgz: https://github.com/krisbulman/vretheme/downloads Choose the latest release (currently v0.75 ALPHA) and download and extract the tar.gz or zip, just as you would any other theme.
+    * Bleeding Edge: test your luck with the latest bleeding edge code by cloning the GIT repo here: https://github.com/krisbulman/vretheme.git
+
+Notes: This theme is actually 3 themes, VRETheme is the container theme and it's two sub themes are located within the same folder. If you have Zen and VRETheme in your themes folder, then all 3 themes will show up when you visit /admin/build/themes . This theme, as of 0.75 is in ALPHA TESTING STAGE, it should NOT be used in production yet, if you do use it in production be prepared to fix it when the core code is updated :). It is currently NOT well documented and is meant to be used in sites/all, with starterkit themes in local site/theme directories to do your own styling (startkit themes have not been created yet so do not do your own styling unless you are a dev on the project).
+
+Warning: Be sure no Zen 1.0 themes are in your working theme directory prior to using this theme, this will seriously break things.
+
+IE stylesheet limit reminder: As there are many stylesheets in Zen2, there is a great possibility of exceeding the 31 stylesheet limit in IE when modules are added. When using the theme on production sites, be sure to enable the Optimize CSS Files option at /admin/settings/performance.
+
+Call for help: If you are a designer, developer or a serious themer and want to help out then please request access through github to be a commiter for this theme. All are welcome to report bugs, it won't get better without your help.
