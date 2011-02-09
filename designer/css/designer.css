@@ -433,6 +433,26 @@ padding-left:30px;
 padding-right:30px;
 }
 
+/* Superfish */
+
+#nav li, #superfish li {
+    border-right: 1px solid #193241;
+}
+
+#nav li.first, #superfish li.first {
+    border-right: 1px solid #193241;
+}
+
+#nav ul.menu  li.active-trail,
+#nav ul.menu  li:hover, 
+#nav .menu li li:hover, 
+#nav .menu li li li:hover,
+#superfish ul.menu  li.active-trail,
+#superfish ul.menu  li:hover, 
+#superfish .menu li li:hover, 
+#superfish .menu li li li:hover {
+    background: #193241;
+}
 
 
 /* Search Block */
