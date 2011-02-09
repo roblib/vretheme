@@ -689,9 +689,10 @@ padding-right:10px;
  */
 
 .with-sidebar-footer #footer-content {
-margin-left:230px;
-margin-right:-960px;
-width:729px;
+    margin-left: 210px;
+    margin-right: -960px;
+    padding-left: 20px;
+    width: 710px;
 }
 
 #footer-content {
@@ -779,12 +780,12 @@ padding-right:10px;
  */
  
 .SidebarFooter {
-border-right:2px solid;
-float:left;
-margin:15px -210px 15px 0;
-padding:0;
-width:210px;
-height: 80%
+    border-right: 2px solid;
+    float: left;
+    height: 80%;
+    margin: 15px -210px 15px 0;
+    padding: 0 0 0 20px;
+    width: 190px;
 }
 
 .SidebarFooter .footersidebar {
