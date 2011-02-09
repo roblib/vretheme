@@ -7,8 +7,30 @@ How to get:
 
 Notes: This theme is actually 3 themes, VRETheme is the container theme and it's two sub themes are located within the same folder. If you have Zen and VRETheme in your themes folder, then all 3 themes will show up when you visit /admin/build/themes . This theme, as of 0.75 is in ALPHA TESTING STAGE, it should NOT be used in production yet, if you do use it in production be prepared to fix it when the core code is updated :). It is currently NOT well documented and is meant to be used in sites/all, with starterkit themes in local site/theme directories to do your own styling (startkit themes have not been created yet so do not do your own styling unless you are a dev on the project).
 
+The 3 themes and their details 
+VRETheme base - sub theme. This is a basic template and is the core of the theme, all template files are maintained within this theme.
+
+VRETheme corporate - sub sub theme based on 'vretheme base'. This is a styled theme based off of the VRETheme, it is currently the most fleshed out theme
+
+VRETheme designer - sub sub theme based on 'vretheme base'. This theme was meant to act as a base for image based designer themes.. dropshadow bg, full width logo, footer links on bottom left and funder logos on bottom right.. you get the picture. 
+
 Warning: Be sure no Zen 1.0 themes are in your working theme directory prior to using this theme, this will seriously break things.
 
 IE stylesheet limit reminder: As there are many stylesheets in Zen2, there is a great possibility of exceeding the 31 stylesheet limit in IE when modules are added. When using the theme on production sites, be sure to enable the Optimize CSS Files option at /admin/settings/performance.
+
+Known issues and theme notes: 
+
+
+    * I sort of go against Zen2 recommendations, and choose to keep all themes in 1 folder called VRETheme, the subtheme folders are: corporate & designer. They will all appear in your drupal themes section if you drop this in your themes directory.
+    * This theme is meant to reside in a server sites/all along with a zen2 theme (they will not function without it)
+    * The base one isn't ready to go yet, and it needs a lot of work. I did it sort of backwards and created a very raw look for the base theme, then worked on corporate & designer.. but mostly corporate. The base theme should have a desirable look.. and the idea is to keep it really raw, with almost no color apart form maybe icons and the superfish menu. If you update base, you have to also update corporate & designer to override your changes, unless you want the changes to also appear on those themes too.
+    * This theme, when many modules are added, falls victim to the (IE limits Drupal to 31 stylesheets bug) - Redmine here: http://support.vre.upei.ca/issues/3237
+    * Adding Zen2 to any site with Zen1 installed WILL BREAK ALL ZEN1 THEMES. The workaround will be to convert all Zen1 themes to actually call "zen1" instead of just zen. This is time consuming, and hasn't been done anywhere yet except a local environment and has proven to work. Since Zen1 is no longer maintained and there is no upgrade path from Zen1 to Zen2, this should not cause any problems. All Zen1 themes will have to be converted to Zen2, or left as is until D7 upgrade. 
+    * Extending this theme.. the idea is to hold these themes in sites/all, making them non editable, then if someone wants their own look.. we use a starterkit file and drop a theme clone that calls either base/corp or designer in their sites/mysite.com/themes directory.. all that would create would be 1 empty custom css file, several color.css files to choose from & a .info file. Every starterkit.info file would allow for the ability to drop regions the user doesn't need (already in place, just comment them out of the .info)
+    * The superfish menu portion is currently working cross browser (including IE6) but it's a mess and has to be cleaned up. 
+    * There are some custom template functions to create unique menu classes (unique menu id portion is not working)
+    * JS has been included to allow alpha transparencies to show up in IE6 (works somewhat)
+    * JS has been included to add default search text to all search boxes 
+
 
 Call for help: If you are a designer, developer or a serious themer and want to help out then please request access through github to be a commiter for this theme. All are welcome to report bugs, it won't get better without your help.
