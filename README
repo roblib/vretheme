@@ -2,7 +2,7 @@ Requirements: Zen 2.0! You must have Zen 6.x-2.0 in your themes directory prior 
 
 How to get:
 
-    * 0.76 ALPHA VRETheme tgz: https://github.com/krisbulman/vretheme/downloads Choose the latest release (currently v0.75 ALPHA) and download and extract the tar.gz or zip, just as you would any other theme.
+    * 0.76 ALPHA VRETheme tgz: https://github.com/krisbulman/vretheme/downloads Choose the latest release and download and extract the tar.gz or zip, just as you would any other theme.
     * Bleeding Edge: test your luck with the latest bleeding edge code by cloning the GIT repo here: https://github.com/krisbulman/vretheme.git
 
 Notes: This theme is actually 3 themes, VRETheme is the container theme and it's two sub themes are located within the same folder. If you have Zen and VRETheme in your themes folder, then all 3 themes will show up when you visit /admin/build/themes . This theme, as of 0.76 is in ALPHA TESTING STAGE, it should NOT be used in production yet, if you do use it in production be prepared to fix it when the core code is updated :). It is currently NOT well documented and is meant to be used in sites/all, with starterkit themes in local site/theme directories to do your own styling (startkit themes have not been created yet so do not do your own styling unless you are a dev on the project).
