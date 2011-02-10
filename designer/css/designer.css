@@ -17,7 +17,6 @@ fieldset {
   /* font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif; */
 }
 
-
 #sitecontent {
 margin-left:auto;
 margin-right:auto;
@@ -31,13 +30,11 @@ width:960px;
 }
 
 #sitelogo {
-width: 960px;
 text-align: center;
 }
 
 #header-site-info-inner  {
 vertical-align: bottom;
-display: block;
 margin-bottom: 0;
 padding-bottom: 0;
 }
@@ -123,7 +120,18 @@ padding-top:0px;
 }
 
 #sitelogo a img {
-height:152px;
+}
+
+#headercontent-inner, 
+#headercontent-wrapper .section,
+ {
+height: 152px;
+width: 960px;
+overflow: hidden;
+}
+
+#sitelogo a img {
+height: 152px;
 }
 
 #sitecontent-wrapper {
@@ -164,6 +172,7 @@ background: none repeat scroll 0 0 transparent; /* for non-css3 browsers */
 
 
 #header .section { 
+
 }
 
 #headercontent-wrapper-bg {
@@ -176,11 +185,13 @@ background: url(../images/pageshadow.png) repeat-y top center transparent;
 }
 
 #headercontent-wrapper .section {
-height: 150px; /* be sure to override this in your theme.css */
 /* background: url(../images/headercontentbg.jpg) repeat-x top center #e1e1e1; */
 background:  #fdfdfd; 
 }
 
+#headercontent-inner,  {
+
+}
 
 #bottom {
 /* background: url(../images/footerbg.png) repeat-x bottom left #1c536f; */
