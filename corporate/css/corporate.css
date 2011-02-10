@@ -585,10 +585,7 @@ color: #fff;
 #superfish ul.menu  li:hover
  {
     background: #000;
-      /* for IE */
-  filter:alpha(opacity=91);
-  /* CSS3 standard */
-  opacity:0.91;
+    opacity:0.91;
 }
 
 
