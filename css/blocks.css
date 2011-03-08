@@ -185,3 +185,7 @@ div.block.with-block-editing div.edit {
 div.block.with-block-editing:hover div.edit {
   display: block;
 }
+
+div.block-book ul {
+    margin: 0.15em 0 0.15em 0em;
+}
