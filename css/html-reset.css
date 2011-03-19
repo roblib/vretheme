@@ -467,7 +467,7 @@ padding-left: 0;
 }
 
 #bottom ul.menu, .footersidebar ul.links {
-text-transform:uppercase;
+text-transform:normal;
 }
 
 .footersidebar ul.links li {
