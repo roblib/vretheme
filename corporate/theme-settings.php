@@ -25,14 +25,19 @@ function corporate_settings($saved_settings) {
    * Create the form using Forms API: http://api.drupal.org/api/6
    */
   $form = array();
-  /* -- Delete this line if you want to use this setting
-  $form['corporate_example'] = array(
-    '#type'          => 'checkbox',
-    '#title'         => t('Use this sample setting'),
-    '#default_value' => $settings['corporate_example'],
-    '#description'   => t("This option doesn't do anything; it's just an example."),
+
+
+  $form['corporate_design'] = array(
+    '#type'          => 'radios',
+    '#title'         => t('Color Scheme'),
+    '#default_value' => $settings['corporate_design'],
+    '#options'       => array(
+      '0' => t('Blue'),
+      '1' => t('None (default grey)'),
+     ),
+    '#description'   => t('Select an option above if you wish to use a pre-designed color scheme.'),
+    
   );
-  // */
 
   // Add the base theme's settings.
   $form += vretheme_settings($saved_settings, $defaults);
@@ -43,3 +48,4 @@ function corporate_settings($saved_settings) {
   // Return the form
   return $form;
 }
+

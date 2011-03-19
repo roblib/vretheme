@@ -63,6 +63,19 @@
  */
 
 
+// Optionally add CSS files for the user-selected color design.
+
+$design = theme_get_setting('corporate_design');
+switch ($design) {
+  case '0':
+    drupal_add_css(drupal_get_path('theme', 'corporate') . '/colors/blue.css', 'theme', 'all');
+    break;
+  case '1':
+    break;
+}
+
+
+
 /**
  * Implementation of HOOK_theme().
  */
