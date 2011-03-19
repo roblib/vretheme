@@ -238,6 +238,39 @@ padding-right: 0px;
 }
 
 
+/* Preface region
+-------------------------------------------------------------- */
+
+
+#feature-wrapper {
+padding-top:5px;
+}
+
+#feature-wrapper .column {
+float: left;
+}
+
+#feature-wrapper.in1 .column {
+width: 98%;
+margin-right: 1%;
+margin-left: 1%;
+padding-top: 5px;
+padding-bottom: 5px;
+}
+
+#feature-wrapper.in2 .column {
+width: 45.65%;
+margin-right: 1%;
+margin-left: 1%;
+padding-top: 5px;
+padding-bottom: 5px;
+}
+
+#feature-wrapper .block {
+padding-left: 0px;
+padding-right: 0px;
+}
+
 
 /* Content Top region
 -------------------------------------------------------------- */

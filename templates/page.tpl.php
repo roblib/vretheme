@@ -293,11 +293,23 @@
 
 </div><!-- /#header -->
 
-      <?php if ($feature): ?>
-        <div id="feature"><div class="section clearfix">
-          <?php print $feature; ?>
-        </div></div> <!-- /.section, /#feature -->
-      <?php endif; ?>
+ <?php if($feature || feature_right): ?>
+    <div style="clear:both"></div>
+    <div id="feature-wrapper" class="in<?php print (bool) $feature + (bool) $feature_right; ?> "><div id="feature"><div class="section">
+          <?php if($feature): ?>
+          <div class="column FeatureMain">
+            <?php print $feature; ?>
+          </div>
+          <?php endif; ?>
+          <?php if($feature_right): ?>
+          <div class="column FeatureRight">
+            <?php print $feature_right; ?>
+          </div>
+          <?php endif; ?> 
+      <div style="clear:both"></div>
+    </div></div></div> <!-- /.section, /#feature-wrapper, /#feature -->
+    <div style="clear:both"></div>
+    <?php endif; ?>
     
 </div><!-- /#headerandfeature -->
 

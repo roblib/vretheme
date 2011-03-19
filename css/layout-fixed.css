@@ -382,19 +382,44 @@ margin:0;
 }
 
 #topbar-wrapper ul.menu li {
-
 }
 
 #topbar-wrapper .block-menu .content {
-
 }
 
-/* Feature */
 
 #topbar .block {
 padding-left:15px;
 padding-right:15px;
 }
+
+
+/* Feature */
+-------------------------------------------------------------- */
+
+#feature-wrapper {
+padding-top: 0px;
+}
+
+#feature-wrapper .column {
+float: left;
+}
+
+#feature-wrapper.in1 .column {
+width: 100%;
+float: none;
+}
+
+#feature-wrapper.in2 .column {
+width: 50%;
+}
+
+#feature-wrapper .block {
+padding-left:15px;
+padding-right:15px;
+}
+
+
 
 /* Header Left + Header Right
 -------------------------------------------------------------- */
@@ -445,13 +470,6 @@ padding-right:10px;
 #headercontent-wrapper .HeaderLeft {
     padding-top: 20px;
     padding-bottom: 20px;
-}
-
-/* Feature */
-
-#feature .block {
-padding-left:15px;
-padding-right:15px;
 }
 
 /* Preface first + Preface second + Preface third +  Preface fourth regions

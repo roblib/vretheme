@@ -89,6 +89,7 @@ regions[header]         = Header
 regions[navigation]     = Navigation bar
 regions[navbar_right]   = Navigation bar right
 regions[feature] 	    = Feature
+regions[feature_right] 	= Feature right
 regions[preface_first]  = Preface 1
 regions[preface_second] = Preface 2
 regions[preface_third]  = Preface 3
