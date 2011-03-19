@@ -187,10 +187,10 @@
 
 <div class="section clearfix">
 
- <?php if($logo || $site_name || $site_slogan || $header_first || $header_second): ?>
+ <?php if($logo || $site_name || $site_slogan || $header_first || $header_second || $secondary_links): ?>
     <div style="clear:both"></div>
 	<div id="headercontent-wrapper-bg">
-    <div id="headercontent-wrapper" class="hf<?php print (int)(bool) $header_first + (int)(bool) $logo + (int)(bool) $site_name + (int)(bool) $site_slogan;?> hs<?php print (int)(bool) $header_second;?>"><div class="section">
+    <div id="headercontent-wrapper" class="hf<?php print (int)(bool) $header_first + (int)(bool) $logo + (int)(bool) $site_name + (int)(bool) $site_slogan;?> hs<?php print (int)(bool) $header_second + (int)(bool) $secondary_links;?>"><div class="section">
           <?php if($header_first || $logo || $site_name || $site_slogan): ?>
 
 <div id="headercontent-inner" class="clearfix tbl<?php print (bool) $topbar_left; ?>  tbr<?php print (bool) $topbar_right; ?>">
@@ -225,6 +225,20 @@
       <?php print $header_first; ?>      
 </div><!-- /#header-left -->
 <div class="column HeaderRight">
+        <?php 
+        if ($secondary_links) {
+		          print theme(array('links__system_main_menu', 'links'), $secondary_links,
+            array(
+              'id' => 'secondary-menu',
+              'class' => 'links clearfix menu',
+            ),
+            array(
+              'text' => t('Secondary menu'),
+              'level' => 'h2',
+              'class' => 'element-invisible',
+            )); 
+				      }
+        ?>  
       <?php print $header_second; ?>
 </div><!-- /#header-right -->
       <?php endif; ?>
@@ -459,7 +473,7 @@
  
     <?php if ($footer_preface_first || $footer_preface_second || $footer_preface_third || $footer || $secondary_links || $sidebar_footer): ?>
       <div style="clear:both"></div>
-<div id="footer-wrapper"><div id="footer" class="clearfix<?php if ($sidebar_footer || $secondary_links) { print ' with-sidebar-footer'; } ?>">
+<div id="footer-wrapper"><div id="footer" class="clearfix<?php if ($sidebar_footer) { print ' with-sidebar-footer'; } ?>">
       <div id="footer-content" class="column"><div class="section">
       
  <?php if($footer_preface_first || $footer_preface_second || $footer_preface_third): ?>
@@ -486,7 +500,7 @@
     <?php endif; ?>
       
       
- <?php if($footer || $secondary_links || $sidebar_footer): ?>
+ <?php if($footer || $sidebar_footer): ?>
     <div style="clear:both"></div>
     <div id="footer-content-bottom-wrapper" class="in<?php print (bool) $footer; ?>"><div class="section">
           <div class="column Footer">
@@ -497,26 +511,11 @@
  <?php endif; ?>  
   </div></div> <!-- /.section, /#footer-content -->
 
-
-          <?php if( $secondary_links || $sidebar_footer): ?>
-          <div class="column SidebarFooter"><div class="section clearfix"><div class="<?php print $secondary_links ? 'footersidebar' : 'footersidebar' ; ?>">
-        <?php 
-        if ($secondary_links) {
-		          print theme(array('links__system_main_menu', 'links'), $secondary_links,
-            array(
-              'id' => 'secondary-menu',
-              'class' => 'links clearfix menu',
-            ),
-            array(
-              'text' => t('Secondary menu'),
-              'level' => 'h2',
-              'class' => 'element-invisible',
-            )); 
-				      }
-				      elseif (!empty($sidebar_footer)) {
-				        print $sidebar_footer;
-				      }
-        ?>  
+          <?php if($sidebar_footer): ?>
+          <div class="column SidebarFooter">
+          <div class="section clearfix">
+          <div class="footersidebar">
+        <?php print $sidebar_footer; ?>  
           </div></div></div>
           <?php endif; ?>
 
