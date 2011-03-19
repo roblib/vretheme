@@ -2,6 +2,8 @@ body.front, body.not-front {
     background: none repeat scroll 0 0 #042332;
 }
 
+
+
 #navigation {
 background: none repeat-x 0 0 #143152; 
 background: -webkit-gradient(linear, left top, left bottom, from(#274160), to(#143152)); /* for webkit browsers */
@@ -24,7 +26,19 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#274160', endC
 }
 
 #feature {
+color: #001933;
+}
+
+#feature {
     background-color: #6699cc;
+}
+
+#feature h2.title {
+color: #fff;
+background: url("../images/1pxdark.png") repeat-x scroll left bottom transparent;
+text-shadow: 0 1px 2px #3B3B3B;
+border-bottom: 1px solid #7da1d4;
+padding-bottom: 0.5em;    
 }
 
 #closure {
