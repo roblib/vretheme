@@ -562,11 +562,11 @@ width: 50%;
 }
 
 #content-top-wrapper.in2 .column.ContentTop2 .block {
-padding-right: 7.5px;
+padding-right: 0px;
 }
 
 #content-top-wrapper.in2 .column.ContentTop1 .block {
-padding-left: 7.5px;
+padding-left: 0px;
 }
 
 /*
