@@ -405,9 +405,13 @@ padding:2px 15px;
 
 /* site padding */
 
+#feature .block h2.title {
+    margin-bottom: 0.667em;
+    padding-top: 0.4em;
+}
+
 #feature h2.title {
 font-size: 140%;
-padding-bottom: 0.8em;    
 }
 
 #feature .block {
