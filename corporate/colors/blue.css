@@ -47,3 +47,54 @@ color: #333;
 a:visited {
 color: #333;
 }
+
+/* Search Block */
+
+  
+#header #google-cse-searchbox-form .form-item label,
+#header #islandora-solr-simple-search-form .form-item label,
+#header #search-box .form-item label,
+#header #search-block-form .form-item label	{ 
+ color: #fff; /* Wrapper for the search form */
+}  
+  
+#header #google-cse-searchbox-form .form-item input,
+#header #islandora-solr-simple-search-form .form-item input, 
+#header #search-box .form-item input,
+#header #search-block-form .form-item input  {
+  color: #CCC;
+  border: 1px solid #000;
+  -moz-box-shadow:0 1px 0 #444444;
+  background: #3B5775 url(../images/insearch-magglass.png) no-repeat right center;
+}
+
+#header #google-cse-searchbox-form .form-item input:hover,
+#header #islandora-solr-simple-search-form .form-item input:hover, 
+#header #search-box .form-item input:hover,
+#header #search-block-form .form-item input:hover  {
+background: #4F749B url(../images/insearch-magglass.png) no-repeat right center;
+color: #FFFFFF;
+}
+
+#header #google-cse-searchbox-form .form-item input:focus,
+#header #islandora-solr-simple-search-form .form-item input:focus, 
+#header #search-box .form-item input:focus,
+#header #search-block-form .form-item input:focus  {
+-moz-box-shadow: 0 0 3px #000000;
+background:#fff url(../images/insearch-magglass.png) no-repeat right center;
+border:1px solid #EEEEEE;
+color:#333333;
+text-shadow:0 1px 0 #FFFFFF;
+}
+
+
+#header #google-cse-searchbox-form  .block-search .form-item  textarea:focus,
+#header #islandora-solr-simple-search-form  .block-search .form-item  textarea:focus, 
+#header #islandora-solr-simple-search-form  .block-search .form-item  textarea:focus input:focus, 
+#header #search-form  .block-search .form-item  textarea:focus, 
+#header #search-form  .block-search .form-item  textarea:focus input:focus,
+#header #search-block-form .block-search .form-item  textarea:focus,
+#header #search-block-form .block-search .form-item  textarea:focus  input:focus	
+{
+  border: 2px solid #2E5067;
+}
