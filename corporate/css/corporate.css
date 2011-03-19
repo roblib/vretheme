@@ -808,12 +808,6 @@ clear: right;
   border: 2px solid #2E5067;
 }
 
-#header #google-cse-searchbox-form label,
-#header #islandora-solr-simple-search-form label, #search-form label {
-    display: none;
-}
-
-
 .prefaceimage img{
 border:12px solid #dbdbdb;
 }
