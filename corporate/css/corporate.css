@@ -40,6 +40,16 @@ fieldset {
 
 }
 
+#name-and-slogan {
+font-family: Garamond, Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman",serif;
+}
+
+#site-slogan { 
+font-size: 130%;
+text-transform: normal;
+}
+
+
 #skip-link,
 #page {
   /*
