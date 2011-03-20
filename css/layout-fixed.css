@@ -157,7 +157,7 @@ padding:0;
 }
 
 #navbar-wrapper {
-background-color: #1C426C;
+background-color: #eee;
 display: inline-block;
 width: 98%;
 margin-left: 10px;
@@ -323,6 +323,7 @@ overflow: visible;
 #topbar-wrapper {
 font-size:90%;
 line-height: 2em;
+border-top: 4px solid #000000;
 }
 
 #topbar-wrapper .column {
@@ -480,8 +481,8 @@ padding-right:10px;
 }
 
 #headercontent-wrapper .HeaderLeft {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 /* Preface first + Preface second + Preface third +  Preface fourth regions

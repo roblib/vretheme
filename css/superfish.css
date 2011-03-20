@@ -1,45 +1,16 @@
 /* colors */
 
-/* hover and active-trail color */ 
-#nav ul.menu  li.active-trail,
-#nav ul.menu  li:hover, 
-#nav .menu li li:hover, 
-#nav .menu li li li:hover,
-#superfish ul.menu  li.active-trail,
-#superfish ul.menu  li:hover, 
-#superfish .menu li li:hover, 
-#superfish .menu li li li:hover {
-    background: #1C426C;
-}
 
-#nav .menu a, #nav .menu a:visited, #superfish .menu a, #superfish .menu a:visited  {
-}
-
-
-/* border seperator */ 
-
-#nav li, #superfish li {
-border-right: 1px solid #346B96;
-}
 
 /* this is the inset look you see on the menu items */ 
 
 #superfish .menu li li {
-background: #1e4877;
-border-bottom:1px solid #143055; 
-border-top:1px solid #265B8C;
 top: -1px;
 }
 
 #superfish .menu li li li {
-background: #1e4877;
-border-bottom:1px solid #143055; 
-border-left:1px solid #143055; 
-border-right:1px solid #143055; 
-border-top:1px solid #265B8C;
 top: -1px;
 }
-
 
 #nav .block, #superfish .block {
 margin-bottom: 0px;
@@ -77,10 +48,6 @@ float:left;
 word-wrap: normal;
 white-space: normal;
 padding:0 1px 0 0;
-}
-
-#header #superfish ul li.last {
-border-right: none;
 }
 
 #navigation #nav, #navigation #superfish { 

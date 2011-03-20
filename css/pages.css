@@ -54,6 +54,11 @@ body {
 /*
  * Header
  */
+ 
+#header {
+    border-top: 4px solid #000000;
+} 
+ 
 #header {
 }
 

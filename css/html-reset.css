@@ -473,71 +473,7 @@ padding:0 0 0.2em;
  * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
  */
 /* Link Colors */
-a:link {
-color: #5c6da3;
-}
 
-a:visited {
-color: #5c6da3;
-}
-
-a:hover,
-a:focus {
-color: #5c6da3;
-text-decoration: underline;
-}
-
-a:active {
-color: #000;
-}
-
-li a.active {
-color:#000;
-}
-
-#header #navigation a:link {
-color: #FFF
-}
-
-#header #navigation a:visited {
-color: #FFF
-}
-
-#header #navigation a:hover,
-#header #navigation a:focus {
-color: #fff;
-text-decoration: none;
-}
-
-#header #navigation a:active {
-color: #fff
-}
-
-#header #navigation li  a.active,  {
-color: #fff
-}
-
-#bottom a:link {
-color: #333
-}
-
-#bottom a:visited {
-color: #333
-}
-
-#bottom a:hover,
-#bottom a:focus {
-color: #333;
-text-decoration: underline;
-}
-
-#bottom a:active {
-color: #333
-}
-
-#bottom li  a.active,  {
-color: #333
-}
 
 
 
@@ -588,22 +524,54 @@ display: none;
  * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
  */
 
+
 a:link {
-  text-decoration: none;
+color: #5c6da3;
 }
 
 a:visited {
-  text-decoration: none;
+color: #5c6da3;
 }
 
 a:hover,
 a:focus {
-  text-decoration: none;
+color: #5c6da3;
+text-decoration: underline;
 }
 
 a:active {
-
+color: #000;
 }
+
+li a.active {
+color:#000;
+}
+
+
+#bottom a:link {
+color: #333;
+text-decoration: none;
+}
+
+#bottom a:visited {
+color: #333;
+text-decoration: none;
+}
+
+#bottom a:hover,
+#bottom a:focus {
+color: #333;
+text-decoration: underline;
+}
+
+#bottom a:active {
+color: #333
+}
+
+#bottom li  a.active,  {
+color: #333
+}
+
 
 #header a:link {
 color: #000000
@@ -613,8 +581,7 @@ color: #000000
 color: #000000
 }
 
-#header a:hover,
-#header a:focus {
+#header a:hover {
 color: #000000
 }
 
@@ -625,6 +592,47 @@ color: #000000
 #header li  a.active,  {
 color: #000000
 }
+
+#header #navigation li.active a {
+background: #333;
+}
+
+/* hover and active-trail color */ 
+#header #navigation li a.active,
+#header #navigation li a:visited .active,
+#header #navigation li a:hover, 
+#header #navigation li li a:hover, 
+#header #navigation li li li a:hover {
+background: #333 !important;;
+color: #fff !important;
+}
+
+#header #navigation li a,
+#header #navigation li li a,
+#header #navigation li li li a {
+background: #eee;
+}
+
+/* border seperator */ 
+
+#nav li, #superfish li {
+border-right: 1px solid #ccc;
+}
+
+#superfish .menu li li {
+border-bottom:1px solid #ccc; 
+border-top:1px solid #ccc;
+border-left:1px solid #ccc;
+}
+
+#superfish .menu li li li {
+border:1px solid #ccc; 
+}
+
+#superfish .menu li li li:hover {
+border:1px solid #333; 
+}
+
 
 #footer a:link {
 color: #000;
