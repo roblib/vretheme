@@ -316,7 +316,7 @@ h6 {
   margin-bottom: 0.909em;
 }
 
-#footer {
+#bottom {
 font-size: 90%;
 }
 
@@ -472,17 +472,27 @@ padding:0 0 0.2em;
  * The order of link states are based on Eric Meyer's article:
  * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
  */
+/* Link Colors */
 a:link {
+color: #5c6da3;
 }
 
 a:visited {
+color: #5c6da3;
 }
 
 a:hover,
 a:focus {
+color: #5c6da3;
+text-decoration: underline;
 }
 
 a:active {
+color: #000;
+}
+
+li a.active {
+color:#000;
 }
 
 #header #navigation a:link {
@@ -506,6 +516,29 @@ color: #fff
 #header #navigation li  a.active,  {
 color: #fff
 }
+
+#bottom a:link {
+color: #333
+}
+
+#bottom a:visited {
+color: #333
+}
+
+#bottom a:hover,
+#bottom a:focus {
+color: #333;
+text-decoration: underline;
+}
+
+#bottom a:active {
+color: #333
+}
+
+#bottom li  a.active,  {
+color: #333
+}
+
 
 
 #bottom li.leaf, .footersidebar #secondary-links {
