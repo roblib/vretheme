@@ -37,8 +37,9 @@ body {
    */
 
   /* Use a 12px base font size with a 16px line height */
-  font-size: 0.875em; /* 16px x .75 = 12px */
+  font-size: 0.75em; /* 16px x .75 = 12px */
   line-height: 1.5em; /* 12px x 1.5 = 18px */
+
 
 
 }
@@ -77,7 +78,8 @@ fieldset {
 
    */
 
-  font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family:"Lucida Grande",Verdana,"Bitstream Vera Sans",Arial,sans-serif !important;
+  
 }
 
 pre,
@@ -441,6 +443,29 @@ a:focus {
 
 a:active {
 }
+
+#header #navigation a:link {
+color: #FFF
+}
+
+#header #navigation a:visited {
+color: #FFF
+}
+
+#header #navigation a:hover,
+#header #navigation a:focus {
+color: #fff;
+text-decoration: none;
+}
+
+#header #navigation a:active {
+color: #fff
+}
+
+#header #navigation li  a.active,  {
+color: #fff
+}
+
 
 #bottom li.leaf, .footersidebar #secondary-links {
 list-style-image: none;

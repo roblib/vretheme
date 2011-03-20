@@ -87,12 +87,18 @@ border-right: none;
 width: 100%;
 }
 
-
+#nav .menu a, #nav .menu a:visited, #superfish .menu a, #superfish .menu a:visited  {
+text-decoration:none;
+font-size:12px;
+padding-right:30px;
+padding-left:30px;
+padding-top:9px;
+}
 
 #nav li a, #superfish li a{
 text-decoration:none;
 font-size:12px;
-padding:7px 29px 0 29px;
+padding:8px 29px 0 29px;
 font-weight:bold;
 text-transform:uppercase;
 }
@@ -109,13 +115,7 @@ padding:.75em 1em;
 text-decoration:none;
 }
 
-#nav .menu a, #nav .menu a:visited, #superfish .menu a, #superfish .menu a:visited  {
-text-decoration:none;
-font-size:12px;
-padding-right:30px;
-padding-left:30px;
-padding-top:10px;
-}
+
 
 #nav .menu, #nav .menu *, #superfish .menu, #superfish .menu * {
 margin:0;
@@ -157,7 +157,7 @@ position:relative;
 #superfish .menu li:hover ul,
 #superfish .menu li.sfHover ul {
 left:0;
-top:32px;
+top:30px;
 z-index:99;
 }
 

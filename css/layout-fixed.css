@@ -220,6 +220,7 @@ width: 100%;
 #navbar-wrapper .block {
 padding-left:0px;
 padding-right:10px;
+margin-bottom: 0;
 }
 
 #navbar-wrapper #nav, 	#navbar-wrapper #search {
@@ -426,8 +427,8 @@ width: 50%;
 }
 
 #feature-wrapper .block {
-padding-left:15px;
-padding-right:15px;
+padding-left:10px;
+padding-right:10px;
 }
 
 

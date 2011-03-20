@@ -1,45 +1,6 @@
 /* $Id: corporate.css,v 0.1 2010/11/22 02:16:49 krisbulman Exp $ */
 
 
-body,
-caption,
-th,
-td,
-input,
-textarea,
-select,
-option,
-legend,
-fieldset {
-  /* The following font family declarations are based on the Microsoft core web
-   * fonts which are common fonts available on most computer systems. The DejaVu
-   * fonts are commonly available on Linux systems where the MS fonts are less
-   * common. Tahoma and Helvetica are also widely available.
-   *
-   * A user's web browser will look at the comma-separated list and will
-   * attempt to use each font in turn until it finds one that is available
-   * on the user's computer. The final "generic" font (sans-serif or serif)
-   * hints at what type of font to use if the web browser doesn't find any
-   * of the fonts in the list.
-
-  font-family: "Times New Roman", Times, Georgia, "DejaVu Serif", serif;
-  font-family: Times, "Times New Roman", Georgia, "DejaVu Serif", serif;
-  font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
-
-  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
-  font-family: Tahoma, Verdana, "DejaVu Sans", sans-serif;
-  font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
-  font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
-
-  font-family: "Courier New", "DejaVu Sans Mono", monospace;
-
-   */
-
-  font-family:"Lucida Grande",Verdana,"Bitstream Vera Sans",Arial,sans-serif !important;
-  
-
-}
-
 #name-and-slogan {
 font-family: Garamond, Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman",serif;
 }
@@ -50,19 +11,6 @@ text-transform: normal;
 }
 
 
-#skip-link,
-#page {
-  /*
-   * To use a 12px font size on the page, delete the 14px declarations.
-   * to use a 14px font size on the page, delete the 12px declarations.
-   */
-
-  /* Use a 12px base font size with a 16px line height */
-  font-size: 0.75em; /* 16px x .75 = 12px */
-  line-height: 1.5em; /* 12px x 1.5 = 18px */
-
-
-}
 
 
 /*
@@ -746,10 +694,6 @@ a:focus > .sf-sub-indicator, a:hover > .sf-sub-indicator, a:active > .sf-sub-ind
     min-width: 1px;
     padding-left: 1em;
     padding-right: 1em;
-}
-
-
-#nav li a, #superfish li a, #nav .menu a, #nav .menu a:visited, #superfish .menu a, #superfish .menu a:visited {
 }
 
 
