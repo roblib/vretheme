@@ -110,10 +110,11 @@ regions[bottom_third]   = Bottom 3
 regions[bottom_fourth]  = Bottom 4
 regions[bottom_fifth]   = Bottom 5
 regions[bottom_sixth]   = Bottom 6
-; regions[sidebar_footer] = Footer sidebar
+regions[sidebar_footer] = Footer sidebar
 regions[footer_preface_first] = Footer 1
 regions[footer_preface_second] = Footer 2
 regions[footer_preface_third] = Footer 3
+regions[footer_preface_fourth] = Footer 4
 regions[footer] 				= Footer bottom
 regions[page_closure]   = Page closure
 

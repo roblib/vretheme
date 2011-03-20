@@ -53,8 +53,8 @@ border-bottom: 1px solid #7da1d4;
 }
 
 .SidebarFooter {
-    background: url("../images/1pxdark.png") repeat-y scroll right top transparent;
-    border-right: 1px solid #111111;
+    background: none repeat-y scroll right top transparent;
+    border-right: 0px solid #111111;
 }
     
 /* Link Colors */
@@ -64,6 +64,25 @@ color: #333;
 
 a:visited {
 color: #333;
+}
+
+#bottom a:link {
+color: #afafaf;
+}
+
+#bottom a:visited {
+color: #afafaf;
+}
+
+#bottom a:hover, 
+#bottom a:focus {
+color: #afafaf;
+}
+
+
+#footer-content-bottom-wrapper .block {
+    background: url("../images/1pxdark.png") repeat-x scroll left top transparent;
+    border-top: 1px solid #111111;
 }
 
 /* Search Block */

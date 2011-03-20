@@ -69,6 +69,12 @@ color: 000;
   clear: both; /* Clear the logo */
 }
 
+#headercontent-wrapper .column.HeaderRight .block-menu, #headercontent-wrapper .column.HeaderRight #secondary-menu {
+    line-height: 2em;
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+
 /*
  * Main (container for everything else)
  */
@@ -334,6 +340,11 @@ width: 50%;
 #topbar-wrapper .column.TopbarRight {
 text-align:right;
 float: right;
+}
+
+#topbar-wrapper .column.TopbarRight .menu {
+text-align:right;
+
 }
 
 #topbar-wrapper .column.TopbarLeft .block {
@@ -707,10 +718,10 @@ padding-right:10px;
  */
 
 .with-sidebar-footer #footer-content {
-    margin-left: 210px;
+    margin-left: 300px;
     margin-right: -960px;
     padding-left: 20px;
-    width: 710px;
+    width: 650px;
 }
 
 #footer-content {
@@ -763,9 +774,14 @@ width: 50%;
 width: 33.3%;
 }
 
+#footer-preface-wrapper.in4 .column {
+width: 25%;
+}
+
+
 #footer-preface-wrapper .block {
-padding-left:0px;
-padding-right:0px;
+    padding-left: 10px;
+    padding-right: 10px;
 margin-bottom: 0;
 }
 
@@ -798,12 +814,18 @@ padding-right:10px;
  */
  
 .SidebarFooter {
-    border-right: 2px solid;
+    background: none repeat-y scroll right top transparent;
+    border-right: 0 solid #111111;
+}
+
+.SidebarFooter {
+    background: none repeat-y scroll right top transparent;
+    border-right: 0 solid #2B2B2B;
     float: left;
     height: 80%;
-    margin: 15px -210px 15px 0;
-    padding: 0 0 0 20px;
-    width: 190px;
+    margin: 15px -650px 15px 0;
+    padding: 0;
+    width: 290px;
 }
 
 .SidebarFooter .footersidebar {

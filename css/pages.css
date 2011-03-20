@@ -248,6 +248,11 @@ ul.links li {
 margin:1.5em 0 0 0;
 }
 
+#content #content-top-wrapper .section {
+    border-bottom: 1px solid #BBBBBB;
+    margin-bottom: 2em;
+}
+
 #content-bottom-wrapper {
 margin: 0em 0 1em 0;
 }
@@ -283,6 +288,10 @@ margin: 0em 0 1em 0;
 }
 
 #footer .section {
+}
+
+#footer .section p{
+margin: 0;
 }
 
 #footer-message /* Wrapper for the footer message from Drupal's "Site information"

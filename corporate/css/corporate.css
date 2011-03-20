@@ -144,7 +144,7 @@ padding-right: 10px;
 }
 
 #topbar-wrapper {
-    font-size: 100%;
+    font-size: 90%;
     line-height: 2em;
 }
 
@@ -199,6 +199,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#292929', endC
 
 #closure-wrapper {
 }
+
 
 #closure {
 border-top: 1px solid #2b2b2b;
@@ -295,16 +296,26 @@ margin:0;
 margin:0;
 }
 
-.SidebarFooter {
-border-right:1px solid #2b2b2b;
-float:left;
-height:80%;
-margin:15px -210px 15px 0;
-padding:0;
-width:210px;
-background: url(../images/1pxlight.png)  repeat-y top right transparent; 
+#bottom .block h2.title {
+color: #ccc;
 }
 
+#footer-content .block h2.title{
+padding-top: 0;
+}
+
+#footer-content .section {
+color: #ccc;
+}
+
+#footer-content-bottom-wrapper .block {
+    background: url("../images/1pxlight.png") repeat-x scroll left top transparent;
+    border-top: 1px solid #2B2B2B;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
 #header {
 border-top: 2px solid #000;

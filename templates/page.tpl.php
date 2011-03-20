@@ -491,7 +491,7 @@
  <?php if($footer_preface_first || $footer_preface_second || $footer_preface_third): ?>
     <div style="clear:both"></div>
  
-    <div id="footer-preface-wrapper" class="in<?php print (bool) $footer_preface_first + (bool) $footer_preface_second + (bool) $footer_preface_third; ?> "><div class="section">
+    <div id="footer-preface-wrapper" class="in<?php print (bool) $footer_preface_first + (bool) $footer_preface_second + (bool) $footer_preface_third + (bool) $footer_preface_fourth; ?> "><div class="section">
           <?php if($footer_preface_first): ?>
           <div class="column FooterPrefaceFirst">
             <?php print $footer_preface_first; ?>
@@ -506,6 +506,11 @@
           <div class="column FooterPrefaceThird">
             <?php print $footer_preface_third; ?>
           </div>
+          <?php endif; ?> 
+          <?php if($footer_preface_fourth): ?>
+          <div class="column FooterPrefaceFourth">
+            <?php print $footer_preface_fourth; ?>
+          </div>          
           <?php endif; ?>        
       <div style="clear:both"></div>
     </div></div> <!-- /.section, /#preface-wrapper -->
