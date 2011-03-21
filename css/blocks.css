@@ -109,30 +109,48 @@ top: 0;
 /* Sidebar blocks */
 
 .region-sidebar-first .block, .region-sidebar-second .block {
-margin-bottom:10px;
+margin-bottom:15px;
 }
 
-.region-sidebar-first .block h2.title, .region-sidebar-second  .block h2.title, div.admin-panel h3 {
-background:none repeat scroll 0 0 #E6E6E6;
-border-left:1px solid #DDDDDD;
-border-right:1px solid #BBBBBB;
-border-top:1px solid #DDDDDD;
-margin:0;
-padding:5px 10px;
+#feature .block h2.title, 
+.region-sidebar-first .block h2.title, 
+.region-sidebar-second  .block h2.title, 
+div.admin-panel h3,
+#mainbottom-wrapper  .block h2.title,
+#preface-wrapper  .block h2.title,
+.region-content-top  .block h2.title,
+#content-top-wrapper .block h2.title,
+.region-content-bottom  .block h2.title,
+#content-bottom-wrapper .block h2.title {
+padding:8px 10px 8px 0px;
+border-bottom: 1px dotted #dededf;
 }
 
-.region-sidebar-first .block div.content, .region-sidebar-second .block div.content, div.admin-panel .body {
-background-color:#F4F4F4;
-border-color:#DDDDDD #BBBBBB #BBBBBB #DDDDDD;
-border-right:1px solid #BBBBBB;
-border-style:solid;
-border-width:1px;
+#feature .block {
+    padding: 15px 10px;
 }
 
 .region-sidebar-first .block .content, .region-sidebar-second  .block .content {
 margin:0;
-padding:5px 15px;
+padding: 0px 15px 15px 0px;
 }
+
+#content-top-wrapper.in2 .ContentTop1 .block {
+padding-right: 10px;
+}
+
+#content-top-wrapper.in2 .ContentTop2 .block {
+padding-left: 10px;
+}
+
+#content-bottom-wrapper.in2 .ContentBottom1 .block {
+padding-right: 10px;
+}
+
+#content-bottom-wrapper.in2 .ContentBottom2 .block {
+padding-left: 10px;
+}
+
 
 /* Highlight Blocks */
 .region-highlight .block {

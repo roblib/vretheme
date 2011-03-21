@@ -47,8 +47,10 @@ font-size: 130%;
 text-transform: normal;
 }
 
-
-
+.region-sidebar-first .block h2.title, 
+.region-sidebar-second  .block h2.title {
+padding:0px 10px 0px 10px;
+}
 
 #logo /* Wrapping link for logo */ {
 }
@@ -249,8 +251,8 @@ color: #ccc;
 }
 
 #footer-content-bottom-wrapper .block {
-    background: url("../images/1pxlight.png") repeat-x scroll left top transparent;
-    border-top: 1px solid #2B2B2B;
+    background:none repeat-x scroll left top transparent;
+    border-top: 1px solid #444;
     margin-top: 10px;
     padding-top: 5px;
     padding-left: 10px;
@@ -359,10 +361,13 @@ padding:2px 15px;
 #feature .block h2.title {
     margin-bottom: 0.667em;
     padding-top: 0.4em;
+    border-bottom: 1px solid #ccc;
 }
 
 #feature h2.title {
 font-size: 140%;
+color: #fff;
+text-shadow: 0 1px 2px #3B3B3B;
 }
 
 #feature .block {
@@ -512,11 +517,11 @@ color: #efefef
 
 
 #footer a:link {
-color: #ade2ff
+color: #ccc
 }
 
 #footer a:visited {
-color: #ade2ff
+color: #ccc
 }
 
 #footer a:hover,

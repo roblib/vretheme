@@ -105,11 +105,11 @@ border-bottom: 1px solid #7da1d4;
     
 /* Link Colors */
 a:link {
-color: #333;
+    color: #4896AC;
 }
 
 a:visited {
-color: #333;
+    color: #4896AC;
 }
 
 #bottom a:link {
@@ -127,8 +127,8 @@ color: #afafaf;
 
 
 #footer-content-bottom-wrapper .block {
-    background: url("../images/1pxdark.png") repeat-x scroll left top transparent;
-    border-top: 1px solid #111111;
+    background: none repeat-x scroll left top transparent;
+    border-top: 1px solid #333333;
 }
 
 /* Search Block */

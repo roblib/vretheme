@@ -9,7 +9,7 @@
 
 
 .node /* Node wrapper */ {
-border-bottom:1px solid #BBBBBB;
+border-bottom:1px dotted #dededf;
 margin:0.5em 0 1em;
 padding-bottom:1em;
 }

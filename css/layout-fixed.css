@@ -414,6 +414,7 @@ padding-right:15px;
 padding-top: 0px;
 }
 
+
 #feature-wrapper .column {
 float: left;
 }
@@ -787,13 +788,15 @@ width: 25%;
 margin-bottom: 0;
 }
 
-
+#footer-content-bottom-wrapper .block {
+    border-top: 1px solid #ccc;
+}
 
 /* Footer Bottom 1 + Footer Bottom 2
 -------------------------------------------------------------- */
 
 #footer-content-bottom-wrapper {
-margin: 0;
+margin: 10px 0 0 0;
 }
 
 
