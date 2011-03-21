@@ -668,7 +668,7 @@ float: left;
 #header #islandora-solr-simple-search-form .form-item input, 
 #header #search-box .form-item input,
 #header #search-block-form .form-item input  {
-  margin: 1px 0px 0 0;
+  margin: 2px 0px 0 0;
   width: 200px;
   display: inline;
   height: 17px;
