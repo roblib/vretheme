@@ -77,8 +77,11 @@ padding-bottom: 0;
 height: 50px;
 }
 
-#logo {
+.with-sitename-slogan #logo {
     border-right: 1px solid #686C71;
+}
+
+#logo {
     margin: 0 0 0 0;
     padding: 0 15px 0 10px;
     float: left;
