@@ -795,7 +795,7 @@ width: 25%;
 margin-bottom: 0;
 }
 
-#footer-content-bottom-wrapper .block {
+#footer-content-bottom-wrapper.with-footer-preface .block {
     border-top: 1px solid #ccc;
 }
 

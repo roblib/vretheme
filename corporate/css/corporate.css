@@ -250,9 +250,12 @@ padding-top: 0;
 color: #ccc;
 }
 
+#footer-content-bottom-wrapper.with-footer-preface .block {
+    border-top: 1px solid #444;
+}
+
 #footer-content-bottom-wrapper .block {
     background:none repeat-x scroll left top transparent;
-    border-top: 1px solid #444;
     margin-top: 10px;
     padding-top: 5px;
     padding-left: 10px;

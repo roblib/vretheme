@@ -519,7 +519,7 @@
       
  <?php if($footer || $sidebar_footer): ?>
     <div style="clear:both"></div>
-    <div id="footer-content-bottom-wrapper" class="in<?php print (bool) $footer; ?>"><div class="section">
+    <div id="footer-content-bottom-wrapper" class="in<?php print (bool) $footer; ?> <?php if ($footer_preface_first || $footer_preface_second || $footer_preface_third || $footer_preface_fourth) { print ' with-footer-preface'; } ?>"><div class="section">
           <div class="column Footer">
             <?php print $footer; ?>
           </div>
