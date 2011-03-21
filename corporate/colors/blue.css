@@ -2,8 +2,6 @@ body.front, body.not-front {
     background: none repeat scroll 0 0 #042332;
 }
 
-
-
 #navigation {
 background: none repeat-x 0 0 #143152; 
 background: -webkit-gradient(linear, left top, left bottom, from(#274160), to(#143152)); /* for webkit browsers */
@@ -20,10 +18,58 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#274160', endC
     border-bottom: 1px solid #515E6B;
 }
 
-#nav ul.menu li.active-trail, #superfish ul.menu li.active-trail, #nav ul.menu li:hover, #superfish ul.menu li:hover {
-    background-color: #2A486B;
-    opacity: 1;
+/* SUPERFISH */
+
+/* superfish borders */
+#nav li, #superfish li {
+border-right: 1px solid #112A44;
 }
+
+#superfish .menu li li.first,
+#superfish .menu li li li.first {
+border-top:1px solid #112A44;
+}
+
+#superfish .menu li li,
+#superfish .menu li li li {
+border-bottom:1px solid #112A44; 
+border-left:1px solid #112A44;
+}
+
+/* background and link colors */
+
+#header #navigation li.active a {
+background: #274160;
+}
+
+#header #navigation li a,
+#header #navigation li li a,
+#header #navigation li li li a {
+background: transparent;
+}
+
+#nav ul.menu li.active-trail, 
+#superfish ul.menu li.active-trail, 
+#nav ul.menu li:hover,
+#superfish ul.menu li:hover {
+background-color: #274160;
+opacity: 1;
+}
+
+#superfish .menu li li {
+    background-color: #153253;
+}
+
+/* hover and active-trail color */ 
+#header #navigation li a.active,
+#header #navigation li a:visited .active,
+#header #navigation li a:hover, 
+#header #navigation li li a:hover, 
+#header #navigation li li li a:hover {
+background: #274160 !important;
+color: #fff !important;
+}
+
 
 #feature {
 color: #001933;

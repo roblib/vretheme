@@ -78,7 +78,7 @@ fieldset {
 
    */
 
-  font-family:"Lucida Grande",Verdana,"Bitstream Vera Sans",Arial,sans-serif !important;
+  font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
   
 }
 
@@ -527,10 +527,12 @@ display: none;
 
 a:link {
 color: #5c6da3;
+text-decoration: none;
 }
 
 a:visited {
 color: #5c6da3;
+text-decoration: none;
 }
 
 a:hover,
@@ -547,6 +549,33 @@ li a.active {
 color:#000;
 }
 
+
+#header a:link {
+color: #000000;
+text-decoration: none;
+}
+
+#header a:visited {
+color: #000000;
+text-decoration: none;
+}
+
+#header a:hover {
+color: #000000
+}
+
+#header a:active {
+color: #000000
+}
+
+#header li  a.active,  {
+color: #000000
+}
+
+#header #navigation li.active a {
+background: #333;
+color: #fff;
+}
 
 #bottom a:link {
 color: #333;
@@ -573,28 +602,22 @@ color: #333
 }
 
 
-#header a:link {
-color: #000000
+#nav ul.menu li.active-trail, 
+#superfish ul.menu li.active-trail, 
+#nav ul.menu li:hover,
+#superfish ul.menu li:hover {
+background-color: #333;
+color: #fff !important;
+opacity: 1;
 }
 
-#header a:visited {
-color: #000000
+#nav ul.menu li:hover a,
+#superfish ul.menu li:hover a {
+color: #fff;
 }
 
-#header a:hover {
-color: #000000
-}
-
-#header a:active {
-color: #000000
-}
-
-#header li  a.active,  {
-color: #000000
-}
-
-#header #navigation li.active a {
-background: #333;
+#superfish .menu li li {
+    background-color: #a4a4a4;
 }
 
 /* hover and active-trail color */ 
@@ -603,34 +626,27 @@ background: #333;
 #header #navigation li a:hover, 
 #header #navigation li li a:hover, 
 #header #navigation li li li a:hover {
-background: #333 !important;;
-color: #fff !important;
+background: #333 !important;
+color: #fff  !important;
 }
 
-#header #navigation li a,
-#header #navigation li li a,
-#header #navigation li li li a {
-background: #eee;
-}
 
-/* border seperator */ 
+
+/* superfish border seperator */ 
 
 #nav li, #superfish li {
 border-right: 1px solid #ccc;
 }
 
-#superfish .menu li li {
-border-bottom:1px solid #ccc; 
+#superfish .menu li li.first,
+#superfish .menu li li li.first {
 border-top:1px solid #ccc;
-border-left:1px solid #ccc;
 }
 
+#superfish .menu li li,
 #superfish .menu li li li {
-border:1px solid #ccc; 
-}
-
-#superfish .menu li li li:hover {
-border:1px solid #333; 
+border-bottom:1px solid #ccc; 
+border-left:1px solid #ccc;
 }
 
 

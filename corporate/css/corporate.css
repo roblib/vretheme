@@ -1,5 +1,42 @@
 /* $Id: corporate.css,v 0.1 2010/11/22 02:16:49 krisbulman Exp $ */
 
+body,
+caption,
+th,
+td,
+input,
+textarea,
+select,
+option,
+legend,
+fieldset {
+  /* The following font family declarations are based on the Microsoft core web
+   * fonts which are common fonts available on most computer systems. The DejaVu
+   * fonts are commonly available on Linux systems where the MS fonts are less
+   * common. Tahoma and Helvetica are also widely available.
+   *
+   * A user's web browser will look at the comma-separated list and will
+   * attempt to use each font in turn until it finds one that is available
+   * on the user's computer. The final "generic" font (sans-serif or serif)
+   * hints at what type of font to use if the web browser doesn't find any
+   * of the fonts in the list.
+
+  font-family: "Times New Roman", Times, Georgia, "DejaVu Serif", serif;
+  font-family: Times, "Times New Roman", Georgia, "DejaVu Serif", serif;
+  font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+
+  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+  font-family: Tahoma, Verdana, "DejaVu Sans", sans-serif;
+  font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+
+  font-family: "Courier New", "DejaVu Sans Mono", monospace;
+
+   */
+
+  font-family:"Lucida Grande",Verdana,"Bitstream Vera Sans",Arial,sans-serif !important;
+  
+}
 
 #name-and-slogan {
 font-family: Garamond, Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman",serif;
@@ -495,84 +532,67 @@ color: #fff
 color: #fff
 }
 
-/* superfish.css */
+/* superfish borders */
+#nav li, #superfish li {
+border-right: 1px solid #333;
+}
 
+#superfish .menu li li.first,
+#superfish .menu li li li.first {
+border-top:1px solid #333;
+}
+
+#superfish .menu li li,
+#superfish .menu li li li {
+border-bottom:1px solid #333; 
+border-left:1px solid #333;
+}
+
+/* background and link colors */
+
+#header #navigation li.active a {
+background: #333;
+}
+
+#header #navigation li a,
+#header #navigation li li a,
+#header #navigation li li li a {
+background: transparent;
+}
+
+#nav ul.menu li.active-trail, 
+#superfish ul.menu li.active-trail, 
+#nav ul.menu li:hover,
+#superfish ul.menu li:hover {
+background-color: #000;
+opacity: 1;
+}
+
+#superfish .menu li li {
+    background-color: #292929;
+}
+
+/* hover and active-trail color */ 
+#header #navigation li a.active,
+#header #navigation li a:visited .active,
+#header #navigation li a:hover, 
+#header #navigation li li a:hover, 
+#header #navigation li li li a:hover {
+background: #000 !important;
+color: #fff !important;
+}
+
+/* superfish styling */
 
 #nav li a, #superfish li a{
 font-weight:normal;
 text-transform:none;
 }
 
-#nav .menu a, #nav .menu a:visited, #superfish .menu a, #superfish .menu a:visited {
+#nav .menu a, #nav .menu a:visited, 
+#superfish .menu a, 
+#superfish .menu a:visited {
    padding-top: 6px;
-}
-
-#nav .menu li a:link, 
-#superfish .menu li a:link,
-#nav .menu li li a:link, 
-#nav .menu li li li a:link,
-#superfish .menu li li a:link, 
-#superfish .menu li li li a:link {
-color: #ccc;
-}
-
-
-#nav .menu li a:active, 
-#superfish .menu li a:active,
-#nav .menu li a.active, 
-#superfish .menu li a.active {
-color: #fff;
-}
-
-#nav .menu li a:hover, 
-#superfish .menu li a:hover,
-#nav .menu li.sfHover a:link,
-#superfish .menu li.sfHover a:link {
-color: #fff;
-}
-
-#nav ul.menu  li.active-trail,
-#superfish ul.menu  li.active-trail,
-#nav ul.menu  li:hover, 
-#superfish ul.menu  li:hover
- {
-    background: #000;
-    opacity:0.91;
-}
-
-
-#nav .menu li li:hover, 
-#nav .menu li li li:hover,
-#superfish .menu li li:hover, 
-#superfish .menu li li li:hover
-{
-    background: #1E1E1E;
-    
-}
-
-#nav ul.menu li a:hover, 
-#superfish ul.menu li a:hover {
-    color: #fff;
-}
-
-#nav .menu li li a:hover, 
-#nav .menu li li li a:hover,
-#superfish .menu li li a:hover, 
-#superfish .menu li li li a:hover
-{
-    color: #fff;
-    background: #292929;
-}
-
-#nav .menu li a:visited, 
-#superfish .menu li a:visited,
-#superfish ul.menu  li:visited, 
-#superfish .menu li li:visited, 
-#superfish .menu li li li:visited,
-#nav ul.menu  li:visited, 
-#nav .menu li li:visited, 
-#nav .menu li li li:visited {
-color: #fff;
 }
 
 #superfish .menu li li {
@@ -580,63 +600,13 @@ top: -3px;
 }
 
 #superfish .menu li li li {
-top: 0px;
-}
-
-#superfish .menu li li, #superfish .menu li li li {
-background: #1E1E1E;
-border-bottom:0px solid #6C8BA0; 
-border-top:0px solid #638093;
-}
-
-#superfish .menu li li,
-#superfish .menu li li li {
-border-left:0px solid #000; 
-border-right:0px solid #000; 
-}
-
-#superfish .menu li li.last {
-border-bottom:0px solid #000; 
-}
-
-#superfish .menu li li li.first {
-border-top:0px solid #000; 
-}
-
-#superfish .menu li:hover {
-}
-
-#header #superfish ul li li.last {
-border-right:0px solid #000; 
-}
-
-#navigation #nav, #navigation #superfish { 
-border-left: 0px solid #ccc;
-}
-
-
-#nav li, #superfish li {
-border-right: 0px solid #ccc;
+top: -1px;
 }
 
 #superfish .menu li, #nav .menu li {
     background: none repeat scroll 0 0 transparent;
     margin-right: 0px;  
 }
-
-#superfish .menu li, #nav .menu li {
-}
-
-#superfish .menu li li.last, #nav .menu li li.last {
--moz-border-radius-topright: 0;
-border-top-right-radius: 0;
--moz-border-radius-bottomleft: 5px;
-border-bottom-left-radius: 5px;
--moz-border-radius-bottomright: 5px;
-border-bottom-right-radius: 5px;
-}
-
-
 
 a > .sf-sub-indicator {
     background-position: 0 100px;
