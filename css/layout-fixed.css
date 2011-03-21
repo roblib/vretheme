@@ -69,11 +69,18 @@ color: 000;
   clear: both; /* Clear the logo */
 }
 
-#headercontent-wrapper .column.HeaderRight .block-menu, #headercontent-wrapper .column.HeaderRight #secondary-menu {
+#headercontent-wrapper .column.HeaderRight #secondary-menu {
     line-height: 2em;
     margin-bottom: 0;
     margin-right: 10px;
 }
+
+#headercontent-wrapper .column.HeaderRight .block-menu {
+    line-height: 2em;
+    margin-bottom: 0;
+    margin-right: 0px;
+}
+
 
 /*
  * Main (container for everything else)

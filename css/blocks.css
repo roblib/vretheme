@@ -130,9 +130,19 @@ border-bottom: 1px dotted #dededf;
     padding: 15px 10px 0 10px;
 }
 
-.region-sidebar-first .block .content, .region-sidebar-second  .block .content {
+.region-sidebar-first .block .content, .region-sidebar-second .block .content {
 margin:0;
-padding: 0px 15px 15px 0px;
+padding: 0 15px 15px 0;
+}
+
+.region-sidebar-first .block .content .menu, 
+.region-sidebar-second .block .content .menu {
+padding-left: 15px;
+}
+
+.region-sidebar-first .block .content .item-list,
+.region-sidebar-second .block .content .item-list {
+padding-left: 10px;
 }
 
 #content-top-wrapper.in2 .ContentTop1 .block {

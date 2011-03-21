@@ -239,7 +239,7 @@ margin:0;
 }
 
 #bottom .block h2.title {
-color: #ccc;
+color: #efefef;
 }
 
 #footer-content .block h2.title{
@@ -310,12 +310,18 @@ padding: 0 0.4em 0.1em 0.4em;
     margin: 0;
 }    
 
-#headercontent-wrapper ul {
-    margin: 0 0.4em;
-}  
-
-#headercontent-wrapper ul.menu li {
+#headercontent-wrapper #secondary-menu li {
     margin: 0 0.25em;
+}
+
+#headercontent-wrapper .region-header-second  ul.menu li { 
+    border-left: 1px solid #686c71;
+    padding-left: 0.6em;
+    margin: 0 0.15em;
+}
+
+#headercontent-wrapper .region-header-second  ul.menu li.first { 
+    border-left: 0px solid #686c71;
 }
 
 #search {
@@ -343,17 +349,13 @@ background: transparent none repeat scroll 0 0;
 border: 0;
 }
 
-.region-sidebar-first .block div.content, .region-sidebar-second .block div.content, div.admin-panel .body, .comment  {
+.comment  {
 background-color:#F4F4F4;
 border-color:#efefef #E8E8E9 #E8E8E9 #efefef;
 border-style:solid;
 border-width:1px;
 }
 
-.region-sidebar-first .block .content, .region-sidebar-second .block .content {
-margin:0;
-padding:2px 15px;
-}
 
 #feature .block h2.title, 
 div.admin-panel h3,
@@ -362,7 +364,10 @@ div.admin-panel h3,
 .region-content-top  .block h2.title,
 #content-top-wrapper .block h2.title,
 .region-content-bottom  .block h2.title,
-#content-bottom-wrapper .block h2.title {
+#content-bottom-wrapper .block h2.title,
+.region-sidebar-first .block h2.title, 
+.region-sidebar-second .block h2.title
+{
 padding:8px 10px 8px 0px;
 border-bottom: 1px dotted #d3d3d3;
 }
