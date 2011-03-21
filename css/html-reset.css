@@ -525,25 +525,25 @@ color:#000;
 
 
 #header a:link {
-color: #555;
+color: #343434;
 text-decoration: none;
 }
 
 #header a:visited {
-color: #555;
+color: #343434;
 text-decoration: none;
 }
 
 #header a:hover {
-color: #555
+color: #343434
 }
 
 #header a:active {
-color: #555
+color: #343434
 }
 
 #header li  a.active,  {
-color: #555
+color: #343434
 }
 
 #header #navigation li.active a {
