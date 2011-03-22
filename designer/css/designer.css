@@ -37,6 +37,15 @@ text-align: center;
 vertical-align: bottom;
 margin-bottom: 0;
 padding-bottom: 0;
+height: 158px;
+}
+
+#header {
+border-top: 0;
+}
+
+#topbar-wrapper { 
+border-top: 0;
 }
 
 #sitelogo a img{ 
@@ -52,7 +61,6 @@ padding: 0;
 }
 
 #logo img {
-height: 100px;
 }
 
 #name-and-slogan {
@@ -131,7 +139,6 @@ overflow: hidden;
 }
 
 #sitelogo a img {
-height: 152px;
 }
 
 #sitecontent-wrapper {

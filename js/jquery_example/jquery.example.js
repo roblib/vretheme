@@ -127,10 +127,16 @@
         /* jQuery 1.1 has no hasClass(), so is() must be used instead. */
         if ($(this).is('.' + o.className)) {
           $(this).val('');
-          $(this).removeClass(o.className);
+         $(this).removeClass(o.className);
         }
       });
     
+      $this.click(function() {
+
+        /* jQuery 1.1 has no hasClass(), so is() must be used instead. */
+          $(this).val('');
+      });
+
       /* Make the example text reappear if the input is blank on blurring. */
       $this.blur(function() {
         if ($(this).val() == '') {
