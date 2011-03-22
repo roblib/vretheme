@@ -706,6 +706,11 @@ form {
   padding: 0;
 }
 
+
+#system-themes-form table {
+    font-size: 75%;
+}
+
 fieldset {
   margin: 1em 0;
   padding: 0.4em;
