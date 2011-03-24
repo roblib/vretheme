@@ -38,6 +38,18 @@ fieldset {
   
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: #343434;
+}
+
+#feature h1, #feature h2, #feature h3, #feature h4, #feature h5, #feature h6 {
+    color: #fff;
+}
+
+#bottom h1, #bottom h2, #bottom h3, #bottom h4, #bottom h5, #bottom h6 {
+    color: #EFEFEF;
+}
+
 #name-and-slogan {
 font-family: Garamond, Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman",serif;
 }
@@ -241,9 +253,6 @@ margin:0;
 margin:0;
 }
 
-#bottom .block h2.title {
-color: #efefef;
-}
 
 #footer-content .block h2.title{
 padding-top: 0;
