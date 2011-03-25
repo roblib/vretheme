@@ -395,8 +395,6 @@ border-bottom: 1px dotted #d3d3d3;
 /* site padding */
 
 #feature .block h2.title {
-    margin-bottom: 0.667em;
-    padding-top: 0;
     border-bottom: 1px solid #ccc;
 }
 
