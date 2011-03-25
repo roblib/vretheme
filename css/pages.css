@@ -119,7 +119,7 @@ div#site-name /* The name of the website */ {
 
 #site-slogan /* The slogan (or tagline) of a website */ {
     font-size: 100%;
-    margin-top: -5px;
+    margin-top: -2px;
 }
 
 #header-site-info.block {
