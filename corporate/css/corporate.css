@@ -506,6 +506,34 @@ color: #fff
 }
 
 
+
+#feature a:link {
+color: #FFF;
+text-decoration: underline;
+}
+
+#feature a:visited {
+color: #FFF;
+text-decoration: underline;
+}
+
+#feature a:hover,
+#feature a:focus {
+color: #fff;
+text-decoration: underline;
+}
+
+#feature a:active {
+color: #fff;
+text-decoration: underline;
+}
+
+#feature li  a.active,  {
+color: #fff;
+text-decoration: underline;
+}
+
+
 #bottom a:link {
 color: #ccc
 }
