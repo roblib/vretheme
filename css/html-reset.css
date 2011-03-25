@@ -712,6 +712,7 @@ form {
 fieldset {
   margin: 1em 0;
   padding: 0.4em;
+  border: 1px solid #DDDDDD;
 }
 
 
