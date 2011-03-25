@@ -25,6 +25,10 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#274160', endC
 border-right: 1px solid #112A44;
 }
 
+#nav li.first, #superfish li.first {
+    border-left: 1px solid #112A44;
+}
+
 #superfish .menu li li.first,
 #superfish .menu li li li.first {
 border-top:1px solid #112A44;

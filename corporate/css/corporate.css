@@ -575,6 +575,10 @@ color: #fff
 border-right: 1px solid #333;
 }
 
+#nav li.first, #superfish li.first {
+    border-left: 1px solid #333;
+}
+
 #superfish .menu li li.first,
 #superfish .menu li li li.first {
 border-top:1px solid #333;
