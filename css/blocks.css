@@ -298,3 +298,52 @@ cursor: pointer;
 cursor: hand;
 z-index: 999;
 }
+
+#feature  .jcarousel-skin-default .jcarousel-clip-horizontal,
+.jcarousel-skin-default .jcarousel-container-horizontal {
+width: 880px;
+}
+
+#feature  .jcarousel-skin-default .jcarousel-container-horizontal {
+padding-left: 0px;
+padding-right:  0px;
+padding-top: 5px;
+}
+
+#feature  .jcarousel-skin-default .jcarousel-prev-horizontal {
+top: 35px;
+left: -40px;
+}
+
+#feature  .jcarousel-skin-default .jcarousel-next-horizontal {
+top: 35px;
+right: -40px;
+}
+
+#feature  .jcarousel-skin-default .jcarousel-item {
+border-color:#A7A7A7 #555555 #555555 #A7A7A7;
+border-style:solid;
+border-width:1px;
+}
+
+#feature  .jcarousel-skin-default .jcarousel-next, .jcarousel-skin-default .jcarousel-prev {
+display:block;
+}
+
+#feature  .jcarousel-skin-default .jcarousel-next,
+#feature  .jcarousel-skin-default .jcarousel-prev { 
+background-image: url("../images/arrows.png");
+}
+
+#feature  .jcarousel-skin-default .jcarousel-next:hover,
+#feature  .jcarousel-skin-default .jcarousel-prev:hover { 
+background-image: url("../images/arrows.png");
+}
+
+#feature .jcarousel-skin-default .jcarousel-container-horizontal {
+width: 880px;
+}
+
+#feature .jcarousel-skin-default .jcarousel-clip-horizontal {
+    width: 880px;
+}
