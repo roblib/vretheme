@@ -195,6 +195,10 @@ text-align: right;
 float: right;
 }
 
+#navbar-wrapper .column.NavbarRight .block {
+float: right;
+}
+
 #navbar-wrapper.nbl1.nbr1 .NavbarLeft,
 #navbar-wrapper.nbl2.nbr1 .NavbarLeft,
 #navbar-wrapper.nbl3.nbr1 .NavbarLeft,
@@ -226,7 +230,6 @@ width: 100%;
 
 #navbar-wrapper .block {
 padding-left:0px;
-padding-right:10px;
 margin-bottom: 0;
 }
 
