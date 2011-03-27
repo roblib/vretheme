@@ -107,6 +107,7 @@ padding: 0 10px 0 15px;
 h1#site-name,
 div#site-name /* The name of the website */ {
   margin: 0;
+  font-weight: normal;
 }
 
 #site-name a:link,
