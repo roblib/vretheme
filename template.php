@@ -71,6 +71,9 @@ switch ($design) {
     drupal_add_css(drupal_get_path('theme', 'corporate') . '/colors/blue.css', 'theme', 'all');
     break;
   case '1':
+    drupal_add_css(drupal_get_path('theme', 'corporate') . '/colors/green.css', 'theme', 'all');
+    break;    
+  case '2':
     break;
 }
 

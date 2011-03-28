@@ -33,7 +33,8 @@ function corporate_settings($saved_settings) {
     '#default_value' => $settings['corporate_design'],
     '#options'       => array(
       '0' => t('Blue'),
-      '1' => t('None (default grey)'),
+      '1' => t('Green'),      
+      '2' => t('None (default grey)'),
      ),
     '#description'   => t('Select an option above if you wish to use a pre-designed color scheme.'),
     
