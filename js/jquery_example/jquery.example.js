@@ -1,5 +1,5 @@
 /*
- * jQuery Form Example Plugin 1.4.2
+ * jQuery Form Example Plugin 1.4.1
  * Populate form inputs with example text that disappears on focus.
  *
  * e.g.
@@ -26,29 +26,30 @@
  * GNU General Public License for more details.
  */
 (function($) {
-
+  
   $.fn.example = function(text, args) {
-
+    
     /* Only calculate once whether a callback has been used. */
     var isCallback = $.isFunction(text);
-
-    /* Merge the arguments and given example text into one options object. */
+    
+    /* Merge the default options with the given arguments and the given
+     * text with the text option.
+     */
     var options = $.extend({}, args, {example: text});
-
+    
     return this.each(function() {
-
+      
       /* Reduce method calls by saving the current jQuery object. */
       var $this = $(this);
-
-      /* Merge the plugin defaults with the given options and, if present,
-       * any metadata.
-       */
+      
       if ($.metadata) {
+        
+        /* If the Metadata plugin is being used merge in the options. */
         var o = $.extend({}, $.fn.example.defaults, $this.metadata(), options);
       } else {
         var o = $.extend({}, $.fn.example.defaults, options);
       }
-
+      
       /* The following event handlers only need to be bound once
        * per class name. In order to do this, an array of used
        * class names is stored and checked on each use of the plugin.
@@ -61,7 +62,7 @@
        * $.inArray().
        */
       if (!$.fn.example.boundClassNames[o.className]) {
-
+      
         /* Because Gecko-based browsers cache form values
          * but ignore all other attributes such as class, all example
          * values must be cleared on page unload to prevent them from
@@ -70,7 +71,7 @@
         $(window).unload(function() {
           $('.' + o.className).val('');
         });
-
+      
         /* Clear fields that are still examples before any form is submitted
          * otherwise those examples will be sent along as well.
          * 
@@ -79,15 +80,15 @@
          * multiple forms would not work correctly.
          */
         $('form').submit(function() {
-
+        
           /* Clear only the fields inside this particular form. */
           $(this).find('.' + o.className).val('');
         });
-
+      
         /* Add the class name to the array. */
         $.fn.example.boundClassNames[o.className] = true;
       }
-
+    
       /* Internet Explorer will cache form values even if they are cleared
        * on unload, so this will clear any value that matches the example
        * text and hasn't been specified in the value attribute.
@@ -97,25 +98,23 @@
        * are cleared. This means that caching is effectively disabled for
        * that field.
        *
-       * We will not clear default values if the selectAll option is true.
-       *
        * Many thanks to Klaus Hartl for helping resolve this issue.
        */
-      if ($.browser.msie && !$this.attr('defaultValue') && (isCallback || $this.val() == o.example) && !o.selectAll)
+      if ($.browser.msie && !$this.attr('defaultValue') && (isCallback || $this.val() == o.example))
         $this.val('');
-
+      
       /* Initially place the example text in the field if it is empty
        * and doesn't have focus yet.
        */
       if ($this.val() == '' && this != document.activeElement) {
         $this.addClass(o.className);
-
+        
         /* The text argument can now be a function; if this is the case,
          * call it, passing the current element as `this`.
          */
         $this.val(isCallback ? o.example.call(this) : o.example);
       }
-
+      
       /* Make the example text disappear when someone focuses.
        *
        * To determine whether the value of the field is an example or not,
@@ -124,31 +123,19 @@
        * input.
        */
       $this.focus(function() {
-
+        
         /* jQuery 1.1 has no hasClass(), so is() must be used instead. */
         if ($(this).is('.' + o.className)) {
-          $(this).removeClass(o.className);
-
-          if (o.selectAll) {
-            $(this).select();
-          } else {
-            $(this).val('');
-          }
-        }
-      });
-
-      /* Detect a change event to the field and remove the example class. */
-      $this.change(function() {
-        if ($(this).is('.' + o.className)) {
+          $(this).val('');
           $(this).removeClass(o.className);
         }
       });
-
+    
       /* Make the example text reappear if the input is blank on blurring. */
       $this.blur(function() {
         if ($(this).val() == '') {
           $(this).addClass(o.className);
-
+          
           /* Re-evaluate the callback function every time the user
            * blurs the field without entering anything. While this
            * is not as efficient as caching the value, it allows for
@@ -159,17 +146,16 @@
       });
     });
   };
-
+  
   /* Users can override the defaults for the plugin like so:
    *
    *   $.fn.example.defaults.className = 'not_example';
    */
   $.fn.example.defaults = {
-    className: 'example',
-    selectAll: false
+    className: 'example'
   };
-
+  
   /* All the class names used are stored as keys in the following array. */
   $.fn.example.boundClassNames = [];
-
+  
 })(jQuery);

@@ -59,7 +59,6 @@ color: #fff;
 }
 
 #headercontent-wrapper {
-color: 000;
 }
 
 #search-box {
@@ -146,11 +145,6 @@ padding:0;
                     Set this to the same value as the margin-top below. */
 }
 
-
-/* .with-navigation #content, */
-/* .with-navigation .region-sidebar-first, */
-/* .with-navigation .region-sidebar-second { */
-/*  margin-top: 4em; /* Set this to the same value as the navigation height above. */ } */
 
 .with-navigation.with-preface #content,
 .with-navigation.with-preface .region-sidebar-first,
@@ -418,7 +412,6 @@ padding-right:15px;
 
 
 /* Feature */
--------------------------------------------------------------- */
 
 #feature-wrapper {
 padding-top: 0px;
