@@ -57,17 +57,13 @@ width: 100%;
 #nav .menu a, #nav .menu a:visited, #superfish .menu a, #superfish .menu a:visited  {
 text-decoration:none;
 font-size:12px;
-padding-right:30px;
-padding-left:30px;
-padding-top:9px;
+padding-top:5px;
 }
 
 #nav li a, #superfish li a{
 text-decoration:none;
 font-size:12px;
-padding:8px 29px 0 29px;
-font-weight:bold;
-text-transform:uppercase;
+padding:6px 29px 0 29px;
 }
 
 
@@ -78,7 +74,7 @@ position: absolute;
 }
 
 #nav .menu a, #superfish .menu a {
-padding:.75em 1em;
+padding: 6px 1em;
 text-decoration:none;
 }
 
@@ -124,7 +120,7 @@ position:relative;
 #superfish .menu li:hover ul,
 #superfish .menu li.sfHover ul {
 left:0;
-top:30px;
+top:24px;
 z-index:99;
 }
 
@@ -192,7 +188,7 @@ overflow:hidden;
 background:url(../images/arrows-ffffff.png) no-repeat -10px -100px;
 }
 a > .sf-sub-indicator { 
-top:.8em;
+top:.6em;
 background-position: 0 -100px;
 }
 

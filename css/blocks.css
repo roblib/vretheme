@@ -101,6 +101,29 @@ margin-bottom: 0.667em;
 #block-user-3 /* "Who's online" block for a list of the online users */ {
 }
 
+#headercontent-wrapper .column.HeaderRight #secondary-menu {
+    font-size: 90%;
+    line-height: 2em;
+    margin-bottom: 0;
+}
+
+#headercontent-wrapper .column.HeaderRight #secondary-menu {
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+    float: right;
+    padding: 0 0.4em 0.1em;
+    margin-top: 0;
+}
+
+#headercontent-wrapper #secondary-menu li {
+    margin: 0 0.25em;
+    padding: 0;
+}
+
 #search-box {
 text-align: right;
 top: 0;

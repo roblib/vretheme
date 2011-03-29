@@ -40,6 +40,7 @@ fieldset {
 
 h1, h2, h3, h4, h5, h6 {
     color: #343434;
+    font-weight: bold;
 }
 
 #header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
@@ -292,19 +293,24 @@ float: right;
 
 
 #headercontent-wrapper .column.HeaderRight #secondary-menu {
-background: #000;
--moz-border-radius-bottomright: 5px 5px;
-border-bottom-right-radius: 5px 5px;
--moz-border-radius-bottomleft: 5px 5px;
-border-bottom-left-radius: 5px 5px;
+-moz-border-radius-bottomleft: 5px;
+-moz-border-radius-bottomright: 5px;
+-webkit-border-bottom-left-radius: 5px;
+-webkit-border-bottom-right-radius: 5px;
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
 float: right;
-border-color:#000 #777 #777 #777;
 border-style:solid;
 border-width:1px;
 padding: 0 0.4em 0.1em 0.4em;
 }
 
-
+#headercontent-wrapper .column.HeaderRight #secondary-menu {
+background-color: #000;
+border-width: 1px;
+border-style: solid;
+border-color: #000 #686c71 #686c71 #686c71;
+}
 
 #headercontent-wrapper .column.HeaderRight .block-menu,
 #headercontent-wrapper .column.HeaderRight #secondary-menu {
@@ -652,6 +658,11 @@ color: #fff !important;
 
 /* superfish styling */
 
+#superfish .menu li:hover ul,
+#superfish .menu li.sfHover ul {
+top:27px;
+}
+
 #nav li a, #superfish li a{
 font-weight:normal;
 text-transform:none;
@@ -660,7 +671,7 @@ text-transform:none;
 #nav .menu a, #nav .menu a:visited, 
 #superfish .menu a, 
 #superfish .menu a:visited {
-   padding-top: 6px;
+   padding: 5px 1em 7px 1em;
 }
 
 #superfish .menu li li {
@@ -717,7 +728,7 @@ float: left;
 #header #islandora-solr-simple-search-form .form-item input, 
 #header #search-box .form-item input,
 #header #search-block-form .form-item input  {
-  margin: 2px 0px 0 0;
+  margin: 0px 0px 0 0;
   width: 200px;
   display: inline;
   height: 17px;

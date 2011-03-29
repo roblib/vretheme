@@ -1,13 +1,23 @@
 body.front, body.not-front {
-    background: none repeat scroll 0 0 #042332;
+    background: none repeat scroll 0 0 #191919;
 }
 
 #navigation {
-background: none repeat-x 0 0 #143152; 
-background: -webkit-gradient(linear, left top, left bottom, from(#274160), to(#143152)); /* for webkit browsers */
-background: -moz-linear-gradient(top,  #274160,  #143152); /* for firefox 3.6+ */
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#274160', endColorstr='#143152'); /* for IE */
+background: none repeat-x 0 0 #46906d; 
+background: -webkit-gradient(linear, left top, left bottom, from(#4FA381), to(#46906d)); /* for webkit browsers */
+background: -moz-linear-gradient(top,  #4FA381,  #46906d); /* for firefox 3.6+ */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4FA381', endColorstr='#46906d'); /* for IE */
 }
+
+#headercontent-wrapper .column.HeaderRight #secondary-menu {
+background: #444;
+border-color:#444 #3A3A2F #3A3A2F #3A3A2F;
+}
+
+#header {
+    border-top: 2px solid #444;
+}
+
 
 #headercontent-wrapper {
     background: url("../images/1pxlighter.png") repeat-x scroll left top transparent;
@@ -15,42 +25,47 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#274160', endC
 
 #headercontent-wrapper-bg {
     background: none repeat-x scroll left bottom transparent;
-    border-bottom: 1px solid #515E6B;
+    border-bottom: 1px solid #5b9f84;
 }
 
-#headercontent-wrapper .column.HeaderRight #secondary-menu {
-background-color: #000;
-border-width: 1px;
-border-style: solid;
-border-color: #000 #39515d #39515d #39515d;
+h1 {
+    color: #000;
+}
+
+h2 {
+    color: #666;
+}
+
+h3, h4, h5, h6 {
+    color: #59892F;
 }
 
 /* SUPERFISH */
 
 /* superfish borders */
 #nav li, #superfish li {
-border-right: 1px solid #112A44;
+border-right: 1px solid #3E7F60;
 }
 
 #nav li.first, #superfish li.first {
-    border-left: 1px solid #112A44;
+    border-left: 1px solid #3E7F60;
 }
 
 #superfish .menu li li.first,
 #superfish .menu li li li.first {
-border-top:1px solid #112A44;
+border-top:1px solid #2F5B47;
 }
 
 #superfish .menu li li,
 #superfish .menu li li li {
-border-bottom:1px solid #112A44; 
-border-left:1px solid #112A44;
+border-bottom:1px solid #2F5B47; 
+border-left:1px solid #2F5B47;
 }
 
 /* background and link colors */
 
 #header #navigation li.active a {
-background: #274160;
+background: #356751;
 }
 
 #header #navigation li a,
@@ -63,12 +78,12 @@ background: transparent;
 #superfish ul.menu li.active-trail, 
 #nav ul.menu li:hover,
 #superfish ul.menu li:hover {
-background-color: #274160;
+background-color: #46906D;
 opacity: 1;
 }
 
 #superfish .menu li li {
-    background-color: #153253;
+    background-color: #417d64;
 }
 
 /* hover and active-trail color */ 
@@ -77,17 +92,14 @@ opacity: 1;
 #header #navigation li a:hover, 
 #header #navigation li li a:hover, 
 #header #navigation li li li a:hover {
-background: #274160 !important;
+background: #46906D !important;
 color: #fff !important;
 }
 
 
 #feature {
 color: #001933;
-}
-
-#feature {
-    background-color: #6699cc;
+background-color: #5db485;
 }
 
 #feature h2.title {
@@ -98,7 +110,7 @@ text-shadow: 0 1px 2px #3B3B3B;
 #feature-wrapper.in2 #feature h2.title {
 padding-bottom: 0.6em;    
 background: url("../images/1pxdark.png") repeat-x scroll left bottom transparent;
-border-bottom: 1px solid #7da1d4;
+border-bottom: 1px solid #d3d3d3;
 }
 
 
@@ -115,13 +127,26 @@ border-bottom: 1px solid #7da1d4;
 }
     
 /* Link Colors */
-a:link {
-
+a:link, a:visited {
+    color: #6299C5;
+    text-decoration: none;
 }
 
-a:visited {
-
+a:hover, a:focus {
+    color: #669933;
+    text-decoration: none;
 }
+
+#headercontent-wrapper .column.HeaderRight #secondary-menu a:link, 
+#headercontent-wrapper .column.HeaderRight #secondary-menu a:visited {
+    color: #b4b4b4;
+}
+
+#headercontent-wrapper .column.HeaderRight #secondary-menu a:hover, 
+#headercontent-wrapper .column.HeaderRight #secondary-menu a:focus {
+    color: #fff;
+}
+
 
 #bottom a:link {
 color: #afafaf;
@@ -159,17 +184,17 @@ color: #afafaf;
 #header #islandora-solr-simple-search-form .form-item input, 
 #header #search-box .form-item input,
 #header #search-block-form .form-item input  {
-  color: #CCC;
-  border: 1px solid #000;
-  -moz-box-shadow:0 1px 0 #444444;
-  background: #3B5775 url(../images/insearch-magglass.png) no-repeat right center;
+  color: #dadada;
+  border: 1px solid #31634B;
+  -moz-box-shadow:0 1px 0 #4fa280;
+  background: #427f5e url(../images/insearch-magglass.png) no-repeat right center;
 }
 
 #header #google-cse-searchbox-form .form-item input:hover,
 #header #islandora-solr-simple-search-form .form-item input:hover, 
 #header #search-box .form-item input:hover,
 #header #search-block-form .form-item input:hover  {
-background: #4F749B url(../images/insearch-magglass.png) no-repeat right center;
+background: #46906d url(../images/insearch-magglass.png) no-repeat right center;
 color: #FFFFFF;
 }
 
@@ -177,7 +202,7 @@ color: #FFFFFF;
 #header #islandora-solr-simple-search-form .form-item input:focus, 
 #header #search-box .form-item input:focus,
 #header #search-block-form .form-item input:focus  {
--moz-box-shadow: 0 0 3px #000000;
+-moz-box-shadow: 0 0 2px #000000;
 background:#fff url(../images/insearch-magglass.png) no-repeat right center;
 border:1px solid #EEEEEE;
 color:#333333;

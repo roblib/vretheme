@@ -16,10 +16,18 @@ body {
 }
 
 body.front, body.not-front {
-background-color: #F5F5F5;
+background-color: #ffeff;
 }
 
 #page-wrapper {
+}
+
+#header {
+border-top: 4px solid #8b1f04;
+}
+
+#headercontent-wrapper .column.HeaderRight #secondary-menu {
+background: #8b1f04;
 }
 
 #page {
