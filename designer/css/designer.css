@@ -10,11 +10,45 @@ select,
 option,
 legend,
 fieldset {
-  /* font-family: Century Gothic, Helvetica, Arial, "Nimbus Sans L", sans-serif; */
+  /* The following font family declarations are based on the Microsoft core web
+   * fonts which are common fonts available on most computer systems. The DejaVu
+   * fonts are commonly available on Linux systems where the MS fonts are less
+   * common. Tahoma and Helvetica are also widely available.
+   *
+   * A user's web browser will look at the comma-separated list and will
+   * attempt to use each font in turn until it finds one that is available
+   * on the user's computer. The final "generic" font (sans-serif or serif)
+   * hints at what type of font to use if the web browser doesn't find any
+   * of the fonts in the list.
+
+  font-family: "Times New Roman", Times, Georgia, "DejaVu Serif", serif;
+  font-family: Times, "Times New Roman", Georgia, "DejaVu Serif", serif;
+  font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+
+  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+  font-family: Tahoma, Verdana, "DejaVu Sans", sans-serif;
+  font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+
+  font-family: "Courier New", "DejaVu Sans Mono", monospace;
+
+   */
+
+  font-family:"Lucida Grande",Verdana,"Bitstream Vera Sans",Arial,sans-serif !important;
+  
 }
 
-#footer {
-  /* font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif; */
+#bottom h1, #bottom h2, #bottom h3, #bottom h4, #bottom h5, #bottom h6 {
+    color: #EFEFEF;
+}
+
+
+#feature .block h2.title, .region-sidebar-first .block h2.title, .region-sidebar-second .block h2.title, div.admin-panel h3, #mainbottom-wrapper .block h2.title, #preface-wrapper .block h2.title, .region-content-top .block h2.title, #content-top-wrapper .block h2.title, .region-content-bottom .block h2.title, #content-bottom-wrapper .block h2.title {
+    padding: 8px 8px;
+}
+
+#sitelogo a img {
+height: 100%
 }
 
 #sitecontent {
@@ -37,7 +71,7 @@ text-align: center;
 vertical-align: bottom;
 margin-bottom: 0;
 padding-bottom: 0;
-height: 158px;
+height: 153px;
 }
 
 #header {
@@ -97,6 +131,10 @@ background: url(../images/pageshadow.png) repeat-y top center transparent;
 }
 
 #page {
+}
+
+.with-sitename-slogan #logo {
+    border-right: 0px dotted #DEDEDF;
 }
 
 #topbar-wrapper {
@@ -200,6 +238,11 @@ background:  #fdfdfd;
 
 }
 
+#bottomcontent-wrapper .block {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 #bottom {
 /* background: url(../images/footerbg.png) repeat-x bottom left #1c536f; */
 color: #fff;
@@ -207,9 +250,8 @@ background: #1C536f;
 }
 
 #bottom .section {
-
+    padding-top: 10px;
 }
-
 
 #footer {
 /* background: url(../images/footermic.png) no-repeat bottom right transparent; */
@@ -257,7 +299,7 @@ background-color:transparent;
 }
 
 #bottom {
-color:#FFFFFF;
+color:#f2f3f4;
 }
 
 #closure-wrapper {
@@ -275,25 +317,68 @@ color: #ccc;
 text-decoration: underline;
 }
 
+#bottom a:link {
+color: #ccc
+}
+
+#bottom a:visited {
+color: #ccc
+}
+
+#bottom a:hover,
+#bottom a:focus {
+color: #fff
+}
+
+#bottom a:active {
+color: #fff
+}
+
+#bottom li  a.active,  {
+color: #fff
+}
+
+#closure a:link {
+color: #efefef
+}
+
+#closure a:visited {
+color: #efefef
+}
+
+#closure a:hover,
+#closure a:focus {
+color: #efefef
+}
+
+#closure a:active {
+color: #efefef
+}
+
+#closure li  a.active,  {
+color: #efefef
+}
+
+
 #footer a:link {
-color: #fff;
+color: #ccc
 }
 
 #footer a:visited {
-color: #fff;
+color: #ccc
 }
 
 #footer a:hover,
 #footer a:focus {
-color: #fff;
+color: #fff
 }
 
 #footer a:active {
-color: #fff;
+color: #fff
 }
 
-#footer li a.active,  {
-color: #fff;
+#footer li  a.active,  {
+color: #fff
 }
 
 #header a:link {
@@ -357,20 +442,8 @@ color: #336686
 
 /* blocks */
 
-#preface-wrapper .block h2.title {
-/* background: url(../images/h2bullet.png) no-repeat 0 0.86em; */
-/* padding-left: 1.2em; */ 
-/* color: #336686; */
-}
-
-#mainbottom-wrapper .block h2.title, #content-top-wrapper h2, .region-content-top h2.title, .region-content-bottom .block h2.title, #content-bottom-wrapper .block h2.title {
-/* background: url(../images/h2bullet-small.png) no-repeat 0 0.9199em; */
-/* padding-left: 1em; */
-/* color: #255720; */
-}
-
 #navigation {
-height: 32px;
+height: 30px;
 }
 
 #navbar-wrapper {
@@ -382,95 +455,108 @@ margin-right:0px;
 border-right:1px solid #346B96;
 }
 
-#header #superfish ul li.last {
-border-right:1px solid #346B96;
-}
-
 #topbar-wrapper .column.TopbarRight .block {
 float:right;
+}
+
+.region-sidebar-first .section {
+padding: 5px 15px 10px 15px;       
+}
+
+.region-sidebar-second .section {
+padding: 5px 15px 10px 15px;      
+}
+
+.one-sidebar.sidebar-first #content .section {
+    padding-right: 15px;
+    padding-top: 10px;    
+}
+
+.one-sidebar.sidebar-second #content .section {
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.no-sidebars #content .section {
+padding: 10px 15px 10px 15px;
+}
+
+/* Feature regions
+-------------------------------------------------------------- */
+
+#preface-wrapper .block {
+padding-left:15px;
+padding-right:15px;
 }
 
 /* Preface first + Preface second + Preface third +  Preface fourth regions
 -------------------------------------------------------------- */
 
-#preface-wrapper {
-padding-top: 15px;
-}
-
-#preface-wrapper .column {
-float: left;
-}
-
-#preface-wrapper.in1 .column {
-width: 100%;
-float: none;
-}
-
-#preface-wrapper.in2 .column {
-width: 50%;
-}
-
-#preface-wrapper.in4 .column {
-width: 25%;
-}
-
 #preface-wrapper .block {
-padding-left:30px;
-padding-right:30px;
+padding-left:15px;
+padding-right:15px;
 }
 
 /* Bottom first + Bottom second + Bottom third +  Bottom fourth regions
 -------------------------------------------------------------- */
 
-#mainbottom-wrapper {
-padding-bottom: 15px;
-}
-
-#mainbottom-wrapper .column {
-float: left;
-}
-
-#mainbottom-wrapper.in1 .column {
-width: 100%;
-}
-
-#mainbottom-wrapper.in2 .column {
-width: 50%;
-}
-
-#mainbottom-wrapper.in3 .column {
-width: 33.3%;
-}
-
-#mainbottom-wrapper.in4 .column {
-width: 25%;
-}
-
 #mainbottom-wrapper .block {
-padding-left:30px;
-padding-right:30px;
+padding-left:15px;
+padding-right:15px;
 }
 
-/* Superfish */
+/* superfish styling */
 
-#nav li, #superfish li {
-    border-right: 1px solid #193241;
+#superfish .menu li:hover ul,
+#superfish .menu li.sfHover ul {
+top:27px;
 }
 
-#nav li.first, #superfish li.first {
-    border-right: 1px solid #193241;
+#nav li a, #superfish li a{
+font-weight:normal;
+text-transform:none;
 }
 
-#nav ul.menu  li.active-trail,
-#nav ul.menu  li:hover, 
-#nav .menu li li:hover, 
-#nav .menu li li li:hover,
-#superfish ul.menu  li.active-trail,
-#superfish ul.menu  li:hover, 
-#superfish .menu li li:hover, 
-#superfish .menu li li li:hover {
-    background: #193241;
+#nav .menu a, #nav .menu a:visited, 
+#superfish .menu a, 
+#superfish .menu a:visited {
+   padding: 9px 1em 9px 1em;
 }
+
+#superfish .menu li li {
+top: -3px;
+}
+
+#superfish .menu li li li {
+top: -1px;
+}
+
+#superfish .menu li, #nav .menu li {
+    background: none repeat scroll 0 0 transparent;
+    margin-right: 0px;  
+}
+
+a > .sf-sub-indicator {
+    background-position: 0 100px;
+    top: 0.8em;
+}
+
+a:focus > .sf-sub-indicator, a:hover > .sf-sub-indicator, a:active > .sf-sub-indicator, li:hover > a > .sf-sub-indicator, li.sfHover > a > .sf-sub-indicator {
+    background-position: -10px 100px;
+}
+
+#nav .menu a, #nav .menu a:visited, #superfish .menu a, #superfish .menu a:visited {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+#superfish .menu a.sf-with-ul,
+#superfish .menu a {
+    min-width: 1px;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
 
 
 /* Search Block */
