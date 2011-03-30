@@ -1,0 +1,222 @@
+body.front, body.not-front {
+    background: none repeat scroll 0 0 #735840;
+}
+
+#navigation {
+background: none repeat-x 0 0 #46906d; 
+background: -webkit-gradient(linear, left top, left bottom, from(#4FA381), to(#46906d)); /* for webkit browsers */
+background: -moz-linear-gradient(top,  #4FA381,  #46906d); /* for firefox 3.6+ */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4FA381', endColorstr='#46906d'); /* for IE */
+}
+
+#headercontent-wrapper .column.HeaderRight #secondary-menu {
+background: #444;
+border-color:#444 #3A3A2F #3A3A2F #3A3A2F;
+}
+
+#header {
+    border-top: 2px solid #7d6c5c;
+}
+
+
+#headercontent-wrapper {
+    background: url("../images/1pxlighter.png") repeat-x scroll left top transparent;
+}
+
+#headercontent-wrapper-bg {
+    background: none repeat-x scroll left bottom transparent;
+    border-bottom: 1px solid #5b9f84;
+}
+
+h1 {
+    color: #000;
+}
+
+h2 {
+    color: #666;
+}
+
+h3, h4, h5, h6 {
+    color: #59892F;
+}
+
+/* SUPERFISH */
+
+/* superfish borders */
+#nav li, #superfish li {
+border-right: 1px solid #3E7F60;
+}
+
+#nav li.first, #superfish li.first {
+    border-left: 1px solid #3E7F60;
+}
+
+#superfish .menu li li.first,
+#superfish .menu li li li.first {
+border-top:1px solid #2F5B47;
+}
+
+#superfish .menu li li,
+#superfish .menu li li li {
+border-bottom:1px solid #2F5B47; 
+border-left:1px solid #2F5B47;
+}
+
+/* background and link colors */
+
+#header #navigation li.active a {
+background: #356751;
+}
+
+#header #navigation li a,
+#header #navigation li li a,
+#header #navigation li li li a {
+background: transparent;
+}
+
+#nav ul.menu li.active-trail, 
+#superfish ul.menu li.active-trail, 
+#nav ul.menu li:hover,
+#superfish ul.menu li:hover {
+background-color: #46906D;
+opacity: 1;
+}
+
+#superfish .menu li li {
+    background-color: #417d64;
+}
+
+/* hover and active-trail color */ 
+#header #navigation li a.active,
+#header #navigation li a:visited .active,
+#header #navigation li a:hover, 
+#header #navigation li li a:hover, 
+#header #navigation li li li a:hover {
+background: #46906D !important;
+color: #fff !important;
+}
+
+
+#feature {
+color: #001933;
+background-color: #5db485;
+}
+
+#feature h2.title {
+color: #fff;
+text-shadow: 0 1px 2px #3B3B3B;
+}
+
+#feature-wrapper.in2 #feature h2.title {
+padding-bottom: 0.6em;    
+background: url("../images/1pxdark.png") repeat-x scroll left bottom transparent;
+border-bottom: 1px solid #d3d3d3;
+}
+
+
+#closure {
+    background: url("../images/1pxdark.png") repeat-x scroll left top transparent;
+    border-top: 1px solid #111111;
+    color: #787878;
+    padding: 0.5em;
+}
+
+.SidebarFooter {
+    background: none repeat-y scroll right top transparent;
+    border-right: 0px solid #111111;
+}
+    
+/* Link Colors */
+a:link, a:visited {
+    color: #6299C5;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: #669933;
+    text-decoration: none;
+}
+
+#headercontent-wrapper .column.HeaderRight #secondary-menu a:link, 
+#headercontent-wrapper .column.HeaderRight #secondary-menu a:visited {
+    color: #b4b4b4;
+}
+
+#headercontent-wrapper .column.HeaderRight #secondary-menu a:hover, 
+#headercontent-wrapper .column.HeaderRight #secondary-menu a:focus {
+    color: #fff;
+}
+
+
+#bottom a:link {
+color: #afafaf;
+}
+
+#bottom a:visited {
+color: #afafaf;
+}
+
+#bottom a:hover, 
+#bottom a:focus {
+color: #afafaf;
+}
+
+#footer-content-bottom-wrapper.with-footer-preface .block{
+    border-top: 1px solid #333333;
+}
+
+
+#footer-content-bottom-wrapper .block {
+    background: none repeat-x scroll left top transparent;
+}
+
+/* Search Block */
+
+  
+#header #google-cse-searchbox-form .form-item label,
+#header #islandora-solr-simple-search-form .form-item label,
+#header #search-box .form-item label,
+#header #search-block-form .form-item label	{ 
+ color: #fff; /* Wrapper for the search form */
+}  
+  
+#header #google-cse-searchbox-form .form-item input,
+#header #islandora-solr-simple-search-form .form-item input, 
+#header #search-box .form-item input,
+#header #search-block-form .form-item input  {
+  color: #dadada;
+  border: 1px solid #31634B;
+  -moz-box-shadow:0 1px 0 #4fa280;
+  background: #427f5e url(../images/insearch-magglass.png) no-repeat right center;
+}
+
+#header #google-cse-searchbox-form .form-item input:hover,
+#header #islandora-solr-simple-search-form .form-item input:hover, 
+#header #search-box .form-item input:hover,
+#header #search-block-form .form-item input:hover  {
+background: #46906d url(../images/insearch-magglass.png) no-repeat right center;
+color: #FFFFFF;
+}
+
+#header #google-cse-searchbox-form .form-item input:focus,
+#header #islandora-solr-simple-search-form .form-item input:focus, 
+#header #search-box .form-item input:focus,
+#header #search-block-form .form-item input:focus  {
+-moz-box-shadow: 0 0 2px #000000;
+background:#fff url(../images/insearch-magglass.png) no-repeat right center;
+border:1px solid #EEEEEE;
+color:#333333;
+text-shadow:0 1px 0 #FFFFFF;
+}
+
+
+#header #google-cse-searchbox-form  .block-search .form-item  textarea:focus,
+#header #islandora-solr-simple-search-form  .block-search .form-item  textarea:focus, 
+#header #islandora-solr-simple-search-form  .block-search .form-item  textarea:focus input:focus, 
+#header #search-form  .block-search .form-item  textarea:focus, 
+#header #search-form  .block-search .form-item  textarea:focus input:focus,
+#header #search-block-form .block-search .form-item  textarea:focus,
+#header #search-block-form .block-search .form-item  textarea:focus  input:focus	
+{
+  border: 2px solid #2E5067;
+}
