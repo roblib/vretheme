@@ -1,5 +1,5 @@
 body.front, body.not-front {
-    background: none repeat scroll 0 0 #331700; /*changed*/
+    background: none repeat scroll 0 0 #331700;
 }
 
 #navigation {
@@ -15,11 +15,11 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#604227', endC
 
 #headercontent-wrapper-bg {
     background: none repeat-x scroll left bottom transparent;
-    border-bottom: 1px solid #6b5d51; /*changed*/
+    border-bottom: 1px solid #6b5d51;
 }
 
 #headercontent-wrapper .column.HeaderRight #secondary-menu {
-	background-color: #121A16; /*changed*/
+	background-color: #121A16;
 	border-top-color: #121A16;
 }
 
@@ -27,28 +27,28 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#604227', endC
 
 /* superfish borders */
 #nav li, #superfish li {
-border-right: 1px solid #442611; /*changed*/
+border-right: 1px solid #442611;
 }
 
 #nav li.first, #superfish li.first {
-    border-left: 1px solid #442611; /*changed*/
+    border-left: 1px solid #442611;
 }
 
 #superfish .menu li li.first,
 #superfish .menu li li li.first {
-border-top:1px solid #442611; /*changed*/
+border-top:1px solid #442611;
 }
 
 #superfish .menu li li,
 #superfish .menu li li li {
-border-bottom:1px solid #442611;  /*changed*/
-border-left:1px solid #442611; /*changed*/
+border-bottom:1px solid #442611; 
+border-left:1px solid #442611;
 }
 
 /* background and link colors */
 
 #header #navigation li.active a {
-background: #604227; /*changed*/
+background: #604227;
 }
 
 #header #navigation li a,
@@ -61,12 +61,12 @@ background: transparent;
 #superfish ul.menu li.active-trail, 
 #nav ul.menu li:hover,
 #superfish ul.menu li:hover {
-background-color: #604227; /*changed*/
+background-color: #604227;
 opacity: 1;
 }
 
 #superfish .menu li li {
-    background-color: #532f15; /*changed*/
+    background-color: #532f15;
 }
 
 /* hover and active-trail color */ 
@@ -81,11 +81,11 @@ color: #fff !important;
 
 
 #feature {
-color: #401c03; /*changed*/
+color: #401c03;
 }
 
 #feature {
-    background-color: #f9c868; /*changed*/
+    background-color: #f9c868;
 }
 
 #feature h2.title {
@@ -164,14 +164,14 @@ color: #afafaf;
   color: #CCC;
   border: 1px solid #000;
   -moz-box-shadow:0 1px 0 #444444;
-  background: #7a5532 url(../images/insearch-magglass.png) no-repeat right center; /*changed*/
+  background: #7a5532 url(../images/insearch-magglass.png) no-repeat right center;
 }
 
 #header #google-cse-searchbox-form .form-item input:hover,
 #header #islandora-solr-simple-search-form .form-item input:hover, 
 #header #search-box .form-item input:hover,
 #header #search-block-form .form-item input:hover  {
-background: #94663d url(../images/insearch-magglass.png) no-repeat right center; /*changed*/
+background: #94663d url(../images/insearch-magglass.png) no-repeat right center;
 color: #FFFFFF;
 }
 
@@ -180,10 +180,10 @@ color: #FFFFFF;
 #header #search-box .form-item input:focus,
 #header #search-block-form .form-item input:focus  {
 -moz-box-shadow: 0 0 3px #000000;
-background:#94663d url(../images/insearch-magglass.png) no-repeat right center; /*changed*/
-border-color: #222; /*changed*/
-color:#FFFFFF; /*changed*/
-text-shadow:0 1px 0 #333333; /*changed*/
+background:#94663d url(../images/insearch-magglass.png) no-repeat right center;
+border-color: #222;
+color:#FFFFFF;
+text-shadow:0 1px 0 #333333;
 }
 
 
