@@ -181,7 +181,7 @@ color: #FFFFFF;
 #header #search-block-form .form-item input:focus  {
 -moz-box-shadow: 0 0 3px #000000;
 background:#94663d url(../images/insearch-magglass.png) no-repeat right center; /*changed*/
-border:1px dashed #222; /*changed*/
+border-color: #222; /*changed*/
 color:#FFFFFF; /*changed*/
 text-shadow:0 1px 0 #333333; /*changed*/
 }
