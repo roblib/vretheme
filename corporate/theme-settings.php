@@ -35,6 +35,7 @@ function corporate_settings($saved_settings) {
       '0' => t('None (default grey)'),
       '1' => t('Dark Blue'),      
       '2' => t('Green'),
+      '3' => t('Orange'),
      ),
     '#description'   => t('Select an option above if you wish to use a pre-designed color scheme.'),
     

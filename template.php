@@ -68,13 +68,17 @@
 $design = theme_get_setting('corporate_design');
 switch ($design) {
   case '0':
+    // Default Grey
     break;
   case '1':
     drupal_add_css(drupal_get_path('theme', 'corporate') . '/colors/blue.css', 'theme', 'all');
-    break;  
+    break;    
   case '2':
     drupal_add_css(drupal_get_path('theme', 'corporate') . '/colors/green.css', 'theme', 'all');
-    break;    
+    break;
+  case '3':
+    drupal_add_css(drupal_get_path('theme', 'corporate') . '/colors/orange.css', 'theme', 'all');
+    break;
 }
 
 
