@@ -689,7 +689,7 @@ top: -1px;
 
 a > .sf-sub-indicator {
     background-position: 0 100px;
-    top: 0.8em;
+    top: 0.6em;
 }
 
 a:focus > .sf-sub-indicator, a:hover > .sf-sub-indicator, a:active > .sf-sub-indicator, li:hover > a > .sf-sub-indicator, li.sfHover > a > .sf-sub-indicator {
