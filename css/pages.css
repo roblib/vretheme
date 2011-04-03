@@ -223,7 +223,7 @@ div.tabs /* See also the tabs.css file. */ {
 #content-area /* Wrapper for the actual page content */ {
 }
 
-.resizable-textarea textarea {
+textarea {
 	font-size: 110%;
 }
 
