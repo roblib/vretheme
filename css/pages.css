@@ -178,6 +178,7 @@ tr.odd {
 
 tr.odd td, tr.even td {
 padding:0.3em;
+background-color: #FFFFFF;
 }
 
 div.messages /* Important messages (status, warning, and error) for the user. See also the declarations in messages.css. */ {
