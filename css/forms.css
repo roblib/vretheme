@@ -126,15 +126,26 @@ form tbody {
 
 form th,
 form thead th {
-  text-align: left; /* LTR */
-  padding-right: 1em; /* LTR */
-  border-bottom: 3px solid #ccc;
+  text-align: center; /* LTR */
+  border: 0.7px solid #D6D1D1;
+  color: #000;
+  font-size: 110%;
+  padding: 	0.5em;
 }
+
 
 form tbody th {
   border-bottom: 1px solid #ccc;
 }
 
+.form-item, .form-checkboxes, .form-radios {
+    margin: 0.5em 0;
+}
+
+.form-select option {
+padding-top: 1px;
+padding-bottom: 1px;
+}
 
 /* Search Block */
 
