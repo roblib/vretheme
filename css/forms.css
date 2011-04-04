@@ -328,3 +328,36 @@ div.teaser-button-wrapper {
     margin-left: 0;
 }
 
+/* ............................................................................................................. Icons */
+
+
+
+#search-form .form-submit { 
+background-image: url(../images/search-darkgrey.png),-webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#ececec));
+background-image: url(../images/search-darkgrey.png),-moz-linear-gradient(#f4f4f4, #ececec);
+background-image: url(../images/search-darkgrey.png),-o-linear-gradient(#f4f4f4, #ececec);
+background-image: url(../images/search-darkgrey.png),linear-gradient(#f4f4f4, #ececec);
+background-position: 0;
+padding-left: 20px;
+}
+
+#search-form .form-submit:hover,
+#search-form .form-submit:focus,
+#search-form .form-submit:active { 
+background-image: url(../images/search-white.png),-webkit-gradient(linear, 0 0, 0 100%, from(#599bdc), to(#3072b3));
+background-image: url(../images/search-white.png),-moz-linear-gradient(#599bdc, #3072b3);
+background-image: url(../images/search-white.png),-o-linear-gradient(#599bdc, #3072b3);
+background-image: url(../images/search-white.png),linear-gradient(#599bdc, #3072b3);
+background-position: 0;
+padding-left: 20px;
+}
+
+#search-form .form-submit:active,
+#search-form .form-submit.active {
+background-image: url(../images/search-white.png),-webkit-gradient(linear, 0 0, 0 100%, from(#3072b3), to(#599bdc));
+background-image: url(../images/search-white.png),-moz-linear-gradient(#3072b3, #599bdc);
+background-image: url(../images/search-white.png),-o-linear-gradient(#3072b3, #599bdc);
+background-image: url(../images/search-white.png),linear-gradient(#3072b3, #599bdc);
+background-position: 0;
+padding-left: 20px;
+}
