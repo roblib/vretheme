@@ -186,10 +186,6 @@ function phptemplate_menu_item($link, $has_children, $menu = '', $in_active_trai
     $class .= ' active-trail';
   }
  
-  // Add unique identifier
-  static $item_id = 0;
-  $item_id += 1;
-  $id .= '' . 'menu-item-custom-id-' . $item_id;
   // Add semi-unique class
   $class .= ' ' . preg_replace("/[^a-zA-Z0-9]/", "", strip_tags($link));
  
