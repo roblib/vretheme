@@ -196,6 +196,22 @@ function phptemplate_menu_item($link, $has_children, $menu = '', $in_active_trai
   return '<li class="'. $class .'" id="' . $id . '">'. $link . $menu ."</li>\n";
 }
 
+/**
+ * Theme override for theme_menu_item_link()
+ */
+function phptemplate_menu_item_link($link) {
+	if (empty($link['localized_options'])) {
+		$link['localized_options'] = array();
+	}
+	
+	// Add a unique identifier to the link
+	if (!empty($link['mlid'])) {
+		$link['localized_options']['attributes']['id'] = "menu-item-id-".$link['mlid'];
+	}
+	
+	return l($link['title'], $link['href'], $link['localized_options']);
+}
+
 // change default file field size from 60 to 40
 function phptemplate_file($element){
   $element['#size'] = 40;
