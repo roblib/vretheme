@@ -160,9 +160,13 @@ padding:0;
 #navbar-wrapper {
 background-color: transparent;
 display: inline-block;
-width: 98%;
+width: 100%;
 margin-left: 10px;
 margin-right: 10px;
+}
+
+#navbar-wrapper .NavbarRight .block {
+padding-right: 10px;
 }
 
 #navigation ul /* Primary and secondary links */ {

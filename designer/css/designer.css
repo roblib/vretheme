@@ -44,7 +44,11 @@ fieldset {
 
 
 #feature .block h2.title, .region-sidebar-first .block h2.title, .region-sidebar-second .block h2.title, div.admin-panel h3, #mainbottom-wrapper .block h2.title, #preface-wrapper .block h2.title, .region-content-top .block h2.title, #content-top-wrapper .block h2.title, .region-content-bottom .block h2.title, #content-bottom-wrapper .block h2.title {
-    padding: 8px 8px;
+    padding: 8px 0 8px 0;
+}
+
+#feature .block {
+    padding: 15px 25px 15px 25px ;
 }
 
 #sitelogo a img {
@@ -186,14 +190,9 @@ overflow: hidden;
 background: none repeat scroll 0 0 #fff;
 }
 
-#feature {
-background: transparent;
-}
-
 #feature .section {
-/* background: url(../images/ivfeatured.jpg) no-repeat 0 -1px #e6e6e6; */
-/* height: 217px; */ 
-background: #e6e6e6;
+background: url("../images/btmdropshdw.png") repeat-x scroll 0 -1px #ccc;
+color: #000;
 }
 
 #preface-wrapper {
@@ -599,7 +598,7 @@ float: left;
 #header #search-box .form-item input:hover,
 #header #search-block-form .form-item input:hover  {
 background: #fff url(../images/mag_glass/insearch-magglass.png) no-repeat right center;
-color: #336686;
+color: #000;
 }
 
 #header #google-cse-searchbox-form .form-item input:focus,
@@ -646,3 +645,11 @@ clear: right;
 #header #islandora-solr-simple-search-form label, #search-form label {
     display: none;
 }
+
+.NavbarRight #google-cse-searchbox-form,
+.NavbarRight #islandora-solr-simple-search-form, 
+.NavbarRight #search-form,
+.NavbarRight #search-block-form	{
+padding-top: 2px;
+}
+
