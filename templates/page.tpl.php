@@ -129,18 +129,7 @@
 <![endif]-->
 
 
-<script>
-    //http://www.vancelucas.com/blog/fixing-ie7-z-index-issues-with-jquery/
-    if($.browser.msie&&parseInt($.browser.version)<=7){
-        $(document).ready(function() {
-        var zIndexNumber = 10000;
-        $('div').each(function() {
-          $(this).css('zIndex', zIndexNumber);
-          zIndexNumber -= 10;
-        });
-      });
-    }
-</script>
+
 
 <script type="text/javascript">
   jQuery(document).ready(function($) {

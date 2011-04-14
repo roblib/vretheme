@@ -161,8 +161,6 @@ padding:0;
 background-color: transparent;
 display: inline-block;
 width: 100%;
-margin-left: 10px;
-margin-right: 10px;
 }
 
 #navbar-wrapper .NavbarRight .block {
@@ -237,7 +235,7 @@ padding-right:0px;
 }
 
 #navbar-wrapper #search-box {
-padding: 0.1em 0;
+padding: 0.2em 0;
 margin: 0;
 }
 
@@ -420,7 +418,6 @@ padding-right:15px;
 #feature-wrapper {
 padding-top: 0px;
 }
-
 
 #feature-wrapper .column {
 float: left;

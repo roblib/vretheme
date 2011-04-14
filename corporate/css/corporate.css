@@ -410,6 +410,12 @@ color: #fff;
 text-shadow: 0 1px 2px #3B3B3B;
 }
 
+/* Feature */
+
+#feature .block {
+padding-left:10px;
+padding-right:10px;
+}
 
 #preface-wrapper .block {
     padding-left: 10px;
@@ -658,6 +664,10 @@ color: #fff !important;
 
 /* superfish styling */
 
+#navigation #nav, #navigation #superfish {
+    padding-left: 10px;
+}
+
 #superfish .menu li:hover ul,
 #superfish .menu li.sfHover ul {
 top:27px;
@@ -671,11 +681,11 @@ text-transform:none;
 #nav .menu a, #nav .menu a:visited, 
 #superfish .menu a, 
 #superfish .menu a:visited {
-   padding: 5px 1em 7px 1em;
+   padding: 7px 1em 7px 1em;
 }
 
 #superfish .menu li li {
-top: -3px;
+top: -1px;
 }
 
 #superfish .menu li li li {
