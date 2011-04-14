@@ -104,11 +104,11 @@ padding-right: 10px;
 
 #topbar-wrapper {
     font-size: 90%;
-    line-height: 2em;
+    line-height: 1.3em;
 }
 
 #topbar .block {
-    margin-bottom: 0.4em;
+    margin-bottom: 0.2em;
 }
 
 #topbar ul {
@@ -354,8 +354,8 @@ border-color: #000 #686c71 #686c71 #686c71;
 }
 
 #topbar .block {
-padding-left:0px;
-padding-right:0px;
+padding-left:15px;
+padding-right:15px;
 }
 
 #topbar ul {
@@ -442,6 +442,7 @@ padding-right:10px;
 
 #topbar-wrapper {
 border-top: 0px;
+color: #ccc;
 }
 
 #topbar {
