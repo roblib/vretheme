@@ -353,10 +353,7 @@ border-color: #000 #686c71 #686c71 #686c71;
     padding-right: 10px;
 }
 
-#topbar .block {
-padding-left:15px;
-padding-right:15px;
-}
+
 
 #topbar ul {
 
@@ -411,6 +408,11 @@ text-shadow: 0 1px 2px #3B3B3B;
 }
 
 /* Feature */
+
+#topbar .block {
+padding-left:10px;
+padding-right:10px;
+}
 
 #feature .block {
 padding-left:10px;
