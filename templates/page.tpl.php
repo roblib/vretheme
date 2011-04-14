@@ -172,29 +172,32 @@
       	   <?php endif; ?>
       <div style="clear:both"></div>
     </div></div> <!-- ./topbar, /#topbar-wrapper -->
-          <?php endif; ?>
+ <?php endif; ?>
 
 <div class="section clearfix">
 
- <?php if($logo || $site_name || $site_slogan || $header_first || $header_second || $secondary_links): ?>
+<?php if($logo || $site_name || $site_slogan || $header || $header_first || $header_second || $secondary_links): ?>
     <div style="clear:both"></div>
 	<div id="headercontent-wrapper-bg">
     <div id="headercontent-wrapper" class="hf<?php print (int)(bool) $header_first + (int)(bool) $logo + (int)(bool) $site_name + (int)(bool) $site_slogan;?> hs<?php print (int)(bool) $header_second + (int)(bool) $secondary_links;?>"><div class="section">
-          <?php if($header_first || $logo || $site_name || $site_slogan): ?>
-
 <div id="headercontent-inner" class="clearfix tbl<?php print (bool) $topbar_left; ?>  tbr<?php print (bool) $topbar_right; ?>">
+
 <div class="column HeaderLeft">
 <div id="header-site-info" class="clearfix">
 <div id="header-site-info-inner">
+
       <?php if ($logo): ?>
       	<div class="<?php if ($site_name || $site_slogan) { print ' with-sitename-slogan'; } ?>" id="sitelogo" >
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
         </div>     
       <?php endif; ?>
+
       <?php if ($site_name || $site_slogan): ?>
+      
         <div id="name-and-slogan" class="clearfix">
           <?php if ($site_name): ?>
-            <?php if ($title): ?>
+      
+      		<?php if ($title): ?>
               <div id="site-name">
                 <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
               </div>
@@ -203,16 +206,22 @@
                 <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
               </h1>
             <?php endif; ?>
+            
           <?php endif; ?>
-
+      
           <?php if ($site_slogan): ?>
             <div id="site-slogan"><?php print $site_slogan; ?></div>
           <?php endif; ?>
         </div> <!-- /#name-and-slogan -->
+        
       <?php endif; ?>
+
 </div></div>  <!-- /#header-site-info, #header-site-info-inner -->
+
       <?php print $header_first; ?>      
+
 </div><!-- /#header-left -->
+
 <div class="column HeaderRight">
         <?php 
         if ($secondary_links) {
@@ -227,18 +236,16 @@
               'class' => 'element-invisible',
             )); 
 				      }
-        ?>  
+        ?>
+        <?php endif; ?>
       <?php print $header_second; ?>
 </div><!-- /#header-right -->
-      <?php endif; ?>
+
       <?php print $header; ?>
 
-</div> <!-- /#preface-wrapper -->
-
 </div> <!-- /#headercontent-inner -->
-    <?php endif; ?>
-
-    </div></div></div> <!-- /.section, /#header -->
+</div><!-- /#headerandfeature -->
+</div></div></div> <!-- /.section, /#header -->
     
       <?php if ($primary_links || $navigation): ?>
         <div id="navigation" class="nbl<?php print (int)(bool) $navigation + (int)(bool) $primary_links;?> nbr<?php print (int)(bool) $navbar_right + (int)(bool) $search_box;?>"><div class="section clearfix">
