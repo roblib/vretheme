@@ -56,13 +56,11 @@ width: 100%;
 
 #nav .menu a, #nav .menu a:visited, #superfish .menu a, #superfish .menu a:visited  {
 text-decoration:none;
-font-size:14px;
 padding-top:5px;
 }
 
 #nav li a, #superfish li a{
 text-decoration:none;
-font-size:14px;
 padding:6px 29px 0 29px;
 }
 
