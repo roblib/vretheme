@@ -727,12 +727,12 @@ padding-right:10px;
 .with-sidebar-footer #footer-content {
     margin-left: 300px;
     margin-right: -960px;
-    padding-left: 20px;
+    padding-left: 0px;
     width: 650px;
 }
 
 #footer-content {
-margin-top: 15px;
+margin-top: 0px;
 float:left;
 margin-left:0;
 margin-right:-960px;
@@ -833,7 +833,7 @@ padding-right:10px;
     float: left;
     height: 80%;
     margin: 15px -650px 15px 0;
-    padding: 0;
+    padding: 0 0 0 20px;
     width: 290px;
 }
 
