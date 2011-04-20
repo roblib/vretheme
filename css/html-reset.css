@@ -676,7 +676,7 @@ color: #000;
  */
 table {
   border-collapse: collapse;
-  /* width: 100%; */ /* Prevent cramped-looking tables */
+  width: 100%; /* Prevent cramped-looking tables */
 }
 
 th,
