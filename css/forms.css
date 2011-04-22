@@ -242,12 +242,60 @@ Licensed under Unlicense
 
 .button,
 .form-submit,
-.teaser-button { 
+.teaser-button,
+.content-overview-links a,
+.content-overview-links a:link,
+.content-overview-links a:visited,
+.container-inline a,
+.container-inline a:link,
+.container-inline a:visited { 
     position: relative; 
     overflow: visible; 
     display: inline-block; 
-    padding: 0.4em 0.8em; 
-    border: 1px solid #d4d4d4; 
+    margin: 0;
+    text-decoration: none; 
+    text-shadow: 1px 1px 0 #fff; 
+    font-size: 11px;
+    color: #333; 
+    white-space: nowrap; 
+    cursor: pointer; 
+    outline: none; 
+    border: 1px solid #bbb; 
+    background-color: #ccc;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
+    background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
+    background-image: -o-linear-gradient(#f2f2f2, #dddddd);
+    background-image: linear-gradient(#f2f2f2, #dddddd);
+    -webkit-background-clip: padding;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    -webkit-border-radius: 0.2em; 
+    -moz-border-radius: 0.2em; 
+    border-radius: 0.2em; 
+    line-height: 1.3em;
+    /* IE hacks */
+    zoom: 1; 
+    *display: inline; 
+}
+
+.button,
+.teaser-button,
+.form-submit,
+.content-overview-links a,
+.content-overview-links a:link,
+.content-overview-links a:visited,
+.container-inline a,
+.container-inline a:link,
+.container-inline a:visited {
+    padding: 0.33em 1em;
+}
+
+ul.primary .tab { 
+    position: relative; 
+    overflow: visible; 
+    display: inline-block; 
+    padding: 0.55em 1.3em 0.3em;
+    border: 1px solid #cccccc;
     margin: 0;
     text-decoration: none; 
     text-shadow: 1px 1px 0 #fff; 
@@ -257,35 +305,10 @@ Licensed under Unlicense
     cursor: pointer; 
     outline: none; 
     background-color: #ececec;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#ececec));
-    background-image: -moz-linear-gradient(#f4f4f4, #ececec);
-    background-image: -o-linear-gradient(#f4f4f4, #ececec);
-    background-image: linear-gradient(#f4f4f4, #ececec);
-    -webkit-background-clip: padding;
-    -moz-background-clip: padding;
-    background-clip: padding-box;
-    -webkit-border-radius: 0.2em; 
-    -moz-border-radius: 0.2em; 
-    border-radius: 0.2em; 
-    /* IE hacks */
-    zoom: 1; 
-    *display: inline; 
-}
-
-.tab { 
-    position: relative; 
-    overflow: visible; 
-    display: inline-block; 
-    padding: 0.5em 1em; 
-    border: 0px solid #d4d4d4; 
-    margin: 0;
-    text-decoration: none; 
-    text-shadow: 1px 1px 0 #fff; 
-    font:11px/normal sans-serif; 
-    color: #333; 
-    white-space: nowrap; 
-    cursor: pointer; 
-    outline: none; 
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
+    background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
+    background-image: -o-linear-gradient(#f2f2f2, #dddddd);
+    background-image: linear-gradient(#f2f2f2, #dddddd);    
     -webkit-background-clip: padding;
     -moz-background-clip: padding;
     background-clip: padding-box;
@@ -295,6 +318,18 @@ Licensed under Unlicense
     /* IE hacks */
     zoom: 1; 
     *display: inline; 
+    -webkit-border-top-right-radius: 0.2em; 
+    -webkit-border-bottom-right-radius: 0; 
+    -moz-border-radius-topright: 0.2em; 
+    -moz-border-radius-bottomright: 0; 
+    border-top-right-radius: 0.2em; 
+    border-bottom-right-radius: 0; 
+    -webkit-border-top-left-radius: 0.2em; 
+    -webkit-border-bottom-left-radius: 0; 
+    -moz-border-radius-topleft: 0.2em; 
+    -moz-border-radius-bottomleft: 0; 
+    border-top-left-radius: 0.2em; 
+    border-bottom-left-radius: 0;      
 }
 
 .button:hover,
@@ -305,7 +340,13 @@ Licensed under Unlicense
 .form-submit:active,
 .teaser-button:hover,
 .teaser-button:focus,
-.teaser-button:active
+.teaser-button:active,
+.container-inline a:hover,
+.container-inline a:focus,
+.container-inline a:active,
+.content-overview-links a:hover,
+.content-overview-links a:focus,
+.content-overview-links a:active
 {
     border-color: #3072b3;
     border-bottom-color: #2a65a0;
@@ -319,14 +360,15 @@ Licensed under Unlicense
     background-image: linear-gradient(#599bdc, #3072b3);
 }
 
-.tab:hover,
-.tab:focus,
-.tab:active
+ul.primary .tab:hover,
+ul.primary .tab:focus,
+ul.primary .tab:active
 {
-    border-color: #3072b3;
     border-bottom-color: #2a65a0;
     text-decoration: none; 
     text-shadow: -1px -1px 0 #fff; 
+    border-top: 1px solid #cccccc; 
+    border-bottom: 0px solid #cccccc; 
     color: #333; 
     background-color: #e7e7e7;
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f7f7f7), to(#e7e7e7));
@@ -341,7 +383,11 @@ Licensed under Unlicense
 .form-submit:active,
 .form-submit.active,
 .teaser-button:active,
-.teaser-button.active {
+.teaser-button.active,
+.container-inline a:active,
+.container-inline a.active,
+.content-overview-links a:active,
+.content-overview-links a.active {
     border-color: #2a65a0;
     border-bottom-color: #3884CF;
     text-shadow: -1px -1px 0 rgba(0,0,0,0.3); 
@@ -353,17 +399,18 @@ Licensed under Unlicense
     background-image: linear-gradient(#3072b3, #599bdc);
 }
 
-li:active .tab,
-li.active .tab {
-    border-color: #2a65a0;
-    border-bottom-color: #3884CF;
+ul.primary li:active .tab,
+ul.primary li.active .tab {
+    border-bottom-color: #cccccc;
     text-shadow: -1px -1px 0 #fff; 
+    border-top: 1px solid #cccccc; 
+    border-bottom: 1px solid #ffffff; 
     color: #333; 
-    background-color: #3072b3;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e7e7e7));
-    background-image: -moz-linear-gradient(#ffffff, #e7e7e7);
-    background-image: -o-linear-gradient(#ffffff, #e7e7e7);
-    background-image: linear-gradient(#ffffff, #e7e7e7);
+    background-color: #ffffff;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ffffff));
+    background-image: -moz-linear-gradient(#ffffff, #ffffff);
+    background-image: -o-linear-gradient(#ffffff, #ffffff);
+    background-image: linear-gradient(#ffffff, #ffffff);
 }
 
 
@@ -376,9 +423,9 @@ li.active .tab {
 }
 
 ul.primary {
-    margin: 0;
+    margin: 0 0 0 0;
     padding: 0;
-    border-bottom: 0;
+    border-bottom: 1px solid #cccccc;
 }
 
 ul.primary li a {
@@ -409,10 +456,10 @@ div.teaser-button-wrapper {
 
 
 #search-form .form-submit { 
-background-image: url(../images/search-darkgrey.png),-webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#ececec));
-background-image: url(../images/search-darkgrey.png),-moz-linear-gradient(#f4f4f4, #ececec);
-background-image: url(../images/search-darkgrey.png),-o-linear-gradient(#f4f4f4, #ececec);
-background-image: url(../images/search-darkgrey.png),linear-gradient(#f4f4f4, #ececec);
+background-image: url(../images/search-darkgrey.png),-webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
+background-image: url(../images/search-darkgrey.png),-moz-linear-gradient(#f2f2f2, #dddddd);
+background-image: url(../images/search-darkgrey.png),-o-linear-gradient(#f2f2f2, #dddddd);
+background-image: url(../images/search-darkgrey.png),linear-gradient(#f2f2f2, #dddddd);
 background-position: 0;
 padding-left: 20px;
 }
@@ -442,7 +489,7 @@ padding-left: 20px;
 
 /* ............................................................................................................. Standard */
 
-.tabs ul{
+.group ul{
     position: relative; 
     overflow: visible; 
     padding: 0em; 
@@ -467,50 +514,75 @@ padding-left: 20px;
     *display: inline; 
 }
 
+.tabs {
+margin-top: 0.5em;
+margin-bottom: 0.5em;
+}
 
-
-.tabs li {
+ul.primary .tabs li {
     float: left;
     padding: 0;
     margin: 0;
 }
 
-.tabs .tab {
+.tabs ul.primary .tab {
     float: left;
-    margin-left: -2px; 
+    margin-left: 3px; 
+    position: relative;
+    top: 1px;
 }
 
-.tabs > .tab:not(:first-child):not(:last-child),
-.tabs li:not(:first-child):not(:last-child) .tab { 
+
+.tabs > ul.primary .tab:active {
+	background-color: #fff;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e7e7e7), to(#f7f7f7));
+    background-image: -moz-linear-gradient(#e7e7e7, #f7f7f7);
+    background-image: -o-linear-gradient(#e7e7e7, #f7f7f7);
+    background-image: linear-gradient(#e7e7e7, #f7f7f7);
+    border-bottom: 1px solid #bbbbbb; 
+}
+
+.tabs > ul.primary .tab:not(:first-child):not(:last-child),
+.tabs li:not(:first-child):not(:last-child) ul.primary .tab { 
     -webkit-border-radius: 0; 
     -moz-border-radius: 0; 
     border-radius: 0; 
 }
 
 .tabs > .tab:first-child,
-.tabs li:first-child .tab { 
-    margin-left: 0; 
-    -webkit-border-top-right-radius: 0; 
+.tabs.primary li:first-child .tab { 
+    margin-left: 3px; 
+    -webkit-border-top-right-radius: 0.2em; 
     -webkit-border-bottom-right-radius: 0; 
-    -moz-border-radius-topright: 0; 
+    -moz-border-radius-topright: 0.2em; 
     -moz-border-radius-bottomright: 0; 
-    border-top-right-radius: 0; 
+    border-top-right-radius: 0.2em; 
     border-bottom-right-radius: 0; 
     -webkit-border-top-left-radius: 0.2em; 
-    -webkit-border-bottom-left-radius: 0.2em; 
+    -webkit-border-bottom-left-radius: 0; 
     -moz-border-radius-topleft: 0.2em; 
-    -moz-border-radius-bottomleft: 0.2em; 
+    -moz-border-radius-bottomleft: 0; 
     border-top-left-radius: 0.2em; 
-    border-bottom-left-radius: 0.2em;     
+    border-bottom-left-radius: 0;  
+    border-right: 1px solid #cccccc;     
+    border-left: 1px solid #cccccc; 
 }
 
 .tabs > .tab:last-child,
-.tabs li:last-child > .tab { 
-    -webkit-border-top-left-radius: 0; 
-    -webkit-border-bottom-left-radius: 0; 
-    -moz-border-radius-topleft: 0; 
+.tabs.primary li:last-child .tab { 
+    -webkit-border-top-right-radius: 0.2em; 
+    -webkit-border-bottom-right-radius: 0; 
+    -moz-border-radius-topright: 0.2em; 
+    -moz-border-radius-bottomright: 0; 
+    border-top-right-radius: 0.2em; 
+    border-bottom-right-radius: 0; 
+    -webkit-border-top-left-radius: 0em; 
+    -webkit-border-bottom-left-radius: 0em; 
+    -moz-border-radius-topleft: 0.2em; 
     -moz-border-radius-bottomleft: 0; 
-    border-top-left-radius: 0; 
-    border-bottom-left-radius: 0; 
+    border-top-left-radius: 0.2em; 
+    border-bottom-left-radius: 0em;   
+    border-right: 1px solid #cccccc; 
+    border-left: 1px solid #cccccc;
 }
 
