@@ -296,7 +296,6 @@ ul.primary .tab {
     display: inline-block; 
     padding: 0.55em 1.3em 0.3em;
     border: 1px solid #cccccc;
-    margin: 0;
     text-decoration: none; 
     text-shadow: 1px 1px 0 #fff; 
     font:11px/normal sans-serif; 
@@ -312,9 +311,6 @@ ul.primary .tab {
     -webkit-background-clip: padding;
     -moz-background-clip: padding;
     background-clip: padding-box;
-    -webkit-border-radius: 0em; 
-    -moz-border-radius: 0em; 
-    border-radius: 0em; 
     /* IE hacks */
     zoom: 1; 
     *display: inline; 
@@ -422,10 +418,18 @@ ul.primary li.active .tab {
 	border: none;
 }
 
+div.tabs {
+   width: 100%;
+}
+
 ul.primary {
-    margin: 0 0 0 0;
+    margin: 0;
     padding: 0;
-    border-bottom: 1px solid #cccccc;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #ccc;
+    display: block;
+    width: 100%;
 }
 
 ul.primary li a {
@@ -434,6 +438,7 @@ ul.primary li a {
     margin-right: 0em;
     padding: 0em;
     text-decoration: none;
+
 }
 
 ul.primary li.active a {
@@ -525,12 +530,15 @@ ul.primary .tabs li {
     margin: 0;
 }
 
+
 .tabs ul.primary .tab {
     float: left;
-    margin-left: 3px; 
     position: relative;
     top: 1px;
+    margin-left: 3px;
 }
+
+
 
 
 .tabs > ul.primary .tab:active {
@@ -539,19 +547,18 @@ ul.primary .tabs li {
     background-image: -moz-linear-gradient(#e7e7e7, #f7f7f7);
     background-image: -o-linear-gradient(#e7e7e7, #f7f7f7);
     background-image: linear-gradient(#e7e7e7, #f7f7f7);
-    border-bottom: 1px solid #ccc; 
+    border-bottom: 1px solid #ccc;     
 }
 
 .tabs > ul.primary .tab:not(:first-child):not(:last-child),
 .tabs li:not(:first-child):not(:last-child) ul.primary .tab { 
     -webkit-border-radius: 0; 
     -moz-border-radius: 0; 
-    border-radius: 0; 
+    border-radius: 0;   
 }
 
 .tabs > .tab:first-child,
 .tabs.primary li:first-child .tab { 
-    margin-left: 3px; 
     -webkit-border-top-right-radius: 0.2em; 
     -webkit-border-bottom-right-radius: 0; 
     -moz-border-radius-topright: 0.2em; 
@@ -586,3 +593,15 @@ ul.primary .tabs li {
     border-left: 1px solid #cccccc;
 }
 
+#main-wrapper .form-text, #main-wrapper textarea {  
+    padding: 3px;  
+    border: solid 1px #cccccc;  
+    outline: 0;  
+    font: normal 13px/100% Verdana, Tahoma, sans-serif;  
+    background: #FFFFFF;  
+    }  
+  
+#main-wrapper .form-text:hover, #main-wrapper textarea:hover,  
+#main-wrapper .form-text:focus, #main-wrapper textarea:focus {  
+    border-color: #C9C9C9;  
+    }  
