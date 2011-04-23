@@ -104,11 +104,11 @@ padding-right: 10px;
 
 #topbar-wrapper {
     font-size: 90%;
-    line-height: 2em;
+    line-height: 1.3em;
 }
 
 #topbar .block {
-    margin-bottom: 0.4em;
+    margin-bottom: 0.2em;
 }
 
 #topbar ul {
@@ -353,10 +353,7 @@ border-color: #000 #686c71 #686c71 #686c71;
     padding-right: 10px;
 }
 
-#topbar .block {
-padding-left:0px;
-padding-right:0px;
-}
+
 
 #topbar ul {
 
@@ -410,6 +407,17 @@ color: #fff;
 text-shadow: 0 1px 2px #3B3B3B;
 }
 
+/* Feature */
+
+#topbar .block {
+padding-left:10px;
+padding-right:10px;
+}
+
+#feature .block {
+padding-left:10px;
+padding-right:10px;
+}
 
 #preface-wrapper .block {
     padding-left: 10px;
@@ -436,6 +444,7 @@ text-shadow: 0 1px 2px #3B3B3B;
 
 #topbar-wrapper {
 border-top: 0px;
+color: #ccc;
 }
 
 #topbar {
@@ -658,6 +667,10 @@ color: #fff !important;
 
 /* superfish styling */
 
+#navigation #nav, #navigation #superfish {
+    padding-left: 10px;
+}
+
 #superfish .menu li:hover ul,
 #superfish .menu li.sfHover ul {
 top:27px;
@@ -671,7 +684,7 @@ text-transform:none;
 #nav .menu a, #nav .menu a:visited, 
 #superfish .menu a, 
 #superfish .menu a:visited {
-   padding: 5px 1em 7px 1em;
+   padding: 5px 1em;
 }
 
 #superfish .menu li li {
@@ -713,7 +726,7 @@ a:focus > .sf-sub-indicator, a:hover > .sf-sub-indicator, a:active > .sf-sub-ind
 
 #header #google-cse-searchbox-form .form-item,
 #header #islandora-solr-simple-search-form .form-item {
-margin: 0px;
+margin: 2px 0 0;
 float: left;
 }
   

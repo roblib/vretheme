@@ -21,13 +21,13 @@
  *   this, we have to override the theme function. You have to first find the
  *   theme function that generates the output, and then "catch" it and modify it
  *   here. The easiest way to do it is to copy the original function in its
- *   entirety and paste it here, changing the prefix from theme_ to vretheme_.
+ *   entirety and paste it here, changing the prefix from theme_ to starterkit_.
  *   For example:
  *
  *     original: theme_breadcrumb()
- *     theme override: vretheme_breadcrumb()
+ *     theme override: starterkit_breadcrumb()
  *
- *   where vretheme is the name of your sub-theme. For example, the
+ *   where starterkit is the name of your sub-theme. For example, the
  *   zen_classic theme would define a zen_classic_breadcrumb() function.
  *
  *   If you would like to override any of the theme functions used in Zen core,
@@ -63,31 +63,11 @@
  */
 
 
-// Optionally add CSS files for the user-selected color design.
-
-$design = theme_get_setting('corporate_design');
-switch ($design) {
-  case '0':
-    // Default Grey
-    break;
-  case '1':
-    drupal_add_css(drupal_get_path('theme', 'corporate') . '/colors/blue.css', 'theme', 'all');
-    break;    
-  case '2':
-    drupal_add_css(drupal_get_path('theme', 'corporate') . '/colors/green.css', 'theme', 'all');
-    break;
-  case '3':
-    drupal_add_css(drupal_get_path('theme', 'corporate') . '/colors/orange.css', 'theme', 'all');
-    break;
-}
-
-
-
 /**
  * Implementation of HOOK_theme().
  */
-function vretheme_theme(&$existing, $type, $theme, $path) {
-  $hooks = zen_theme($existing, $type, $theme, $path);
+function starterkit_theme(&$existing, $type, $theme, $path) {
+  $hooks = designer_theme($existing, $type, $theme, $path);
   // Add your theme hooks like this:
   /*
   $hooks['hook_name_here'] = array( // Details go here );
@@ -105,7 +85,7 @@ function vretheme_theme(&$existing, $type, $theme, $path) {
  *   The name of the template being rendered (name of the .tpl.php file.)
  */
 /* -- Delete this line if you want to use this function
-function vretheme_preprocess(&$vars, $hook) {
+function starterkit_preprocess(&$vars, $hook) {
   $vars['sample_variable'] = t('Lorem ipsum.');
 }
 // */
@@ -119,7 +99,7 @@ function vretheme_preprocess(&$vars, $hook) {
  *   The name of the template being rendered ("page" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function vretheme_preprocess_page(&$vars, $hook) {
+function starterkit_preprocess_page(&$vars, $hook) {
   $vars['sample_variable'] = t('Lorem ipsum.');
 }
 // */
@@ -133,11 +113,11 @@ function vretheme_preprocess_page(&$vars, $hook) {
  *   The name of the template being rendered ("node" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function vretheme_preprocess_node(&$vars, $hook) {
+function starterkit_preprocess_node(&$vars, $hook) {
   $vars['sample_variable'] = t('Lorem ipsum.');
 
   // Optionally, run node-type-specific preprocess functions, like
-  // vretheme_preprocess_node_page() or vretheme_preprocess_node_story().
+  // starterkit_preprocess_node_page() or starterkit_preprocess_node_story().
   $function = __FUNCTION__ . '_' . $vars['node']->type;
   if (function_exists($function)) {
     $function($vars, $hook);
@@ -154,7 +134,7 @@ function vretheme_preprocess_node(&$vars, $hook) {
  *   The name of the template being rendered ("comment" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function vretheme_preprocess_comment(&$vars, $hook) {
+function starterkit_preprocess_comment(&$vars, $hook) {
   $vars['sample_variable'] = t('Lorem ipsum.');
 }
 // */
@@ -168,48 +148,9 @@ function vretheme_preprocess_comment(&$vars, $hook) {
  *   The name of the template being rendered ("block" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function vretheme_preprocess_block(&$vars, $hook) {
+function starterkit_preprocess_block(&$vars, $hook) {
   $vars['sample_variable'] = t('Lorem ipsum.');
 }
 // */
 
 
-/**
-* Theme override for theme_menu_item()
-*/
-function phptemplate_menu_item($link, $has_children, $menu = '', $in_active_trail = FALSE, $extra_class = NULL) {
-  $class = ($menu ? 'expanded' : ($has_children ? 'collapsed' : 'leaf'));
-  if (!empty($extra_class)) {
-    $class .= ' '. $extra_class;
-  }
-  if ($in_active_trail) {
-    $class .= ' active-trail';
-  }
- 
-  // Add semi-unique class
-  $class .= ' ' . preg_replace("/[^a-zA-Z0-9]/", "", strip_tags($link));
- 
-  return '<li class="'. $class .'" id="' . $id . '">'. $link . $menu ."</li>\n";
-}
-
-/**
- * Theme override for theme_menu_item_link()
- */
-function phptemplate_menu_item_link($link) {
-	if (empty($link['localized_options'])) {
-		$link['localized_options'] = array();
-	}
-	
-	// Add a unique identifier to the link
-	if (!empty($link['mlid'])) {
-		$link['localized_options']['attributes']['id'] = "menu-item-id-".$link['mlid'];
-	}
-	
-	return l($link['title'], $link['href'], $link['localized_options']);
-}
-
-// change default file field size from 60 to 40
-function phptemplate_file($element){
-  $element['#size'] = 40;
-  return theme_file($element);
-}

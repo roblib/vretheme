@@ -150,7 +150,8 @@ border-bottom: 1px dotted #dededf;
 }
 
 #feature .block {
-padding: 15px 10px 10px;
+padding-top: 15px;
+padding-bottom: 10px;
 }
 
 .region-sidebar-first .block .content, .region-sidebar-second .block .content {
