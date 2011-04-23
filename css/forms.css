@@ -348,16 +348,37 @@ ul.primary .tab {
 .content-overview-links a:focus,
 .content-overview-links a:active
 {
-    border-color: #3072b3;
-    border-bottom-color: #2a65a0;
+    border-color: #516A89;
+    border-bottom-color: #465C77;
     text-decoration: none; 
     text-shadow: -1px -1px 0 rgba(0,0,0,0.3); 
     color: #fff; 
-    background-color: #3072b3;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#599bdc), to(#3072b3));
-    background-image: -moz-linear-gradient(#599bdc, #3072b3);
-    background-image: -o-linear-gradient(#599bdc, #3072b3);
-    background-image: linear-gradient(#599bdc, #3072b3);
+    background-color: #5c6da3;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8DABF4), to(#516A89));
+    background-image: -moz-linear-gradient(#8DABF4, #516A89);
+    background-image: -o-linear-gradient(#8DABF4, #516A89);
+    background-image: linear-gradient(#8DABF4, #516A89);
+}
+
+.button:active,
+.button.active,
+.form-submit:active,
+.form-submit.active,
+.teaser-button:active,
+.teaser-button.active,
+.container-inline a:active,
+.container-inline a.active,
+.content-overview-links a:active,
+.content-overview-links a.active {
+    border-color: #465C77;
+    border-bottom-color: #516A89;
+    text-shadow: -1px -1px 0 rgba(0,0,0,0.3); 
+    color: #fff; 
+    background-color: #5c6da3;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#516A89), to(#8DABF4));
+    background-image: -moz-linear-gradient(#516A89, #8DABF4);
+    background-image: -o-linear-gradient(#516A89, #8DABF4);
+    background-image: linear-gradient(#516A89, #8DABF4);
 }
 
 ul.primary .tab:hover,
@@ -377,27 +398,6 @@ ul.primary .tab:active
     background-image: linear-gradient(#f7f7f7, #e7e7e7);
 }
 
-
-.button:active,
-.button.active,
-.form-submit:active,
-.form-submit.active,
-.teaser-button:active,
-.teaser-button.active,
-.container-inline a:active,
-.container-inline a.active,
-.content-overview-links a:active,
-.content-overview-links a.active {
-    border-color: #2a65a0;
-    border-bottom-color: #3884CF;
-    text-shadow: -1px -1px 0 rgba(0,0,0,0.3); 
-    color: #fff; 
-    background-color: #3072b3;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3072b3), to(#599bdc));
-    background-image: -moz-linear-gradient(#3072b3, #599bdc);
-    background-image: -o-linear-gradient(#3072b3, #599bdc);
-    background-image: linear-gradient(#3072b3, #599bdc);
-}
 
 ul.primary li:active .tab,
 ul.primary li.active .tab {
