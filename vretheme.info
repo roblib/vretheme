@@ -67,7 +67,7 @@ scripts[] = js/jquery_example/jquery.example.min.js
 scripts[] = js/searchtext.js  
 scripts[] = js/superfish.js
 scripts[] = js/hoverIntent.js
-;scripts[if IE 6] = js/jquery.pngFix.js
+; scripts[if IE 6] = js/jquery.pngFix.js
 
   ; The regions defined in Zen's default page.tpl.php file.  The name in
   ; brackets is the name of the variable in the page.tpl.php file, (e.g.

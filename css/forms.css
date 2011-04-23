@@ -276,21 +276,11 @@ Licensed under Unlicense
     /* IE hacks */
     zoom: 1; 
     *display: inline; 
-}
-
-.button,
-.teaser-button,
-.form-submit,
-.content-overview-links a,
-.content-overview-links a:link,
-.content-overview-links a:visited,
-.container-inline a,
-.container-inline a:link,
-.container-inline a:visited {
     padding: 0.33em 1em;
+    
 }
 
-ul.primary .tab { 
+.tabs ul.primary  a { 
     position: relative; 
     overflow: visible; 
     display: inline-block; 
@@ -307,25 +297,25 @@ ul.primary .tab {
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
     background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
     background-image: -o-linear-gradient(#f2f2f2, #dddddd);
-    background-image: linear-gradient(#f2f2f2, #dddddd);    
-    -webkit-background-clip: padding;
-    -moz-background-clip: padding;
+    background-image: linear-gradient(#f2f2f2, #dddddd);  
+    -webkit-border-top-right-radius: 0.2em; 
+    -webkit-border-bottom-right-radius: 0; 
+    -webkit-border-top-left-radius: 0.2em; 
+    -webkit-border-bottom-left-radius: 0;  
+    -webkit-background-clip: padding;    
+    -moz-border-radius-topright: 0.2em; 
+    -moz-border-radius-bottomright: 0; 
+    -moz-border-radius-topleft: 0.2em; 
+    -moz-border-radius-bottomleft: 0; 
+    -moz-background-clip: padding;    
+    border-top-right-radius: 0.2em; 
+    border-bottom-right-radius: 0; 
+    border-top-left-radius: 0.2em; 
+    border-bottom-left-radius: 0;    
     background-clip: padding-box;
     /* IE hacks */
     zoom: 1; 
-    *display: inline; 
-    -webkit-border-top-right-radius: 0.2em; 
-    -webkit-border-bottom-right-radius: 0; 
-    -moz-border-radius-topright: 0.2em; 
-    -moz-border-radius-bottomright: 0; 
-    border-top-right-radius: 0.2em; 
-    border-bottom-right-radius: 0; 
-    -webkit-border-top-left-radius: 0.2em; 
-    -webkit-border-bottom-left-radius: 0; 
-    -moz-border-radius-topleft: 0.2em; 
-    -moz-border-radius-bottomleft: 0; 
-    border-top-left-radius: 0.2em; 
-    border-bottom-left-radius: 0;      
+    *display: inline;   
 }
 
 .button:hover,
@@ -377,9 +367,9 @@ ul.primary .tab {
     background-image: linear-gradient(#516A89, #8DABF4);
 }
 
-ul.primary .tab:hover,
-ul.primary .tab:focus,
-ul.primary .tab:active
+.tabs ul.primary  a:hover,
+.tabs ul.primary  a:focus,
+.tabs ul.primary  a:active
 {
     border-bottom-color: #2a65a0;
     text-decoration: none; 
@@ -395,8 +385,11 @@ ul.primary .tab:active
 }
 
 
-ul.primary li:active .tab,
-ul.primary li.active .tab {
+ul.primary li:active a,
+ul.primary li.active a,
+ul.primary li.active a:hover,
+ul.primary li.active a:focus,
+ul.primary li.active a:active {
     border-bottom-color: #cccccc;
     text-shadow: -1px -1px 0 #fff; 
     border-top: 1px solid #cccccc; 
@@ -438,17 +431,12 @@ ul.primary li a {
     margin-right: 0em;
     padding: 0em;
     text-decoration: none;
-
-}
-
-ul.primary li.active a {
-    border-width: 0px;
 }
 
 /* correct teaser-button margin so it does not fall into text area */
 div.teaser-button-wrapper {
     margin-top: -5px;
-    padding-right: 4.5%;
+    padding-right: 0;
 }
 
 /* pulls form submit buttons closer together */
@@ -531,18 +519,15 @@ ul.primary .tabs li {
 }
 
 
-.tabs ul.primary .tab {
+.tabs ul.primary  a {
     float: left;
     position: relative;
     top: 1px;
     margin-left: 3px;
 }
 
-
-
-
-.tabs > ul.primary .tab:active {
-	background-color: #fff;
+.tabs > ul.primary a:active {
+	background-color: #EFEFEF;
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e7e7e7), to(#f7f7f7));
     background-image: -moz-linear-gradient(#e7e7e7, #f7f7f7);
     background-image: -o-linear-gradient(#e7e7e7, #f7f7f7);
@@ -550,15 +535,15 @@ ul.primary .tabs li {
     border-bottom: 1px solid #ccc;     
 }
 
-.tabs > ul.primary .tab:not(:first-child):not(:last-child),
-.tabs li:not(:first-child):not(:last-child) ul.primary .tab { 
+.tabs > ul.primary a:not(:first-child):not(:last-child),
+.tabs li:not(:first-child):not(:last-child) ul.primary a { 
     -webkit-border-radius: 0; 
     -moz-border-radius: 0; 
     border-radius: 0;   
 }
 
-.tabs > .tab:first-child,
-.tabs.primary li:first-child .tab { 
+.tabs > a:first-child,
+.tabs.primary li:first-child a { 
     -webkit-border-top-right-radius: 0.2em; 
     -webkit-border-bottom-right-radius: 0; 
     -moz-border-radius-topright: 0.2em; 
@@ -575,8 +560,8 @@ ul.primary .tabs li {
     border-left: 1px solid #cccccc; 
 }
 
-.tabs > .tab:last-child,
-.tabs.primary li:last-child .tab { 
+.tabs > a:last-child,
+.tabs.primary li:last-child a { 
     -webkit-border-top-right-radius: 0.2em; 
     -webkit-border-bottom-right-radius: 0; 
     -moz-border-radius-topright: 0.2em; 
@@ -605,3 +590,7 @@ ul.primary .tabs li {
 #main-wrapper .form-text:focus, #main-wrapper textarea:focus {  
     border-color: #C9C9C9;  
     }  
+    
+.resizable-textarea {
+    width: 98%;
+}    
