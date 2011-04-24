@@ -149,7 +149,7 @@ padding-right:0px;
 #navbar-wrapper.nbl2.nbr2 .NavbarLeft,
 #navbar-wrapper.nbl3.nbr2 .NavbarLeft,
 #navbar-wrapper.nbl4.nbr2 .NavbarLeft{
-width: 72.65%;
+width: 69%;
 margin-right: 1%;
 margin-left: 1%;
 }
@@ -169,10 +169,10 @@ padding-top: 0;
 padding-bottom: 0;
 }
 
-#navbar-wrapper.nbl41.nbr0 .column,
-#navbar-wrapper.nbl42.nbr0 .column,
-#navbar-wrapper.nbl43.nbr0 .column,
-#navbar-wrapper.nbl44.nbr0 .column {
+#navbar-wrapper.nbl1.nbr0 .column,
+#navbar-wrapper.nbl2.nbr0 .column,
+#navbar-wrapper.nbl3.nbr0 .column,
+#navbar-wrapper.nbl4.nbr0 .column {
 width: 98%;
 margin-right: 1%;
 margin-left: 1%;
@@ -225,7 +225,7 @@ padding-bottom: 5px;
 }
 
 #preface-wrapper.in4 .column {
-width: 21.5%;
+width: 21%;
 margin-right: 1%;
 margin-left: 1%;
 padding-top: 5px;
@@ -438,7 +438,7 @@ padding-bottom: 5px;
 }
 
 #mainbottom-wrapper.in4 .column {
-width: 21.5%;
+width: 21%;
 margin-right: 1%;
 margin-left: 1%;
 padding-top: 5px;

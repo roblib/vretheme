@@ -255,7 +255,7 @@ Licensed under Unlicense
     margin: 0;
     text-decoration: none; 
     text-shadow: 1px 1px 0 #fff; 
-    font-size: 11px;
+    font-size: 95%;
     color: #333; 
     white-space: nowrap; 
     cursor: pointer; 
@@ -272,12 +272,15 @@ Licensed under Unlicense
     -webkit-border-radius: 0.2em; 
     -moz-border-radius: 0.2em; 
     border-radius: 0.2em; 
-
+	line-height: 1.25em;
     /* IE hacks */
     zoom: 1; 
     *display: inline; 
     padding: 0.33em 1em;
-    
+    }
+
+.container-inline {
+line-height: 1.25em;
 }
 
 .tabs ul.primary  a { 
@@ -288,7 +291,7 @@ Licensed under Unlicense
     border: 1px solid #cccccc;
     text-decoration: none; 
     text-shadow: 1px 1px 0 #fff; 
-    font:11px/normal sans-serif; 
+    font-size: 95%;
     color: #333; 
     white-space: nowrap; 
     cursor: pointer; 
@@ -389,8 +392,8 @@ ul.primary li:active a,
 ul.primary li.active a,
 ul.primary li.active a:hover,
 ul.primary li.active a:focus,
-ul.primary li.active a:active {
-    border-bottom-color: #cccccc;
+ul.primary li.active a:active,
+ul.primary li.active a.active {
     text-shadow: -1px -1px 0 #fff; 
     border-top: 1px solid #cccccc; 
     border-bottom: 1px solid #ffffff; 
@@ -460,20 +463,20 @@ padding-left: 20px;
 #search-form .form-submit:hover,
 #search-form .form-submit:focus,
 #search-form .form-submit:active { 
-background-image: url(../images/search-white.png),-webkit-gradient(linear, 0 0, 0 100%, from(#599bdc), to(#3072b3));
-background-image: url(../images/search-white.png),-moz-linear-gradient(#599bdc, #3072b3);
-background-image: url(../images/search-white.png),-o-linear-gradient(#599bdc, #3072b3);
-background-image: url(../images/search-white.png),linear-gradient(#599bdc, #3072b3);
+background-image: url(../images/search-white.png),-webkit-gradient(linear, 0 0, 0 100%, from(#8DABF4), to(#516A89));
+background-image: url(../images/search-white.png),-moz-linear-gradient(#8DABF4, #516A89);
+background-image: url(../images/search-white.png),-o-linear-gradient(#8DABF4, #516A89);
+background-image: url(../images/search-white.png),linear-gradient(#8DABF4, #516A89);
 background-position: 0;
 padding-left: 20px;
 }
 
 #search-form .form-submit:active,
 #search-form .form-submit.active {
-background-image: url(../images/search-white.png),-webkit-gradient(linear, 0 0, 0 100%, from(#3072b3), to(#599bdc));
-background-image: url(../images/search-white.png),-moz-linear-gradient(#3072b3, #599bdc);
-background-image: url(../images/search-white.png),-o-linear-gradient(#3072b3, #599bdc);
-background-image: url(../images/search-white.png),linear-gradient(#3072b3, #599bdc);
+background-image: url(../images/search-white.png),-webkit-gradient(linear, 0 0, 0 100%, from(#516A89), to(#8DABF4));
+background-image: url(../images/search-white.png),-moz-linear-gradient(#516A89, #8DABF4);
+background-image: url(../images/search-white.png),-o-linear-gradient(#516A89, #8DABF4);
+background-image: url(../images/search-white.png),linear-gradient(#516A89, #8DABF4);
 background-position: 0;
 padding-left: 20px;
 }

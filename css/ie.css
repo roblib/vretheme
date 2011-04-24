@@ -25,6 +25,13 @@ ul.secondary li a .tab {
   cursor: pointer;
 }
 
+#navbar-wrapper ul li {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}    
+    
+
 /*
  * Drupal nodes
  */
@@ -60,19 +67,23 @@ min-width: 13em;
 word-wrap: break-word;
 }
 
-.block-search input.form-submit, 
-#islandora-solr-simple-search-form input.form-submit,
-#search-form input.form-submit,
-#search-block-form input.form-submit{
-width: 24px;
-font-size: 0; 
-color: #875420;
-text-align: right;
+#search-form .form-submit { 
+background-image: url(../images/search-darkgrey.png);
+background-position: 0 center;
+padding-left: 20px;
 }
 
-#islandora-solr-simple-search-form .search-advanced input.form-submit,
-#search-form .search-advanced input.form-submit,
-#search-block-form  .search-advanced input.form-submit{
-width: 34px;
-text-indent: 0;
+#search-form .form-submit:hover,
+#search-form .form-submit:focus,
+#search-form .form-submit:active { 
+background-image: url(../images/search-white.png);
+background-position: 0 center;
+padding-left: 20px;
+}
+
+#search-form .form-submit:active,
+#search-form .form-submit.active {
+background-image: url(../images/search-white.png);
+background-position: 0 center;
+padding-left: 20px;
 }
