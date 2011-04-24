@@ -261,7 +261,7 @@ Licensed under Unlicense
     cursor: pointer; 
     outline: none; 
     border: 1px solid #bbb; 
-    background-color: #ccc;
+    background-color: #eaeaea;
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
     background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
     background-image: -o-linear-gradient(#f2f2f2, #dddddd);
@@ -272,7 +272,7 @@ Licensed under Unlicense
     -webkit-border-radius: 0.2em; 
     -moz-border-radius: 0.2em; 
     border-radius: 0.2em; 
-    line-height: 1.3em;
+
     /* IE hacks */
     zoom: 1; 
     *display: inline; 
@@ -579,10 +579,9 @@ ul.primary .tabs li {
 }
 
 #main-wrapper .form-text, #main-wrapper textarea {  
-    padding: 3px;  
+    padding: 0.28em;
     border: solid 1px #cccccc;  
-    outline: 0;  
-    font: normal 13px/100% Verdana, Tahoma, sans-serif;  
+    outline: 0;
     background: #FFFFFF;  
     }  
   
