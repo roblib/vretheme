@@ -311,6 +311,11 @@
 
 <div id="sitecontent-wrapper"><div id="sitecontent">
 
+<div id="breadcrumb-wrapper">
+        <?php print $breadcrumb; ?>
+</div>
+
+
  <?php if($preface_first || $preface_second || $preface_third || $preface_fourth): ?>
     <div style="clear:both"></div>
     <div id="preface-wrapper" class="in<?php print (bool) $preface_first + (bool) $preface_second + (bool) $preface_third + (bool) $preface_fourth; ?> "><div class="section">
@@ -350,7 +355,6 @@
 
         <?php print $highlight; ?>
 
-        <?php print $breadcrumb; ?>
         <?php if ($title): ?>
           <h1 class="title"><?php print $title; ?></h1>
         <?php endif; ?>

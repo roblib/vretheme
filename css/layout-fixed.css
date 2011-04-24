@@ -39,7 +39,7 @@ body {
 
 
 .region-topbar-top, #topbar, #headercontent-wrapper div.section, #feature div.section, 
-#preface-wrapper div.section, #navigation div.section, 
+#breadcrumb-wrapper, #preface-wrapper div.section, #navigation div.section, 
 #featured div.section, #messages, #main, #mainbottom-wrapper div.section, 
 #bottom, #bottomcontent-wrapper, #footer-wrapper,  #closure {
 margin-left:auto;
@@ -177,7 +177,6 @@ padding-right: 10px;
   float: left; /* LTR */
   padding: 0 10px 0 0; /* LTR */
 }
-
 
 /* Navigation Bar + Navbar Right
 -------------------------------------------------------------- */
@@ -489,6 +488,15 @@ padding-right:10px;
     padding-top: 15px;
     padding-bottom: 15px;
 }
+
+
+/* Breadcrumb */
+.breadcrumb {
+padding-top: 0.2em;
+padding-left: 10px;
+padding-right: 10px;
+}
+
 
 /* Preface first + Preface second + Preface third +  Preface fourth regions
 -------------------------------------------------------------- */
