@@ -177,7 +177,7 @@ tr.odd {
 }
 
 tr.odd td, tr.even td {
-padding:0.3em;
+padding:0.3em 0.5em;
 background-color: #FFFFFF;
 }
 
