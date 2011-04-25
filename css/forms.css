@@ -173,9 +173,10 @@ float: left;
   font-size: 9.5pt;
   color: #CCC;
   -moz-border-radius: 3px;
-  border-top-right: 3px;
   -moz-border-radius: 3px;
+  border-top-right: 3px;
   border-top-left: 3px;
+  -webkit-border-radius: 3px;
   padding-right: 20px;
    padding-left: 5px;
   border: 1px solid #000;
@@ -231,6 +232,11 @@ clear: right;
 {
   border: 2px solid #2E5067;
 }
+
+#navbar-wrapper .NavbarRight form {
+padding: 2px 0;
+}
+
 
 /* ------------------------------------------
 CSS3 GITHUB Buttons for Drupal 6
