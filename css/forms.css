@@ -272,7 +272,7 @@ Licensed under Unlicense
     margin: 0;
     text-decoration: none; 
     text-shadow: 1px 1px 0 #fff; 
-    font-size: 95%;
+    font-size: 94%;
     color: #333; 
     white-space: nowrap; 
     cursor: pointer; 
@@ -294,10 +294,8 @@ Licensed under Unlicense
     zoom: 1; 
     *display: inline; 
     padding: 0.34em 1em;
-    margin-top: 0.5em;
+    margin-top: 0.2em;
     }
-
-
 
 .container-inline {
 line-height: 1.25em;
@@ -341,6 +339,30 @@ line-height: 1.25em;
     *display: inline;   
 }
 
+#edit-delete,
+#feeds-delete-tab-form .form-submit {
+    color: #990000;
+}
+
+
+#feeds-delete-tab-form .form-submit:hover,
+#feeds-delete-tab-form .form-submit:focus,
+#feeds-delete-tab-form .form-submit:active,
+#edit-delete:hover,
+#edit-delete:focus,
+#edit-delete:active
+{
+    border-color: #B53F3A;
+    border-bottom-color: #A0302A;
+    color: #fff; 
+    background-color: #5c6da3;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#DA5D57), to(#B43731));
+    background-image: -moz-linear-gradient(#DA5D57, #B43731);
+    background-image: -o-linear-gradient(#DA5D57, #B43731);
+    background-image: linear-gradient(#DA5D57, #B43731);
+}
+
+
 .node_read_more a:hover,
 .node_read_more a:focus,
 .node_read_more a:active,
@@ -380,6 +402,23 @@ line-height: 1.25em;
     background-image: -o-linear-gradient(#8DABF4, #516A89);
     background-image: linear-gradient(#8DABF4, #516A89);
 }
+
+#feeds-delete-tab-form .form-submit:active,
+#feeds-delete-tab-form .form-submit.active,
+#edit-delete:active,
+#edit-delete.active {
+    border-color: #A0302A;
+    border-bottom-color: #B53F3A;
+    color: #fff; 
+    background-color: #5c6da3;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#B43731), to(#DA5D57));
+    background-image: -moz-linear-gradient(#B43731, #DA5D57);
+    background-image: -o-linear-gradient(#B43731, #DA5D57);
+    background-image: linear-gradient(#B43731, #DA5D57);
+}
+
+
+
 
 .node_read_more a:active,
 .node_read_more a.active,
