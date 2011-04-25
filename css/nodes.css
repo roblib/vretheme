@@ -81,6 +81,7 @@ color:#999999;
 
 .node ul.links /* Node links. See also the ul.links declaration in the pages.css. */ {
 margin-top: 1em;
+display: block;
 }
 
 .preview .node /* Preview of the content before submitting new or updated content */ {
