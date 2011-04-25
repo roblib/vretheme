@@ -246,6 +246,9 @@ Licensed under Unlicense
 
 /* ------------------------------------------------------------------------------------------------------------- form-submit */
 
+.print_html a,
+.print_html a:link,
+.print_html a:visited,
 .button,
 .form-submit,
 .teaser-button,
@@ -327,6 +330,9 @@ line-height: 1.25em;
     *display: inline;   
 }
 
+.print_html a:hover,
+.print_html a:focus,
+.print_html a:active,
 .button:hover,
 .button:focus,
 .button:active,
@@ -355,6 +361,9 @@ line-height: 1.25em;
     background-image: linear-gradient(#8DABF4, #516A89);
 }
 
+
+.print_html a:active,
+.print_html a.active,
 .button:active,
 .button.active,
 .form-submit:active,
