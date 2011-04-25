@@ -246,9 +246,10 @@ Licensed under Unlicense
 
 /* ------------------------------------------------------------------------------------------------------------- form-submit */
 
-.event_calendar a,
-.event_calendar a:link,
-.event_calendar a:visited,
+
+.node_read_more a,
+.node_read_more a:link,
+.node_read_more a:visited,
 .comment_add a,
 .comment_add a:link,
 .comment_add a:visited,
@@ -257,6 +258,7 @@ Licensed under Unlicense
 .print_html a:visited,
 .button,
 .form-submit,
+#views-ajax-pad .form-buttons .form-submit,
 .teaser-button,
 .content-overview-links a,
 .content-overview-links a:link,
@@ -292,7 +294,10 @@ Licensed under Unlicense
     zoom: 1; 
     *display: inline; 
     padding: 0.34em 1em;
+    margin-top: 0.5em;
     }
+
+
 
 .container-inline {
 line-height: 1.25em;
@@ -336,9 +341,9 @@ line-height: 1.25em;
     *display: inline;   
 }
 
-.event_calendar a:hover,
-.event_calendar a:focus,
-.event_calendar a:active,
+.node_read_more a:hover,
+.node_read_more a:focus,
+.node_read_more a:active,
 .comment_add a:hover,
 .comment_add a:focus,
 .comment_add a:active,
@@ -351,6 +356,9 @@ line-height: 1.25em;
 .form-submit:hover,
 .form-submit:focus,
 .form-submit:active,
+#views-ajax-pad .form-buttons .form-submit:hover,
+#views-ajax-pad .form-buttons .form-submit:focus,
+#views-ajax-pad .form-buttons .form-submit:active,
 .teaser-button:hover,
 .teaser-button:focus,
 .teaser-button:active,
@@ -373,8 +381,8 @@ line-height: 1.25em;
     background-image: linear-gradient(#8DABF4, #516A89);
 }
 
-.event_calendar a:active,
-.event_calendar a.active,
+.node_read_more a:active,
+.node_read_more a.active,
 .comment_add a:active,
 .comment_add a.active,
 .print_html a:active,
@@ -383,6 +391,8 @@ line-height: 1.25em;
 .button.active,
 .form-submit:active,
 .form-submit.active,
+#views-ajax-pad .form-buttons .form-submit:active,
+#views-ajax-pad .form-buttons .form-submit.active,
 .teaser-button:active,
 .teaser-button.active,
 .container-inline a:active,
@@ -575,6 +585,7 @@ ul.primary .tabs li {
     border-radius: 0;   
 }
 
+
 .tabs > a:first-child,
 .tabs.primary li:first-child a { 
     -webkit-border-top-right-radius: 0.2em; 
@@ -592,6 +603,7 @@ ul.primary .tabs li {
     border-right: 1px solid #cccccc;     
     border-left: 1px solid #cccccc; 
 }
+
 
 .tabs > a:last-child,
 .tabs.primary li:last-child a { 
