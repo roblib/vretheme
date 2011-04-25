@@ -246,6 +246,9 @@ Licensed under Unlicense
 
 /* ------------------------------------------------------------------------------------------------------------- form-submit */
 
+.comment_add a,
+.comment_add a:link,
+.comment_add a:visited,
 .print_html a,
 .print_html a:link,
 .print_html a:visited,
@@ -330,6 +333,9 @@ line-height: 1.25em;
     *display: inline;   
 }
 
+.comment_add a:hover,
+.comment_add a:focus,
+.comment_add a:active,
 .print_html a:hover,
 .print_html a:focus,
 .print_html a:active,
@@ -361,7 +367,8 @@ line-height: 1.25em;
     background-image: linear-gradient(#8DABF4, #516A89);
 }
 
-
+.comment_add a:active,
+.comment_add a.active,
 .print_html a:active,
 .print_html a.active,
 .button:active,
