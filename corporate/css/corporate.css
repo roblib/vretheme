@@ -726,7 +726,7 @@ a:focus > .sf-sub-indicator, a:hover > .sf-sub-indicator, a:active > .sf-sub-ind
 
 #header #google-cse-searchbox-form .form-item,
 #header #islandora-solr-simple-search-form .form-item {
-margin: 2px 0 0;
+margin: 0;
 float: left;
 }
   
