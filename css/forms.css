@@ -285,7 +285,7 @@ Licensed under Unlicense
     /* IE hacks */
     zoom: 1; 
     *display: inline; 
-    padding: 0.33em 1em;
+    padding: 0.34em 1em;
     }
 
 .container-inline {
@@ -597,7 +597,7 @@ ul.primary .tabs li {
 }
 
 #main-wrapper .form-text, #main-wrapper textarea {  
-    padding: 0.28em;
+    padding: 0.345em;
     border: solid 1px #cccccc;  
     outline: 0;
     background: #FFFFFF;  
