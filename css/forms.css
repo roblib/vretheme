@@ -246,6 +246,9 @@ Licensed under Unlicense
 
 /* ------------------------------------------------------------------------------------------------------------- form-submit */
 
+.event_calendar a,
+.event_calendar a:link,
+.event_calendar a:visited,
 .comment_add a,
 .comment_add a:link,
 .comment_add a:visited,
@@ -333,6 +336,9 @@ line-height: 1.25em;
     *display: inline;   
 }
 
+.event_calendar a:hover,
+.event_calendar a:focus,
+.event_calendar a:active,
 .comment_add a:hover,
 .comment_add a:focus,
 .comment_add a:active,
@@ -367,6 +373,8 @@ line-height: 1.25em;
     background-image: linear-gradient(#8DABF4, #516A89);
 }
 
+.event_calendar a:active,
+.event_calendar a.active,
 .comment_add a:active,
 .comment_add a.active,
 .print_html a:active,
