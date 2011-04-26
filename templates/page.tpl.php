@@ -158,7 +158,14 @@
 
  <?php if($topbar_top || $topbar_left || $topbar_right): ?>
     <div id="topbar-wrapper" class="tb<?php print (bool) $topbar_left + (bool) $topbar_right; ?>">
-    	 <?php print $topbar_top; ?><div style="clear:both"></div>
+	<div id="topbartop-wrapper-bg">
+		<div id="topbartop-wrapper">
+		<?php print $topbar_top; ?>
+		</div>
+    </div>
+    	 <div style="clear:both"></div>
+	<div id="topbarleftright-wrapper-bg">		 
+    <div id="topbarleftright-wrapper">	 
     	 <div id="topbar" class="section clearfix">
           <?php if ($topbar_left): ?>
           <div class="column TopbarLeft">
@@ -169,7 +176,9 @@
           <div class="column TopbarRight">
             <?php print $topbar_right; ?>
       	  </div>
-      	   <?php endif; ?>
+      	   <?php endif; ?> 
+      </div><!-- /#topbarleftright-wrapper -->	 
+      </div><!-- /#topbarleftright-wrapper-bg -->	      
       <div style="clear:both"></div>
     </div></div> <!-- ./topbar, /#topbar-wrapper -->
  <?php endif; ?>
