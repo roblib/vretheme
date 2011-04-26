@@ -484,4 +484,30 @@ z-index: 999;
   background-position: -96px -96px;
 }
 
+.featureslideshow .views-field-title {
+    background-color: #222;
+    height: 65px;
+    margin-top: -70px;
+    opacity: 0.7;
+    width: 100%;
+    color: #fff;
+    bottom: 0;
+}
+
+.featureslideshow .views-field-body {
+    margin-top: -35px;
+    height: 35px;
+    opacity: 0.7;
+    color: #fff;
+    bottom: 0;
+    line-height: 1.2em;
+}
+
+.featureslideshow .views-field-title .field-content {
+ 	padding-left: 10px;
+}
+
+.featureslideshow .views-field-body .field-content {
+ 	padding-left: 10px;
+}
 
