@@ -53,7 +53,7 @@
  * @see zen_process()
  */
 ?>
-<div id="<?php print $block_html_id; ?>" class="<?php print $classes; ?>">
+<div id="<?php print $block_html_id; ?>" class="<?php print $classes; ?><?php if ($title) { print ' with-blocktitle'; } ?>">
   <?php if ($title): ?>
     <h2 class="title"><?php print $title; ?></h2>
   <?php endif; ?>

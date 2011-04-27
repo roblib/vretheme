@@ -691,6 +691,10 @@ tbody td, thead th {
 
 }
 
+tbody td {
+    vertical-align: top;
+}
+
 tbody {
   border-top: none;
 }
