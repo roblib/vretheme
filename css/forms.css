@@ -484,6 +484,9 @@ ul.primary li.active a.active {
     background-image: linear-gradient(#ffffff, #ffffff);
 }
 
+#header fieldset.captcha-admin-links {
+display: none
+}
 
 /* overrides extra padding on form-submit elements in Firefox */
 .button::-moz-focus-inner,

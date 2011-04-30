@@ -606,9 +606,8 @@ float: left;
   font-size: 9.5pt;
   color: #CCC;
   -moz-border-radius: 3px;
-  border-top-right: 3px;
-  -moz-border-radius: 3px;
-  border-top-left: 3px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
   padding-right: 20px;
    padding-left: 5px;
   border: 1px solid #888;
@@ -629,7 +628,9 @@ color: #000;
 #header #islandora-solr-simple-search-form .form-item input:focus, 
 #header #search-box .form-item input:focus,
 #header #search-block-form .form-item input:focus  {
--moz-box-shadow: 0 0 3px #000000;
+-webkit-box-shadow: 0px 0px 3px #73351b;
+box-shadow: 0px 0px 2px #73351b;
+-moz-box-shadow: 0px 0px 3px #73351b;
 background:#fff url(../images/mag_glass/insearch-magglass.png) no-repeat right center;
 border:1px solid #000;
 color:#333333;
