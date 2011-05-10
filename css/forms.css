@@ -246,7 +246,12 @@ Licensed under Unlicense
 
 /* ------------------------------------------------------------------------------------------------------------- form-submit */
 
-
+.book_add_child a,
+.book_add_child a:link,
+.book_add_child a:visited,
+.book_printer a,
+.book_printer a:link,
+.book_printer a:visited,
 .node_read_more a,
 .node_read_more a:link,
 .node_read_more a:visited,
@@ -363,7 +368,12 @@ line-height: 1.25em;
     background-image: linear-gradient(#DA5D57, #B43731);
 }
 
-
+.book_add_child a:hover,
+.book_add_child a:focus,
+.book_add_child a:active,
+.book_printer a:hover,
+.book_printer a:focus,
+.book_printer a:active,
 .node_read_more a:hover,
 .node_read_more a:focus,
 .node_read_more a:active,
@@ -420,7 +430,10 @@ line-height: 1.25em;
 
 
 
-
+.book_add_child a:active,
+.book_add_child a.active,
+.book_printer a:active,
+.book_printer a.active,
 .node_read_more a:active,
 .node_read_more a.active,
 .comment_add a:active,
