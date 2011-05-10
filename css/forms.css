@@ -301,6 +301,7 @@ Licensed under Unlicense
 line-height: 1.25em;
 }
 
+#tabs-tabset ul.primary  a,
 .tabs ul.primary  a { 
     position: relative; 
     overflow: visible; 
@@ -449,6 +450,9 @@ line-height: 1.25em;
     background-image: linear-gradient(#516A89, #8DABF4);
 }
 
+#tabs-tabset ul.primary  a:hover,
+#tabs-tabset ul.primary  a:focus,
+#tabs-tabset ul.primary  a:active,
 .tabs ul.primary  a:hover,
 .tabs ul.primary  a:focus,
 .tabs ul.primary  a:active
@@ -467,12 +471,18 @@ line-height: 1.25em;
 }
 
 
-ul.primary li:active a,
-ul.primary li.active a,
-ul.primary li.active a:hover,
-ul.primary li.active a:focus,
-ul.primary li.active a:active,
-ul.primary li.active a.active {
+#tabs-tabset ul.primary li.ui-tabs-selected a,
+#tabs-tabset ul.primary li.ui-tabs-selected a,
+#tabs-tabset ul.primary li.ui-tabs-selected a:hover,
+#tabs-tabset ul.primary li.ui-tabs-selected a:focus,
+#tabs-tabset ul.primary li.ui-tabs-selected a:active,
+#tabs-tabset ul.primary li.ui-tabs-selected a.active,
+.tabs ul.primary li:active a,
+.tabs ul.primary li.active a,
+.tabs ul.primary li.active a:hover,
+.tabs ul.primary li.active a:focus,
+.tabs ul.primary li.active a:active,
+.tabs ul.primary li.active a.active {
     text-shadow: -1px -1px 0 #fff; 
     border-top: 1px solid #cccccc; 
     border-bottom: 1px solid #ffffff; 
@@ -492,10 +502,12 @@ display: none
 .button::-moz-focus-inner,
 .form-submit::-moz-focus-inner,
 .teaser-button::-moz-focus-inner,
-.tab::-moz-focus-inner {
+.tab::-moz-focus-inner,
+#tabs-tabset::-moz-focus-inner {
 	border: none;
 }
 
+#tabs-tabset,
 div.tabs {
    width: 100%;
 }
@@ -592,6 +604,7 @@ padding-left: 20px;
     *display: inline; 
 }
 
+#tabs-tabset,
 .tabs {
 margin-top: 1.5em;
 margin-bottom: 2em;
@@ -603,7 +616,7 @@ ul.primary .tabs li {
     margin: 0;
 }
 
-
+#tabs-tabset ul.primary  a,
 .tabs ul.primary  a {
     float: left;
     position: relative;
@@ -611,6 +624,7 @@ ul.primary .tabs li {
     margin-left: 3px;
 }
 
+#tabs-tabset > ul.primary a:active,
 .tabs > ul.primary a:active {
 	background-color: #EFEFEF;
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e7e7e7), to(#f7f7f7));
@@ -620,6 +634,8 @@ ul.primary .tabs li {
     border-bottom: 1px solid #ccc;     
 }
 
+#tabs-tabset > ul.primary a:not(:first-child):not(:last-child),
+#tabs-tabset li:not(:first-child):not(:last-child) ul.primary a,
 .tabs > ul.primary a:not(:first-child):not(:last-child),
 .tabs li:not(:first-child):not(:last-child) ul.primary a { 
     -webkit-border-radius: 0; 
@@ -627,7 +643,8 @@ ul.primary .tabs li {
     border-radius: 0;   
 }
 
-
+#tabs-tabset > a:first-child,
+#tabs-tabset li:first-child a,
 .tabs > a:first-child,
 .tabs.primary li:first-child a { 
     -webkit-border-top-right-radius: 0.2em; 
@@ -646,7 +663,8 @@ ul.primary .tabs li {
     border-left: 1px solid #cccccc; 
 }
 
-
+#tabs-tabset > a:last-child,
+#tabs-tabset ul.primary li:last-child a,
 .tabs > a:last-child,
 .tabs.primary li:last-child a { 
     -webkit-border-top-right-radius: 0.2em; 
