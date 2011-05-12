@@ -243,6 +243,10 @@ ul.links li {
   padding: 0 0.5em;
 }
 
+#content ul.links li.first {
+  padding-left: 0;
+}
+
 #sitecontent ul.links li {
     padding: 0;
 }
