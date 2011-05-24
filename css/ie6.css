@@ -162,9 +162,9 @@ margin-left: 1%;
 #navbar-wrapper.nbl2.nbr2 .NavbarRight,
 #navbar-wrapper.nbl3.nbr2 .NavbarRight,
 #navbar-wrapper.nbl4.nbr2 .NavbarRight {
-width: 23.65%;
+width: 22.65%;
 margin-right: 1%;
-margin-left: 1%;
+margin-left: 0;
 padding-top: 0;
 padding-bottom: 0;
 }
