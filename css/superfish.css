@@ -180,7 +180,7 @@ z-index:20;
 position:absolute;
 display:block;
 right:.75em;
-top:1.05em;
+top:0.6em;
 width:10px;
 height:10px;
 text-indent:-999em;
@@ -188,7 +188,6 @@ overflow:hidden;
 background:url(../images/arrows-ffffff.png) no-repeat -10px -100px;
 }
 a > .sf-sub-indicator { 
-top:.6em;
 background-position: 0 -100px;
 }
 

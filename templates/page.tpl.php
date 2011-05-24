@@ -118,18 +118,6 @@
   <?php print $head; ?>
   <?php print $styles; ?>
   <?php print $scripts; ?>
-  
-  
-<!--[if IE 6]>
-<script type="text/javascript">
-    jQuery(document).ready(function($) {
-        $(document).pngFix();
-    });
-</script>
-<![endif]-->
-
-
-
 
 <script type="text/javascript">
   jQuery(document).ready(function($) {

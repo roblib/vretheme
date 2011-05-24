@@ -700,27 +700,24 @@ top: -1px;
     margin-right: 0px;  
 }
 
-a > .sf-sub-indicator {
-    background-position: 0 100px;
-    top: 0.6em;
-}
-
-a:focus > .sf-sub-indicator, a:hover > .sf-sub-indicator, a:active > .sf-sub-indicator, li:hover > a > .sf-sub-indicator, li.sfHover > a > .sf-sub-indicator {
-    background-position: -10px 100px;
-}
-
 #nav .menu a, #nav .menu a:visited, #superfish .menu a, #superfish .menu a:visited {
     padding-left: 1em;
     padding-right: 1em;
 }
 
-#superfish .menu a.sf-with-ul,
-#superfish .menu a {
-    min-width: 1px;
-    padding-left: 1em;
+#superfish .menu a.sf-with-ul {
     padding-right: 1em;
 }
 
+#superfish .menu li a .sf-sub-indicator {
+	clip: rect(1px 1px 1px 1px); /* IE6 & 7 */
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+#superfish .menu li li a .sf-sub-indicator {
+	clip:rect(auto); /* IE6 & 7 */
+	clip:rect(auto, auto, auto, auto);
+}
 
 /* Search Block */
 
