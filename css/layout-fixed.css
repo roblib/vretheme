@@ -21,9 +21,11 @@
 /*
  * Body
  */
-body {
-min-width:980px;
+#page-wrapper,
+.region-page-closure {
+  min-width: 980px; /* Don't allow the browser to make the site unreadable. */
 }
+
 
 #page-wrapper,
 .region-page-closure {
