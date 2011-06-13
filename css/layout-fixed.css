@@ -22,7 +22,7 @@
  * Body
  */
 body {
-
+min-width:980px;
 }
 
 #page-wrapper,
@@ -38,9 +38,13 @@ body {
 }
 
 
+#page-wrapper {
+
+}
+
 .region-topbar-top, #topbar, #headercontent-wrapper div.section, #feature div.section, 
 #breadcrumb-wrapper, #preface-wrapper div.section, #navigation div.section, 
-#featured div.section, #messages, #main, #mainbottom-wrapper div.section, 
+#featured div.section, #messages, #sitecontent, #main, #mainbottom-wrapper div.section, 
 #bottom, #bottomcontent-wrapper, #footer-wrapper,  #closure {
 margin-left:auto;
 margin-right:auto;

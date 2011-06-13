@@ -11,9 +11,10 @@
 /*
  * Layout CSS
  */
-
+ 
 body {
   text-align: center; /* 1st part of IE5/IE6quirks centering hack */
+  width:expression(document.documentElement.clientWidth < 962 ? "960px" : "auto");
 }
 
 #page {
