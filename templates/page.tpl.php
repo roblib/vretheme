@@ -123,7 +123,7 @@
   jQuery(document).ready(function($) {
     $("#superfish ul.menu").superfish({ 
             delay:       100,                           
-            animation:   {opacity:'show',height:'show'},  
+            animation:   {opacity:'show'},  
             speed:       'fast',                          
             autoArrows:  true,                           
             dropShadows: true                   
