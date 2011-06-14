@@ -262,7 +262,8 @@ Licensed under Unlicense
 .print_html a:link,
 .print_html a:visited,
 .button,
-.form-submit,
+block-admin-configure .form-submit,
+.node-form .form-submit,
 #views-ajax-pad .form-buttons .form-submit,
 .teaser-button,
 .content-overview-links a,
@@ -294,7 +295,7 @@ Licensed under Unlicense
     -webkit-border-radius: 0.2em; 
     -moz-border-radius: 0.2em; 
     border-radius: 0.2em; 
-	line-height: 1.25em;
+	  line-height: 1.25em;
     /* IE hacks */
     zoom: 1; 
     *display: inline; 

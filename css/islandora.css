@@ -31,10 +31,5 @@ border: 1px solid #bbb;
 }
 
 #fedora-repository-purge-object-form input {
-    -moz-background-clip: padding;
-    -moz-border-radius: 0.2em 0.2em 0.2em 0.2em;
-    background-color: transparent;
-    background-image: none;
-    border: 0px solid #BBBBBB;
-	padding: 0;
+
 }
