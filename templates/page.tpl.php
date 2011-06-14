@@ -138,62 +138,63 @@
     <div id="skip-link"><a href="#main-menu"><?php print t('Jump to Navigation'); ?></a></div>
   <?php endif; ?>
 
-  <div id="page-wrapper"><div id="page">
+<div id="page-wrapper"><div id="page">
 
 <div style="clear:both"></div>
-   <div id="headerandfeature"> 
-    <div id="header" class="tb<?php print (bool) $topbar_left + (bool) $topbar_right; ?>">
 
- <?php if($topbar_top || $topbar_left || $topbar_right): ?>
-    <div id="topbar-wrapper" class="tb<?php print (bool) $topbar_left + (bool) $topbar_right; ?>">
-	<div id="topbartop-wrapper-bg">
-		<div id="topbartop-wrapper">
-		<?php print $topbar_top; ?>
-		</div>
-    </div>
-    	 <div style="clear:both"></div>
-	<div id="topbarleftright-wrapper-bg">		 
+<div id="headerandfeature">
+
+<div id="header" class="tb<?php print (bool) $topbar_left + (bool) $topbar_right; ?>">
+
+<?php if($topbar_top || $topbar_left || $topbar_right): ?>
+  <div id="topbar-wrapper" class="tb<?php print (bool) $topbar_left + (bool) $topbar_right; ?>">
+    <div id="topbartop-wrapper-bg">
+      <div id="topbartop-wrapper">
+        <?php print $topbar_top; ?>
+      </div><!-- /#topbar-wrapper -->
+    </div><!-- /#topbar-wrapper-bg -->
+    <div style="clear:both"></div>
+	  <div id="topbarleftright-wrapper-bg">		 
     <div id="topbarleftright-wrapper">	 
-    	 <div id="topbar" class="section clearfix">
-          <?php if ($topbar_left): ?>
+      <div id="topbar" class="section clearfix">
+        <?php if ($topbar_left): ?>
           <div class="column TopbarLeft">
             <?php print $topbar_left; ?>
           </div>
-          <?php endif; ?>
-         <?php if ($topbar_right): ?>
+        <?php endif; ?>
+        <?php if ($topbar_right): ?>
           <div class="column TopbarRight">
             <?php print $topbar_right; ?>
       	  </div>
-      	   <?php endif; ?> 
-      </div><!-- /#topbarleftright-wrapper -->	 
-      </div><!-- /#topbarleftright-wrapper-bg -->	      
+        <?php endif; ?> 
+      </div><!-- /#topbar -->	 
+    </div><!-- /#topbarleftright-wrapper -->	      
       <div style="clear:both"></div>
-    </div></div> <!-- ./topbar, /#topbar-wrapper -->
- <?php endif; ?>
+  </div><!-- /#topbarleftright-wrapper-bg -->
+  </div> <!-- #topbar-wrapper -->
+<?php endif; ?>
 
 <div class="section clearfix">
-
 <?php if($logo || $site_name || $site_slogan || $header || $header_first || $header_second || $secondary_links): ?>
-    <div style="clear:both"></div>
+  <div style="clear:both"></div>
 	<div id="headercontent-wrapper-bg">
-    <div id="headercontent-wrapper" class="hf<?php print (int)(bool) $header_first + (int)(bool) $logo + (int)(bool) $site_name + (int)(bool) $site_slogan;?> hs<?php print (int)(bool) $header_second + (int)(bool) $secondary_links;?>"><div class="section">
-<div id="headercontent-inner" class="clearfix tbl<?php print (bool) $topbar_left; ?>  tbr<?php print (bool) $topbar_right; ?>">
+    <div id="headercontent-wrapper" class="hf<?php print (int)(bool) $header_first + (int)(bool) $logo + (int)(bool) $site_name + (int)(bool) $site_slogan;?> hs<?php print (int)(bool) $header_second + (int)(bool) $secondary_links;?>">
+      <div class="section">
+      <div id="headercontent-inner" class="clearfix tbl<?php print (bool) $topbar_left; ?>  tbr<?php print (bool) $topbar_right; ?>">
 
-<div class="column HeaderLeft">
-<div id="header-site-info" class="clearfix">
-<div id="header-site-info-inner">
+        <div class="column HeaderLeft">
+          <div id="header-site-info" class="clearfix">
+            <div id="header-site-info-inner">
 
       <?php if ($logo): ?>
       	<div class="<?php if ($site_name || $site_slogan) { print ' with-sitename-slogan'; } ?>" id="sitelogo" >
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
         </div>     
-      <?php endif; ?>
+      <?php endif; ?><!-- logo -->
 
       <?php if ($site_name || $site_slogan): ?>
-      
         <div id="name-and-slogan" class="clearfix">
           <?php if ($site_name): ?>
-      
       		<?php if ($title): ?>
               <div id="site-name">
                 <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
@@ -202,53 +203,54 @@
               <h1 id="site-name">
                 <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
               </h1>
-            <?php endif; ?>
-            
-          <?php endif; ?>
-      
+            <?php endif; ?><!-- title -->
+          <?php endif; ?><!-- site name -->
           <?php if ($site_slogan): ?>
             <div id="site-slogan"><?php print $site_slogan; ?></div>
-          <?php endif; ?>
+          <?php endif; ?><!-- site slogan -->
         </div> <!-- /#name-and-slogan -->
-        
-      <?php endif; ?>
+      <?php endif; ?><!-- site name and slogan -->
 
-</div></div>  <!-- /#header-site-info, #header-site-info-inner -->
+            </div><!-- /#header-site-info-inner -->
+          </div><!-- /#header-site-info -->
+        <?php print $header_first; ?>
+        </div><!-- /#header-left -->
 
-      <?php print $header_first; ?>      
-
-</div><!-- /#header-left -->
-
-<div class="column HeaderRight">
-        <?php 
-        if ($secondary_links) {
-		          print theme(array('links__system_main_menu', 'links'), $secondary_links,
-            array(
-              'id' => 'secondary-menu',
-              'class' => 'links clearfix menu',
-            ),
-            array(
-              'text' => t('Secondary menu'),
-              'level' => 'h2',
-              'class' => 'element-invisible',
-            )); 
-				      }
-        ?>
+      <?php if ($header_second || $secondary_links): ?>
+        <div class="column HeaderRight">
+          <?php
+            if ($secondary_links) {
+            print theme(array('links__system_main_menu', 'links'), $secondary_links,
+              array(
+                'id' => 'secondary-menu',
+                'class' => 'links clearfix menu',
+              ),
+              array(
+                'text' => t('Secondary menu'),
+                'level' => 'h2',
+                'class' => 'element-invisible',
+              )); 
+				        }
+          ?>
+        <?php print $header_second; ?>
+        </div><!-- /#header-right -->
         <?php endif; ?>
-      <?php print $header_second; ?>
-</div><!-- /#header-right -->
-
+        
       <?php print $header; ?>
 
-</div> <!-- /#headercontent-inner -->
-</div><!-- /#headerandfeature -->
-</div></div></div> <!-- /.section, /#header -->
-    
-      <?php if ($primary_links || $navigation): ?>
-        <div id="navigation" class="nbl<?php print (int)(bool) $navigation + (int)(bool) $primary_links;?> nbr<?php print (int)(bool) $navbar_right + (int)(bool) $search_box;?>"><div class="section clearfix">
+      </div> <!-- /#headercontent-inner -->
+</div><!-- /.section -->
+    </div><!-- /#headercontent-wrapper -->
+  </div><!-- /#headercontent-wrapper-bg -->
+<?php endif; ?>
+</div><!-- /.section -->
+
+<?php if ($primary_links || $navigation): ?>
+  <div id="navigation" class="nbl<?php print (int)(bool) $navigation + (int)(bool) $primary_links;?> nbr<?php print (int)(bool) $navbar_right + (int)(bool) $search_box;?>">
+  <div class="section clearfix">
     <div id="navbar-wrapper" class="nbl<?php print (int)(bool) $navigation + (int)(bool) $primary_links;?> nbr<?php print (int)(bool) $navbar_right + (int)(bool) $search_box;?>">
-      <!-- PRIMARY -->
-      <div class="column NavbarLeft">
+    <!-- PRIMARY -->
+    <div class="column NavbarLeft">
       <div id="<?php print $primary_links ? 'nav' : 'superfish' ; ?>">
         <?php 
 					     if ($primary_links) {
@@ -267,24 +269,24 @@
 				        print $navigation;
 				      }
         ?>
-      </div></div> <!-- /primary, /#NavbarLeft -->
+      </div><!-- /primary -->
+    </div><!-- /#NavbarLeft -->
 
-      <?php if ($navbar_right || $search_box): ?>
-          <div class="column NavbarRight">
-        	<?php if ($search_box): ?>
-       			<div id="search-box"><?php print $search_box; ?></div>
-     		<?php endif; ?>
-     		<?php print $navbar_right; ?>
-      	  </div>
+    <?php if ($navbar_right || $search_box): ?>
+    <div class="column NavbarRight">
+      <?php if ($search_box): ?>
+        <div id="search-box"><?php print $search_box; ?></div>
       <?php endif; ?>
-	  </div>
-
-        </div></div> <!-- /.section, /#navigation -->
-      <?php endif; ?>
-
-
+      <?php print $navbar_right; ?>
+    </div><!-- /navbarright -->
+    <?php endif; ?>
+  </div><!-- /#Navbar-wrapper -->
+  </div><!-- /.section -->
+</div><!-- /#navigation -->
+<?php endif; ?>
 
 </div><!-- /#header -->
+
 
  <?php if($feature || feature_right): ?>
     <div style="clear:both"></div>
@@ -292,30 +294,28 @@
           <?php if($feature): ?>
           <div class="column FeatureMain">
             <?php print $feature; ?>
-          </div>
+          </div><!-- /.featuremain -->
           <?php endif; ?>
           <?php if($feature_right): ?>
           <div class="column FeatureRight">
             <?php print $feature_right; ?>
-          </div>
+          </div><!-- /.featureright -->
           <?php endif; ?> 
       <div style="clear:both"></div>
-    </div></div></div> <!-- /.section, /#feature-wrapper, /#feature -->
+    </div></div></div><!-- /.section, /#feature-wrapper, /#feature -->
     <div style="clear:both"></div>
     <?php endif; ?>
-    
 </div><!-- /#headerandfeature -->
 
 <div id="sitecontent-wrapper"><div id="sitecontent">
 
 <div id="breadcrumb-wrapper">
-        <?php print $breadcrumb; ?>
+  <?php print $breadcrumb; ?>
 </div>
 
-
- <?php if($preface_first || $preface_second || $preface_third || $preface_fourth): ?>
-    <div style="clear:both"></div>
-    <div id="preface-wrapper" class="in<?php print (bool) $preface_first + (bool) $preface_second + (bool) $preface_third + (bool) $preface_fourth; ?> "><div class="section">
+<?php if($preface_first || $preface_second || $preface_third || $preface_fourth): ?>
+  <div style="clear:both"></div>
+  <div id="preface-wrapper" class="in<?php print (bool) $preface_first + (bool) $preface_second + (bool) $preface_third + (bool) $preface_fourth; ?> "><div class="section">
           <?php if($preface_first): ?>
           <div class="column PrefaceFirst">
             <?php print $preface_first; ?>
@@ -338,11 +338,10 @@
           <?php endif; ?>          
       <div style="clear:both"></div>
     </div></div> <!-- /.section, /#preface-wrapper -->
-    <div style="clear:both"></div>
-    <?php endif; ?>
+  <div style="clear:both"></div>
+<?php endif; ?>
 
-
-    <div id="main-wrapper"><div id="main" class="clearfix<?php if ($primary_links || $navigation) { print ' with-navigation'; } ?> <?php if ($preface_first || $preface_second || $preface_third || $preface_fourth) { print ' with-preface'; } ?>">
+<div id="main-wrapper"><div id="main" class="clearfix<?php if ($primary_links || $navigation) { print ' with-navigation'; } ?> <?php if ($preface_first || $preface_second || $preface_third || $preface_fourth) { print ' with-preface'; } ?>">
 
       <div id="content" class="column"><div class="section">
 
@@ -361,7 +360,8 @@
         <?php endif; ?>
         <?php print $help; ?>
         <?php print $content_top; ?>
- <?php if($content_top1 || $content_top2): ?>
+
+  <?php if($content_top1 || $content_top2): ?>
     <div style="clear:both"></div>
     <div id="content-top-wrapper" class="in<?php print (bool) $content_top1 + (bool) $content_top2; ?>"><div class="section">
           <?php if($content_top1): ?>
@@ -376,7 +376,7 @@
           <?php endif; ?>
       <div style="clear:both"></div>
     </div></div> <!-- /.section, /#content-bottom-wrapper -->
-    <?php endif; ?>
+  <?php endif; ?>
 
         <div id="content-area">
           <?php print $content; ?>
@@ -440,7 +440,9 @@
     </div></div> <!-- /.section, /#mainbottom-wrapper -->
     <?php endif; ?>
     
-    </div> <!-- /#main, /#main-wrapper -->        </div></div> <!-- /#sitecontent-wrapper, /#sitecontent -->
+    </div> <!-- /#main, /#main-wrapper -->
+</div></div> <!-- /#sitecontent-wrapper, /#sitecontent -->
+
 <div id="bottom-wrapper"><div id="bottom"><div class="section">
  <?php if($bottom_first || $bottom_second || $bottom_third || $bottom_fourth || $bottom_fifth || $bottom_sixth): ?>
     <div style="clear:both"></div>
@@ -536,17 +538,20 @@
  </div></div> <!-- /#footer, /#footer-wrapper -->
     <?php endif; ?>
 </div></div></div><!-- /#bottom, /.section, /#bottom-wrapper  -->
-  </div></div> <!-- /#page, /#page-wrapper -->
+
+</div></div><!-- /#page, /#page-wrapper -->
+
 <?php if($page_closure || $footer_message): ?>
 <div id="closure-wrapper">
- <div id="closure">
+  <div id="closure">
   <?php print $page_closure; ?>
-        <?php if ($footer_message): ?>
-          <div id="footer-message"><?php print $footer_message; ?></div>
-        <?php endif; ?>
- </div>
-</div>
-<?php endif; ?>
-  <?php print $closure; ?>
+    <?php if ($footer_message): ?>
+      <div id="footer-message"><?php print $footer_message; ?></div>
+    <?php endif; ?>
+  </div><!-- /#closure -->
+
+<?php print $closure; ?>
+</div><!-- /#closure-wrapper -->
+<?php endif; ?>  
 </body>
 </html>
