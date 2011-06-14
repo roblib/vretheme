@@ -647,54 +647,7 @@ ul.primary .tabs li {
     border-bottom: 1px solid #ccc;     
 }
 
-#tabs-tabset > ul.primary a:not(:first-child):not(:last-child),
-#tabs-tabset li:not(:first-child):not(:last-child) ul.primary a,
-.tabs > ul.primary a:not(:first-child):not(:last-child),
-.tabs li:not(:first-child):not(:last-child) ul.primary a { 
-    -webkit-border-radius: 0; 
-    -moz-border-radius: 0; 
-    border-radius: 0;   
-}
 
-#tabs-tabset > a:first-child,
-#tabs-tabset li:first-child a,
-.tabs > a:first-child,
-.tabs.primary li:first-child a { 
-    -webkit-border-top-right-radius: 0.2em; 
-    -webkit-border-bottom-right-radius: 0; 
-    -moz-border-radius-topright: 0.2em; 
-    -moz-border-radius-bottomright: 0; 
-    border-top-right-radius: 0.2em; 
-    border-bottom-right-radius: 0; 
-    -webkit-border-top-left-radius: 0.2em; 
-    -webkit-border-bottom-left-radius: 0; 
-    -moz-border-radius-topleft: 0.2em; 
-    -moz-border-radius-bottomleft: 0; 
-    border-top-left-radius: 0.2em; 
-    border-bottom-left-radius: 0;  
-    border-right: 1px solid #cccccc;     
-    border-left: 1px solid #cccccc; 
-}
-
-#tabs-tabset > a:last-child,
-#tabs-tabset ul.primary li:last-child a,
-.tabs > a:last-child,
-.tabs.primary li:last-child a { 
-    -webkit-border-top-right-radius: 0.2em; 
-    -webkit-border-bottom-right-radius: 0; 
-    -moz-border-radius-topright: 0.2em; 
-    -moz-border-radius-bottomright: 0; 
-    border-top-right-radius: 0.2em; 
-    border-bottom-right-radius: 0; 
-    -webkit-border-top-left-radius: 0em; 
-    -webkit-border-bottom-left-radius: 0em; 
-    -moz-border-radius-topleft: 0.2em; 
-    -moz-border-radius-bottomleft: 0; 
-    border-top-left-radius: 0.2em; 
-    border-bottom-left-radius: 0em;   
-    border-right: 1px solid #cccccc; 
-    border-left: 1px solid #cccccc;
-}
 
 #main-wrapper .form-text, #main-wrapper textarea {  
     padding: 0.345em;

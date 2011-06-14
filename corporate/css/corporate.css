@@ -492,30 +492,32 @@ a:active {
 color: #000;
 }
 
-li a.active {
-color:#000;
+li a.active,
+a.active {
+color:#000000 !important;
+background-color: transparent !important;
 }
 
 #header a:link {
-color: #FFF
+color: #FFFFFF;
 }
 
 #header a:visited {
-color: #FFF
+color: #FFFFFF;
 }
 
 #header a:hover,
 #header a:focus {
-color: #fff;
+color: #FFFFFF;
 text-decoration: none;
 }
 
 #header a:active {
-color: #fff
+color: #FFFFFF;
 }
 
 #header li  a.active,  {
-color: #fff
+color: #FFFFFF;
 }
 
 
