@@ -137,16 +137,16 @@ margin-bottom:15px;
 
 #feature .block h2.title, 
 .region-sidebar-first .block h2.title, 
-.region-sidebar-second  .block h2.title, 
-div.admin-panel h3,
-#mainbottom-wrapper  .block h2.title,
-#preface-wrapper  .block h2.title,
-.region-content-top  .block h2.title,
-#content-top-wrapper .block h2.title,
-.region-content-bottom  .block h2.title,
+.region-sidebar-second .block h2.title, 
+div.admin-panel h3, 
+#mainbottom-wrapper .block h2.title, 
+#preface-wrapper .block h2.title, 
+.region-content-top .block h2.title, 
+#content-top-wrapper .block h2.title, 
+.region-content-bottom .block h2.title, 
 #content-bottom-wrapper .block h2.title {
-padding:8px 10px 8px 0px;
-border-bottom: 1px dotted #dededf;
+    border-bottom: 1px dotted #DEDEDF;
+    padding: 0 10px 8px 0;
 }
 
 #feature .block {

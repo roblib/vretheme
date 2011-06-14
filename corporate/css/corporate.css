@@ -390,7 +390,7 @@ div.admin-panel h3,
 .region-sidebar-first .block h2.title, 
 .region-sidebar-second .block h2.title
 {
-padding:8px 10px 8px 0px;
+padding: 0 10px 8px 0px;
 border-bottom: 1px dotted #d3d3d3;
 }
 
