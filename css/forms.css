@@ -620,7 +620,7 @@ padding-left: 20px;
 #tabs-tabset,
 .tabs {
 margin-top: 1.5em;
-margin-bottom: 2em;
+margin-bottom: 0em;
 }
 
 ul.primary .tabs li {
