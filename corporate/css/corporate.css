@@ -493,7 +493,8 @@ color: #000;
 }
 
 li a.active,
-a.active {
+a.active,
+li.active {
 color:#000000 !important;
 background-color: transparent !important;
 }
