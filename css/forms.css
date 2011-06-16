@@ -307,8 +307,8 @@ input[type=submit],
 line-height: 1.25em;
 }
 
-#tabs-tabset ul.primary  a,
-.tabs ul.primary  a { 
+.drupal-tabs ul.primary a,
+.tabs ul.primary a { 
     position: relative; 
     overflow: visible; 
     display: inline-block; 
