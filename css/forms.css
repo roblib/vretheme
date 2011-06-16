@@ -263,7 +263,7 @@ Licensed under Unlicense
 .print_html a:visited,
 .button,
 block-admin-configure .form-submit,
-.node-form .form-submit,
+input[type=submit],
 #views-ajax-pad .form-buttons .form-submit,
 .teaser-button,
 .content-overview-links a,
