@@ -369,6 +369,9 @@ line-height: 1.25em;
     background-image: linear-gradient(#DA5D57, #B43731);
 }
 
+input[type=submit]:hover,
+input[type=submit]:focus,
+input[type=submit]:active,
 .book_add_child a:hover,
 .book_add_child a:focus,
 .book_add_child a:active,
@@ -430,7 +433,7 @@ line-height: 1.25em;
 }
 
 
-
+input[type=submit]:active,
 .book_add_child a:active,
 .book_add_child a.active,
 .book_printer a:active,

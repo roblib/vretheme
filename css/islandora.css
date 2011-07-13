@@ -33,3 +33,7 @@ border: 1px solid #bbb;
 #fedora-repository-purge-object-form input {
 
 }
+
+#fedora_detailed_list h3 {
+margin: 0;
+}
