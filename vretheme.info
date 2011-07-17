@@ -35,17 +35,18 @@ base theme = zen
   ; tabs.css has been commented out, i prefer the standard styling for now
   
 stylesheets[all][]   = css/html-reset.css
+stylesheets[all][]   = css/typography.css
 ; stylesheets[all][]   = css/wireframes.css
 stylesheets[all][]   = css/layout-fixed.css
 stylesheets[all][]   = css/page-backgrounds.css
-; stylesheets[all][]   = css/tabs.css
+stylesheets[all][]   = css/tabs.css
 stylesheets[all][]   = css/messages.css
 stylesheets[all][]   = css/pages.css
-; stylesheets[all][]   = css/block-editing.css 
 stylesheets[all][]   = css/blocks.css
 stylesheets[all][]   = css/navigation.css
 ; stylesheets[all][]   = css/panels-styles.css
-; stylesheets[all][]   = css/views-styles.css
+stylesheets[all][]   = css/views-styles.css
+stylesheets[all][]   = css/jcarousel.css
 stylesheets[all][]   = css/nodes.css
 stylesheets[all][]   = css/comments.css
 stylesheets[all][]   = css/forms.css
