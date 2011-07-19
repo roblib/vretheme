@@ -527,6 +527,24 @@ padding-right:15px;
     color: #FFFFFF !important;
 }
 
+#nav ul.menu li:hover a,
+#superfish ul.menu li:hover a {
+color: #fff;
+}
+
+#superfish .menu li li {
+    background-color: #1C536F;
+}
+
+#superfish .menu li li.first, #superfish .menu li li li.first {
+    border-top: 1px solid #193241;
+}
+
+#superfish .menu li li, #superfish .menu li li li {
+    border-bottom: 1px solid #193241;
+    border-left: 1px solid #193241;
+}
+
 #nav li, #superfish li {
     border-right: 1px solid #193241;
 }

@@ -76,8 +76,12 @@ padding:0px 10px 0px 10px;
 
 }
 
-#sitelogo a img{
-height: 50px;
+#sitelogo a img{ 
+max-height: 50px; /* sets max-height value for all standards-compliant browsers */
+}
+
+* html #sitelogo a img {
+height: expression( this.scrollHeight > 49 ? "50px" : "auto" ); /* sets max-height for IE */
 }
 
 
@@ -661,6 +665,11 @@ opacity: 1;
 
 #superfish .menu li li {
     background-color: #292929;
+}
+
+#nav ul.menu li:hover a,
+#superfish ul.menu li:hover a {
+color: #fff;
 }
 
 /* hover and active-trail color */ 

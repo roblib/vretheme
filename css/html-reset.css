@@ -461,18 +461,18 @@ color: #333
 #superfish ul.menu li.active-trail, 
 #nav ul.menu li:hover,
 #superfish ul.menu li:hover {
-background-color: #333;
-color: #fff !important;
+background-color: #fff;
+color: #333 !important;
 opacity: 1;
 }
 
 #nav ul.menu li:hover a,
 #superfish ul.menu li:hover a {
-color: #fff;
+color: #333;
 }
 
 #superfish .menu li li {
-    background-color: #a4a4a4;
+    background-color: #efefef;
 }
 
 /* hover and active-trail color */ 
@@ -481,8 +481,8 @@ color: #fff;
 #header #navigation li a:hover, 
 #header #navigation li li a:hover, 
 #header #navigation li li li a:hover {
-background: #333 !important;
-color: #fff  !important;
+background: #fff !important;
+color: #555  !important;
 }
 
 
