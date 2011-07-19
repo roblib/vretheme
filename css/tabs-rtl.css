@@ -1,23 +1,21 @@
 /* $Id: tabs-rtl.css,v 1.2 2009/08/12 08:03:53 johnalbin Exp $ */
-
 /**
  * @file
  * RTL companion for the tabs.css file.
  */
-
-
+/* line 9, ../sass/tabs-rtl.scss */
 ul.primary {
   padding: 0 10px 0 0;
 }
-
+/* line 11, ../sass/tabs-rtl.scss */
 ul.primary li {
   float: right;
 }
-
+/* line 13, ../sass/tabs-rtl.scss */
 ul.secondary {
   padding: 0 5px 0 0;
 }
-
+/* line 15, ../sass/tabs-rtl.scss */
 ul.secondary li {
   float: right;
   border-left: none;

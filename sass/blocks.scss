@@ -1,0 +1,133 @@
+/* $Id: blocks.css,v 1.4 2009/11/05 11:05:39 johnalbin Exp $ */
+
+/**
+ * @file
+ * Block Styling
+ */
+
+.block-region {
+  color: #000; }
+
+.block {
+  margin-bottom: 1em; }
+
+#feature {
+  .block-region, .block {
+    margin: 0; } }
+
+.block {
+  &.region-odd, &.region-even, &.odd, &.even {} }
+
+.region-count-1, .count-1 {}
+
+.block {
+  h2.title {
+    padding-top: 0.667em;
+    margin-bottom: 0.667em; }
+  .content {} }
+
+#block-aggregator-category-1, #block-aggregator-feed-1, #block-block-1, #block-blog-0, #block-book-0, #block-comment-0, #block-forum-0, #block-forum-1, #block-menu-primary-links, #block-menu-secondary-links, #block-node-0, #block-poll-0, #block-profile-0, #block-search-0, #block-statistics-0, #block-user-0, #block-user-1, #block-user-2, #block-user-3 {}
+
+#headercontent-wrapper {
+  .column.HeaderRight #secondary-menu {
+    font-size: 90%;
+    line-height: 2em;
+    margin-bottom: 0;
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    float: right;
+    padding: 0 0.4em 0.1em;
+    margin-top: 0; }
+  #secondary-menu li {
+    margin: 0 0.25em;
+    padding: 0; } }
+
+#search-box {
+  text-align: right;
+  top: 0; }
+
+/* Sidebar blocks */
+
+.region-sidebar-first .block, .region-sidebar-second .block {
+  margin-bottom: 15px; }
+
+#feature .block h2.title, .region-sidebar-first .block h2.title, .region-sidebar-second .block h2.title, div.admin-panel h3, #mainbottom-wrapper .block h2.title, #preface-wrapper .block h2.title, .region-content-top .block h2.title, #content-top-wrapper .block h2.title, .region-content-bottom .block h2.title, #content-bottom-wrapper .block h2.title {
+  border-bottom: 1px dotted #DEDEDF;
+  padding: 0 10px 8px 0; }
+
+#feature .block {
+  padding-top: 15px;
+  padding-bottom: 10px; }
+
+.region-sidebar-first .block .content, .region-sidebar-second .block .content {
+  margin: 0;
+  padding: 0 15px 15px 0; }
+
+.region-sidebar-first .block .content .menu, .region-sidebar-second .block .content .menu {
+  padding-left: 15px; }
+
+.region-sidebar-first .block .content .item-list, .region-sidebar-second .block .content .item-list {
+  padding-left: 10px; }
+
+#content-top-wrapper.in2 {
+  .ContentTop1 .block {
+    padding-right: 10px; }
+  .ContentTop2 .block {
+    padding-left: 10px; } }
+
+#content-bottom-wrapper.in2 {
+  .ContentBottom1 .block {
+    padding-right: 10px; }
+  .ContentBottom2 .block {
+    padding-left: 10px; } }
+
+/* Highlight Blocks */
+
+.region-highlight .block {
+  background-color: #F4F4F4;
+  border-color: #DDDDDD #BBBBBB #BBBBBB #DDDDDD;
+  border-style: solid;
+  border-width: 1px;
+  margin: 0 0 1.5em;
+  padding: 0.1em 1.2em 0.5em; }
+
+div.admin {
+  .left {
+    margin-left: 0.2em;
+    width: 48%; }
+  .right {
+    margin-right: 0.2em;
+    width: 48%; } }
+
+/* $Id: block-editing.css,v 1.3 2009/11/05 14:01:26 johnalbin Exp $ */
+
+/**
+ * @file
+ * Zen's rollover edit links for blocks.
+ */
+
+#topbar div.block.with-block-editing div.edit {
+  margin-top: 15px; }
+
+div {
+  &.block.with-block-editing {
+    position: relative;
+    div.edit {
+      display: none;
+      position: absolute;
+      right: 0;
+      /* LTR */
+      top: 0;
+      z-index: 40;
+      border: 1px solid #eee;
+      padding: 0 2px;
+      font-size: 0.75em;
+      background-color: #a5a5a5; }
+    &:hover div.edit {
+      display: block; } }
+  &.block-book ul {
+    margin: 0.15em 0 0.15em 0em; } }

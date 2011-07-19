@@ -1,5 +1,4 @@
 /* $Id: ie.css,v 1.2.2.1 2010/01/20 20:11:52 johnalbin Exp $ */
-
 /**
  * @file
  * CSS targeted specifically for Internet Explorer for Windows.
@@ -12,78 +11,90 @@
  * stylesheets total. The work-around for the bug is to enable CSS aggregation
  * under: admin / settings / performance.
  */
-
-
 /*
  * Tabs
  */
-
-ul.primary li a,
-ul.primary li a .tab,
-ul.secondary li a,
-ul.secondary li a .tab {
+/* line 21, ../sass/ie.scss */
+ul.primary li a, ul.secondary li a {
+  cursor: pointer;
+}
+/* line 23, ../sass/ie.scss */
+ul.primary li a .tab, ul.secondary li a .tab {
   cursor: pointer;
 }
 
+/* line 26, ../sass/ie.scss */
 #navbar-wrapper ul li {
-    list-style: none outside none;
-    margin: 0;
-    padding: 0;
-}    
-    
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+}
 
 /*
  * Drupal nodes
  */
-
-.node-unpublished .node-inner>* {
-  position: relative; /* Otherwise these elements will appear below the "Unpublished" text. */
+/* line 35, ../sass/ie.scss */
+.node-unpublished .node-inner > * {
+  position: relative;
+  /* Otherwise these elements will appear below the "Unpublished" text. */
 }
 
 /*
  * Drupal admin tables
  */
-tr.even th,
-tr.even td,
-tr.odd th,
-tr.odd td {
-  border-bottom: 1px solid #ccc; /* IE doesn't display borders on table rows */
+/* line 45, ../sass/ie.scss */
+tr.even th, tr.even td {
+  border-bottom: 1px solid #ccc;
+  /* IE doesn't display borders on table rows */
+}
+/* line 49, ../sass/ie.scss */
+tr.odd th, tr.odd td {
+  border-bottom: 1px solid #ccc;
+  /* IE doesn't display borders on table rows */
 }
 
 /*
  * Markup free clearing
  */
+/* line 57, ../sass/ie.scss */
 .clearfix {
   zoom: 1;
 }
 
-
+/* line 61, ../sass/ie.scss */
 #superfish .menu ul {
-width: 13em;
-min-width: 13em;
+  width: 13em;
+  min-width: 13em;
 }
-
+/* line 64, ../sass/ie.scss */
 #superfish li {
-word-wrap: break-word;
+  word-wrap: break-word;
 }
 
-#search-form .form-submit { 
-background-image: url(../images/search-darkgrey.png);
-background-position: 0 center;
-padding-left: 20px;
+/* line 67, ../sass/ie.scss */
+#search-form .form-submit {
+  background-image: url(../images/search-darkgrey.png);
+  background-position: 0 center;
+  padding-left: 20px;
 }
-
-#search-form .form-submit:hover,
-#search-form .form-submit:focus,
-#search-form .form-submit:active { 
-background-image: url(../images/search-white.png);
-background-position: 0 center;
-padding-left: 20px;
+/* line 71, ../sass/ie.scss */
+#search-form .form-submit:hover, #search-form .form-submit:focus {
+  background-image: url(../images/search-white.png);
+  background-position: 0 center;
+  padding-left: 20px;
 }
-
-#search-form .form-submit:active,
+/* line 75, ../sass/ie.scss */
+#search-form .form-submit:active {
+  background-image: url(../images/search-white.png);
+  background-position: 0 center;
+  padding-left: 20px;
+  background-image: url(../images/search-white.png);
+  background-position: 0 center;
+  padding-left: 20px;
+}
+/* line 82, ../sass/ie.scss */
 #search-form .form-submit.active {
-background-image: url(../images/search-white.png);
-background-position: 0 center;
-padding-left: 20px;
+  background-image: url(../images/search-white.png);
+  background-position: 0 center;
+  padding-left: 20px;
 }

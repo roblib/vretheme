@@ -1,0 +1,48 @@
+/* $Id: comments.css,v 1.5 2009/11/01 20:54:20 johnalbin Exp $ */
+
+/**
+ * @file
+ * Comment Styling
+ */
+
+#comments {
+  margin: 1em 0;
+  .title {} }
+
+.comment {
+  background-color: #F4F4F4;
+  border-color: #DDDDDD #BBBBBB #BBBBBB #DDDDDD;
+  border-right: 1px solid #BBBBBB;
+  border-style: solid;
+  border-width: 1px;
+  margin-bottom: 1em;
+  padding: 1em 1em 0 1em; }
+
+.comment-preview {}
+
+.comment {
+  &.new, &.first, &.last, &.odd, &.even {} }
+
+.comment-unpublished {
+  /* background-color: #fff4f4; */
+  /* Drupal core uses a #fff4f4 background */
+  div.unpublished {} }
+
+.comment-by-anonymous, .comment-by-node-author, .comment-by-viewer, .comment h3.title {}
+
+.new {
+  color: #c00; }
+
+.comment {
+  .picture {}
+  .submitted {
+    color: #999999; }
+  .content, .user-signature, ul.links {} }
+
+.indented {
+  /* margin-left: 25px; */
+  /* Drupal core uses a 25px left margin */ }
+
+.preview .comment {
+  /* background-color: #ffffea; */
+  /* Drupal core uses a #ffffea background */ }

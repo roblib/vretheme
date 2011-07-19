@@ -1,28 +1,24 @@
 /* $Id: nodes.css,v 1.6 2009/11/02 15:37:29 johnalbin Exp $ */
-
 /**
  * @file
  * Node Styling
  *
  * Style anything that isn't in the $content variable.
  */
-
-
-.node /* Node wrapper */ {
-border-bottom:1px dotted #dededf;
-margin:0.5em 0 1em;
-padding-bottom:1em;
+/* line 10, ../sass/nodes.scss */
+.node {
+  border-bottom: 1px dotted #dededf;
+  margin: 0.5em 0 1em;
+  padding-bottom: 1em;
 }
 
-.node-sticky /* A sticky node (displayed before others in a list) */ {
+/* line 17, ../sass/nodes.scss */
+.node-unpublished {
+  /* background-color: #fff4f4; */
+  /* Drupal core uses a #fff4f4 background */
 }
-
-.node-unpublished /* Unpublished nodes */ {
-  /* background-color: #fff4f4; */ /* Drupal core uses a #fff4f4 background */
-}
-
-.node-unpublished div.unpublished,
-.comment-unpublished div.unpublished /* The word "Unpublished" displayed underneath the content. */ {
+/* line 20, ../sass/nodes.scss */
+.node-unpublished div.unpublished {
   height: 0;
   overflow: visible;
   color: #d8d8d8;
@@ -32,58 +28,58 @@ padding-bottom:1em;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  word-wrap: break-word; /* A very nice CSS3 property */
+  word-wrap: break-word;
+  /* A very nice CSS3 property */
 }
 
-.node-by-viewer /* A node created by the current user */ {
-}
-
-.node-teaser /* A node displayed as teaser */ {
+/* line 33, ../sass/nodes.scss */
+.comment-unpublished div.unpublished {
+  height: 0;
+  overflow: visible;
+  color: #d8d8d8;
+  font-size: 75px;
+  line-height: 1;
+  font-family: Impact, "Arial Narrow", Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  word-wrap: break-word;
+  /* A very nice CSS3 property */
 }
 
 /* All nodes are given a node-type-FOO class that describes the type of
  * content that it is. If you create a new content type called
  * "my-custom-type", it will receive a "node-type-my-custom-type" class.
  */
-.node-type-page /* Page content node */ {
-}
-
-.node-type-story /* Story content node */ {
-}
-
-.node h2.title /* Node title */ {
-}
-
-.marker /* "New" or "Updated" marker for content that is new or updated for the current user */ {
+/* line 53, ../sass/nodes.scss */
+.marker {
   color: #c00;
 }
 
-.node .picture /* The picture of the node author */ {
+/* line 58, ../sass/nodes.scss */
+.node.node-unpublished .picture {
+  position: relative;
+  /* Otherwise floated pictures will appear below the "Unpublished" text. */
 }
 
-.node.node-unpublished .picture,
+/* line 62, ../sass/nodes.scss */
 .comment.comment-unpublished .picture {
-  position: relative; /* Otherwise floated pictures will appear below the "Unpublished" text. */
+  position: relative;
+  /* Otherwise floated pictures will appear below the "Unpublished" text. */
 }
 
-.node .meta /* Wrapper for submitted and terms data */ {
+/* line 68, ../sass/nodes.scss */
+.node .submitted {
+  color: #999999;
+}
+/* line 71, ../sass/nodes.scss */
+.node ul.links {
+  margin-top: 1em;
+  display: block;
 }
 
-.node .submitted /* The "posted by" information */ {
-color:#999999;
-}
-
-.node .terms /* Node terms (taxonomy) */ {
-}
-
-.node .content /* Node's content wrapper */ {
-}
-
-.node ul.links /* Node links. See also the ul.links declaration in the pages.css. */ {
-margin-top: 1em;
-display: block;
-}
-
-.preview .node /* Preview of the content before submitting new or updated content */ {
-  /* background-color: #ffffea; */ /* Drupal core uses a #ffffea background */
+/* line 75, ../sass/nodes.scss */
+.preview .node {
+  /* background-color: #ffffea; */
+  /* Drupal core uses a #ffffea background */
 }

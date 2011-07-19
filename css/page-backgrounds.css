@@ -1,5 +1,4 @@
 /* $Id: page-backgrounds.css,v 1.8 2009/11/04 20:57:49 johnalbin Exp $ */
-
 /**
  * @file
  * Page Background Styling
@@ -10,64 +9,17 @@
  * ALA article:
  *   http://www.alistapart.com/articles/fauxcolumns/
  */
-
-
-body {
-}
-
+/* line 15, ../sass/page-backgrounds.scss */
 body.front, body.not-front {
-background-color: #ffeff;
+  background-color: #ffeff;
 }
 
-#page-wrapper {
-}
-
+/* line 20, ../sass/page-backgrounds.scss */
 #header {
-border-top: 4px solid #8b1f04;
+  border-top: 4px solid #8b1f04;
 }
 
+/* line 23, ../sass/page-backgrounds.scss */
 #headercontent-wrapper .column.HeaderRight #secondary-menu {
-background: #8b1f04;
-}
-
-#page {
-}
-
-#navigation {
-}
-
-#feature {
-}
-
-#preface-wrapper {
-}
-
-#main-wrapper {
-}
-
-#header {
-}
-
-#topbar-wrapper {
-}
-
-#header .section {
-}
-
-#sitecontent-wrapper {
-}
-
-#sitecontent{
-}
-
-#main-wrapper {
-}
-
-#main {
-}
-
-#footer {
-}
-
-#footer .section {
+  background: #8b1f04;
 }

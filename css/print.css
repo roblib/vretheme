@@ -1,35 +1,37 @@
 /* $Id: print.css,v 1.8.2.1 2010/06/26 15:36:04 johnalbin Exp $ */
-
 /**
  * @file
  * Print styling
  *
  * We provide some sane print styling for Drupal using Zen's layout method.
  */
-
-
 /* underline all links */
-a:link,
-a:visited {
+/* line 13, ../sass/print.scss */
+a:link, a:visited {
   text-decoration: underline !important;
 }
 
 /* Don't underline header */
-#site-name a:link,
-#site-name a:visited {
+/* line 19, ../sass/print.scss */
+#site-name a:link, #site-name a:visited {
   text-decoration: none !important;
 }
 
 /* CSS2 selector to add visible href after links */
-#content a:link:after,
-#content a:visited:after {
+/* line 24, ../sass/print.scss */
+#content {
+  float: none;
+  width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+/* line 26, ../sass/print.scss */
+#content a:link:after, #content a:visited:after {
   content: " (" attr(href) ") ";
   font-size: 0.8em;
   font-weight: normal;
 }
-
-/* Un-float the content */
-#content,
+/* line 34, ../sass/print.scss */
 #content .section {
   float: none;
   width: 100%;
@@ -37,13 +39,22 @@ a:visited {
   padding: 0 !important;
 }
 
+/* Un-float the content */
 /* Turn off any background colors or images */
-body,
-#page-wrapper,
-#page,
-#main-wrapper,
-#main,
-#content,
+/* line 44, ../sass/print.scss */
+body, #page-wrapper, #page, #main-wrapper, #main {
+  color: #000;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* line 49, ../sass/print.scss */
+#content {
+  color: #000;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+/* line 53, ../sass/print.scss */
 #content .section {
   color: #000;
   background-color: transparent !important;
@@ -51,25 +62,15 @@ body,
 }
 
 /* Hide sidebars and nav elements */
-#skip-link,
-#navigation,
-.region-sidebar-first,
-.region-sidebar-second,
-#footer,
-.breadcrumb,
-div.tabs,
-.links,
-.taxonomy,
-.book-navigation,
-.forum-topic-navigation,
-.pager,
-.feed-icons {
+/* line 60, ../sass/print.scss */
+#skip-link, #navigation, .region-sidebar-first, .region-sidebar-second, #footer, .breadcrumb, div.tabs, .links, .taxonomy, .book-navigation, .forum-topic-navigation, .pager, .feed-icons {
   visibility: hidden;
   display: none;
 }
 
 /* If you un-comment the "page { overflow-y: hidden; }" ruleset, Firefox clips
    the content after the first page. */
+/* line 67, ../sass/print.scss */
 #page-wrapper {
   overflow-y: visible;
 }

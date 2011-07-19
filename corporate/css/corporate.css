@@ -1,15 +1,6 @@
 /* $Id: corporate.css,v 0.1 2010/11/22 02:16:49 krisbulman Exp $ */
-
-body,
-caption,
-th,
-td,
-input,
-textarea,
-select,
-option,
-legend,
-fieldset {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\000033}}
+body, caption, th, td, input, textarea, select, option, legend, fieldset {
   /* The following font family declarations are based on the Microsoft core web
    * fonts which are common fonts available on most computer systems. The DejaVu
    * fonts are commonly available on Linux systems where the MS fonts are less
@@ -33,728 +24,647 @@ fieldset {
   font-family: "Courier New", "DejaVu Sans Mono", monospace;
 
    */
-
-  font-family:"Lucida Grande",Verdana,"Bitstream Vera Sans",Arial,sans-serif !important;
-  
+  font-family: "Lucida Grande",Verdana,"Bitstream Vera Sans",Arial,sans-serif !important;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\0000329}}
 h1, h2, h3, h4, h5, h6 {
-    color: #343434;
-    font-weight: bold;
+  color: #343434;
+  font-weight: bold;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\0000334}}
 #header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
-    color: #fff;
+  color: #fff;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\0000338}}
 #feature h1, #feature h2, #feature h3, #feature h4, #feature h5, #feature h6 {
-    color: #fff;
+  color: #fff;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\0000342}}
 #bottom h1, #bottom h2, #bottom h3, #bottom h4, #bottom h5, #bottom h6 {
-    color: #EFEFEF;
+  color: #EFEFEF;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\0000345}}
 #name-and-slogan {
-font-family: Garamond, Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman",serif;
+  font-family: Garamond, Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman",serif;
 }
 
-#site-slogan { 
-font-size: 130%;
-text-transform: normal;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\0000348}}
+#site-slogan {
+  font-size: 130%;
+  text-transform: normal;
 }
 
-.region-sidebar-first .block h2.title, 
-.region-sidebar-second  .block h2.title {
-padding:0px 10px 0px 10px;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\0000352}}
+.region-sidebar-first .block h2.title, .region-sidebar-second.block h2.title {
+  padding: 0px 10px 0px 10px;
 }
 
-#logo /* Wrapping link for logo */ {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\0000357}}
+#sitelogo a img {
+  max-height: 50px;
+  /* sets max-height value for all standards-compliant browsers */
 }
 
-#logo img {
-
-}
-
-#sitelogo a img{ 
-max-height: 50px; /* sets max-height value for all standards-compliant browsers */
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\0000361}}
 * html #sitelogo a img {
-height: expression( this.scrollHeight > 49 ? "50px" : "auto" ); /* sets max-height for IE */
+  height: expression(this.scrollHeight > 49 ? "50px" : "auto" );
+  /* sets max-height for IE */
 }
-
 
 /**
  * @file
  * Page Background Styling
  */
-
-body {
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\0000371}}
 body.front, body.not-front {
-background: #4E5359 none repeat scroll 0 0 ;
+  background: #4E5359 none repeat scroll 0 0;
 }
 
-#page-wrapper {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\0000376}}
+#header .section .HeaderRight .block {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-#page {
-}
-
-#headercontent-wrapper {
-}
-
-#header .section .HeaderRight .block{
-padding-left: 10px;
-padding-right: 10px;
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\0000380}}
 #topbar-wrapper {
-    font-size: 90%;
-    line-height: 1.3em;
+  font-size: 90%;
+  line-height: 1.3em;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\0000385}}
 #topbar .block {
-    margin-bottom: 0.2em;
+  margin-bottom: 0.2em;
 }
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\0000387}}
 #topbar ul {
-    margin: 0 0.4em 0 0.4em;
+  margin: 0 0.4em 0 0.4em;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\0000390}}
 #topbar-wrapper ul.menu li {
-    margin: 0 0.4em 0 0.4em;
+  margin: 0 0.4em 0 0.4em;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\0000394}}
 #header .tb1, #header .tb2 {
-border-top: 0px solid #000;
+  border-top: 0px solid #000;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\0000397}}
 #topbar-wrapper {
-background: none repeat-x bottom left #000; 
-border-top: 2px solid #000;
+  background: none repeat-x bottom left #000;
+  border-top: 2px solid #000;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003101}}
 #navigation {
-background: none repeat-x 0 0 #000; 
-border-bottom: 0px solid #6C8BA0;
-border-top: 0px solid #000;
-background: -webkit-gradient(linear, left top, left bottom, from(#292929), to(#000)); /* for webkit browsers */
-background: -moz-linear-gradient(top,  #292929,  #000); /* for firefox 3.6+ */
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#292929', endColorstr='#000000'); /* for IE */
+  background: none repeat-x 0 0 #000;
+  border-bottom: 0px solid #6C8BA0;
+  border-top: 0px solid #000;
+  background: -webkit-gradient(linear, left top, left bottom, from(#292929), to(black));
+  /* for webkit browsers */
+  background: -moz-linear-gradient(top, #292929, black);
+  /* for firefox 3.6+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#292929', endColorstr='#000000');
+  /* for IE */
 }
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003111}}
 #navigation .section {
-    background-color: transparent;
-    line-height: 0.83em;
+  background-color: transparent;
+  line-height: 0.83em;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003115}}
 #sitecontent-wrapper {
- border-top: 1px solid #fff;
- background: url(../images/sitecontent-bg.png) repeat-x 0 0 #fff; 
- border-bottom: 1px solid #000;
+  border-top: 1px solid #fff;
+  background: url(../images/sitecontent-bg.png) repeat-x 0 0 white;
+  border-bottom: 1px solid #000;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003120}}
 #mainbottom-wrapper {
-    background: none repeat scroll 0 0 transparent;
+  background: none repeat scroll 0 0 transparent;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003123}}
 #bottom-wrapper {
- border-top: 1px solid #444;
+  border-top: 1px solid #444;
 }
 
-#closure-wrapper {
-}
-
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003128}}
 #closure {
-border-top: 1px solid #2b2b2b;
-color: #afafaf;
-background: url(../images/1pxlight.png)  repeat-x top left transparent; 
-padding: 0.5em;
+  border-top: 1px solid #2b2b2b;
+  color: #afafaf;
+  background: url(../images/1pxlight.png) repeat-x top left transparent;
+  padding: 0.5em;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003134}}
 #feature {
-background: url("../images/btmdropshdw.png") repeat-x scroll 0 -1px #6C8BA0;
-color: #fff;
+  background: url("../images/btmdropshdw.png") repeat-x scroll 0 -1px #6c8ba0;
+  color: #fff;
 }
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003137}}
 #feature .section {
-background:none repeat scroll 0 0 transparent;
+  background: none repeat scroll 0 0 transparent;
 }
 
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003140}}
 #preface-wrapper {
-background:none repeat scroll 0 0 transparent;
+  background: none repeat scroll 0 0 transparent;
 }
 
-#main-wrapper {
-
-}
-
-#main {
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003145}}
 #header {
-  background: none repeat-x bottom left transparent; 
+  background: none repeat-x bottom left transparent;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003148}}
 #headercontent-wrapper-bg {
-  background: url(../images/1pxlight.png)  repeat-x bottom left transparent; 
+  background: url(../images/1pxlight.png) repeat-x bottom left transparent;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003151}}
 #headercontent-wrapper {
-  background: url(../images/1pxlight.png)  repeat-x top left transparent; 
+  background: url(../images/1pxlight.png) repeat-x top left transparent;
 }
 
-h1#site-name, div#site-name {
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003156}}
 #name-and-slogan {
   padding: 0;
 }
 
-#topbar-wrapper {
-}
-
-#header .section {
-}
-
-#floater {
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003161}}
 .with-sitename-slogan #logo {
-    border-right: 1px solid #686C71;
+  border-right: 1px solid #686C71;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003164}}
 #logo {
-    margin: 0 0 0 0;
-    padding: 0 15px 0 10px;
+  margin: 0 0 0 0;
+  padding: 0 15px 0 10px;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003168}}
 #name-and-slogan {
-    padding: 0 10px 0 15px;
+  padding: 0 10px 0 15px;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003171}}
 #site-name {
-    text-shadow: 0px 1px 2px #3B3B3B;
+  text-shadow: 0px 1px 2px #3B3B3B;
 }
 
-#sitelogo {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003176}}
+.with-sidebar-footer #footer-preface-wrapper, #footer-preface-wrapper, #footer-content-bottom-wrapper {
+  margin: 0;
 }
 
-
-#sitecontent{
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003180}}
+#footer-content .block h2.title {
+  padding-top: 0;
 }
-
-#footer {
-}
-
-#footer .section {
-}
-
-.with-sidebar-footer #footer-preface-wrapper {
-margin:0;
-}
-
-#footer-preface-wrapper {
-margin:0;
-}
-
-#footer-content-bottom-wrapper {
-margin:0;
-}
-
-
-#footer-content .block h2.title{
-padding-top: 0;
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003182}}
 #footer-content .section {
-color: #ccc;
+  color: #ccc;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003186}}
 #footer-content-bottom-wrapper.with-footer-preface .block {
-    border-top: 1px solid #444;
+  border-top: 1px solid #444;
 }
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003188}}
 #footer-content-bottom-wrapper .block {
-    background:none repeat-x scroll left top transparent;
-    margin-top: 10px;
-    padding-top: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
+  background: none repeat-x scroll left top transparent;
+  margin-top: 10px;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003195}}
 #header {
-border-top: 2px solid #000;
+  border-top: 2px solid #000;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003198}}
 #headercontent-inner {
-    padding:  0;
+  padding: 0;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003203}}
 #headercontent-wrapper .column.HeaderRight .block .content {
-float: right;
+  float: right;
 }
-
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003205}}
 #headercontent-wrapper .column.HeaderRight #secondary-menu {
--moz-border-radius-bottomleft: 5px;
--moz-border-radius-bottomright: 5px;
--webkit-border-bottom-left-radius: 5px;
--webkit-border-bottom-right-radius: 5px;
-border-bottom-left-radius: 5px;
-border-bottom-right-radius: 5px;
-float: right;
-border-style:solid;
-border-width:1px;
-padding: 0 0.4em 0.1em 0.4em;
+  -moz-border-radius-bottomleft: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  float: right;
+  border-style: solid;
+  border-width: 1px;
+  padding: 0 0.4em 0.1em 0.4em;
+  background-color: #000;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000 #686c71 #686c71 #686c71;
 }
-
-#headercontent-wrapper .column.HeaderRight #secondary-menu {
-background-color: #000;
-border-width: 1px;
-border-style: solid;
-border-color: #000 #686c71 #686c71 #686c71;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003220}}
+#headercontent-wrapper .column.HeaderRight .block-menu, #headercontent-wrapper .column.HeaderRight #secondary-menu {
+  font-size: 90%;
+  line-height: 2em;
+  margin-bottom: 0;
 }
-
-#headercontent-wrapper .column.HeaderRight .block-menu,
-#headercontent-wrapper .column.HeaderRight #secondary-menu {
-    font-size: 90%;
-    line-height: 2em;
-    margin-bottom: 0;
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003224}}
 #headercontent-wrapper ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003227}}
 #headercontent-wrapper li {
-    display: inline;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    }
-
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003232}}
 #headercontent-wrapper #secondary-menu {
-    margin: 0;
-}    
-
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003234}}
 #headercontent-wrapper #secondary-menu li {
-    margin: 0 0.25em;
+  margin: 0 0.25em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003236}}
+#headercontent-wrapper .region-header-second ul.menu li {
+  border-left: 1px solid #686c71;
+  padding-left: 0.6em;
+  margin: 0 0.15em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003240}}
+#headercontent-wrapper .region-header-second ul.menu li.first {
+  border-left: 0px solid #686c71;
 }
 
-#headercontent-wrapper .region-header-second  ul.menu li { 
-    border-left: 1px solid #686c71;
-    padding-left: 0.6em;
-    margin: 0 0.15em;
-}
-
-#headercontent-wrapper .region-header-second  ul.menu li.first { 
-    border-left: 0px solid #686c71;
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003243}}
 #search {
-    padding-right: 10px;
+  padding-right: 10px;
 }
 
-
-
-#topbar ul {
-
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003248}}
 #topbar #search-box {
-margin:0;
-padding:0 0 0 15px;
+  margin: 0;
+  padding: 0 0 0 15px;
 }
 
 /* blocks.css */
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003254}}
 .region-sidebar-first .block h2.title, .region-sidebar-second .block h2.title, div.admin-panel h3 {
-background: transparent none repeat scroll 0 0;
-border: 0;
+  background: transparent none repeat scroll 0 0;
+  border: 0;
 }
 
-.comment  {
-background-color:#F4F4F4;
-border-color:#efefef #E8E8E9 #E8E8E9 #efefef;
-border-style:solid;
-border-width:1px;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003258}}
+.comment {
+  background-color: #F4F4F4;
+  border-color: #efefef #E8E8E9 #E8E8E9 #efefef;
+  border-style: solid;
+  border-width: 1px;
 }
 
-
-#feature .block h2.title, 
-div.admin-panel h3,
-#mainbottom-wrapper  .block h2.title,
-#preface-wrapper  .block h2.title,
-.region-content-top  .block h2.title,
-#content-top-wrapper .block h2.title,
-.region-content-bottom  .block h2.title,
-#content-bottom-wrapper .block h2.title,
-.region-sidebar-first .block h2.title, 
-.region-sidebar-second .block h2.title
-{
-padding: 0 10px 8px 0px;
-border-bottom: 1px dotted #d3d3d3;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003264}}
+#feature .block h2.title, div.admin-panel h3, #mainbottom-wrapper.block h2.title, #preface-wrapper.block h2.title, .region-content-top.block h2.title, #content-top-wrapper .block h2.title, .region-content-bottom.block h2.title, #content-bottom-wrapper .block h2.title, .region-sidebar-first .block h2.title, .region-sidebar-second .block h2.title {
+  padding: 0 10px 8px 0px;
+  border-bottom: 1px dotted #d3d3d3;
 }
-
 
 /* site padding */
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003271}}
 #feature .block h2.title {
-    border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003273}}
 #feature h2.title {
-font-size: 140%;
-color: #fff;
-text-shadow: 0 1px 2px #3B3B3B;
+  font-size: 140%;
+  color: #fff;
+  text-shadow: 0 1px 2px #3B3B3B;
 }
 
 /* Feature */
-
-#topbar .block {
-padding-left:10px;
-padding-right:10px;
-}
-
-#feature .block {
-padding-left:10px;
-padding-right:10px;
-}
-
-#preface-wrapper .block {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-#mainbottom-wrapper .block {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-#bottomcontent-wrapper .block {
-    padding-left: 10px;
-    padding-right: 10px;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003280}}
+#topbar .block, #feature .block, #preface-wrapper .block, #mainbottom-wrapper .block, #bottomcontent-wrapper .block {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* text colors */
-
-#body {
-}
-
-#feature {
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003288}}
 #topbar-wrapper {
-border-top: 0px;
-color: #ccc;
+  border-top: 0px;
+  color: #ccc;
 }
 
-#topbar {
-}
-
-header {
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003294}}
 #headercontent-wrapper .HeaderLeft {
-    padding-top: 20px;
-    padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-
-#navigation{
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003300}}
 #navbar-wrapper {
-    background-color: transparent;
-    }
-
-#preface-wrapper{
+  background-color: transparent;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003305}}
 #bottom {
-color:#FFFFFF;
+  color: #FFFFFF;
 }
 
 /* Link Colors */
-a:link {
-color: #5c6da3;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003311}}
+a:link, a:visited {
+  color: #5c6da3;
 }
-
-a:visited {
-color: #5c6da3;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003313}}
+a:hover, a:focus {
+  color: #5c6da3;
+  text-decoration: underline;
 }
-
-a:hover,
-a:focus {
-color: #5c6da3;
-text-decoration: underline;
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003316}}
 a:active {
-color: #000;
+  color: #000;
 }
 
-li a.active,
-a.active,
-li.active {
-color:#000000 !important;
-background-color: transparent !important;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003319}}
+li a.active, a.active, li.active {
+  color: #000000 !important;
+  background-color: transparent !important;
 }
 
-#header a:link {
-color: #FFFFFF;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003325}}
+#header a:link, #header a:visited {
+  color: #FFFFFF;
 }
-
-#header a:visited {
-color: #FFFFFF;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003327}}
+#header a:hover, #header a:focus {
+  color: #FFFFFF;
+  text-decoration: none;
 }
-
-#header a:hover,
-#header a:focus {
-color: #FFFFFF;
-text-decoration: none;
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003330}}
 #header a:active {
-color: #FFFFFF;
+  color: #FFFFFF;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003332}}
+#header li a.active {
+  color: #FFFFFF;
 }
 
-#header li  a.active,  {
-color: #FFFFFF;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003337}}
+#feature a:link, #feature a:visited {
+  color: #FFF;
+  text-decoration: underline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003340}}
+#feature a:hover, #feature a:focus, #feature a:active {
+  color: #fff;
+  text-decoration: underline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003343}}
+#feature li a.active {
+  color: #fff;
+  text-decoration: underline;
 }
 
-
-
-#feature a:link {
-color: #FFF;
-text-decoration: underline;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003349}}
+#bottom a:link, #bottom a:visited {
+  color: #ccc;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003351}}
+#bottom a:hover, #bottom a:focus, #bottom a:active {
+  color: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003353}}
+#bottom li a.active {
+  color: #fff;
 }
 
-#feature a:visited {
-color: #FFF;
-text-decoration: underline;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003358}}
+#closure a:link, #closure a:visited, #closure a:hover, #closure a:focus, #closure a:active {
+  color: #efefef;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003360}}
+#closure li a.active {
+  color: #efefef;
 }
 
-#feature a:hover,
-#feature a:focus {
-color: #fff;
-text-decoration: underline;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003365}}
+#footer a:link, #footer a:visited {
+  color: #ccc;
 }
-
-#feature a:active {
-color: #fff;
-text-decoration: underline;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003367}}
+#footer a:hover, #footer a:focus, #footer a:active {
+  color: #fff;
 }
-
-#feature li  a.active,  {
-color: #fff;
-text-decoration: underline;
-}
-
-
-#bottom a:link {
-color: #ccc
-}
-
-#bottom a:visited {
-color: #ccc
-}
-
-#bottom a:hover,
-#bottom a:focus {
-color: #fff
-}
-
-#bottom a:active {
-color: #fff
-}
-
-#bottom li  a.active,  {
-color: #fff
-}
-
-#closure a:link {
-color: #efefef
-}
-
-#closure a:visited {
-color: #efefef
-}
-
-#closure a:hover,
-#closure a:focus {
-color: #efefef
-}
-
-#closure a:active {
-color: #efefef
-}
-
-#closure li  a.active,  {
-color: #efefef
-}
-
-
-#footer a:link {
-color: #ccc
-}
-
-#footer a:visited {
-color: #ccc
-}
-
-#footer a:hover,
-#footer a:focus {
-color: #fff
-}
-
-#footer a:active {
-color: #fff
-}
-
-#footer li  a.active,  {
-color: #fff
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003369}}
+#footer li a.active {
+  color: #fff;
 }
 
 /* superfish borders */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003374}}
 #nav li, #superfish li {
-border-right: 1px solid #333;
+  border-right: 1px solid #333;
 }
 
-#nav li.first, #superfish li.first {
-    border-left: 1px solid #333;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003377}}
+#nav li.first {
+  border-left: 1px solid #333;
 }
 
-#superfish .menu li li.first,
-#superfish .menu li li li.first {
-border-top:1px solid #333;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003381}}
+#superfish li.first {
+  border-left: 1px solid #333;
 }
-
-#superfish .menu li li,
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003383}}
+#superfish .menu li li {
+  border-bottom: 1px solid #333;
+  border-left: 1px solid #333;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003384}}
+#superfish .menu li li.first {
+  border-top: 1px solid #333;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003386}}
 #superfish .menu li li li {
-border-bottom:1px solid #333; 
-border-left:1px solid #333;
+  border-bottom: 1px solid #333;
+  border-left: 1px solid #333;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003387}}
+#superfish .menu li li li.first {
+  border-top: 1px solid #333;
 }
 
 /* background and link colors */
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003397}}
 #header #navigation li.active a {
-background: #333;
+  background: #333;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003399}}
+#header #navigation li a {
+  background: transparent;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003402}}
+#header #navigation li li a, #header #navigation li li li a {
+  background: transparent;
 }
 
-#header #navigation li a,
-#header #navigation li li a,
-#header #navigation li li li a {
-background: transparent;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003405}}
+#nav ul.menu li.active-trail, #superfish ul.menu li.active-trail, #nav ul.menu li:hover {
+  background-color: #000;
+  opacity: 1;
 }
 
-#nav ul.menu li.active-trail, 
-#superfish ul.menu li.active-trail, 
-#nav ul.menu li:hover,
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003410}}
 #superfish ul.menu li:hover {
-background-color: #000;
-opacity: 1;
+  background-color: #000;
+  opacity: 1;
 }
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003413}}
 #superfish .menu li li {
-    background-color: #292929;
+  background-color: #292929;
 }
 
-#nav ul.menu li:hover a,
-#superfish ul.menu li:hover a {
-color: #fff;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003416}}
+#nav ul.menu li:hover a, #superfish ul.menu li:hover a {
+  color: #fff;
 }
 
-/* hover and active-trail color */ 
-#header #navigation li a.active,
-#header #navigation li a:visited .active,
-#header #navigation li a:hover, 
-#header #navigation li li a:hover, 
-#header #navigation li li li a:hover {
-background: #000 !important;
-color: #fff !important;
+/* hover and active-trail color */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003423}}
+#header #navigation li a.active, #header #navigation li a:visited .active, #header #navigation li a:hover {
+  background: #000 !important;
+  color: #fff !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003427}}
+#header #navigation li li a:hover, #header #navigation li li li a:hover {
+  background: #000 !important;
+  color: #fff !important;
 }
 
 /* superfish styling */
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003434}}
 #navigation #nav, #navigation #superfish {
-    padding-left: 10px;
+  padding-left: 10px;
 }
 
-#superfish .menu li:hover ul,
-#superfish .menu li.sfHover ul {
-top:27px;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003438}}
+#superfish .menu li:hover ul, #superfish .menu li.sfHover ul {
+  top: 27px;
 }
 
-#nav li a, #superfish li a{
-font-weight:normal;
-text-transform:none;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003441}}
+#nav li a, #superfish li a {
+  font-weight: normal;
+  text-transform: none;
 }
 
-#nav .menu a, #nav .menu a:visited, 
-#superfish .menu a, 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003445}}
+#nav .menu a {
+  padding: 5px 1em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003447}}
+#nav .menu a:visited {
+  padding: 5px 1em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003451}}
+#superfish .menu a {
+  padding: 5px 1em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003453}}
 #superfish .menu a:visited {
-   padding: 5px 1em;
+  padding: 5px 1em;
 }
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003455}}
+#superfish .menu li {
+  background: none repeat scroll 0 0 transparent;
+  margin-right: 0px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003456}}
 #superfish .menu li li {
-top: -3px;
+  top: -3px;
 }
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003458}}
 #superfish .menu li li li {
-top: -1px;
+  top: -1px;
 }
 
-#superfish .menu li, #nav .menu li {
-    background: none repeat scroll 0 0 transparent;
-    margin-right: 0px;  
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003464}}
+#nav .menu li {
+  background: none repeat scroll 0 0 transparent;
+  margin-right: 0px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003467}}
+#nav .menu a {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003470}}
+#nav .menu a:visited {
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
-#nav .menu a, #nav .menu a:visited, #superfish .menu a, #superfish .menu a:visited {
-    padding-left: 1em;
-    padding-right: 1em;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003475}}
+#superfish .menu a {
+  padding-left: 1em;
+  padding-right: 1em;
 }
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003478}}
+#superfish .menu a:visited {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003481}}
 #superfish .menu a.sf-with-ul {
-    padding-right: 1em;
+  padding-right: 1em;
 }
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003484}}
 #superfish .menu li a .sf-sub-indicator {
-	clip: rect(1px 1px 1px 1px); /* IE6 & 7 */
-	clip: rect(1px, 1px, 1px, 1px);
+  clip: rect(1px 1px 1px 1px);
+  /* IE6 & 7 */
+  clip: rect(1px, 1px, 1px, 1px);
 }
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003488}}
 #superfish .menu li li a .sf-sub-indicator {
-	clip:rect(auto); /* IE6 & 7 */
-	clip:rect(auto, auto, auto, auto);
+  clip: rect(auto);
+  /* IE6 & 7 */
+  clip: rect(auto, auto, auto, auto);
 }
 
 /* Search Block */
-
-#header #google-cse-searchbox-form .form-item,
-#header #islandora-solr-simple-search-form .form-item {
-margin: 0;
-float: left;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003496}}
+#header #google-cse-searchbox-form .form-item, #header #islandora-solr-simple-search-form .form-item {
+  margin: 0;
+  float: left;
 }
-  
-#header #google-cse-searchbox-form .form-item label,
-#header #islandora-solr-simple-search-form .form-item label,
-#header #search-box .form-item label,
-#header #search-block-form .form-item label	{ 
- color: #fff; /* Wrapper for the search form */
-}  
-  
-#header #google-cse-searchbox-form .form-item input,
-#header #islandora-solr-simple-search-form .form-item input, 
-#header #search-box .form-item input,
-#header #search-block-form .form-item input  {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003499}}
+#header #google-cse-searchbox-form .form-item label, #header #islandora-solr-simple-search-form .form-item label, #header #search-box .form-item label, #header #search-block-form .form-item label {
+  color: #fff;
+  /* Wrapper for the search form */
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003502}}
+#header #google-cse-searchbox-form .form-item input, #header #islandora-solr-simple-search-form .form-item input, #header #search-box .form-item input, #header #search-block-form .form-item input {
   margin: 0px 0px 0 0;
   width: 200px;
   display: inline;
@@ -766,77 +676,77 @@ float: left;
   -moz-border-radius: 3px;
   border-top-left: 3px;
   padding-right: 20px;
-   padding-left: 5px;
+  padding-left: 5px;
   border: 1px solid #000;
-  -moz-box-shadow:0 1px 0 #444444;
+  -moz-box-shadow: 0 1px 0 #444444;
   background: #666666 url(../images/insearch-magglass.png) no-repeat right center;
 }
-
-#header #google-cse-searchbox-form .form-item input:hover,
-#header #islandora-solr-simple-search-form .form-item input:hover, 
-#header #search-box .form-item input:hover,
-#header #search-block-form .form-item input:hover  {
-background: #777 url(../images/insearch-magglass.png) no-repeat right center;
-color: #FFFFFF;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003518}}
+#header #google-cse-searchbox-form .form-item input:hover, #header #islandora-solr-simple-search-form .form-item input:hover, #header #search-box .form-item input:hover, #header #search-block-form .form-item input:hover {
+  background: #777777 url(../images/insearch-magglass.png) no-repeat right center;
+  color: #FFFFFF;
 }
-
-#header #google-cse-searchbox-form .form-item input:focus,
-#header #islandora-solr-simple-search-form .form-item input:focus, 
-#header #search-box .form-item input:focus,
-#header #search-block-form .form-item input:focus  {
--moz-box-shadow: 0 0 3px #000000;
-background:#EEEEEE url(../images/insearch-magglass.png) no-repeat right center;
-border:1px solid #EEEEEE;
-color:#333333;
-outline-color:-moz-use-text-color;
-outline-style:none;
-outline-width:medium;
-text-shadow:0 1px 0 #FFFFFF;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003521}}
+#header #google-cse-searchbox-form .form-item input:focus, #header #islandora-solr-simple-search-form .form-item input:focus, #header #search-box .form-item input:focus, #header #search-block-form .form-item input:focus {
+  -moz-box-shadow: 0 0 3px #000000;
+  background: #eeeeee url(../images/insearch-magglass.png) no-repeat right center;
+  border: 1px solid #EEEEEE;
+  color: #333333;
+  outline-color: -moz-use-text-color;
+  outline-style: none;
+  outline-width: medium;
+  text-shadow: 0 1px 0 #FFFFFF;
 }
-
-
-#header #google-cse-searchbox-form  input.form-submit, 
-#header #islandora-solr-simple-search-form input.form-submit, 
-#header #search-form input.form-submit, 
-#header #search-box input.form-submit,
-#header #search-block-form input.form-submit {
-height: 21px;
-width: 21px;
-cursor: pointer;
-text-indent: -9999px;
-border: none;
-/* background: url(../images/mag_glass/grey-mag_glass.png) no-repeat left top;  */
-display: none;
-clear: right;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003530}}
+#header #google-cse-searchbox-form input.form-submit, #header #islandora-solr-simple-search-form input.form-submit, #header #search-form input.form-submit, #header #search-box input.form-submit, #header #search-block-form input.form-submit {
+  height: 21px;
+  width: 21px;
+  cursor: pointer;
+  text-indent: -9999px;
+  border: none;
+  /* background: url(../images/mag_glass/grey-mag_glass.png) no-repeat left top;  */
+  display: none;
+  clear: right;
 }
-  
-#header #google-cse-searchbox-form  .block-search .form-item  textarea:focus,
-#header #islandora-solr-simple-search-form  .block-search .form-item  textarea:focus, 
-#header #islandora-solr-simple-search-form  .block-search .form-item  textarea:focus input:focus, 
-#header #search-form  .block-search .form-item  textarea:focus, 
-#header #search-form  .block-search .form-item  textarea:focus input:focus,
-#header #search-block-form .block-search .form-item  textarea:focus,
-#header #search-block-form .block-search .form-item  textarea:focus  input:focus	
-{
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003539}}
+#header #google-cse-searchbox-form.block-search .form-item textarea:focus {
+  border: 2px solid #2E5067;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003542}}
+#header #islandora-solr-simple-search-form.block-search .form-item textarea:focus, #header #islandora-solr-simple-search-form.block-search .form-item textarea:focus input:focus {
+  border: 2px solid #2E5067;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003545}}
+#header #search-form.block-search .form-item textarea:focus, #header #search-form.block-search .form-item textarea:focus input:focus {
+  border: 2px solid #2E5067;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003547}}
+#header #search-block-form .block-search .form-item textarea:focus {
+  border: 2px solid #2E5067;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003549}}
+#header #search-block-form .block-search .form-item textarea:focus input:focus {
   border: 2px solid #2E5067;
 }
 
-.prefaceimage img{
-border:12px solid #dbdbdb;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003552}}
+.prefaceimage img {
+  border: 12px solid #dbdbdb;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003554}}
+.prefaceimage img:hover {
+  border: 12px solid #e3e3e3;
 }
 
-.prefaceimage img:hover{
-border:12px solid #e3e3e3;
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003557}}
 .region-header-second div.block.with-block-editing div.edit {
-    display:none;
+  display: none;
 }
 
-#bottom .item-list .pager{
-text-align: left;
-margin-top: 5px;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/corporate\/sass\/corporate\.scss}line{font-family:\00003560}}
+#bottom .item-list .pager {
+  text-align: left;
+  margin-top: 5px;
 }
 
 /* fedora overrides */
-

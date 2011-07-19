@@ -1,0 +1,108 @@
+/* $Id: views-styles.css,v 1.1 2009/08/12 04:25:15 johnalbin Exp $ */
+
+/**
+ * @file
+ * Views Styling
+ */
+
+.view-viewsslideshow {
+  margin-top: 5px;
+  .views-content-title {
+    -moz-border-radius-bottomright: 10px;
+    border-bottom-right-radius: 10px;
+    bottom-right-radius: 10px;
+    background: none repeat scroll 0 0 #333;
+    padding: 5px 10px;
+    font-size: 11px;
+    font-weight: 700;
+    height: 20px;
+    line-height: 22px;
+    margin: 0 10px 5px 0;
+    overflow: hidden;
+    padding: 0 0 0 5px;
+    width: 95%;
+    color: #fff; }
+  .views-field-title {
+    background-color: #e6e7e8;
+    height: 55px;
+    margin-top: -60px;
+    opacity: 0.7;
+    width: 460px;
+    color: #fff;
+    bottom: 0; }
+  .views-content-title a {
+    padding: 10px; }
+  .activeSlide .views-field-counter {
+    color: #fff;
+    background: url(../images/rotator_pager_active_bg.png) no-repeat 1px 1px transparent; } }
+
+#views_slideshow_thumbnailhover_teaser_section_viewsslideshow-block_1 {
+  display: block;
+  clear: both;
+  height: 265px; }
+
+#views_slideshow_thumbnailhover_breakout_teasers_viewsslideshow-block_1 {
+  width: 100px; }
+
+.view-viewsslideshow {
+  .views-slideshow-controls-bottom {
+    float: right;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    margin-right: -5px; }
+  .views-field-nothing {
+    float: right;
+    font-style: italic;
+    font-size: 90%;
+    margin-top: -20px;
+    margin-right: 10px;
+    z-index: 99;
+    position: relative; }
+  .views-field-counter {
+    display: inline-block;
+    float: left;
+    padding: 0 5px 0 5px;
+    margin: 0 0.1em 0 0.1em;
+    color: #000;
+    background: url(../images/rotator_pager_bg.png) no-repeat 1px 1px transparent;
+    font-size: 95%;
+    cursor: pointer;
+    cursor: hand;
+    z-index: 999; } }
+
+#views_slideshow_singleframe_teaser_section_image_gallery_rotating_banner-block_1 {
+  position: relative; }
+
+#transparency {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 940px;
+  height: 60px;
+  background-color: #000;
+  opacity: 0.5;
+  filter: alpha(opacity = 50);
+  -moz-opacity: 0.5; }
+
+#featurecontent {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  padding-right: 10px;
+  color: #fff; }
+
+.slideshowtitle {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 4px;
+  font-family: "Trebuchet MS","Lucida Grande","Lucida Sans","Lucida Sans Unicode",Tahoma,Helvetica,sans-serif; }
+
+#feature .slideshowtitle a {
+  &:link, &:visited {
+    text-decoration: none; } }
+
+.views_slideshow_singleframe_slide {
+  height: 300px; }
+
+.slideshowtext {
+  font-family: "Trebuchet MS","Lucida Grande","Lucida Sans","Lucida Sans Unicode",Tahoma,Helvetica,sans-serif; }

@@ -1,0 +1,77 @@
+/* $Id: nodes.css,v 1.6 2009/11/02 15:37:29 johnalbin Exp $ */
+
+/**
+ * @file
+ * Node Styling
+ *
+ * Style anything that isn't in the $content variable.
+ */
+
+.node {
+  border-bottom: 1px dotted #dededf;
+  margin: 0.5em 0 1em;
+  padding-bottom: 1em; }
+
+.node-sticky {}
+
+.node-unpublished {
+  /* background-color: #fff4f4; */
+  /* Drupal core uses a #fff4f4 background */
+  div.unpublished {
+    height: 0;
+    overflow: visible;
+    color: #d8d8d8;
+    font-size: 75px;
+    line-height: 1;
+    font-family: Impact, "Arial Narrow", Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    word-wrap: break-word;
+    /* A very nice CSS3 property */ } }
+
+.comment-unpublished div.unpublished {
+  height: 0;
+  overflow: visible;
+  color: #d8d8d8;
+  font-size: 75px;
+  line-height: 1;
+  font-family: Impact, "Arial Narrow", Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  word-wrap: break-word;
+  /* A very nice CSS3 property */ }
+
+.node-by-viewer, .node-teaser, .node-type-page, .node-type-story, .node h2.title {}
+
+/* All nodes are given a node-type-FOO class that describes the type of
+ * content that it is. If you create a new content type called
+ * "my-custom-type", it will receive a "node-type-my-custom-type" class.
+ */
+
+.marker {
+  color: #c00; }
+
+.node {
+  .picture {}
+  &.node-unpublished .picture {
+    position: relative;
+    /* Otherwise floated pictures will appear below the "Unpublished" text. */ } }
+
+.comment.comment-unpublished .picture {
+  position: relative;
+  /* Otherwise floated pictures will appear below the "Unpublished" text. */ }
+
+.node {
+  .meta {}
+  .submitted {
+    color: #999999; }
+  .terms, .content {}
+  ul.links {
+    margin-top: 1em;
+    display: block; } }
+
+.preview .node {
+  /* background-color: #ffffea; */
+  /* Drupal core uses a #ffffea background */ }

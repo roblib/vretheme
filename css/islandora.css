@@ -1,43 +1,40 @@
+/* line 2, ../sass/islandora.scss */
 #content-fedora table {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
 }
-
-#content-fedora table td img{
-    text-align: center;
+/* line 5, ../sass/islandora.scss */
+#content-fedora table td img {
+  text-align: center;
 }
-
-#content-fedora table {
-    width: 95%;
-}
-
+/* line 9, ../sass/islandora.scss */
 #content-fedora .fedora_detailed_list table {
-    background: #EAEAEA;
-    width: 100%;
+  background: #EAEAEA;
+  width: 100%;
 }
-
+/* line 12, ../sass/islandora.scss */
 #content-fedora .fedora_detailed_list form {
-    padding: 0 0 1.3em 0; 
+  padding: 0 0 1.3em 0;
 }
-
-#content-fedora .fedora_detailed_list table td,
-#content-fedora .fedora_detailed_list table th {
-    padding: 0 1em;
-}
-
-#content-fedora .fedora_detailed_list table td,
+/* line 14, ../sass/islandora.scss */
 #content-fedora .fedora_detailed_list table {
-    border: 1px solid #bbb;
+  border: 1px solid #bbb;
+}
+/* line 15, ../sass/islandora.scss */
+#content-fedora .fedora_detailed_list table td, #content-fedora .fedora_detailed_list table th {
+  padding: 0 1em;
+}
+/* line 17, ../sass/islandora.scss */
+#content-fedora .fedora_detailed_list table td {
+  border: 1px solid #bbb;
 }
 
-#fedora-repository-purge-object-form input {
-
-}
-
+/* line 24, ../sass/islandora.scss */
 .fedora_detailed_list h3 {
-    margin: 0;
+  margin: 0;
 }
-
+/* line 26, ../sass/islandora.scss */
 .fedora_detailed_list table td {
-      vertical-align: bottom;
+  vertical-align: bottom;
 }

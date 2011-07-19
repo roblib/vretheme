@@ -1,0 +1,180 @@
+/* colors */
+
+/* this is the inset look you see on the menu items */
+
+#superfish .menu li li {
+  top: -1px;
+  li {
+    top: -1px; } }
+
+#nav .block, #superfish .block {
+  margin-bottom: 0px; }
+
+#nav, #superfish {
+  margin: 0 auto;
+  padding: 0px;
+  float: left;
+  /* border-bottom: 1px solid #346b96; */
+  position: relative;
+  z-index: 10000; }
+
+#header {
+  .column.W #superfish {
+    float: left;
+    bottom: 0;
+    position: absolute; }
+  #superfish {} }
+
+.roundify {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; }
+
+/* border seperator */
+
+#nav li, #superfish li {
+  float: left;
+  word-wrap: normal;
+  white-space: normal;
+  padding: 0 1px 0 0; }
+
+#navigation {
+  #nav, #superfish {
+    width: 100%; } }
+
+#nav .menu a, #superfish .menu a {
+  text-decoration: none;
+  padding-top: 5px;
+  &:visited {
+    text-decoration: none;
+    padding-top: 5px; } }
+
+#nav li a, #superfish li a {
+  text-decoration: none;
+  padding: 6px 29px 0 29px; }
+
+#nav h2, #superfish h2 {
+  height: 0;
+  overflow: hidden;
+  position: absolute; }
+
+#nav .menu a, #superfish .menu a {
+  padding: 6px 1em;
+  text-decoration: none; }
+
+#nav .menu, #superfish .menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  * {
+    margin: 0;
+    padding: 0;
+    list-style: none; } }
+
+#nav .menu {
+  line-height: 1.3em; }
+
+#superfish .menu {
+  line-height: 1.3em;
+  ul {
+    position: absolute;
+    top: -999em;
+    min-width: 13em;
+    width: 13em;
+    max-width: 17em;
+    li {
+      width: 100%; } }
+  li {
+    &:hover {
+      visibility: inherit; }
+    float: left;
+    position: relative; } }
+
+#nav .menu a {
+  display: block;
+  position: relative; }
+
+#superfish {
+  .menu {
+    a {
+      display: block;
+      position: relative; }
+    li {
+      &:hover ul, &.sfHover ul {
+        left: 0;
+        top: 24px;
+        z-index: 99; } } }
+  ul.menu li {
+    &:hover li ul, &.sfHover li ul {
+      top: -999em; }
+    li {
+      &:hover ul, &.sfHover ul {
+        left: 13em;
+        top: 0; }
+      &:hover li ul, &.sfHover li ul {
+        top: -999em; }
+      li {
+        &:hover ul, &.sfHover ul {
+          left: 13em;
+          top: 0; } } } }
+  .menu {
+    a.sf-with-ul {
+      padding-right: 2.25em;
+      min-width: 1px; }
+    li {
+      background: transparent;
+      &:hover, &.sfHover {
+        outline: 0; } }
+    a {
+      &:focus, &:hover, &:active {
+        outline: 0; } }
+    li {
+      &:hover, &.sfHover {
+        z-index: 20; } }
+    a {
+      &:focus, &:hover, &:active {
+        z-index: 20; }
+      z-index: 20; } } }
+
+.sf-sub-indicator {
+  position: absolute;
+  display: block;
+  right: .75em;
+  top: 0.6em;
+  width: 10px;
+  height: 10px;
+  text-indent: -999em;
+  overflow: hidden;
+  background: url(../images/arrows-ffffff.png) no-repeat -10px -100px; }
+
+a {
+  > .sf-sub-indicator {
+    background-position: 0 -100px; }
+  &:focus > .sf-sub-indicator, &:hover > .sf-sub-indicator, &:active > .sf-sub-indicator {
+    background-position: -10px -100px; } }
+
+li {
+  &:hover > a > .sf-sub-indicator, &.sfHover > a > .sf-sub-indicator {
+    background-position: -10px -100px; } }
+
+#superfish {
+  .menu ul {
+    .sf-sub-indicator {
+      background-position: -10px 0; }
+    a {
+      > .sf-sub-indicator {
+        background-position: 0 0; }
+      &:focus > .sf-sub-indicator, &:hover > .sf-sub-indicator, &:active > .sf-sub-indicator {
+        background-position: -10px 0; } }
+    li {
+      &:hover > a > .sf-sub-indicator, &.sfHover > a > .sf-sub-indicator {
+        background-position: -10px 0; } } }
+  .sf-shadow ul {
+    background: url(../images/shadow.png) no-repeat bottom right;
+    padding: 0 8px 9px 0;
+    -moz-border-radius-bottomleft: 17px;
+    -moz-border-radius-topright: 17px;
+    -webkit-border-top-right-radius: 17px;
+    -webkit-border-bottom-left-radius: 17px;
+    &.sf-shadow-off {
+      background: transparent; } } }

@@ -1,5 +1,4 @@
 /* $Id: layout-fixed.css,v 1.17 2009/11/05 12:09:53 johnalbin Exp $ */
-
 /**
  * @file
  * Layout Styling (DIV Positioning)
@@ -16,19 +15,17 @@
  *   display, position, float, clear, width, height, min-width, min-height
  *   margin, border, padding, overflow
  */
-
-
 /*
  * Body
  */
-#page-wrapper,
-.region-page-closure {
-  min-width: 980px; /* Don't allow the browser to make the site unreadable. */
+/* line 24, ../sass/layout-fixed.scss */
+#page-wrapper, .region-page-closure {
+  min-width: 980px;
+  /* Don't allow the browser to make the site unreadable. */
 }
 
-
-#page-wrapper,
-.region-page-closure {
+/* line 28, ../sass/layout-fixed.scss */
+#page-wrapper, .region-page-closure {
   /*
    * If you want to make the page a fixed width and centered in the viewport,
    * this is the standards-compliant way to do that. See also the ie6.css file
@@ -36,283 +33,274 @@
    */
 }
 
-#page {
+/* line 37, ../sass/layout-fixed.scss */
+.region-topbar-top, #topbar, #headercontent-wrapper div.section, #feature div.section, #breadcrumb-wrapper, #preface-wrapper div.section, #navigation div.section, #featured div.section, #messages, #sitecontent, #main, #mainbottom-wrapper div.section, #bottom, #bottomcontent-wrapper, #footer-wrapper, #closure {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
 }
-
-
-#page-wrapper {
-
-}
-
-.region-topbar-top, #topbar, #headercontent-wrapper div.section, #feature div.section, 
-#breadcrumb-wrapper, #preface-wrapper div.section, #navigation div.section, 
-#featured div.section, #messages, #sitecontent, #main, #mainbottom-wrapper div.section, 
-#bottom, #bottomcontent-wrapper, #footer-wrapper,  #closure {
-margin-left:auto;
-margin-right:auto;
-width:960px;
-}
-
 
 /*
  * Header
  */
+/* line 46, ../sass/layout-fixed.scss */
 #header {
-color: #fff;
+  color: #fff;
 }
 
-#header .section {
-}
-
-#headercontent-wrapper {
-}
-
-#search-box {
-}
-
+/* line 52, ../sass/layout-fixed.scss */
 .region-header {
-  clear: both; /* Clear the logo */
+  clear: both;
+  /* Clear the logo */
 }
 
+/* line 57, ../sass/layout-fixed.scss */
 #headercontent-wrapper .column.HeaderRight #secondary-menu {
-    line-height: 2em;
-    margin-bottom: 0;
-    margin-right: 10px;
+  line-height: 2em;
+  margin-bottom: 0;
+  margin-right: 10px;
 }
-
+/* line 61, ../sass/layout-fixed.scss */
 #headercontent-wrapper .column.HeaderRight .block-menu {
-    line-height: 2em;
-    margin-bottom: 0;
-    margin-right: 0px;
+  line-height: 2em;
+  margin-bottom: 0;
+  margin-right: 0px;
 }
-
 
 /*
  * Main (container for everything else)
  */
+/* line 70, ../sass/layout-fixed.scss */
 #main-wrapper {
   position: relative;
 }
 
+/* line 73, ../sass/layout-fixed.scss */
 #sitecontent {
-  min-height:500px;
-  height:auto !important;
-  height:500px;
+  min-height: 500px;
+  height: auto !important;
+  height: 500px;
   padding: 0;
 }
 
 /*
  * Content
  */
-#content,
-.no-sidebars #content {
-  float: left; /* LTR */
+/* line 83, ../sass/layout-fixed.scss */
+#content, .no-sidebars #content {
+  float: left;
+  /* LTR */
   width: 960px;
-  margin-left: 0; /* LTR */
-  margin-right: -960px; /* LTR */ /* Negative value of #content's width + left margin. */
-  padding: 0; /* DO NOT CHANGE. Add padding or margin to #content .section. */
+  margin-left: 0;
+  /* LTR */
+  margin-right: -960px;
+  /* LTR */
+  /* Negative value of #content's width + left margin. */
+  padding: 0;
+  /* DO NOT CHANGE. Add padding or margin to #content .section. */
 }
 
+/* line 95, ../sass/layout-fixed.scss */
 .sidebar-first #content {
   width: 720px;
-  margin-left: 240px; /* LTR */ /* The width of .region-sidebar-first. */
-  margin-right: -960px; /* LTR */ /* Negative value of #content's width + left margin. */
+  margin-left: 240px;
+  /* LTR */
+  /* The width of .region-sidebar-first. */
+  margin-right: -960px;
+  /* LTR */
+  /* Negative value of #content's width + left margin. */
 }
 
+/* line 104, ../sass/layout-fixed.scss */
 .sidebar-second #content {
   width: 720px;
-  margin-left: 0; /* LTR */
-  margin-right: -720px; /* LTR */ /* Negative value of #content's width + left margin. */
+  margin-left: 0;
+  /* LTR */
+  margin-right: -720px;
+  /* LTR */
+  /* Negative value of #content's width + left margin. */
 }
 
+/* line 112, ../sass/layout-fixed.scss */
 .two-sidebars #content {
   width: 480px;
-  margin-left: 240px; /* LTR */ /* The width of .region-sidebar-first */
-  margin-right: -720px; /* LTR */ /* Negative value of #content's width + left margin. */
+  margin-left: 240px;
+  /* LTR */
+  /* The width of .region-sidebar-first */
+  margin-right: -720px;
+  /* LTR */
+  /* Negative value of #content's width + left margin. */
 }
 
+/* line 121, ../sass/layout-fixed.scss */
 #content .section {
-margin:10px;
-padding:0;
+  margin: 10px;
+  padding: 0;
 }
-
 
 /*
  * Navigation
  */
+/* line 129, ../sass/layout-fixed.scss */
 #navigation {
   /* float: left; /* LTR */
   /* width: 100%; */
   /* margin-left: 0; /* LTR */
-  /* margin-right: -100%; /* LTR */ /* Negative value of #navigation's width + left margin. */
-  padding: 0; /* DO NOT CHANGE. Add padding or margin to #navigation .section. */
+  /* margin-right: -100%; /* LTR */
+  /* Negative value of #navigation's width + left margin. */
+  padding: 0;
+  /* DO NOT CHANGE. Add padding or margin to #navigation .section. */
   /* height: 3.8em; The navigation can have any arbritrary height. We picked one
                     that is the line-height plus 1em: 1.3 + 1 = 2.3
                     Set this to the same value as the margin-top below. */
 }
 
-
-.with-navigation.with-preface #content,
-.with-navigation.with-preface .region-sidebar-first,
-.with-navigation.with-preface .region-sidebar-second {
-  margin-top: 0em; /* Set this to the same value as the navigation height above. */
+/* line 142, ../sass/layout-fixed.scss */
+.with-navigation.with-preface #content, .with-navigation.with-preface .region-sidebar-first, .with-navigation.with-preface .region-sidebar-second {
+  margin-top: 0em;
+  /* Set this to the same value as the navigation height above. */
 }
 
-
-#navigation .section {
-
-}
-
+/* line 148, ../sass/layout-fixed.scss */
 #navbar-wrapper {
-background-color: transparent;
-display: inline-block;
-width: 100%;
+  background-color: transparent;
+  display: inline-block;
+  width: 100%;
 }
-
+/* line 152, ../sass/layout-fixed.scss */
 #navbar-wrapper .NavbarRight .block {
-padding-right: 10px;
+  padding-right: 10px;
 }
 
-#navigation ul /* Primary and secondary links */ {
+/* line 156, ../sass/layout-fixed.scss */
+#navigation ul {
   margin: 0;
   padding: 0;
-  text-align: left; /* LTR */
+  text-align: left;
+  /* LTR */
 }
-
-#navigation li /* A simple method to get navigation links to appear in one line. */ {
-  float: left; /* LTR */
-  padding: 0 10px 0 0; /* LTR */
+/* line 161, ../sass/layout-fixed.scss */
+#navigation li {
+  float: left;
+  /* LTR */
+  padding: 0 10px 0 0;
+  /* LTR */
 }
 
 /* Navigation Bar + Navbar Right
 -------------------------------------------------------------- */
-
+/* line 172, ../sass/layout-fixed.scss */
 #navbar-wrapper .column.NavbarLeft {
-float: left;
+  float: left;
 }
-
+/* line 174, ../sass/layout-fixed.scss */
 #navbar-wrapper .column.NavbarRight {
-text-align: right;
-float: right;
+  text-align: right;
+  float: right;
 }
-
+/* line 177, ../sass/layout-fixed.scss */
 #navbar-wrapper .column.NavbarRight .block {
-float: right;
+  float: right;
 }
-
-#navbar-wrapper.nbl1.nbr1 .NavbarLeft,
-#navbar-wrapper.nbl2.nbr1 .NavbarLeft,
-#navbar-wrapper.nbl3.nbr1 .NavbarLeft,
-#navbar-wrapper.nbl4.nbr1 .NavbarLeft,
-#navbar-wrapper.nbl1.nbr2 .NavbarLeft,
-#navbar-wrapper.nbl2.nbr2 .NavbarLeft,
-#navbar-wrapper.nbl3.nbr2 .NavbarLeft,
-#navbar-wrapper.nbl4.nbr2 .NavbarLeft {
-width: 75%;
+/* line 179, ../sass/layout-fixed.scss */
+#navbar-wrapper.nbl1.nbr1 .NavbarLeft, #navbar-wrapper.nbl2.nbr1 .NavbarLeft, #navbar-wrapper.nbl3.nbr1 .NavbarLeft, #navbar-wrapper.nbl4.nbr1 .NavbarLeft, #navbar-wrapper.nbl1.nbr2 .NavbarLeft, #navbar-wrapper.nbl2.nbr2 .NavbarLeft, #navbar-wrapper.nbl3.nbr2 .NavbarLeft, #navbar-wrapper.nbl4.nbr2 .NavbarLeft {
+  width: 75%;
 }
-
-#navbar-wrapper.nbl1.nbr1 .NavbarRight,
-#navbar-wrapper.nbl2.nbr1 .NavbarRight,
-#navbar-wrapper.nbl3.nbr1 .NavbarRight,
-#navbar-wrapper.nbl4.nbr1 .NavbarRight,
-#navbar-wrapper.nbl1.nbr2 .NavbarRight,
-#navbar-wrapper.nbl2.nbr2 .NavbarRight,
-#navbar-wrapper.nbl3.nbr2 .NavbarRight,
-#navbar-wrapper.nbl4.nbr2 .NavbarRight {
-width: 25%;
+/* line 181, ../sass/layout-fixed.scss */
+#navbar-wrapper.nbl1.nbr1 .NavbarRight, #navbar-wrapper.nbl2.nbr1 .NavbarRight, #navbar-wrapper.nbl3.nbr1 .NavbarRight, #navbar-wrapper.nbl4.nbr1 .NavbarRight, #navbar-wrapper.nbl1.nbr2 .NavbarRight, #navbar-wrapper.nbl2.nbr2 .NavbarRight, #navbar-wrapper.nbl3.nbr2 .NavbarRight, #navbar-wrapper.nbl4.nbr2 .NavbarRight {
+  width: 25%;
 }
-
-#navbar-wrapper.nbl1.nbr0 .column,
-#navbar-wrapper.nbl2.nbr0 .column,
-#navbar-wrapper.nbl3.nbr0 .column,
-#navbar-wrapper.nbl4.nbr0 .column {
-width: 100%;
+/* line 183, ../sass/layout-fixed.scss */
+#navbar-wrapper.nbl1.nbr0 .column, #navbar-wrapper.nbl2.nbr0 .column, #navbar-wrapper.nbl3.nbr0 .column, #navbar-wrapper.nbl4.nbr0 .column {
+  width: 100%;
 }
-
+/* line 185, ../sass/layout-fixed.scss */
 #navbar-wrapper .block {
-padding-left:0px;
-margin-bottom: 0;
+  padding-left: 0px;
+  margin-bottom: 0;
 }
-
-#navbar-wrapper #nav, 	#navbar-wrapper #search {
-padding-left:0;
-padding-right:0px;
+/* line 188, ../sass/layout-fixed.scss */
+#navbar-wrapper #nav, #navbar-wrapper #search {
+  padding-left: 0;
+  padding-right: 0px;
 }
-
+/* line 191, ../sass/layout-fixed.scss */
 #navbar-wrapper #search-box {
-padding: 0 10px 0 0;
-margin: 0;
+  padding: 0 10px 0 0;
+  margin: 0;
 }
-
-
-
 
 /*
  * First sidebar
  */
+/* line 199, ../sass/layout-fixed.scss */
 .region-sidebar-first {
-  float: left; /* LTR */
+  float: left;
+  /* LTR */
   width: 240px;
-  margin-left: 0; /* LTR */
-  margin-right: -240px; /* LTR */ /* Negative value of .region-sidebar-first's width + left margin. */
-  padding: 0; /* DO NOT CHANGE. Add padding or margin to .region-sidebar-first .section. */
+  margin-left: 0;
+  /* LTR */
+  margin-right: -240px;
+  /* LTR */
+  /* Negative value of .region-sidebar-first's width + left margin. */
+  padding: 0;
+  /* DO NOT CHANGE. Add padding or margin to .region-sidebar-first .section. */
 }
-
+/* line 210, ../sass/layout-fixed.scss */
 .region-sidebar-first .section {
-margin:10px;
-padding:0;
+  margin: 10px;
+  padding: 0;
 }
 
 /*
  * Second sidebar
  */
+/* line 218, ../sass/layout-fixed.scss */
 .region-sidebar-second {
-  float: left; /* LTR */
+  float: left;
+  /* LTR */
   width: 240px;
-  margin-left: 720px; /* LTR */ /* Width of content + sidebar-first. */
-  margin-right: -960px; /* LTR */ /* Negative value of .region-sidebar-second's width + left margin. */
-  padding: 0; /* DO NOT CHANGE. Add padding or margin to .region-sidebar-second .section. */
+  margin-left: 720px;
+  /* LTR */
+  /* Width of content + sidebar-first. */
+  margin-right: -960px;
+  /* LTR */
+  /* Negative value of .region-sidebar-second's width + left margin. */
+  padding: 0;
+  /* DO NOT CHANGE. Add padding or margin to .region-sidebar-second .section. */
 }
-
+/* line 230, ../sass/layout-fixed.scss */
 .region-sidebar-second .section {
-  margin: 10px; /* LTR */
+  margin: 10px;
+  /* LTR */
   padding: 0;
 }
 
 /*
  * Footer
  */
-#footer {
-}
-
-#footer .section {
-}
-
 /*
  * Closure
  */
-.region-page-closure /* See also the #page-wrapper declaration above that this div shares. */ {
-}
-
 /*
  * Prevent overflowing content
  */
-
-
-.region-sidebar-first,
-.region-sidebar-second,
-#footer,
-.region-page-closure {
+/* line 249, ../sass/layout-fixed.scss */
+.region-sidebar-first, .region-sidebar-second, #footer, .region-page-closure {
   overflow: hidden;
-  word-wrap: break-word; /* A very nice CSS3 property */
+  word-wrap: break-word;
+  /* A very nice CSS3 property */
 }
 
+/* line 254, ../sass/layout-fixed.scss */
 #content {
-overflow: visible;
+  overflow: visible;
 }
 
+/* line 257, ../sass/layout-fixed.scss */
 #header, #navigation {
-  overflow: visible; /* May need to be removed if using a dynamic drop-down menu */
+  overflow: visible;
+  /* May need to be removed if using a dynamic drop-down menu */
 }
 
 /*
@@ -328,544 +316,471 @@ overflow: visible;
   overflow-y: hidden;
 }
 */
-
 /* Topbar first + Topbar last regions */
-
+/* line 277, ../sass/layout-fixed.scss */
 #topbar-wrapper {
-font-size:90%;
-line-height: 2em;
-border-top: 4px solid #000000;
+  font-size: 90%;
+  line-height: 2em;
+  border-top: 4px solid #000000;
 }
-
+/* line 281, ../sass/layout-fixed.scss */
 #topbar-wrapper .column {
-float: left;
-
+  float: left;
 }
-
+/* line 283, ../sass/layout-fixed.scss */
 #topbar-wrapper.tb1 .column {
-width: 100%;
+  width: 100%;
 }
-
+/* line 285, ../sass/layout-fixed.scss */
 #topbar-wrapper.tb2 .column {
-width: 50%;
+  width: 50%;
 }
-
+/* line 288, ../sass/layout-fixed.scss */
 #topbar-wrapper .column.TopbarRight {
-text-align:right;
-float: right;
+  text-align: right;
+  float: right;
 }
-
+/* line 291, ../sass/layout-fixed.scss */
 #topbar-wrapper .column.TopbarRight .menu {
-text-align:right;
-
+  text-align: right;
 }
-
+/* line 293, ../sass/layout-fixed.scss */
 #topbar-wrapper .column.TopbarLeft .block {
-float: left;
-display: inline;
+  float: left;
+  display: inline;
 }
 
+/* line 298, ../sass/layout-fixed.scss */
 #topbar .block {
-padding: 0px 10px 0 10px; 
-margin-bottom:0;
+  padding: 0px 10px 0 10px;
+  margin-bottom: 0;
 }
-
-
+/* line 301, ../sass/layout-fixed.scss */
 #topbar .form-item {
-display:inline;
-margin-right: 0.5em;
+  display: inline;
+  margin-right: 0.5em;
 }
-
+/* line 304, ../sass/layout-fixed.scss */
 #topbar .form-item label {
-display:inline;
+  display: inline;
 }
-
+/* line 306, ../sass/layout-fixed.scss */
 #topbar #user-login-form .item-list {
-display: none;
+  display: none;
 }
-
 
 /*
  * Topbar Navigation
  */
-
+/* line 314, ../sass/layout-fixed.scss */
 #topbar-wrapper h2.title {
-display: none;
+  display: none;
 }
-
+/* line 316, ../sass/layout-fixed.scss */
 #topbar-wrapper ul {
-padding:0; 
-margin:0;
+  padding: 0;
+  margin: 0;
 }
-
+/* line 319, ../sass/layout-fixed.scss */
 #topbar-wrapper li {
-list-style-type: none;
-display:inline; 
-padding:0; 
-margin:0;
+  list-style-type: none;
+  display: inline;
+  padding: 0;
+  margin: 0;
 }
 
-#topbar-wrapper ul.menu li {
-}
-
-#topbar-wrapper .block-menu .content {
-}
-
-
+/* line 326, ../sass/layout-fixed.scss */
 #topbar .block {
-padding-left:15px;
-padding-right:15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-
 
 /* Feature */
-
+/* line 332, ../sass/layout-fixed.scss */
 #feature-wrapper {
-padding-top: 0px;
+  padding-top: 0px;
 }
-
+/* line 334, ../sass/layout-fixed.scss */
 #feature-wrapper .column {
-float: left;
+  float: left;
 }
-
+/* line 336, ../sass/layout-fixed.scss */
 #feature-wrapper.in1 .column {
-width: 100%;
-float: none;
+  width: 100%;
+  float: none;
 }
-
+/* line 339, ../sass/layout-fixed.scss */
 #feature-wrapper.in2 .column {
-width: 50%;
+  width: 50%;
 }
-
+/* line 341, ../sass/layout-fixed.scss */
 #feature-wrapper .block {
-padding-left:10px;
-padding-right:10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
-
-
 
 /* Header Left + Header Right
 -------------------------------------------------------------- */
-
+/* line 348, ../sass/layout-fixed.scss */
 #headercontent-inner {
-padding-right: 0;
+  padding-right: 0;
 }
 
+/* line 351, ../sass/layout-fixed.scss */
 #headercontent-wrapper {
-position:relative;
+  position: relative;
 }
-
+/* line 354, ../sass/layout-fixed.scss */
 #headercontent-wrapper .column.HeaderLeft {
-float: left;
+  float: left;
 }
-
+/* line 356, ../sass/layout-fixed.scss */
 #headercontent-wrapper .column.HeaderRight {
-text-align: right;
-float: right;
+  text-align: right;
+  float: right;
 }
-
-#headercontent-wrapper.hf1 .column.HeaderLeft,
-#headercontent-wrapper.hf2 .column.HeaderLeft,
-#headercontent-wrapper.hf3 .column.HeaderLeft,
-#headercontent-wrapper.hf4 .column.HeaderLeft {
-width: 75%;
+/* line 359, ../sass/layout-fixed.scss */
+#headercontent-wrapper.hf1 .column.HeaderLeft, #headercontent-wrapper.hf2 .column.HeaderLeft, #headercontent-wrapper.hf3 .column.HeaderLeft, #headercontent-wrapper.hf4 .column.HeaderLeft {
+  width: 75%;
 }
-
-#headercontent-wrapper.hf1.hs1 .column.HeaderRight,
-#headercontent-wrapper.hf2.hs1 .column.HeaderRight,
-#headercontent-wrapper.hf3.hs1 .column.HeaderRight,
-#headercontent-wrapper.hf4.hs1 .column.HeaderRight {
-width: 25%;
+/* line 361, ../sass/layout-fixed.scss */
+#headercontent-wrapper.hf1.hs1 .column.HeaderRight, #headercontent-wrapper.hf2.hs1 .column.HeaderRight, #headercontent-wrapper.hf3.hs1 .column.HeaderRight, #headercontent-wrapper.hf4.hs1 .column.HeaderRight {
+  width: 25%;
 }
-
-#headercontent-wrapper.hf1.hs0 .column,
-#headercontent-wrapper.hf2.hs0 .column,
-#headercontent-wrapper.hf3.hs0 .column,
-#headercontent-wrapper.hf4.hs0 .column {
-width: 100%;
+/* line 363, ../sass/layout-fixed.scss */
+#headercontent-wrapper.hf1.hs0 .column, #headercontent-wrapper.hf2.hs0 .column, #headercontent-wrapper.hf3.hs0 .column, #headercontent-wrapper.hf4.hs0 .column {
+  width: 100%;
 }
-
+/* line 365, ../sass/layout-fixed.scss */
 #headercontent-wrapper .block {
-padding-left:10px;
-padding-right:10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
-
+/* line 368, ../sass/layout-fixed.scss */
 #headercontent-wrapper .HeaderLeft {
-    padding-top: 15px;
-    padding-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
-
-#headercontent-wrapper.hf0  .HeaderLeft {
-	padding: 0
+/* line 371, ../sass/layout-fixed.scss */
+#headercontent-wrapper.hf0.HeaderLeft {
+  padding: 0;
 }
 
 /* Breadcrumb */
+/* line 376, ../sass/layout-fixed.scss */
 .breadcrumb {
-padding-top: 0.2em;
-padding-left: 10px;
-padding-right: 10px;
+  padding-top: 0.2em;
+  padding-left: 10px;
+  padding-right: 10px;
 }
-
 
 /* Preface first + Preface second + Preface third +  Preface fourth regions
 -------------------------------------------------------------- */
-
+/* line 384, ../sass/layout-fixed.scss */
 #preface-wrapper {
-padding-top: 10px;
+  padding-top: 10px;
 }
-
+/* line 386, ../sass/layout-fixed.scss */
 #preface-wrapper .column {
-float: left;
+  float: left;
 }
-
+/* line 388, ../sass/layout-fixed.scss */
 #preface-wrapper.in1 .column {
-width: 100%;
-float: none;
+  width: 100%;
+  float: none;
 }
-
+/* line 391, ../sass/layout-fixed.scss */
 #preface-wrapper.in2 .column {
-width: 50%;
+  width: 50%;
 }
-
+/* line 393, ../sass/layout-fixed.scss */
 #preface-wrapper.in3 .column {
-width: 33.3%;
+  width: 33.3%;
 }
-
+/* line 395, ../sass/layout-fixed.scss */
 #preface-wrapper.in4 .column {
-width: 25%;
+  width: 25%;
 }
-
+/* line 397, ../sass/layout-fixed.scss */
 #preface-wrapper .block {
-padding-left:10px;
-padding-right:10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
-
-
-
 
 /*
  * Content Top
  */
- 
-.no-sidebars #content-top-wrapper {
+/* line 405, ../sass/layout-fixed.scss */
+.no-sidebars #content-top-wrapper, .sidebar-first #content-top-wrapper, .sidebar-second #content-top-wrapper, .two-sidebars #content-top-wrapper {
   width: 100%;
   margin-left: 0;
 }
-
-.sidebar-first #content-top-wrapper {
-  width: 100%;
-  margin-left: 0;
-}
-
-.sidebar-second #content-top-wrapper {
-  width: 100%;
-  margin-left: 0;
-}
-
-.two-sidebars #content-top-wrapper {
-  width: 100%;
-  margin-left: 0;
-}
-
-
 
 /* Content Top 1 + Content Top 2
 -------------------------------------------------------------- */
-
+/* line 412, ../sass/layout-fixed.scss */
 #content #content-top-wrapper .section {
-margin:0;
+  margin: 0;
 }
 
-
+/* line 415, ../sass/layout-fixed.scss */
 #content-top-wrapper {
-margin: 0 auto;
+  margin: 0 auto;
 }
-
+/* line 417, ../sass/layout-fixed.scss */
 #content-top-wrapper .column {
-float: left;
+  float: left;
 }
-
+/* line 419, ../sass/layout-fixed.scss */
 #content-top-wrapper.in1 .column {
-width: 100%;
+  width: 100%;
 }
-
+/* line 421, ../sass/layout-fixed.scss */
 #content-top-wrapper.in2 .column {
-width: 50%;
+  width: 50%;
 }
-
-#content-top-wrapper .block {
-}
-
+/* line 425, ../sass/layout-fixed.scss */
 #content-top-wrapper.in2 .column.ContentTop2 .block {
-padding-right: 0px;
+  padding-right: 0px;
 }
-
+/* line 427, ../sass/layout-fixed.scss */
 #content-top-wrapper.in2 .column.ContentTop1 .block {
-padding-left: 0px;
+  padding-left: 0px;
 }
 
 /*
  * Content Bottom
  */
- 
-.no-sidebars #content-bottom-wrapper {
+/* line 434, ../sass/layout-fixed.scss */
+.no-sidebars #content-bottom-wrapper, .sidebar-first #content-bottom-wrapper, .sidebar-second #content-bottom-wrapper, .two-sidebars #content-bottom-wrapper {
   width: 100%;
   margin-left: 0;
 }
-
-.sidebar-first #content-bottom-wrapper {
-  width: 100%;
-  margin-left: 0;
-}
-
-.sidebar-second #content-bottom-wrapper {
-  width: 100%;
-  margin-left: 0;
-}
-
-.two-sidebars #content-bottom-wrapper {
-  width: 100%;
-  margin-left: 0;
-}
-
-
 
 /* Content Bottom 1 + Content Bottom 2
 -------------------------------------------------------------- */
-
+/* line 441, ../sass/layout-fixed.scss */
 #content #content-bottom-wrapper .section {
-margin:0;
+  margin: 0;
 }
 
+/* line 444, ../sass/layout-fixed.scss */
 #content-bottom-wrapper {
-margin: 0 auto;
+  margin: 0 auto;
 }
-
+/* line 446, ../sass/layout-fixed.scss */
 #content-bottom-wrapper .column {
-float: left;
+  float: left;
 }
-
+/* line 448, ../sass/layout-fixed.scss */
 #content-bottom-wrapper.in1 .column {
-width: 100%;
+  width: 100%;
 }
-
+/* line 450, ../sass/layout-fixed.scss */
 #content-bottom-wrapper.in2 .column {
-width: 50%;
+  width: 50%;
 }
-
-#content-bottom-wrapper .block {
-}
-
-
-
 
 /* Bottom first + Bottom second + Bottom third +  Bottom fourth regions
 -------------------------------------------------------------- */
-
+/* line 457, ../sass/layout-fixed.scss */
 #mainbottom-wrapper {
-padding-bottom: 15px;
+  padding-bottom: 15px;
 }
-
+/* line 459, ../sass/layout-fixed.scss */
 #mainbottom-wrapper .column {
-float: left;
+  float: left;
 }
-
+/* line 461, ../sass/layout-fixed.scss */
 #mainbottom-wrapper.in1 .column {
-width: 100%;
+  width: 100%;
 }
-
+/* line 463, ../sass/layout-fixed.scss */
 #mainbottom-wrapper.in2 .column {
-width: 50%;
+  width: 50%;
 }
-
+/* line 465, ../sass/layout-fixed.scss */
 #mainbottom-wrapper.in3 .column {
-width: 33.3%;
+  width: 33.3%;
 }
-
+/* line 467, ../sass/layout-fixed.scss */
 #mainbottom-wrapper.in4 .column {
-width: 25%;
+  width: 25%;
 }
-
+/* line 469, ../sass/layout-fixed.scss */
 #mainbottom-wrapper .block {
-padding-left:10px;
-padding-right:10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
-
-
 
 /* Bottom */
-
-#bottom .section {
-}
-
 /* Bottom first + Bottom second + Bottom third +  Bottom fourth +  Bottom fifth +  Bottom sixth regions
 -------------------------------------------------------------- */
-
-#bottomcontent-wrapper {
-}
-
+/* line 481, ../sass/layout-fixed.scss */
 #bottomcontent-wrapper .column {
-float: left;
+  float: left;
 }
-
+/* line 483, ../sass/layout-fixed.scss */
 #bottomcontent-wrapper.in1 .column {
-width: 100%;
+  width: 100%;
 }
-
+/* line 485, ../sass/layout-fixed.scss */
 #bottomcontent-wrapper.in2 .column {
-width: 50%;
+  width: 50%;
 }
-
+/* line 487, ../sass/layout-fixed.scss */
 #bottomcontent-wrapper.in3 .column {
-width: 33.3%;
+  width: 33.3%;
 }
-
+/* line 489, ../sass/layout-fixed.scss */
 #bottomcontent-wrapper.in4 .column {
-width: 25%;
+  width: 25%;
 }
-
+/* line 491, ../sass/layout-fixed.scss */
 #bottomcontent-wrapper.in5 .column {
-width: 20%;
+  width: 20%;
 }
-
+/* line 493, ../sass/layout-fixed.scss */
 #bottomcontent-wrapper.in6 .column {
-width: 16.66%;
+  width: 16.66%;
 }
-
+/* line 495, ../sass/layout-fixed.scss */
 #bottomcontent-wrapper .block {
-padding-left:10px;
-padding-right:10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /*
  * Footer Content
  */
-
+/* line 503, ../sass/layout-fixed.scss */
 .with-sidebar-footer #footer-content {
-    margin-left: 300px;
-    margin-right: -960px;
-    padding-left: 0px;
-    width: 650px;
+  margin-left: 300px;
+  margin-right: -960px;
+  padding-left: 0px;
+  width: 650px;
 }
 
+/* line 509, ../sass/layout-fixed.scss */
 #footer-content {
-margin-top: 0px;
-float:left;
-margin-left:0;
-margin-right:-960px;
-padding:0;
-width:960px;
+  margin-top: 0px;
+  float: left;
+  margin-left: 0;
+  margin-right: -960px;
+  padding: 0;
+  width: 960px;
 }
-
+/* line 516, ../sass/layout-fixed.scss */
 #footer-content .section {
   margin: 0px 0 0 0;
   padding: 0;
 }
 
+/* line 520, ../sass/layout-fixed.scss */
 #footer-wrapper {
   position: relative;
 }
 
+/* line 523, ../sass/layout-fixed.scss */
 #footer {
-padding-bottom: 1em;
+  padding-bottom: 1em;
 }
 
 /* Preface first + Preface second + Preface third +  Preface fourth regions
 -------------------------------------------------------------- */
-
+/* line 529, ../sass/layout-fixed.scss */
 .with-sidebar-footer #footer-preface-wrapper {
-margin: 0;
+  margin: 0;
 }
 
+/* line 532, ../sass/layout-fixed.scss */
 #footer-preface-wrapper {
-margin: 0;
+  margin: 0;
 }
-
+/* line 534, ../sass/layout-fixed.scss */
 #footer-preface-wrapper .column {
-float: left;
+  float: left;
 }
-
+/* line 536, ../sass/layout-fixed.scss */
 #footer-preface-wrapper.in1 .column {
-width: 100%;
-float: none;
-} 
-
+  width: 100%;
+  float: none;
+}
+/* line 539, ../sass/layout-fixed.scss */
 #footer-preface-wrapper.in2 .column {
-width: 50%;
+  width: 50%;
 }
-
+/* line 541, ../sass/layout-fixed.scss */
 #footer-preface-wrapper.in3 .column {
-width: 33.3%;
+  width: 33.3%;
 }
-
+/* line 543, ../sass/layout-fixed.scss */
 #footer-preface-wrapper.in4 .column {
-width: 24.6%;
+  width: 24.6%;
 }
-
-
+/* line 545, ../sass/layout-fixed.scss */
 #footer-preface-wrapper .block {
-    padding-left: 10px;
-    padding-right: 10px;
-margin-bottom: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 0;
 }
 
+/* line 550, ../sass/layout-fixed.scss */
+#footer-content-bottom-wrapper {
+  margin: 10px 0 0 0;
+}
+/* line 551, ../sass/layout-fixed.scss */
 #footer-content-bottom-wrapper.with-footer-preface .block {
-    border-top: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+/* line 554, ../sass/layout-fixed.scss */
+#footer-content-bottom-wrapper .column {
+  float: left;
+}
+/* line 556, ../sass/layout-fixed.scss */
+#footer-content-bottom-wrapper.in1 .column {
+  width: 100%;
+}
+/* line 558, ../sass/layout-fixed.scss */
+#footer-content-bottom-wrapper .block {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* Footer Bottom 1 + Footer Bottom 2
 -------------------------------------------------------------- */
-
-#footer-content-bottom-wrapper {
-margin: 10px 0 0 0;
-}
-
-
-#footer-content-bottom-wrapper .column {
-float:left;
-}
-
-#footer-content-bottom-wrapper.in1 .column {
-width:100%;
-}
-
-#footer-content-bottom-wrapper .block {
-padding-left:10px;
-padding-right:10px;
-}
-
-
 /*
  * First sidebar footer
  */
- 
+/* line 569, ../sass/layout-fixed.scss */
 .SidebarFooter {
-    background: none repeat-y scroll right top transparent;
-    border-right: 0 solid #111111;
+  background: none repeat-y scroll right top transparent;
+  border-right: 0 solid #111111;
+  background: none repeat-y scroll right top transparent;
+  border-right: 0 solid #2B2B2B;
+  float: left;
+  height: 80%;
+  margin: 15px -650px 15px 0;
+  padding: 0 0 0 20px;
+  width: 280px;
 }
-
-.SidebarFooter {
-    background: none repeat-y scroll right top transparent;
-    border-right: 0 solid #2B2B2B;
-    float: left;
-    height: 80%;
-    margin: 15px -650px 15px 0;
-    padding: 0 0 0 20px;
-    width: 280px;
-}
-
+/* line 579, ../sass/layout-fixed.scss */
 .SidebarFooter .footersidebar {
-margin:0;
-padding:0;
+  margin: 0;
+  padding: 0;
 }
-
+/* line 582, ../sass/layout-fixed.scss */
 .SidebarFooter .footersidebar .block {
-margin-bottom:0;
+  margin-bottom: 0;
+}
+/* line 584, ../sass/layout-fixed.scss */
+.SidebarFooter .footersidebar .section {
+  margin: 0;
+  z-index: 99;
 }
 
-.SidebarFooter .footersidebar .section, .footersidebar #secondary-menu {
-margin: 0 ;
-z-index:99;
+/* line 588, ../sass/layout-fixed.scss */
+.footersidebar #secondary-menu {
+  margin: 0;
+  z-index: 99;
 }
-
-

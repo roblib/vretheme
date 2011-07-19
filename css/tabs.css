@@ -1,5 +1,4 @@
 /* $Id: tabs.css,v 1.2 2009/08/12 08:03:53 johnalbin Exp $ */
-
 /**
  * @file
  * Tabs Styling
@@ -9,143 +8,193 @@
  * Compare this with default CSS found in the system module's stylesheet (a copy
  * of which is in drupal6-reference.css, line 510.)
  */
-.drupal-tabs ul.primary a,
-.tabs ul.primary a { 
-    position: relative; 
-    overflow: visible; 
-    display: inline-block; 
-    padding: 0.55em 1.3em 0.3em;
-    border: 1px solid #cccccc;
-    text-decoration: none; 
-    text-shadow: 1px 1px 0 #fff; 
-    font-size: 95%;
-    color: #333; 
-    white-space: nowrap; 
-    cursor: pointer; 
-    outline: none; 
-    background-color: #ececec;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
-    background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
-    background-image: -o-linear-gradient(#f2f2f2, #dddddd);
-    background-image: linear-gradient(#f2f2f2, #dddddd);  
-    -webkit-border-top-right-radius: 0.2em; 
-    -webkit-border-bottom-right-radius: 0; 
-    -webkit-border-top-left-radius: 0.2em; 
-    -webkit-border-bottom-left-radius: 0;  
-    -webkit-background-clip: padding;    
-    -moz-border-radius-topright: 0.2em; 
-    -moz-border-radius-bottomright: 0; 
-    -moz-border-radius-topleft: 0.2em; 
-    -moz-border-radius-bottomleft: 0; 
-    -moz-background-clip: padding;    
-    border-top-right-radius: 0.2em; 
-    border-bottom-right-radius: 0; 
-    border-top-left-radius: 0.2em; 
-    border-bottom-left-radius: 0;    
-    background-clip: padding-box;
-    /* IE hacks */
-    zoom: 1; 
-    *display: inline;   
+/* line 13, ../sass/tabs.scss */
+.drupal-tabs ul.primary a, .tabs ul.primary a {
+  position: relative;
+  overflow: visible;
+  display: inline-block;
+  padding: 0.55em 1.3em 0.3em;
+  border: 1px solid #cccccc;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #fff;
+  font-size: 95%;
+  color: #333;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
+  background-color: #ececec;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
+  background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
+  background-image: -o-linear-gradient(#f2f2f2, #dddddd);
+  background-image: linear-gradient(#f2f2f2, #dddddd);
+  -webkit-border-top-right-radius: 0.2em;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-top-left-radius: 0.2em;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-background-clip: padding;
+  -moz-border-radius-topright: 0.2em;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-topleft: 0.2em;
+  -moz-border-radius-bottomleft: 0;
+  -moz-background-clip: padding;
+  border-top-right-radius: 0.2em;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 0.2em;
+  border-bottom-left-radius: 0;
+  background-clip: padding-box;
+  /* IE hacks */
+  zoom: 1;
+  *display: inline;
 }
 
-.drupal-tabs ul.primary  a:hover,
-.drupal-tabs ul.primary  a:focus,
-.drupal-tabs ul.primary  a:active,
-.tabs ul.primary  a:hover,
-.tabs ul.primary  a:focus,
-.tabs ul.primary  a:active
-{
-    border-bottom-color: #2a65a0;
-    text-decoration: none; 
-    text-shadow: -1px -1px 0 #fff; 
-    border-top: 1px solid #cccccc; 
-    border-bottom: 0px solid #cccccc; 
-    color: #333; 
-    background-color: #e7e7e7;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f7f7f7), to(#e7e7e7));
-    background-image: -moz-linear-gradient(#f7f7f7, #e7e7e7);
-    background-image: -o-linear-gradient(#f7f7f7, #e7e7e7);
-    background-image: linear-gradient(#f7f7f7, #e7e7e7);
+/* line 51, ../sass/tabs.scss */
+.drupal-tabs ul.primary a:hover, .drupal-tabs ul.primary a:focus, .drupal-tabs ul.primary a:active {
+  border-bottom-color: #2a65a0;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 white;
+  border-top: 1px solid #cccccc;
+  border-bottom: 0px solid #cccccc;
+  color: #333;
+  background-color: #e7e7e7;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f7f7f7), to(#e7e7e7));
+  background-image: -moz-linear-gradient(#f7f7f7, #e7e7e7);
+  background-image: -o-linear-gradient(#f7f7f7, #e7e7e7);
+  background-image: linear-gradient(#f7f7f7, #e7e7e7);
 }
 
-.drupal-tabs ul.primary li.ui-tabs-selected a,
-.drupal-tabs ul.primary li.ui-tabs-selected a,
-.drupal-tabs ul.primary li.ui-tabs-selected a:hover,
-.drupal-tabs ul.primary li.ui-tabs-selected a:focus,
-.drupal-tabs ul.primary li.ui-tabs-selected a:active,
-.drupal-tabs ul.primary li.ui-tabs-selected a.active,
-.tabs ul.primary li:active a,
-.tabs ul.primary li.active a,
-.tabs ul.primary li.active a:hover,
-.tabs ul.primary li.active a:focus,
-.tabs ul.primary li.active a:active,
-.tabs ul.primary li.active a.active {
-    text-shadow: -1px -1px 0 #fff; 
-    border-top: 1px solid #cccccc; 
-    border-bottom: 1px solid #ffffff; 
-    color: #333; 
-    background-color: #ffffff;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ffffff));
-    background-image: -moz-linear-gradient(#ffffff, #ffffff);
-    background-image: -o-linear-gradient(#ffffff, #ffffff);
-    background-image: linear-gradient(#ffffff, #ffffff);
+/* line 65, ../sass/tabs.scss */
+.tabs ul.primary a:hover, .tabs ul.primary a:focus, .tabs ul.primary a:active {
+  border-bottom-color: #2a65a0;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 white;
+  border-top: 1px solid #cccccc;
+  border-bottom: 0px solid #cccccc;
+  color: #333;
+  background-color: #e7e7e7;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f7f7f7), to(#e7e7e7));
+  background-image: -moz-linear-gradient(#f7f7f7, #e7e7e7);
+  background-image: -o-linear-gradient(#f7f7f7, #e7e7e7);
+  background-image: linear-gradient(#f7f7f7, #e7e7e7);
 }
 
-.drupal-tabs,
-div.tabs {
-   width: 100%;
+/* line 78, ../sass/tabs.scss */
+.drupal-tabs ul.primary li.ui-tabs-selected a {
+  text-shadow: -1px -1px 0 white;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #ffffff;
+  color: #333;
+  background-color: #ffffff;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(white));
+  background-image: -moz-linear-gradient(white, white);
+  background-image: -o-linear-gradient(white, white);
+  background-image: linear-gradient(#ffffff, #ffffff);
+}
+/* line 88, ../sass/tabs.scss */
+.drupal-tabs ul.primary li.ui-tabs-selected a:hover, .drupal-tabs ul.primary li.ui-tabs-selected a:focus, .drupal-tabs ul.primary li.ui-tabs-selected a:active, .drupal-tabs ul.primary li.ui-tabs-selected a.active {
+  text-shadow: -1px -1px 0 white;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #ffffff;
+  color: #333;
+  background-color: #ffffff;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(white));
+  background-image: -moz-linear-gradient(white, white);
+  background-image: -o-linear-gradient(white, white);
+  background-image: linear-gradient(#ffffff, #ffffff);
 }
 
-
-.tab::-moz-focus-inner,
-#tabs-tabset::-moz-focus-inner {
-	border: none;
+/* line 100, ../sass/tabs.scss */
+.tabs ul.primary li:active a {
+  text-shadow: -1px -1px 0 white;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #ffffff;
+  color: #333;
+  background-color: #ffffff;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(white));
+  background-image: -moz-linear-gradient(white, white);
+  background-image: -o-linear-gradient(white, white);
+  background-image: linear-gradient(#ffffff, #ffffff);
+}
+/* line 110, ../sass/tabs.scss */
+.tabs ul.primary li.active a {
+  text-shadow: -1px -1px 0 white;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #ffffff;
+  color: #333;
+  background-color: #ffffff;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(white));
+  background-image: -moz-linear-gradient(white, white);
+  background-image: -o-linear-gradient(white, white);
+  background-image: linear-gradient(#ffffff, #ffffff);
+}
+/* line 120, ../sass/tabs.scss */
+.tabs ul.primary li.active a:hover, .tabs ul.primary li.active a:focus, .tabs ul.primary li.active a:active, .tabs ul.primary li.active a.active {
+  text-shadow: -1px -1px 0 white;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #ffffff;
+  color: #333;
+  background-color: #ffffff;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(white));
+  background-image: -moz-linear-gradient(white, white);
+  background-image: -o-linear-gradient(white, white);
+  background-image: linear-gradient(#ffffff, #ffffff);
 }
 
+/* line 131, ../sass/tabs.scss */
+.drupal-tabs, div.tabs {
+  width: 100%;
+}
+
+/* line 134, ../sass/tabs.scss */
+.tab::-moz-focus-inner, #tabs-tabset::-moz-focus-inner {
+  border: none;
+}
+
+/* line 137, ../sass/tabs.scss */
 ul.primary {
-    margin: 0;
-    padding: 0;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-bottom-color: #ccc;
-    display: block;
-    width: 100%;
+  margin: 0;
+  padding: 0;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #ccc;
+  display: block;
+  width: 100%;
 }
-
+/* line 145, ../sass/tabs.scss */
 ul.primary li a {
-    background-color: transparent;
-    border-width: 0px;
-    margin-right: 0em;
-    padding: 0em;
-    text-decoration: none;
+  background-color: transparent;
+  border-width: 0px;
+  margin-right: 0em;
+  padding: 0em;
+  text-decoration: none;
 }
 
-.drupal-tabs,
-.tabs {
-margin-top: 1.5em;
-margin-bottom: 0em;
+/* line 152, ../sass/tabs.scss */
+.drupal-tabs, .tabs {
+  margin-top: 1.5em;
+  margin-bottom: 0em;
 }
 
+/* line 156, ../sass/tabs.scss */
 ul.primary .tabs li {
-    float: left;
-    padding: 0;
-    margin: 0;
+  float: left;
+  padding: 0;
+  margin: 0;
 }
 
-.drupal-tabs ul.primary  a,
-.tabs ul.primary  a {
-    float: left;
-    position: relative;
-    top: 1px;
-    margin-left: 3px;
+/* line 161, ../sass/tabs.scss */
+.drupal-tabs ul.primary a, .tabs ul.primary a {
+  float: left;
+  position: relative;
+  top: 1px;
+  margin-left: 3px;
 }
 
-.drupal-tabs > ul.primary a:active,
-.tabs > ul.primary a:active {
-	background-color: #EFEFEF;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e7e7e7), to(#f7f7f7));
-    background-image: -moz-linear-gradient(#e7e7e7, #f7f7f7);
-    background-image: -o-linear-gradient(#e7e7e7, #f7f7f7);
-    background-image: linear-gradient(#e7e7e7, #f7f7f7);
-    border-bottom: 1px solid #ccc;     
+/* line 167, ../sass/tabs.scss */
+.drupal-tabs > ul.primary a:active, .tabs > ul.primary a:active {
+  background-color: #EFEFEF;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e7e7e7), to(#f7f7f7));
+  background-image: -moz-linear-gradient(#e7e7e7, #f7f7f7);
+  background-image: -o-linear-gradient(#e7e7e7, #f7f7f7);
+  background-image: linear-gradient(#e7e7e7, #f7f7f7);
+  border-bottom: 1px solid #ccc;
 }

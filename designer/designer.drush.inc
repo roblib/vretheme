@@ -71,6 +71,10 @@ function drush_designer($name = NULL, $machine_name = NULL) {
   $style_css_file = $subtheme_path . '/css/' . $machine_name . '.css';
   drush_op('rename', $subtheme_path . '/css/STARTERKIT.css', $style_css_file);
 
+  // Rename the .scss file.
+  $style_css_file = $subtheme_path . '/sass/' . $machine_name . '.scss';
+  drush_op('rename', $subtheme_path . '/sass/STARTERKIT.scss', $style_css_file);
+
    // Replace all occurrences of 'STARTERKIT' with the machine name of our sub theme.
   drush_op('designer_file_str_replace', $subtheme_path . '/STARTERKIT.info.txt', 'STARTERKIT', $machine_name);
 

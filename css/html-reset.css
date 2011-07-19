@@ -1,5 +1,4 @@
 /* $Id: html-reset.css,v 1.6.2.2 2010/06/26 15:36:03 johnalbin Exp $ */
-
 /**
  * @file
  * HTML Element Styling
@@ -11,8 +10,6 @@
  * @see http://meiert.com/en/blog/20080419/reset-style-sheets-are-bad/
  * @see http://snook.ca/archives/html_and_css/no_css_reset/
  */
-
-
 /*
  * Fonts
  *
@@ -25,36 +22,28 @@
  * to resize the font in the browser and produces the most consistent results
  * across different browsers.
  */
+/* line 28, ../sass/html-reset.scss */
 body {
-  font-size: 100%; /* Fixes exaggerated text resizing in IE6 and IE7 */
+  font-size: 100%;
+  /* Fixes exaggerated text resizing in IE6 and IE7 */
   color: #555555;
 }
 
-#skip-link,
-#page {
+/* line 33, ../sass/html-reset.scss */
+#skip-link, #page {
   /*
    * To use a 12px font size on the page, delete the 14px declarations.
    * to use a 14px font size on the page, delete the 12px declarations.
    */
-
   /* Use a 12px base font size with a 16px line height */
-  font-size: 0.75em; /* 16px x .75 = 12px */
-  line-height: 1.5em; /* 12px x 1.5 = 18px */
-
-
-
+  font-size: 0.75em;
+  /* 16px x .75 = 12px */
+  line-height: 1.5em;
+  /* 12px x 1.5 = 18px */
 }
 
-body,
-caption,
-th,
-td,
-input,
-textarea,
-select,
-option,
-legend,
-fieldset {
+/* line 44, ../sass/html-reset.scss */
+body, caption, th, td, input, textarea, select, option, legend, fieldset {
   /* The following font family declarations are based on the Microsoft core web
    * fonts which are common fonts available on most computer systems. The DejaVu
    * fonts are commonly available on Linux systems where the MS fonts are less
@@ -78,226 +67,284 @@ fieldset {
   font-family: "Courier New", "DejaVu Sans Mono", monospace;
 
    */
-
   font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
-  
 }
 
-pre,
-code {
-  font-size: 1.1em; /* Monospace fonts can be hard to read */
+/* line 70, ../sass/html-reset.scss */
+pre, code {
+  font-size: 1.1em;
+  /* Monospace fonts can be hard to read */
   font-family: "Courier New", "DejaVu Sans Mono", monospace;
 }
 
+/* line 75, ../sass/html-reset.scss */
 #name-and-slogan {
   font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
 }
 
+/* line 78, ../sass/html-reset.scss */
 html.js fieldset.collapsible .fieldset-wrapper {
-overflow:visible;
+  overflow: visible;
 }
-
 
 /*
  * Headings
  */
+/* line 85, ../sass/html-reset.scss */
 h1 {
   font-size: 1.5em;
   font-weight: normal;
   line-height: 1.3em;
   margin-top: 0;
-  margin-bottom: 0.5em; /* 0.5em is equavalent to 1em in the page's base font.
-                           Remember, a margin specified in ems is relative to
-                           the element's font-size, not to the pages' base
-                           font size. So, for example, if we want a 1em margin
-                           (relative to the base font), we have to divide that
-                           length by the element's font-size:
-                           1em / 2em = 0.5em */
+  margin-bottom: 0.5em;
+  /* 0.5em is equavalent to 1em in the page's base font.
+     Remember, a margin specified in ems is relative to
+     the element's font-size, not to the pages' base
+     font size. So, for example, if we want a 1em margin
+     (relative to the base font), we have to divide that
+     length by the element's font-size:
+     1em / 2em = 0.5em */
 }
 
-
+/* line 99, ../sass/html-reset.scss */
 h2 {
   font-size: 1.2em;
   font-weight: normal;
   line-height: 1.3em;
-  margin-top: 0.667em; /* Equivalent to 1em in the page's base font: 1 / 1.5 = 0.667em */
+  margin-top: 0.667em;
+  /* Equivalent to 1em in the page's base font: 1 / 1.5 = 0.667em */
   margin-bottom: 0.3em;
 }
-
+/* line 106, ../sass/html-reset.scss */
 h2.block-title {
   font-weight: normal;
-    font-size: 1.1em;
+  font-size: 1.1em;
 }
 
+/* line 110, ../sass/html-reset.scss */
 h3 {
   font-size: 1.1em;
   line-height: 1.3em;
-  margin-top: 0.769em; /* Equivalent to 1em in the page's base font: 1 / 1.3 = 0.769 */
+  margin-top: 0.769em;
+  /* Equivalent to 1em in the page's base font: 1 / 1.3 = 0.769 */
   margin-bottom: 0.769em;
 }
 
-h4,
-h5,
-h6 {
+/* line 117, ../sass/html-reset.scss */
+h4, h5, h6 {
   font-size: 1em;
   line-height: 1.3em;
-  margin-top: 0.909em; /* Equivalent to 1em in the page's base font: 1 / 1.1 = 0.909 */
+  margin-top: 0.909em;
+  /* Equivalent to 1em in the page's base font: 1 / 1.1 = 0.909 */
   margin-bottom: 0.909em;
 }
 
+/* line 124, ../sass/html-reset.scss */
 h1, h2, h3, h4, h5, h6 {
-color: #343434;
+  color: #343434;
 }
 
+/* line 127, ../sass/html-reset.scss */
 #bottom {
-font-size: 90%;
+  font-size: 90%;
 }
 
+/* line 130, ../sass/html-reset.scss */
 #closure {
-font-size: 60%;
-text-align: center;
-padding: 0.5em 0;
-border-top: 1px solid #BBBBBB;
+  font-size: 60%;
+  text-align: center;
+  padding: 0.5em 0;
+  border-top: 1px solid #BBBBBB;
 }
 
 /*4
  * Block-level elements
  */
-p,
-ul,
-ol,
-dl,
-pre,
-table,
-fieldset {
+/* line 140, ../sass/html-reset.scss */
+p, ul, ol, dl, pre, table, fieldset {
   margin: 1em 0;
 }
 
+/* line 143, ../sass/html-reset.scss */
 #feature p {
-margin: 0;
-padding: 0 0 1em 0;
+  margin: 0;
+  padding: 0 0 1em 0;
 }
 
+/* line 147, ../sass/html-reset.scss */
 blockquote {
   background: url(../images/open-quote.png) no-repeat 0 0;
   font: italic;
   margin: 1em 0.5em;
 }
-
+/* line 151, ../sass/html-reset.scss */
 blockquote p {
   background: url(../images/close-quote.png) no-repeat right bottom;
   margin-left: 2.2em;
   padding-right: 1.5em;
 }
 
-
 /*
  * Lists
  *
  * We need to standardize the list item indentation.
  */
- 
-
-ul,
-ol {
+/* line 162, ../sass/html-reset.scss */
+ul, ol {
   margin-left: 0;
-  padding-left: 2em; /* LTR */
+  padding-left: 2em;
+  /* LTR */
 }
 
-.block ul,
-.item-list ul /* Drupal overrides */ {
+/* line 167, ../sass/html-reset.scss */
+.block ul, .item-list ul {
   margin: 1em 0;
-  padding: 0 0 0 1em; /* LTR */
+  padding: 0 0 0 1em;
+  /* LTR */
 }
 
-ul ul, ul ol,
-ol ol, ol ul,
-.block ul ul, .block ul ol,
-.block ol ol, .block ol ul,
-.item-list ul ul, .item-list ul ol,
+/* line 173, ../sass/html-reset.scss */
+ul ul, ul ol {
+  margin: 0;
+}
+
+/* line 177, ../sass/html-reset.scss */
+ol ol, ol ul {
+  margin: 0;
+}
+
+/* line 182, ../sass/html-reset.scss */
+.block ul ul, .block ul ol {
+  margin: 0;
+}
+/* line 185, ../sass/html-reset.scss */
+.block ol ol, .block ol ul {
+  margin: 0;
+}
+
+/* line 190, ../sass/html-reset.scss */
+.item-list ul ul, .item-list ul ol {
+  margin: 0;
+}
+/* line 193, ../sass/html-reset.scss */
 .item-list ol ol, .item-list ol ul {
   margin: 0;
 }
 
+/* line 196, ../sass/html-reset.scss */
 li {
   margin: 0;
   padding: 0;
 }
 
-.item-list ul li /* Drupal override */ {
-  margin:0;
-  padding:0;
+/* line 200, ../sass/html-reset.scss */
+.item-list ul li {
+  margin: 0;
+  padding: 0;
   list-style: inherit;
 }
 
-ul.menu li,
-li.expanded, 
-li.collapsed,
-li.leaf /* Drupal override */ {
+/* line 205, ../sass/html-reset.scss */
+ul.menu li {
   margin: 0.15em 0 0.15em 0.5em;
   padding: 0;
 }
 
-ul          { list-style-type: disc; }
-ul ul       { list-style-type: circle; }
-ul ul ul    { list-style-type: square; }
-ul ul ul ul { list-style-type: circle; }
-ol          { list-style-type: decimal; }
-ol ol       { list-style-type: lower-alpha; }
-ol ol ol    { list-style-type: decimal; }
+/* line 210, ../sass/html-reset.scss */
+li.expanded, li.collapsed, li.leaf {
+  margin: 0.15em 0 0.15em 0.5em;
+  padding: 0;
+}
 
+/* line 214, ../sass/html-reset.scss */
+ul {
+  list-style-type: disc;
+}
+/* line 216, ../sass/html-reset.scss */
+ul ul {
+  list-style-type: circle;
+}
+/* line 218, ../sass/html-reset.scss */
+ul ul ul {
+  list-style-type: square;
+}
+/* line 220, ../sass/html-reset.scss */
+ul ul ul ul {
+  list-style-type: circle;
+}
+
+/* line 223, ../sass/html-reset.scss */
+ol {
+  list-style-type: decimal;
+}
+/* line 225, ../sass/html-reset.scss */
+ol ol {
+  list-style-type: lower-alpha;
+}
+/* line 227, ../sass/html-reset.scss */
+ol ol ol {
+  list-style-type: decimal;
+}
+
+/* line 230, ../sass/html-reset.scss */
 dt {
   margin: 0;
   padding: 0;
 }
 
+/* line 234, ../sass/html-reset.scss */
 dd {
   margin: 0 0 0 2em;
   padding: 0;
 }
 
-#bottomcontent-wrapper ul{
-list-style-type: none;
-list-style-image: none;
+/* line 239, ../sass/html-reset.scss */
+#bottomcontent-wrapper ul {
+  list-style-type: none;
+  list-style-image: none;
+}
+/* line 242, ../sass/html-reset.scss */
+#bottomcontent-wrapper .block-aggregator ul li {
+  padding-bottom: 0.2em;
 }
 
-#bottomcontent-wrapper .block-aggregator ul li{
-padding-bottom: 0.2em;
-}
-
+/* line 246, ../sass/html-reset.scss */
 #aggregator .feed-item-title {
-font-size: 1.1em;
+  font-size: 1.1em;
 }
-
+/* line 248, ../sass/html-reset.scss */
 #aggregator .feed-item {
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 1em;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1em;
 }
-
+/* line 251, ../sass/html-reset.scss */
 #aggregator .feed-item-date {
-	color: #888;
-	font-size: 90%;
+  color: #888;
+  font-size: 90%;
+}
+/* line 254, ../sass/html-reset.scss */
+#aggregator .feed-url, #aggregator .feed-updated, #aggregator .feed-item-categories {
+  color: #888;
+  font-size: 95%;
+}
+/* line 257, ../sass/html-reset.scss */
+#aggregator .feed-item-title a {
+  text-decoration: none;
+}
+/* line 259, ../sass/html-reset.scss */
+#aggregator .feed-item-title a:hover {
+  text-decoration: none;
 }
 
-#aggregator .feed-url,
-#aggregator .feed-updated,
-#aggregator .feed-item-categories {
-	color: #888;
-	font-size: 95%;
-}
-
-#aggregator .feed-item-title a{
-text-decoration: none;
-}
-
-#aggregator .feed-item-title a:hover{
-text-decoration: none;
-}
-
+/* line 263, ../sass/html-reset.scss */
 #bottom .item-list ul li {
-padding:0 0 0.2em;
+  padding: 0 0 0.2em;
 }
-
+/* line 265, ../sass/html-reset.scss */
+#bottom li.leaf {
+  list-style-image: none;
+  list-style-type: none;
+}
 
 /*
  * Links
@@ -306,49 +353,62 @@ padding:0 0 0.2em;
  * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
  */
 /* Link Colors */
-
-
-
-
-#bottom li.leaf, .footersidebar #secondary-links {
-list-style-image: none;
-list-style-type: none;
+/* line 277, ../sass/html-reset.scss */
+.footersidebar #secondary-links {
+  list-style-image: none;
+  list-style-type: none;
 }
 
+/* line 282, ../sass/html-reset.scss */
 #bottom .block ul, #bottom .item-list ul {
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
+}
+/* line 285, ../sass/html-reset.scss */
+#bottom ul.menu li {
+  margin-left: 0;
+  padding-left: 0;
+}
+/* line 289, ../sass/html-reset.scss */
+#bottom li.expanded, #bottom li.collapsed, #bottom li.leaf {
+  margin-left: 0;
+  padding-left: 0;
 }
 
-#bottom ul.menu li,#bottom li.expanded, #bottom li.collapsed, #bottom li.leaf,  .footersidebar ul.links li {
-margin-left: 0;
-padding-left: 0;
+/* line 293, ../sass/html-reset.scss */
+.footersidebar ul.links li {
+  margin-left: 0;
+  padding-left: 0;
 }
 
-
-#bottom .footersidebar ul.menu li,
-#bottom .footersidebar li.expanded, 
-#bottom .footersidebar li.collapsed,
-#bottom .footersidebar li.leaf /* Drupal override */ {
+/* line 299, ../sass/html-reset.scss */
+#bottom .footersidebar ul.menu li {
   margin: 0.25em 0 0.25em 0.5em;
   padding: 0;
 }
-
-#bottom ul.menu, .footersidebar ul.links {
-text-transform:normal;
+/* line 303, ../sass/html-reset.scss */
+#bottom .footersidebar li.expanded, #bottom .footersidebar li.collapsed, #bottom .footersidebar li.leaf {
+  margin: 0.25em 0 0.25em 0.5em;
+  padding: 0;
+}
+/* line 306, ../sass/html-reset.scss */
+#bottom ul.menu {
+  text-transform: normal;
 }
 
+/* line 309, ../sass/html-reset.scss */
+.footersidebar ul.links {
+  text-transform: normal;
+}
+/* line 311, ../sass/html-reset.scss */
 .footersidebar ul.links li {
-display:block;
+  display: block;
 }
 
-.block-menu h2.title {
-}
-
+/* line 316, ../sass/html-reset.scss */
 #header .block-menu h2.title {
-display: none;
+  display: none;
 }
-
 
 /*
  * Link Colors
@@ -356,174 +416,146 @@ display: none;
  * The order of link states are based on Eric Meyer's article:
  * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
  */
-
-
-a:link {
-color: #5c6da3;
-text-decoration: none;
+/* line 327, ../sass/html-reset.scss */
+a:link, a:visited {
+  color: #5c6da3;
+  text-decoration: none;
 }
-
-a:visited {
-color: #5c6da3;
-text-decoration: none;
+/* line 330, ../sass/html-reset.scss */
+a:hover, a:focus {
+  color: #5c6da3;
+  text-decoration: underline;
 }
-
-a:hover,
-a:focus {
-color: #5c6da3;
-text-decoration: underline;
-}
-
+/* line 333, ../sass/html-reset.scss */
 a:active {
-color: #000;
+  color: #000;
 }
 
+/* line 336, ../sass/html-reset.scss */
 li a.active {
-color:#000;
+  color: #000;
 }
 
-
-#header a:link {
-color: #343434;
-text-decoration: none;
+/* line 341, ../sass/html-reset.scss */
+#header a:link, #header a:visited {
+  color: #343434;
+  text-decoration: none;
 }
-
-#header a:visited {
-color: #343434;
-text-decoration: none;
+/* line 344, ../sass/html-reset.scss */
+#header a:hover, #header a:active {
+  color: #343434;
 }
-
-#header a:hover {
-color: #343434
+/* line 346, ../sass/html-reset.scss */
+#header li a.active {
+  color: #343434;
 }
-
-#header a:active {
-color: #343434
+/* line 350, ../sass/html-reset.scss */
+#header #secondary-menu li a:link, #header #secondary-menu li a:visited {
+  color: #fff;
+  text-decoration: none;
 }
-
-#header li  a.active,  {
-color: #343434
+/* line 353, ../sass/html-reset.scss */
+#header #secondary-menu li a:hover, #header #secondary-menu li a:active {
+  color: #fff;
 }
-
-#header #secondary-menu li a:link {
-color: #fff;
-text-decoration: none;
+/* line 355, ../sass/html-reset.scss */
+#header #secondary-menu li a.active {
+  color: #fff;
 }
-
-#header #secondary-menu li a:visited {
-color: #fff;
-text-decoration: none;
-}
-
-#header #secondary-menu li a:hover {
-color: #fff;
-}
-
-#header #secondary-menu li a:active {
-color: #fff;
-}
-
-#header #secondary-menu li  a.active,  {
-color: #fff;
-}
-
+/* line 357, ../sass/html-reset.scss */
 #header #navigation li.active a {
-background: #333;
-color: #fff;
+  background: #333;
+  color: #fff;
 }
 
-#bottom a:link {
-color: #333;
-text-decoration: none;
+/* line 363, ../sass/html-reset.scss */
+#bottom a:link, #bottom a:visited {
+  color: #333;
+  text-decoration: none;
 }
-
-#bottom a:visited {
-color: #333;
-text-decoration: none;
+/* line 366, ../sass/html-reset.scss */
+#bottom a:hover, #bottom a:focus {
+  color: #333;
+  text-decoration: underline;
 }
-
-#bottom a:hover,
-#bottom a:focus {
-color: #333;
-text-decoration: underline;
-}
-
+/* line 369, ../sass/html-reset.scss */
 #bottom a:active {
-color: #333
+  color: #333;
+}
+/* line 371, ../sass/html-reset.scss */
+#bottom li a.active {
+  color: #333;
 }
 
-#bottom li  a.active,  {
-color: #333
+/* line 374, ../sass/html-reset.scss */
+#nav ul.menu li.active-trail, #superfish ul.menu li.active-trail, #nav ul.menu li:hover, #superfish ul.menu li:hover {
+  background-color: #fff;
+  color: #333 !important;
+  opacity: 1;
 }
 
-
-#nav ul.menu li.active-trail, 
-#superfish ul.menu li.active-trail, 
-#nav ul.menu li:hover,
-#superfish ul.menu li:hover {
-background-color: #fff;
-color: #333 !important;
-opacity: 1;
+/* line 379, ../sass/html-reset.scss */
+#nav ul.menu li:hover a {
+  color: #333;
 }
 
-#nav ul.menu li:hover a,
+/* line 383, ../sass/html-reset.scss */
 #superfish ul.menu li:hover a {
-color: #333;
+  color: #333;
 }
-
+/* line 385, ../sass/html-reset.scss */
 #superfish .menu li li {
-    background-color: #efefef;
+  background-color: #efefef;
 }
 
-/* hover and active-trail color */ 
-#header #navigation li a.active,
-#header #navigation li a:visited .active,
-#header #navigation li a:hover, 
-#header #navigation li li a:hover, 
-#header #navigation li li li a:hover {
-background: #fff !important;
-color: #555  !important;
+/* hover and active-trail color */
+/* line 392, ../sass/html-reset.scss */
+#header #navigation li a.active, #header #navigation li a:visited .active, #header #navigation li a:hover {
+  background: #fff !important;
+  color: #555  !important;
+}
+/* line 396, ../sass/html-reset.scss */
+#header #navigation li li a:hover, #header #navigation li li li a:hover {
+  background: #fff !important;
+  color: #555  !important;
 }
 
-
-
-/* superfish border seperator */ 
-
-#nav li, #superfish li {
-border-right: 0px solid #ccc;
+/* superfish border seperator */
+/* line 402, ../sass/html-reset.scss */
+#nav li {
+  border-right: 0px solid #ccc;
 }
 
-#superfish .menu li li.first,
-#superfish .menu li li li.first {
-border-top:1px solid #ccc;
+/* line 406, ../sass/html-reset.scss */
+#superfish li {
+  border-right: 0px solid #ccc;
 }
-
-#superfish .menu li li,
+/* line 408, ../sass/html-reset.scss */
+#superfish .menu li li {
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+/* line 409, ../sass/html-reset.scss */
+#superfish .menu li li.first {
+  border-top: 1px solid #ccc;
+}
+/* line 411, ../sass/html-reset.scss */
 #superfish .menu li li li {
-border-bottom:1px solid #ccc; 
-border-left:1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+/* line 412, ../sass/html-reset.scss */
+#superfish .menu li li li.first {
+  border-top: 1px solid #ccc;
 }
 
-
-#footer a:link {
-color: #000;
+/* line 421, ../sass/html-reset.scss */
+#footer a:link, #footer a:visited, #footer a:hover, #footer a:focus, #footer a:active {
+  color: #000;
 }
-
-#footer a:visited {
-color: #000;
-}
-
-#footer a:hover,
-#footer a:focus {
-color: #000;
-}
-
-#footer a:active {
-color: #000;
-}
-
-#footer li  a.active,  {
-color: #000;
+/* line 423, ../sass/html-reset.scss */
+#footer li a.active {
+  color: #000;
 }
 
 /*
@@ -532,41 +564,49 @@ color: #000;
  * Drupal provides table styling which is only useful for its admin section
  * forms, so we override this default CSS. (We set it back in forms.css.)
  */
+/* line 433, ../sass/html-reset.scss */
 table {
   border-collapse: collapse;
-  width: 100%; /* Prevent cramped-looking tables */
+  width: 100%;
+  /* Prevent cramped-looking tables */
 }
 
-th,
-thead th,
-tbody th {
-  text-align: left; /* LTR */
+/* line 438, ../sass/html-reset.scss */
+th, thead th {
+  text-align: left;
+  /* LTR */
   padding: 0.5em;
   border-bottom: none;
 }
 
-tbody td, thead th {
-
+/* line 445, ../sass/html-reset.scss */
+tbody th {
+  text-align: left;
+  /* LTR */
+  padding: 0.5em;
+  border-bottom: none;
 }
 
-tbody td {
-    vertical-align: top;
-}
-
+/* line 454, ../sass/html-reset.scss */
 tbody {
   border-top: none;
+}
+/* line 455, ../sass/html-reset.scss */
+tbody td {
+  vertical-align: top;
 }
 
 /*
  * Abbreviations
  */
+/* line 463, ../sass/html-reset.scss */
 abbr {
   border-bottom: 1px dotted #666;
   cursor: help;
   white-space: nowrap;
 }
-
-abbr.created /* Date-based "abbreviations" show computer-friendly timestamps which are not human-friendly. */ {
+/* line 467, ../sass/html-reset.scss */
+abbr.created {
   border: none;
   cursor: auto;
   white-space: normal;
@@ -575,6 +615,7 @@ abbr.created /* Date-based "abbreviations" show computer-friendly timestamps whi
 /*
  * Images
  */
+/* line 476, ../sass/html-reset.scss */
 img {
   border: 0;
 }
@@ -582,6 +623,7 @@ img {
 /*
  * Horizontal rules
  */
+/* line 483, ../sass/html-reset.scss */
 hr {
   height: 1px;
   border: 1px solid #666;
@@ -590,34 +632,37 @@ hr {
 /*
  * Forms
  */
+/* line 491, ../sass/html-reset.scss */
 form {
   margin: 0;
   padding: 0;
 }
 
-
+/* line 495, ../sass/html-reset.scss */
 #system-themes-form table {
-    font-size: 75%;
+  font-size: 75%;
 }
 
+/* line 498, ../sass/html-reset.scss */
 fieldset {
   margin: 1em 0;
   padding: 0.4em;
   border: 1px solid #DDDDDD;
 }
 
-
-/* custom */ 
-
+/* custom */
+/* line 505, ../sass/html-reset.scss */
 .float-right-front {
-float: right;
-margin-top: -25px;
+  float: right;
+  margin-top: -25px;
 }
 
+/* line 509, ../sass/html-reset.scss */
 .float-right {
-float: right
+  float: right;
 }
 
+/* line 512, ../sass/html-reset.scss */
 .float-left {
-float: left
+  float: left;
 }

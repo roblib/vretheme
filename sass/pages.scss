@@ -1,0 +1,297 @@
+/* $Id: pages.css,v 1.18.2.3 2010/06/26 17:18:58 johnalbin Exp $ */
+
+/**
+ * @file
+ * Page Styling
+ *
+ * Style the markup found in page.tpl.php. Also includes some styling of
+ * miscellaneous Drupal elements that appear in the $content variable, such as
+ * ul.links, .pager, .more-link, etc.
+ */
+
+/*
+ * Body
+ */
+
+body {
+  margin: 0;
+  padding: 0; }
+
+#page-wrapper, #page {}
+
+/*
+ * The skip navigation link will be completely hidden until a user tabs to the
+ * link. See http://www.webaim.org/techniques/skipnav/
+ */
+
+#skip-link a {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: -500px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #666;
+  color: #fff;
+  &:visited {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: -500px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #666;
+    color: #fff; }
+  &:hover, &:active, &:focus {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 2px 0 3px 0; } }
+
+/*
+ * Header
+ */
+
+#header .section, #header-site-info-inner {}
+
+#sitelogo a img {
+  vertical-align: bottom;
+  display: block;
+  margin-bottom: 0;
+  padding-bottom: 0; }
+
+.with-sitename-slogan #logo {
+  border-right: 1px dotted #DEDEDF; }
+
+#logo {
+  margin: 0 0 0 0;
+  padding: 0 15px 0 10px;
+  float: left;
+  img {} }
+
+#name-and-slogan {
+  float: left;
+  padding: 0 10px 0 15px; }
+
+#site-name, #slogan {
+  display: block; }
+
+#site-name {
+  font-size: 180%;
+  line-height: 140%; }
+
+h1#site-name, div#site-name {
+  margin: 0;
+  font-weight: normal; }
+
+#site-name a {
+  &:link, &:visited, &:hover, &:focus {} }
+
+#site-slogan {
+  font-size: 100%;
+  margin-top: -2px; }
+
+#header-site-info {
+  &.block {
+    margin-bottom: 0; }
+  width: auto; }
+
+.region-header, #main-wrapper {}
+
+/*
+ * Main (container for everything else)
+ */
+
+#main {
+  padding-top: 5px; }
+
+/*
+ * Content
+ */
+
+#content .section, #mission, .region-content-top {}
+
+.breadcrumb {
+  padding-bottom: 0;
+  /* Undo system.css */ }
+
+h1.title, h2.title, h3.title {}
+
+tr {
+  &.even {
+    /* background-color: #eee; */
+    /* Drupal core uses a #eee background */ }
+  &.odd {
+    /* background-color: #eee; */
+    /* Drupal core uses a #eee background */
+    td {
+      padding: 0.3em 0.5em;
+      background-color: #FFFFFF; } }
+  &.even td {
+    padding: 0.3em 0.5em;
+    background-color: #FFFFFF; }
+  &.odd td.active, &.even td.active {
+    background-color: #DDDDDD; } }
+
+div {
+  &.messages, &.status {}
+  &.warning {
+    /* border: 1px solid #f0c020; */
+    /* Drupal core uses: 1px solid #f0c020 */ } }
+
+tr.warning {
+  /* border: 1px solid #f0c020; */
+  /* Drupal core uses: 1px solid #f0c020 */ }
+
+div.error, tr.error {}
+
+.error {
+  /* color: #e55; */
+  /* Drupal core uses a #e55 background */ }
+
+.warning {
+  /* color: #e09010; */
+  /* Drupal core uses a #e09010 background */ }
+
+div.tabs {}
+
+.help {
+  margin: 1em 0; }
+
+.more-help-link {
+  font-size: 0.85em;
+  text-align: right; }
+
+#content-area {}
+
+textarea {
+  font-size: 110%; }
+
+ul.links {
+  margin: 1em 0;
+  padding: 0;
+  &.inline {
+    margin: 0;
+    display: inline; }
+  li {
+    display: inline;
+    list-style-type: none;
+    padding: 0 0.5em; } }
+
+#content ul.links li.first {
+  padding-left: 0; }
+
+#sitecontent ul.links li {
+  padding: 0; }
+
+.pager {
+  clear: both;
+  margin: 1em 0;
+  text-align: center;
+  a, strong.pager-current {
+    padding: 0.5em; } }
+
+.feed-icons {
+  margin: 1em 0; }
+
+.more-link {
+  text-align: right;
+  /* LTR */ }
+
+.region-content-bottom {
+  margin: 1.5em 0 0 0; }
+
+#content #content-top-wrapper .section {
+  border-bottom: 1px dotted #dededf;
+  margin-bottom: 2em; }
+
+#content-bottom-wrapper {
+  margin: 0em 0 1em 0; }
+
+/*
+ * First sidebar (on left in LTR languages, on right in RTL)
+ *
+ * Remember to NOT add padding or margin to your .region-sidebar-first
+ * (see the layout.css file.)
+ */
+
+.region-sidebar-first .section, .region-sidebar-second .section {}
+
+/*
+ * Second sidebar (on right in LTR languages, on left in RTL)
+ *
+ * Remember to NOT add padding or margin to your .region-sidebar-second
+ * (see the layout.css file.)
+ */
+
+/*
+ * Footer
+ */
+
+#footer .section p {
+  margin: 0; }
+
+#footer-message, .region-footer, .region-page-closure {}
+
+/*
+ * Closure
+ */
+
+/*
+ * Drupal boxes
+ *
+ * Wrapper for Comment form, Comment viewing options, Menu admin, and
+ * Search results.
+ */
+
+.box {
+  h2, .content {} }
+
+/*
+ * Markup free clearing (See: http://www.positioniseverything.net/easyclearing.html )
+ */
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+/**
+ * Hide elements from all users.
+ *
+ * Used for elements which should not be immediately displayed to any user. An
+ * example would be a collapsible fieldset that will be expanded with a click
+ * from a user. The effect of this class can be toggled with the jQuery show()
+ * and hide() functions.
+ */
+
+.element-hidden {
+  display: none; }
+
+/**
+ * Hide elements visually, but keep them available for screen-readers.
+ *
+ * Used for information required for screen-reader users to understand and use
+ * the site where visual display is undesirable. Information provided in this
+ * manner should be kept concise, to avoid unnecessary burden on the user. Must
+ * not be used for focusable elements (such as links and form elements) as this
+ * causes issues for keyboard only or voice recognition users. "!important" is
+ * used to prevent unintentional overrides.
+ */
+
+.element-invisible {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px); }
+
+/* search styling */
+
+.search-results .search-info {
+  color: #777; }

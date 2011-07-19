@@ -1,5 +1,4 @@
 /* $Id: drupal6-reference.css,v 1.1 2009/08/12 04:25:15 johnalbin Exp $ */
-
 /**
  * @file
  * DRUPAL 6.x Reference CSS
@@ -17,73 +16,83 @@
  * for Firefox. With it, you can inspect elements and easily view and play with
  * its CSS styles.  http://www.getfirebug.com
  */
-
-
 /*
  * modules/aggregator/aggregator-rtl.css
  */
-
+/* line 27, ../sass/drupal6-reference.scss */
 #aggregator .feed-source .feed-icon {
   float: left;
 }
-
-
-/*
- * modules/aggregator/aggregator.css
- */
-
+/* line 29, ../sass/drupal6-reference.scss */
 #aggregator .feed-source .feed-title {
   margin-top: 0;
 }
+/* line 31, ../sass/drupal6-reference.scss */
 #aggregator .feed-source .feed-image img {
   margin-bottom: 0.75em;
 }
+/* line 33, ../sass/drupal6-reference.scss */
 #aggregator .feed-source .feed-icon {
-  float: right; /* LTR */
+  float: right;
+  /* LTR */
   display: block;
 }
+/* line 37, ../sass/drupal6-reference.scss */
 #aggregator .feed-item {
   margin-bottom: 1.5em;
 }
+/* line 39, ../sass/drupal6-reference.scss */
 #aggregator .feed-item-title {
   margin-bottom: 0;
   font-size: 1.3em;
 }
+/* line 42, ../sass/drupal6-reference.scss */
 #aggregator .feed-item-meta, #aggregator .feed-item-body {
   margin-bottom: 0.5em;
 }
+/* line 44, ../sass/drupal6-reference.scss */
 #aggregator .feed-item-categories {
   font-size: 0.9em;
 }
+/* line 46, ../sass/drupal6-reference.scss */
 #aggregator td {
   vertical-align: bottom;
 }
+/* line 48, ../sass/drupal6-reference.scss */
 #aggregator td.categorize-item {
   white-space: nowrap;
 }
+/* line 51, ../sass/drupal6-reference.scss */
 #aggregator .categorize-item .news-item .body {
   margin-top: 0;
 }
+/* line 53, ../sass/drupal6-reference.scss */
 #aggregator .categorize-item h3 {
   margin-bottom: 1em;
   margin-top: 0;
 }
 
-
+/*
+ * modules/aggregator/aggregator.css
+ */
 /*
  * modules/block/block.css
  */
-
+/* line 66, ../sass/drupal6-reference.scss */
 #blocks td.region {
   font-weight: bold;
 }
+/* line 69, ../sass/drupal6-reference.scss */
 #blocks tr.region-message {
   font-weight: normal;
   color: #999;
 }
+/* line 72, ../sass/drupal6-reference.scss */
 #blocks tr.region-populated {
   display: none;
 }
+
+/* line 75, ../sass/drupal6-reference.scss */
 .block-region {
   background-color: #ff6;
   margin-top: 4px;
@@ -91,249 +100,296 @@
   padding: 3px;
 }
 
-
 /*
  * modules/book/book-rtl.css
  */
-
-.book-navigation .page-previous {
+/* line 86, ../sass/drupal6-reference.scss */
+.book-navigation .page-previous, .book-navigation .page-up {
   float: right;
 }
-.book-navigation .page-up {
-  float: right;
-}
-
-
-/*
- * modules/book/book.css
- */
-
+/* line 88, ../sass/drupal6-reference.scss */
 .book-navigation .menu {
   border-top: 1px solid #888;
   padding: 1em 0 0 3em;
 }
+/* line 91, ../sass/drupal6-reference.scss */
 .book-navigation .page-links {
   border-top: 1px solid #888;
   border-bottom: 1px solid #888;
   text-align: center;
   padding: 0.5em;
 }
+/* line 96, ../sass/drupal6-reference.scss */
 .book-navigation .page-previous {
   text-align: left;
   width: 42%;
   display: block;
-  float: left; /* LTR */
+  float: left;
+  /* LTR */
 }
+/* line 102, ../sass/drupal6-reference.scss */
 .book-navigation .page-up {
   margin: 0 5%;
   width: 4%;
   display: block;
-  float: left; /* LTR */
+  float: left;
+  /* LTR */
 }
+/* line 108, ../sass/drupal6-reference.scss */
 .book-navigation .page-next {
   text-align: right;
   width: 42%;
   display: block;
   float: right;
 }
+
+/*
+ * modules/book/book.css
+ */
+/* line 118, ../sass/drupal6-reference.scss */
 #book-outline {
   min-width: 56em;
 }
+
+/* line 121, ../sass/drupal6-reference.scss */
 .book-outline-form .form-item {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+/* line 125, ../sass/drupal6-reference.scss */
 #edit-book-bid-wrapper .description {
   clear: both;
 }
+
+/* line 129, ../sass/drupal6-reference.scss */
 #book-admin-edit select {
   margin-right: 24px;
 }
+/* line 131, ../sass/drupal6-reference.scss */
 #book-admin-edit select.progress-disabled {
   margin-right: 0;
 }
+/* line 133, ../sass/drupal6-reference.scss */
 #book-admin-edit tr.ahah-new-content {
   background-color: #ffd;
 }
+/* line 135, ../sass/drupal6-reference.scss */
 #book-admin-edit .form-item {
   float: left;
 }
 
-
 /*
  * modules/color/color-rtl.css
  */
-
+/* line 142, ../sass/drupal6-reference.scss */
 #placeholder {
   left: 0;
   right: auto;
 }
 
 /* Palette */
+/* line 149, ../sass/drupal6-reference.scss */
 .color-form .form-item {
   padding-left: 0;
   padding-right: 1em;
 }
+/* line 152, ../sass/drupal6-reference.scss */
 .color-form label {
   float: right;
   clear: right;
 }
+/* line 155, ../sass/drupal6-reference.scss */
 .color-form .form-text, .color-form .form-select {
   float: right;
 }
+/* line 157, ../sass/drupal6-reference.scss */
 .color-form .form-text {
   margin-right: 0;
   margin-left: 5px;
 }
 
+/* line 162, ../sass/drupal6-reference.scss */
 #palette .hook {
   float: right;
 }
+/* line 164, ../sass/drupal6-reference.scss */
 #palette .down, #palette .up, #palette .both {
   background: url(images/hook-rtl.png) no-repeat 0 0;
 }
+/* line 166, ../sass/drupal6-reference.scss */
 #palette .up {
   background-position: 0 -27px;
 }
+/* line 168, ../sass/drupal6-reference.scss */
 #palette .both {
   background-position: 0 -54px;
 }
-
+/* line 170, ../sass/drupal6-reference.scss */
 #palette .lock {
   float: right;
   right: -10px;
 }
+
+/* line 174, ../sass/drupal6-reference.scss */
 html.js #preview {
   float: right;
 }
 
-
 /*
  * modules/color/color.css
  */
-
 /* Farbtastic placement */
+/* line 183, ../sass/drupal6-reference.scss */
 .color-form {
   max-width: 50em;
   position: relative;
 }
+
+/* line 187, ../sass/drupal6-reference.scss */
 #placeholder {
   position: absolute;
   top: 0;
-  right: 0; /* LTR */
+  right: 0;
+  /* LTR */
 }
 
 /* Palette */
+/* line 196, ../sass/drupal6-reference.scss */
 .color-form .form-item {
   height: 2em;
   line-height: 2em;
-  padding-left: 1em; /* LTR */
+  padding-left: 1em;
+  /* LTR */
   margin: 0.5em 0;
 }
+/* line 202, ../sass/drupal6-reference.scss */
 .color-form label {
-  float: left; /* LTR */
-  clear: left; /* LTR */
+  float: left;
+  /* LTR */
+  clear: left;
+  /* LTR */
   width: 10em;
 }
+/* line 208, ../sass/drupal6-reference.scss */
 .color-form .form-text, .color-form .form-select {
-  float: left; /* LTR */
+  float: left;
+  /* LTR */
 }
+/* line 211, ../sass/drupal6-reference.scss */
 .color-form .form-text {
   text-align: center;
-  margin-right: 5px; /* LTR */
+  margin-right: 5px;
+  /* LTR */
   cursor: pointer;
 }
 
+/* line 218, ../sass/drupal6-reference.scss */
 #palette .hook {
-  float: left; /* LTR */
+  float: left;
+  /* LTR */
   margin-top: 3px;
   width: 16px;
   height: 16px;
 }
+/* line 224, ../sass/drupal6-reference.scss */
 #palette .down, #palette .up, #palette .both {
-  background: url(images/hook.png) no-repeat 100% 0; /* LTR */
+  background: url(images/hook.png) no-repeat 100% 0;
+  /* LTR */
 }
+/* line 227, ../sass/drupal6-reference.scss */
 #palette .up {
-  background-position: 100% -27px; /* LTR */
+  background-position: 100% -27px;
+  /* LTR */
 }
+/* line 230, ../sass/drupal6-reference.scss */
 #palette .both {
-  background-position: 100% -54px; /* LTR */
+  background-position: 100% -54px;
+  /* LTR */
 }
-
+/* line 233, ../sass/drupal6-reference.scss */
 #palette .lock {
-  float: left; /* LTR */
+  float: left;
+  /* LTR */
   position: relative;
   top: -1.4em;
-  left: -10px; /* LTR */
+  left: -10px;
+  /* LTR */
   width: 20px;
   height: 25px;
   background: url(images/lock.png) no-repeat 50% 2px;
   cursor: pointer;
 }
+/* line 244, ../sass/drupal6-reference.scss */
 #palette .unlocked {
   background-position: 50% -22px;
 }
+/* line 246, ../sass/drupal6-reference.scss */
 #palette .form-item {
   width: 20em;
 }
+/* line 248, ../sass/drupal6-reference.scss */
 #palette .item-selected {
   background: #eee;
 }
 
 /* Preview */
+/* line 253, ../sass/drupal6-reference.scss */
 #preview {
   display: none;
 }
+
+/* line 256, ../sass/drupal6-reference.scss */
 html.js #preview {
   display: block;
   position: relative;
-  float: left; /* LTR */
+  float: left;
+  /* LTR */
 }
-
 
 /*
  * modules/comment/comment-rtl.css
  */
-
+/* line 266, ../sass/drupal6-reference.scss */
 .indented {
   margin-left: 0;
   margin-right: 25px;
+  margin-left: 25px;
+  /* LTR */
 }
-
 
 /*
  * modules/comment/comment.css
  */
-
-.indented {
-  margin-left: 25px; /* LTR */
-}
+/* line 276, ../sass/drupal6-reference.scss */
 .comment-unpublished {
   background-color: #fff4f4;
 }
+
+/* line 279, ../sass/drupal6-reference.scss */
 .preview .comment {
   background-color: #ffffea;
 }
 
-
 /*
  * modules/dblog/dblog-rtl.css
  */
-
+/* line 286, ../sass/drupal6-reference.scss */
 #edit-type-wrapper, #edit-severity-wrapper {
   float: right;
   padding-right: 0;
   padding-left: .8em;
 }
 
-
 /*
  * modules/dblog/dblog.css
  */
-
+/* line 295, ../sass/drupal6-reference.scss */
 #edit-type-wrapper, #edit-severity-wrapper {
-  float: left; /* LTR */
-  padding-right: .8em; /* LTR */
+  float: left;
+  /* LTR */
+  padding-right: .8em;
+  /* LTR */
   margin: 0.1em;
   /**
    * In Opera 9, DOM elements with the property of "overflow: auto"
@@ -342,146 +398,177 @@ html.js #preview {
    */
   width: 15em;
 }
+
+/* line 308, ../sass/drupal6-reference.scss */
 #dblog-filter-form .form-item select.form-select {
   width: 100%;
 }
+
+/* line 312, ../sass/drupal6-reference.scss */
 tr.dblog-user {
   background: #ffd;
 }
+/* line 314, ../sass/drupal6-reference.scss */
 tr.dblog-user .active {
   background: #eed;
 }
+/* line 316, ../sass/drupal6-reference.scss */
 tr.dblog-content {
   background: #ddf;
 }
+/* line 318, ../sass/drupal6-reference.scss */
 tr.dblog-content .active {
   background: #cce;
 }
+/* line 320, ../sass/drupal6-reference.scss */
 tr.dblog-page-not-found, tr.dblog-access-denied {
   background: #dfd;
 }
+/* line 322, ../sass/drupal6-reference.scss */
 tr.dblog-page-not-found .active, tr.dblog-access-denied .active {
   background: #cec;
 }
+/* line 324, ../sass/drupal6-reference.scss */
 tr.dblog-error {
   background: #ffc9c9;
 }
+/* line 326, ../sass/drupal6-reference.scss */
 tr.dblog-error .active {
   background: #eeb9b9;
 }
 
-
 /*
  * modules/forum/forum-rtl.css
  */
-
+/* line 333, ../sass/drupal6-reference.scss */
 #forum tr td.forum {
   padding-left: 0.5em;
   padding-right: 25px;
   background-position: 98% 2px;
 }
+
+/* line 338, ../sass/drupal6-reference.scss */
 .forum-topic-navigation {
   padding: 1em 3em 0 0;
 }
+/* line 340, ../sass/drupal6-reference.scss */
 .forum-topic-navigation .topic-previous {
   text-align: left;
   float: right;
 }
+/* line 343, ../sass/drupal6-reference.scss */
 .forum-topic-navigation .topic-next {
   text-align: right;
   float: left;
 }
 
-
 /*
  * modules/forum/forum.css
  */
-
+/* line 352, ../sass/drupal6-reference.scss */
 #forum .description {
   font-size: 0.9em;
   margin: 0.5em;
 }
+/* line 356, ../sass/drupal6-reference.scss */
 #forum td.created, #forum td.posts, #forum td.topics, #forum td.last-reply, #forum td.replies, #forum td.pager {
   white-space: nowrap;
 }
+/* line 358, ../sass/drupal6-reference.scss */
 #forum td.posts, #forum td.topics, #forum td.replies, #forum td.pager {
   text-align: center;
 }
+/* line 361, ../sass/drupal6-reference.scss */
 #forum tr td.forum {
-  padding-left: 25px; /* LTR */
-  background-position: 2px 2px; /* LTR */
+  padding-left: 25px;
+  /* LTR */
+  background-position: 2px 2px;
+  /* LTR */
   background-image: url(../../misc/forum-default.png);
   background-repeat: no-repeat;
 }
+/* line 368, ../sass/drupal6-reference.scss */
 #forum tr.new-topics td.forum {
   background-image: url(../../misc/forum-new.png);
 }
+/* line 370, ../sass/drupal6-reference.scss */
 #forum div.indent {
   margin-left: 20px;
 }
 
+/* line 373, ../sass/drupal6-reference.scss */
 .forum-topic-navigation {
-  padding: 1em 0 0 3em; /* LTR */
+  padding: 1em 0 0 3em;
+  /* LTR */
   border-top: 1px solid #888;
   border-bottom: 1px solid #888;
   text-align: center;
   padding: 0.5em;
 }
+/* line 380, ../sass/drupal6-reference.scss */
 .forum-topic-navigation .topic-previous {
-  text-align: right; /* LTR */
-  float: left; /* LTR */
+  text-align: right;
+  /* LTR */
+  float: left;
+  /* LTR */
   width: 46%;
 }
+/* line 386, ../sass/drupal6-reference.scss */
 .forum-topic-navigation .topic-next {
-  text-align: left; /* LTR */
-  float: right; /* LTR */
+  text-align: left;
+  /* LTR */
+  float: right;
+  /* LTR */
   width: 46%;
 }
-
 
 /*
  * modules/help/help-rtl.css
  */
-
+/* line 397, ../sass/drupal6-reference.scss */
 .help-items {
   float: right;
   padding-right: 0;
   padding-left: 3%;
 }
+
+/* line 402, ../sass/drupal6-reference.scss */
 .help-items-last {
   padding-right: 0;
   padding-left: 0;
 }
 
-
 /*
  * modules/help/help.css
  */
-
+/* line 410, ../sass/drupal6-reference.scss */
 .help-items {
-  float: left; /* LTR */
+  float: left;
+  /* LTR */
   width: 22%;
-  padding-right: 3%; /* LTR */
-}
-.help-items-last {
-  padding-right: 0; /* LTR */
+  padding-right: 3%;
+  /* LTR */
 }
 
+/* line 417, ../sass/drupal6-reference.scss */
+.help-items-last {
+  padding-right: 0;
+  /* LTR */
+}
 
 /*
  * modules/locale/locale.css
  */
-
+/* line 425, ../sass/drupal6-reference.scss */
 .locale-untranslated {
   font-style: normal;
   text-decoration: line-through;
 }
 
-
 /*
  * modules/node/node-rtl.css
  */
-
+/* line 433, ../sass/drupal6-reference.scss */
 #node-admin-buttons {
   float: right;
   margin-left: 0;
@@ -489,230 +576,286 @@ tr.dblog-error .active {
   clear: left;
 }
 
-
 /*
  * modules/node/node.css
  */
-
+/* line 443, ../sass/drupal6-reference.scss */
 .node-unpublished {
   background-color: #fff4f4;
 }
+
+/* line 446, ../sass/drupal6-reference.scss */
 .preview .node {
   background-color: #ffffea;
 }
+
+/* line 449, ../sass/drupal6-reference.scss */
 #node-admin-filter ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
   width: 100%;
 }
+
+/* line 455, ../sass/drupal6-reference.scss */
 #node-admin-buttons {
-  float: left; /* LTR */
-  margin-left: 0.5em; /* LTR */
-  clear: right; /* LTR */
+  float: left;
+  /* LTR */
+  margin-left: 0.5em;
+  /* LTR */
+  clear: right;
+  /* LTR */
 }
+
+/* line 463, ../sass/drupal6-reference.scss */
 td.revision-current {
   background: #ffc;
 }
+
+/* line 467, ../sass/drupal6-reference.scss */
 .node-form .form-text {
   display: block;
   width: 95%;
 }
+/* line 470, ../sass/drupal6-reference.scss */
 .node-form .container-inline .form-text {
   display: inline;
   width: auto;
 }
+/* line 473, ../sass/drupal6-reference.scss */
 .node-form .standard {
   clear: both;
 }
+/* line 475, ../sass/drupal6-reference.scss */
 .node-form textarea {
   display: block;
   width: 95%;
 }
+/* line 478, ../sass/drupal6-reference.scss */
 .node-form .attachments fieldset {
   float: none;
   display: block;
 }
+
+/* line 482, ../sass/drupal6-reference.scss */
 .terms-inline {
   display: inline;
 }
 
-
 /*
  * modules/openid/openid.css
  */
-
+/* line 489, ../sass/drupal6-reference.scss */
 #edit-openid-identifier {
   background-image: url("login-bg.png");
   background-position: 0% 50%;
   background-repeat: no-repeat;
   padding-left: 20px;
 }
+
+/* line 495, ../sass/drupal6-reference.scss */
 div#edit-openid-identifier-wrapper {
   display: block;
 }
-html.js #user-login-form div#edit-openid-identifier-wrapper,
-html.js #user-login div#edit-openid-identifier-wrapper {
+
+/* line 499, ../sass/drupal6-reference.scss */
+html.js #user-login-form div#edit-openid-identifier-wrapper, html.js #user-login div#edit-openid-identifier-wrapper {
   display: none;
 }
-html.js #user-login-form li.openid-link,
-html.js #user-login li.openid-link {
-  display : block;
+/* line 501, ../sass/drupal6-reference.scss */
+html.js #user-login-form li.openid-link, html.js #user-login li.openid-link {
+  display: block;
   list-style: none;
 }
+
+/* line 505, ../sass/drupal6-reference.scss */
 #user-login-form ul {
   margin-top: 0;
 }
+
+/* line 508, ../sass/drupal6-reference.scss */
 #user-login ul {
   margin: 0 0 5px;
 }
+/* line 510, ../sass/drupal6-reference.scss */
 #user-login ul li {
   margin: 0;
 }
-#user-login-form li.openid-link,
-#user-login-form li.user-link,
-#user-login li.openid-link,
-#user-login li.user-link {
+
+/* line 514, ../sass/drupal6-reference.scss */
+#user-login-form li.openid-link, #user-login-form li.user-link {
   display: none;
 }
-#user-login-form li.openid-link a,
-#user-login li.openid-link a {
+
+/* line 518, ../sass/drupal6-reference.scss */
+#user-login li.openid-link, #user-login li.user-link {
+  display: none;
+}
+
+/* line 521, ../sass/drupal6-reference.scss */
+#user-login-form li.openid-link a, #user-login li.openid-link a {
   background: transparent url("login-bg.png") no-repeat 0 2px;
   padding: 0 20px;
 }
 
-
 /*
  * modules/poll/poll-rtl.css
  */
-
+/* line 530, ../sass/drupal6-reference.scss */
 .poll .bar .foreground {
   float: right;
 }
+/* line 532, ../sass/drupal6-reference.scss */
 .poll .percent {
   text-align: left;
 }
+/* line 534, ../sass/drupal6-reference.scss */
 .poll .vote-form .choices {
   text-align: right;
 }
-
-
-/*
- * modules/poll/poll.css
- */
-
+/* line 536, ../sass/drupal6-reference.scss */
 .poll .bar {
   height: 1em;
   margin: 1px 0;
   background-color: #ddd;
 }
+/* line 540, ../sass/drupal6-reference.scss */
 .poll .bar .foreground {
   background-color: #000;
   height: 1em;
-  float: left; /* LTR */
+  float: left;
+  /* LTR */
 }
+/* line 545, ../sass/drupal6-reference.scss */
 .poll .links {
   text-align: center;
 }
+/* line 547, ../sass/drupal6-reference.scss */
 .poll .percent {
-  text-align: right; /* LTR */
+  text-align: right;
+  /* LTR */
 }
+/* line 550, ../sass/drupal6-reference.scss */
 .poll .total {
   text-align: center;
 }
+/* line 552, ../sass/drupal6-reference.scss */
 .poll .vote-form {
   text-align: center;
 }
+/* line 554, ../sass/drupal6-reference.scss */
 .poll .vote-form .choices {
-  text-align: left; /* LTR */
+  text-align: left;
+  /* LTR */
   margin: 0 auto;
   display: table;
 }
+/* line 559, ../sass/drupal6-reference.scss */
 .poll .vote-form .choices .title {
   font-weight: bold;
 }
+
+/*
+ * modules/poll/poll.css
+ */
+/* line 566, ../sass/drupal6-reference.scss */
 .node-form #edit-poll-more {
   margin: 0;
 }
+
+/* line 570, ../sass/drupal6-reference.scss */
 td.poll-chtext {
   width: 80%;
 }
+/* line 572, ../sass/drupal6-reference.scss */
 td.poll-chvotes .form-text {
   width: 85%;
 }
 
-
 /*
  * modules/profile/profile.css
  */
-
+/* line 580, ../sass/drupal6-reference.scss */
 #profile-fields td.category {
   font-weight: bold;
 }
+/* line 583, ../sass/drupal6-reference.scss */
 #profile-fields tr.category-message {
   color: #999;
 }
+/* line 585, ../sass/drupal6-reference.scss */
 #profile-fields tr.category-populated {
   display: none;
 }
 
-
 /*
  * modules/search/search-rtl.css
  */
-
+/* line 593, ../sass/drupal6-reference.scss */
 .search-advanced .criterion {
   float: right;
   margin-right: 0;
   margin-left: 2em;
 }
+/* line 597, ../sass/drupal6-reference.scss */
 .search-advanced .action {
   float: right;
   clear: right;
 }
 
-
 /*
  * modules/search/search.css
  */
-
+/* line 605, ../sass/drupal6-reference.scss */
 .search-form {
   margin-bottom: 1em;
 }
+/* line 607, ../sass/drupal6-reference.scss */
 .search-form input {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+/* line 612, ../sass/drupal6-reference.scss */
 .search-results p {
   margin-top: 0;
 }
+/* line 614, ../sass/drupal6-reference.scss */
 .search-results dt {
   font-size: 1.1em;
 }
+/* line 616, ../sass/drupal6-reference.scss */
 .search-results dd {
   margin-bottom: 1em;
 }
+/* line 618, ../sass/drupal6-reference.scss */
 .search-results .search-info {
   font-size: 0.85em;
 }
-.search-advanced .criterion {
-  float: left; /* LTR */
-  margin-right: 2em; /* LTR */
-}
-.search-advanced .action {
-  float: left; /* LTR */
-  clear: left; /* LTR */
-}
 
+/* line 622, ../sass/drupal6-reference.scss */
+.search-advanced .criterion {
+  float: left;
+  /* LTR */
+  margin-right: 2em;
+  /* LTR */
+}
+/* line 627, ../sass/drupal6-reference.scss */
+.search-advanced .action {
+  float: left;
+  /* LTR */
+  clear: left;
+  /* LTR */
+}
 
 /*
  * modules/system/admin-rtl.css
  */
-
+/* line 638, ../sass/drupal6-reference.scss */
 div.admin-panel .body {
   padding: 0 8px 2px 4px;
 }
-
+/* line 640, ../sass/drupal6-reference.scss */
 div.admin .expert-link {
   text-align: left;
   margin-right: 0;
@@ -721,91 +864,109 @@ div.admin .expert-link {
   padding-left: 4px;
 }
 
+/* line 649, ../sass/drupal6-reference.scss */
 table.system-status-report th, table.system-status-report tr.merge-up td {
   padding-right: 30px;
 }
-
+/* line 651, ../sass/drupal6-reference.scss */
 table.system-status-report th {
   background-position: 95% 50%;
 }
-
+/* line 653, ../sass/drupal6-reference.scss */
 table.screenshot {
   margin-left: 1em;
 }
 
+/* line 656, ../sass/drupal6-reference.scss */
 .date-container {
   clear: right;
 }
-.date-container .select-container, .date-container .custom-container {
+/* line 658, ../sass/drupal6-reference.scss */
+.date-container .select-container {
   float: right;
 }
+/* line 660, ../sass/drupal6-reference.scss */
 .date-container .custom-container {
+  float: right;
   margin-left: 0;
   margin-right: 15px;
 }
 
-
 /*
  * modules/system/admin.css
  */
-
 /*
 ** Formatting for administration page
 */
+/* line 674, ../sass/drupal6-reference.scss */
 div.admin-panel {
   margin: 0;
   padding: 5px 5px 15px 5px;
 }
-
+/* line 677, ../sass/drupal6-reference.scss */
 div.admin-panel .description {
   margin: 0 0 3px;
   padding: 2px 0 3px 0;
 }
-
+/* line 680, ../sass/drupal6-reference.scss */
 div.admin-panel .body {
-  padding: 0 4px 2px 8px; /* LTR */
+  padding: 0 4px 2px 8px;
+  /* LTR */
 }
-
+/* line 683, ../sass/drupal6-reference.scss */
 div.admin {
   padding-top: 15px;
 }
-
+/* line 685, ../sass/drupal6-reference.scss */
 div.admin .left {
   float: left;
   width: 47%;
   margin-left: 1em;
 }
+/* line 689, ../sass/drupal6-reference.scss */
 div.admin .right {
   float: right;
   width: 47%;
   margin-right: 1em;
 }
-
+/* line 693, ../sass/drupal6-reference.scss */
 div.admin .expert-link {
-  text-align: right; /* LTR */
-  margin-right: 1em; /* LTR */
-  padding-right: 4px; /* LTR */
+  text-align: right;
+  /* LTR */
+  margin-right: 1em;
+  /* LTR */
+  padding-right: 4px;
+  /* LTR */
 }
 
+/* line 701, ../sass/drupal6-reference.scss */
 table.package {
   width: 100%;
 }
+/* line 703, ../sass/drupal6-reference.scss */
 table.package .description {
   width: 100%;
 }
+/* line 705, ../sass/drupal6-reference.scss */
 table.package .version {
   direction: ltr;
 }
+
+/* line 709, ../sass/drupal6-reference.scss */
 div.admin-dependencies, div.admin-required {
   font-size: 0.9em;
   color: #444;
 }
+
+/* line 714, ../sass/drupal6-reference.scss */
 span.admin-disabled {
   color: #800;
 }
+/* line 716, ../sass/drupal6-reference.scss */
 span.admin-enabled {
   color: #080;
 }
+/* line 718, ../sass/drupal6-reference.scss */
 span.admin-missing {
   color: #f00;
 }
@@ -813,24 +974,34 @@ span.admin-missing {
 /**
  * Formatting for status report
  */
+/* line 726, ../sass/drupal6-reference.scss */
 table.system-status-report th {
   border-bottom: 1px solid #ccc;
+  padding-left: 30px;
+  /* LTR */
 }
-table.system-status-report th, table.system-status-report tr.merge-up td {
-  padding-left: 30px; /* LTR */
+/* line 730, ../sass/drupal6-reference.scss */
+table.system-status-report tr.merge-up td {
+  padding-left: 30px;
+  /* LTR */
 }
+/* line 733, ../sass/drupal6-reference.scss */
 table.system-status-report th {
   background-repeat: no-repeat;
-  background-position: 5px 50%; /* LTR */
+  background-position: 5px 50%;
+  /* LTR */
   padding-top: 6px;
   padding-bottom: 6px;
 }
+/* line 740, ../sass/drupal6-reference.scss */
 table.system-status-report tr.error th {
   background-image: url(../../misc/watchdog-error.png);
 }
+/* line 742, ../sass/drupal6-reference.scss */
 table.system-status-report tr.warning th {
   background-image: url(../../misc/watchdog-warning.png);
 }
+/* line 744, ../sass/drupal6-reference.scss */
 table.system-status-report tr.ok th {
   background-image: url(../../misc/watchdog-ok.png);
 }
@@ -838,14 +1009,19 @@ table.system-status-report tr.ok th {
 /**
  * Formatting for theme configuration
  */
+/* line 751, ../sass/drupal6-reference.scss */
 .theme-settings-left {
   float: left;
   width: 49%;
 }
+
+/* line 755, ../sass/drupal6-reference.scss */
 .theme-settings-right {
   float: right;
   width: 49%;
 }
+
+/* line 759, ../sass/drupal6-reference.scss */
 .theme-settings-bottom {
   clear: both;
 }
@@ -853,78 +1029,103 @@ table.system-status-report tr.ok th {
 /**
  * Formatting for theme overview
  */
+/* line 766, ../sass/drupal6-reference.scss */
 table.screenshot {
-  margin-right: 1em; /* LTR */
+  margin-right: 1em;
+  /* LTR */
 }
+
+/* line 771, ../sass/drupal6-reference.scss */
 .theme-info h2 {
   margin-bottom: 0;
 }
+/* line 773, ../sass/drupal6-reference.scss */
 .theme-info p {
   margin-top: 0;
 }
 
-
 /**
  * Date and time settings page
  */
+/* line 780, ../sass/drupal6-reference.scss */
 .date-container {
   overflow: auto;
-  clear: left; /* LTR */
+  clear: left;
+  /* LTR */
 }
+/* line 784, ../sass/drupal6-reference.scss */
 .date-container .form-item {
   margin-top: 0;
 }
-.date-container .select-container, .date-container .custom-container {
-  float: left; /* LTR */
+/* line 786, ../sass/drupal6-reference.scss */
+.date-container .select-container {
+  float: left;
+  /* LTR */
 }
+/* line 789, ../sass/drupal6-reference.scss */
 .date-container .custom-container {
-  margin-left: 15px; /* LTR */
+  float: left;
+  /* LTR */
+  margin-left: 15px;
+  /* LTR */
   width: 50%;
 }
+
+/* line 796, ../sass/drupal6-reference.scss */
 html.js .custom-container label {
   visibility: hidden;
 }
 
-
 /*
  * modules/system/defaults-rtl.css
  */
-
+/* line 803, ../sass/drupal6-reference.scss */
 th {
   text-align: right;
   padding-right: 0;
   padding-left: 1em;
 }
 
-
 /*
  * modules/system/defaults.css
  */
-
 /*
 ** HTML elements
 */
+/* line 816, ../sass/drupal6-reference.scss */
 fieldset {
   margin-bottom: 1em;
   padding: .5em;
 }
+
+/* line 820, ../sass/drupal6-reference.scss */
 form {
   margin: 0;
   padding: 0;
 }
+
+/* line 824, ../sass/drupal6-reference.scss */
 hr {
   height: 1px;
   border: 1px solid gray;
 }
+
+/* line 828, ../sass/drupal6-reference.scss */
 img {
   border: 0;
 }
+
+/* line 831, ../sass/drupal6-reference.scss */
 table {
   border-collapse: collapse;
 }
+
+/* line 834, ../sass/drupal6-reference.scss */
 th {
-  text-align: left; /* LTR */
-  padding-right: 1em; /* LTR */
+  text-align: left;
+  /* LTR */
+  padding-right: 1em;
+  /* LTR */
   border-bottom: 3px solid #ccc;
 }
 
@@ -932,6 +1133,11 @@ th {
 ** Markup free clearing
 ** Details: http://www.positioniseverything.net/easyclearing.html
 */
+/* line 846, ../sass/drupal6-reference.scss */
+.clear-block {
+  display: inline-block;
+}
+/* line 847, ../sass/drupal6-reference.scss */
 .clear-block:after {
   content: ".";
   display: block;
@@ -940,25 +1146,23 @@ th {
   visibility: hidden;
 }
 
-.clear-block {
-  display: inline-block;
-}
-
 /* Hides from IE-mac \*/
+/* line 857, ../sass/drupal6-reference.scss */
 * html .clear-block {
   height: 1%;
 }
+
+/* line 860, ../sass/drupal6-reference.scss */
 .clear-block {
   display: block;
 }
+
 /* End hide from IE-mac */
-
-
 /*
  * modules/system/maintenance.css
  */
-
 /* Update styles */
+/* line 871, ../sass/drupal6-reference.scss */
 #update-results {
   margin-top: 3em;
   padding: 0.25em;
@@ -966,388 +1170,545 @@ th {
   background: #eee;
   font-size: smaller;
 }
+/* line 877, ../sass/drupal6-reference.scss */
 #update-results h2 {
   margin-top: 0.25em;
 }
+/* line 879, ../sass/drupal6-reference.scss */
 #update-results h4 {
   margin-bottom: 0.25em;
 }
+/* line 882, ../sass/drupal6-reference.scss */
 #update-results li.none {
   color: #888;
   font-style: italic;
 }
+/* line 885, ../sass/drupal6-reference.scss */
 #update-results li.failure strong {
   color: #b63300;
 }
 
-
 /*
  * modules/system/system-menus-rtl.css
  */
-
+/* line 892, ../sass/drupal6-reference.scss */
 ul.menu {
-  text-align:right;
+  text-align: right;
 }
+/* line 894, ../sass/drupal6-reference.scss */
 ul.menu li {
   margin: 0 0.5em 0 0;
 }
+
+/* line 898, ../sass/drupal6-reference.scss */
 li.expanded {
   padding: 0.2em 0 0 0.5em;
 }
+/* line 900, ../sass/drupal6-reference.scss */
 li.collapsed {
   list-style-image: url(../../misc/menu-collapsed-rtl.png);
   padding: 0.2em 0 0 0.5em;
 }
+/* line 903, ../sass/drupal6-reference.scss */
 li.leaf {
   padding: 0.2em 0 0 0.5em;
 }
 
-
 /*
  * modules/system/system-menus.css
  */
-
+/* line 910, ../sass/drupal6-reference.scss */
 ul.menu {
   list-style: none;
   border: none;
-  text-align:left; /* LTR */
+  text-align: left;
+  /* LTR */
 }
+/* line 915, ../sass/drupal6-reference.scss */
 ul.menu li {
-  margin: 0 0 0 0.5em; /* LTR */
+  margin: 0 0 0 0.5em;
+  /* LTR */
 }
+
+/* line 920, ../sass/drupal6-reference.scss */
 li.expanded {
   list-style-type: circle;
   list-style-image: url(../../misc/menu-expanded.png);
-  padding: 0.2em 0.5em 0 0; /* LTR */
+  padding: 0.2em 0.5em 0 0;
+  /* LTR */
   margin: 0;
 }
+/* line 926, ../sass/drupal6-reference.scss */
 li.collapsed {
   list-style-type: disc;
-  list-style-image: url(../../misc/menu-collapsed.png); /* LTR */
-  padding: 0.2em 0.5em 0 0; /* LTR */
+  list-style-image: url(../../misc/menu-collapsed.png);
+  /* LTR */
+  padding: 0.2em 0.5em 0 0;
+  /* LTR */
   margin: 0;
 }
+/* line 933, ../sass/drupal6-reference.scss */
 li.leaf {
   list-style-type: square;
   list-style-image: url(../../misc/menu-leaf.png);
-  padding: 0.2em 0.5em 0 0; /* LTR */
+  padding: 0.2em 0.5em 0 0;
+  /* LTR */
   margin: 0;
 }
+/* line 939, ../sass/drupal6-reference.scss */
 li a.active {
   color: #000;
 }
+
+/* line 942, ../sass/drupal6-reference.scss */
 td.menu-disabled {
   background: #ccc;
 }
+
+/* line 945, ../sass/drupal6-reference.scss */
 ul.links {
   margin: 0;
   padding: 0;
 }
+/* line 948, ../sass/drupal6-reference.scss */
 ul.links.inline {
   display: inline;
 }
+/* line 950, ../sass/drupal6-reference.scss */
 ul.links li {
   display: inline;
   list-style-type: none;
   padding: 0 0.5em;
 }
+
+/* line 955, ../sass/drupal6-reference.scss */
 .block ul {
   margin: 0;
-  padding: 0 0 0.25em 1em; /* LTR */
+  padding: 0 0 0.25em 1em;
+  /* LTR */
 }
-
 
 /*
  * modules/system/system-rtl.css
  */
-
+/* line 964, ../sass/drupal6-reference.scss */
 thead th {
   text-align: right;
   padding-left: 1em;
   padding-right: 0.5em;
 }
 
+/* line 970, ../sass/drupal6-reference.scss */
 .item-list .icon {
   float: left;
   padding-left: 0;
   padding-right: 0.25em;
   clear: left;
 }
+/* line 975, ../sass/drupal6-reference.scss */
 .item-list ul li {
   margin: 0 1.5em 0.25em 0;
 }
 
-.more-link {
-  text-align: left;
-}
-.more-help-link {
+/* line 978, ../sass/drupal6-reference.scss */
+.more-link, .more-help-link {
   text-align: left;
 }
 
+/* line 982, ../sass/drupal6-reference.scss */
 dl.multiselect dt, dl.multiselect dd {
   float: right;
   margin: 0 0 0 1em;
 }
 
+/* line 986, ../sass/drupal6-reference.scss */
 .block ul {
   padding: 0 1em 0.25em 0;
 }
 
+/* line 990, ../sass/drupal6-reference.scss */
 ul.primary {
   padding: 0 1em 0 0;
 }
+/* line 992, ../sass/drupal6-reference.scss */
 ul.primary li a {
   margin-right: 5px;
   margin-left: 0.5em;
 }
+/* line 995, ../sass/drupal6-reference.scss */
 ul.secondary li {
   display: inline;
   padding: 0 1em;
   border-right: none;
   border-left: 1px solid #ccc;
 }
+
+/* line 1003, ../sass/drupal6-reference.scss */
 html.js input.form-autocomplete {
   background-position: 0% 2px;
 }
+/* line 1005, ../sass/drupal6-reference.scss */
 html.js input.throbbing {
   background-position: 0% -18px;
 }
-
+/* line 1008, ../sass/drupal6-reference.scss */
 html.js fieldset.collapsible legend a {
   padding-left: 0;
   padding-right: 15px;
   background-position: 98% 75%;
 }
+/* line 1012, ../sass/drupal6-reference.scss */
 html.js fieldset.collapsed legend a {
   background-image: url(../../misc/menu-collapsed-rtl.png);
   background-position: 98% 50%;
 }
 
+/* line 1016, ../sass/drupal6-reference.scss */
 div.teaser-button-wrapper {
   float: left;
   padding-right: 0;
   padding-left: 5%;
 }
+
+/* line 1021, ../sass/drupal6-reference.scss */
 .teaser-checkbox div.form-item {
   float: left;
   margin: 0 0 0 5%;
 }
+
+/* line 1025, ../sass/drupal6-reference.scss */
 .progress .percentage {
   float: left;
 }
+
+/* line 1028, ../sass/drupal6-reference.scss */
 .progess-disabled {
   float: right;
 }
+
+/* line 1031, ../sass/drupal6-reference.scss */
 .ahah-progress {
   float: right;
 }
+/* line 1033, ../sass/drupal6-reference.scss */
 .ahah-progress .throbber {
   float: right;
 }
-input.password-field {
-  margin-left: 10px;
-  margin-right: 0;
-}
-input.password-confirm {
+
+/* line 1037, ../sass/drupal6-reference.scss */
+input.password-field, input.password-confirm {
   margin-left: 10px;
   margin-right: 0;
 }
 
+/* line 1041, ../sass/drupal6-reference.scss */
 .draggable a.tabledrag-handle {
   float: right;
   margin: -0.4em -0.5em -0.4em 0;
   padding: 0.42em 0.5em 0.42em 1.5em;
 }
+
+/* line 1047, ../sass/drupal6-reference.scss */
 div.indentation {
   margin: -0.4em -0.4em -0.4em 0.2em;
   padding: 0.42em 0.6em 0.42em 0;
   float: right;
 }
+/* line 1051, ../sass/drupal6-reference.scss */
 div.tree-child, div.tree-child-last {
   background-position: -65px center;
 }
 
-
 /*
  * modules/system/system.css
  */
-
 /*
 ** HTML elements
 */
+/* line 1062, ../sass/drupal6-reference.scss */
 body.drag {
   cursor: move;
 }
+
+/* line 1065, ../sass/drupal6-reference.scss */
 th.active img {
   display: inline;
 }
+
+/* line 1069, ../sass/drupal6-reference.scss */
 tr.even, tr.odd {
   background-color: #eee;
   border-bottom: 1px solid #ccc;
   padding: 0.1em 0.6em;
 }
+/* line 1073, ../sass/drupal6-reference.scss */
 tr.drag {
   background-color: #fffff0;
 }
+/* line 1075, ../sass/drupal6-reference.scss */
 tr.drag-previous {
   background-color: #ffd;
 }
+
+/* line 1079, ../sass/drupal6-reference.scss */
 td.active {
   background-color: #ddd;
 }
-td.checkbox, th.checkbox {
+/* line 1081, ../sass/drupal6-reference.scss */
+td.checkbox {
   text-align: center;
 }
+
+/* line 1084, ../sass/drupal6-reference.scss */
+th.checkbox {
+  text-align: center;
+}
+
+/* line 1087, ../sass/drupal6-reference.scss */
 tbody {
   border-top: 1px solid #ccc;
 }
+/* line 1089, ../sass/drupal6-reference.scss */
 tbody th {
   border-bottom: 1px solid #ccc;
 }
+
+/* line 1092, ../sass/drupal6-reference.scss */
 thead th {
-  text-align: left; /* LTR */
-  padding-right: 1em; /* LTR */
+  text-align: left;
+  /* LTR */
+  padding-right: 1em;
+  /* LTR */
   border-bottom: 3px solid #ccc;
 }
 
 /*
 ** Other common styles
 */
+/* line 1103, ../sass/drupal6-reference.scss */
 .breadcrumb {
-  padding-bottom: .5em
+  padding-bottom: .5em;
 }
+
+/* line 1107, ../sass/drupal6-reference.scss */
 div.indentation {
   width: 20px;
   height: 1.7em;
-  margin: -0.4em 0.2em -0.4em -0.4em; /* LTR */
-  padding: 0.42em 0 0.42em 0.6em; /* LTR */
-  float: left; /* LTR */
+  margin: -0.4em 0.2em -0.4em -0.4em;
+  /* LTR */
+  padding: 0.42em 0 0.42em 0.6em;
+  /* LTR */
+  float: left;
+  /* LTR */
 }
+/* line 1116, ../sass/drupal6-reference.scss */
 div.tree-child {
-  background: url(../../misc/tree.png) no-repeat 11px center; /* LTR */
+  background: url(../../misc/tree.png) no-repeat 11px center;
+  /* LTR */
 }
+/* line 1119, ../sass/drupal6-reference.scss */
 div.tree-child-last {
-  background: url(../../misc/tree-bottom.png) no-repeat 11px center; /* LTR */
+  background: url(../../misc/tree-bottom.png) no-repeat 11px center;
+  /* LTR */
 }
+/* line 1122, ../sass/drupal6-reference.scss */
 div.tree-child-horizontal {
   background: url(../../misc/tree.png) no-repeat -11px center;
 }
+
+/* line 1125, ../sass/drupal6-reference.scss */
 .error {
   color: #e55;
 }
+
+/* line 1128, ../sass/drupal6-reference.scss */
 div.error {
   border: 1px solid #d77;
-}
-div.error, tr.error {
   background: #fcc;
   color: #200;
   padding: 2px;
 }
+
+/* line 1134, ../sass/drupal6-reference.scss */
+tr.error {
+  background: #fcc;
+  color: #200;
+  padding: 2px;
+}
+
+/* line 1139, ../sass/drupal6-reference.scss */
 .warning {
   color: #e09010;
 }
+
+/* line 1142, ../sass/drupal6-reference.scss */
 div.warning {
   border: 1px solid #f0c020;
-}
-div.warning, tr.warning {
   background: #ffd;
   color: #220;
   padding: 2px;
 }
+
+/* line 1148, ../sass/drupal6-reference.scss */
+tr.warning {
+  background: #ffd;
+  color: #220;
+  padding: 2px;
+}
+
+/* line 1153, ../sass/drupal6-reference.scss */
 .ok {
   color: #008000;
 }
+
+/* line 1156, ../sass/drupal6-reference.scss */
 div.ok {
   border: 1px solid #00aa00;
-}
-div.ok, tr.ok {
   background: #dfd;
   color: #020;
   padding: 2px;
 }
+
+/* line 1162, ../sass/drupal6-reference.scss */
+tr.ok {
+  background: #dfd;
+  color: #020;
+  padding: 2px;
+}
+
+/* line 1168, ../sass/drupal6-reference.scss */
 .item-list .icon {
   color: #555;
-  float: right; /* LTR */
-  padding-left: 0.25em; /* LTR */
-  clear: right; /* LTR */
+  float: right;
+  /* LTR */
+  padding-left: 0.25em;
+  /* LTR */
+  clear: right;
+  /* LTR */
 }
+/* line 1176, ../sass/drupal6-reference.scss */
 .item-list .title {
   font-weight: bold;
 }
+/* line 1178, ../sass/drupal6-reference.scss */
 .item-list ul {
   margin: 0 0 0.75em 0;
   padding: 0;
 }
+/* line 1181, ../sass/drupal6-reference.scss */
 .item-list ul li {
-  margin: 0 0 0.25em 1.5em; /* LTR */
+  margin: 0 0 0.25em 1.5em;
+  /* LTR */
   padding: 0;
   list-style: disc;
 }
+
+/* line 1187, ../sass/drupal6-reference.scss */
 ol.task-list li.active {
   font-weight: bold;
 }
+
+/* line 1190, ../sass/drupal6-reference.scss */
 .form-item {
   margin-top: 1em;
   margin-bottom: 1em;
 }
+
+/* line 1195, ../sass/drupal6-reference.scss */
 tr.odd .form-item, tr.even .form-item {
   margin-top: 0;
   margin-bottom: 0;
   white-space: nowrap;
 }
-tr.merge-down, tr.merge-down td, tr.merge-down th {
+/* line 1199, ../sass/drupal6-reference.scss */
+tr.merge-down {
   border-bottom-width: 0 !important;
 }
-tr.merge-up, tr.merge-up td, tr.merge-up th {
+/* line 1201, ../sass/drupal6-reference.scss */
+tr.merge-down td, tr.merge-down th {
+  border-bottom-width: 0 !important;
+}
+/* line 1203, ../sass/drupal6-reference.scss */
+tr.merge-up {
   border-top-width: 0 !important;
 }
+/* line 1205, ../sass/drupal6-reference.scss */
+tr.merge-up td, tr.merge-up th {
+  border-top-width: 0 !important;
+}
+
+/* line 1209, ../sass/drupal6-reference.scss */
 .form-item input.error, .form-item textarea.error, .form-item select.error {
   border: 2px solid red;
 }
+/* line 1211, ../sass/drupal6-reference.scss */
 .form-item .description {
   font-size: 0.85em;
 }
+/* line 1213, ../sass/drupal6-reference.scss */
 .form-item label {
   display: block;
   font-weight: bold;
 }
+/* line 1216, ../sass/drupal6-reference.scss */
 .form-item label.option {
   display: inline;
   font-weight: normal;
 }
+
+/* line 1220, ../sass/drupal6-reference.scss */
 .form-checkboxes, .form-radios {
   margin: 1em 0;
 }
+
+/* line 1223, ../sass/drupal6-reference.scss */
 .form-checkboxes .form-item, .form-radios .form-item {
   margin-top: 0.4em;
   margin-bottom: 0.4em;
 }
+
+/* line 1227, ../sass/drupal6-reference.scss */
 .marker, .form-required {
   color: #f00;
 }
+
+/* line 1230, ../sass/drupal6-reference.scss */
 .more-link {
-  text-align: right; /* LTR */
+  text-align: right;
+  /* LTR */
 }
+
+/* line 1234, ../sass/drupal6-reference.scss */
 .more-help-link {
   font-size: 0.85em;
-  text-align: right; /* LTR */
+  text-align: right;
+  /* LTR */
 }
+
+/* line 1239, ../sass/drupal6-reference.scss */
 .nowrap {
   white-space: nowrap;
 }
+
+/* line 1242, ../sass/drupal6-reference.scss */
 .item-list .pager {
   clear: both;
   text-align: center;
 }
+/* line 1245, ../sass/drupal6-reference.scss */
 .item-list .pager li {
-  background-image:none;
-  display:inline;
-  list-style-type:none;
+  background-image: none;
+  display: inline;
+  list-style-type: none;
   padding: 0.5em;
 }
+
+/* line 1251, ../sass/drupal6-reference.scss */
 .pager-current {
-  font-weight:bold;
+  font-weight: bold;
 }
+
+/* line 1254, ../sass/drupal6-reference.scss */
 .tips {
   margin-top: 0;
   margin-bottom: 0;
@@ -1355,20 +1716,37 @@ tr.merge-up, tr.merge-up td, tr.merge-up th {
   padding-bottom: 0;
   font-size: 0.9em;
 }
-dl.multiselect dd.b, dl.multiselect dd.b .form-item, dl.multiselect dd.b select {
+
+/* line 1263, ../sass/drupal6-reference.scss */
+dl.multiselect dd.b {
   font-family: inherit;
   font-size: inherit;
   width: 14em;
 }
-dl.multiselect dd.a, dl.multiselect dd.a .form-item {
+/* line 1267, ../sass/drupal6-reference.scss */
+dl.multiselect dd.b .form-item, dl.multiselect dd.b select {
+  font-family: inherit;
+  font-size: inherit;
+  width: 14em;
+}
+/* line 1271, ../sass/drupal6-reference.scss */
+dl.multiselect dd.a {
   width: 8em;
 }
+/* line 1273, ../sass/drupal6-reference.scss */
+dl.multiselect dd.a .form-item {
+  width: 8em;
+}
+/* line 1275, ../sass/drupal6-reference.scss */
 dl.multiselect dt, dl.multiselect dd {
-  float: left; /* LTR */
+  float: left;
+  /* LTR */
   line-height: 1.75em;
   padding: 0;
-  margin: 0 1em 0 0; /* LTR */
+  margin: 0 1em 0 0;
+  /* LTR */
 }
+/* line 1282, ../sass/drupal6-reference.scss */
 dl.multiselect .form-item {
   height: 1.75em;
   margin: 0;
@@ -1377,6 +1755,7 @@ dl.multiselect .form-item {
 /*
 ** Inline items (need to override above)
 */
+/* line 1291, ../sass/drupal6-reference.scss */
 .container-inline div, .container-inline label {
   display: inline;
 }
@@ -1384,9 +1763,11 @@ dl.multiselect .form-item {
 /*
 ** Tab navigation
 */
+/* line 1299, ../sass/drupal6-reference.scss */
 ul.primary {
   border-collapse: collapse;
-  padding: 0 0 0 1em; /* LTR */
+  padding: 0 0 0 1em;
+  /* LTR */
   white-space: nowrap;
   list-style: none;
   margin: 5px;
@@ -1394,43 +1775,53 @@ ul.primary {
   line-height: normal;
   border-bottom: 1px solid #bbb;
 }
+/* line 1309, ../sass/drupal6-reference.scss */
 ul.primary li {
   display: inline;
 }
+/* line 1311, ../sass/drupal6-reference.scss */
 ul.primary li a {
   background-color: #ddd;
   border-color: #bbb;
   border-width: 1px;
   border-style: solid solid none solid;
   height: auto;
-  margin-right: 0.5em; /* LTR */
+  margin-right: 0.5em;
+  /* LTR */
   padding: 0 1em;
   text-decoration: none;
 }
+/* line 1321, ../sass/drupal6-reference.scss */
 ul.primary li.active a {
   background-color: #fff;
   border: 1px solid #bbb;
   border-bottom: #fff 1px solid;
 }
+/* line 1325, ../sass/drupal6-reference.scss */
 ul.primary li a:hover {
   background-color: #eee;
   border-color: #ccc;
   border-bottom-color: #eee;
 }
+/* line 1329, ../sass/drupal6-reference.scss */
 ul.secondary {
   border-bottom: 1px solid #bbb;
   padding: 0.5em 1em;
   margin: 5px;
 }
+/* line 1333, ../sass/drupal6-reference.scss */
 ul.secondary li {
   display: inline;
   padding: 0 1em;
-  border-right: 1px solid #ccc; /* LTR */
+  border-right: 1px solid #ccc;
+  /* LTR */
 }
+/* line 1338, ../sass/drupal6-reference.scss */
 ul.secondary a {
   padding: 0;
   text-decoration: none;
 }
+/* line 1341, ../sass/drupal6-reference.scss */
 ul.secondary a.active {
   border-bottom: 4px solid #999;
 }
@@ -1439,40 +1830,46 @@ ul.secondary a.active {
 ** Autocomplete styles
 */
 /* Suggestion list */
+/* line 1349, ../sass/drupal6-reference.scss */
 #autocomplete {
   position: absolute;
   border: 1px solid;
   overflow: hidden;
   z-index: 100;
 }
+/* line 1354, ../sass/drupal6-reference.scss */
 #autocomplete ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+/* line 1358, ../sass/drupal6-reference.scss */
 #autocomplete li {
   background: #fff;
   color: #000;
   white-space: pre;
   cursor: default;
 }
+/* line 1363, ../sass/drupal6-reference.scss */
 #autocomplete li.selected {
   background: #0072b9;
   color: #fff;
 }
+
 /* Animated throbber */
+/* line 1371, ../sass/drupal6-reference.scss */
 html.js input.form-autocomplete {
   background-image: url(../../misc/throbber.gif);
   background-repeat: no-repeat;
-  background-position: 100% 2px; /* LTR */
+  background-position: 100% 2px;
+  /* LTR */
 }
+/* line 1376, ../sass/drupal6-reference.scss */
 html.js input.throbbing {
-  background-position: 100% -18px; /* LTR */
+  background-position: 100% -18px;
+  /* LTR */
 }
-
-/*
-** Collapsing fieldsets
-*/
+/* line 1380, ../sass/drupal6-reference.scss */
 html.js fieldset.collapsed {
   border-bottom-width: 0;
   border-left-width: 0;
@@ -1480,52 +1877,79 @@ html.js fieldset.collapsed {
   margin-bottom: 0;
   height: 1em;
 }
+/* line 1386, ../sass/drupal6-reference.scss */
 html.js fieldset.collapsed * {
   display: none;
 }
+/* line 1388, ../sass/drupal6-reference.scss */
 html.js fieldset.collapsed legend {
   display: block;
 }
+/* line 1390, ../sass/drupal6-reference.scss */
 html.js fieldset.collapsible legend a {
-  padding-left: 15px; /* LTR */
-  background: url(../../misc/menu-expanded.png) 5px 75% no-repeat; /* LTR */
+  padding-left: 15px;
+  /* LTR */
+  background: url(../../misc/menu-expanded.png) 5px 75% no-repeat;
+  /* LTR */
 }
+/* line 1395, ../sass/drupal6-reference.scss */
 html.js fieldset.collapsed legend a {
-  background-image: url(../../misc/menu-collapsed.png); /* LTR */
-  background-position: 5px 50%; /* LTR */
+  background-image: url(../../misc/menu-collapsed.png);
+  /* LTR */
+  background-position: 5px 50%;
+  /* LTR */
 }
+
+/*
+** Collapsing fieldsets
+*/
 /* Note: IE-only fix due to '* html' (breaks Konqueror otherwise). */
-* html.js fieldset.collapsed legend,
-* html.js fieldset.collapsed legend *,
+/* line 1408, ../sass/drupal6-reference.scss */
+* html.js fieldset.collapsed legend {
+  display: inline;
+}
+/* line 1410, ../sass/drupal6-reference.scss */
+* html.js fieldset.collapsed legend * {
+  display: inline;
+}
+/* line 1412, ../sass/drupal6-reference.scss */
 * html.js fieldset.collapsed table * {
   display: inline;
 }
+
 /* For Safari 2 to prevent collapsible fieldsets containing tables from dissapearing due to tableheader.js. */
+/* line 1417, ../sass/drupal6-reference.scss */
 html.js fieldset.collapsible {
   position: relative;
 }
+/* line 1419, ../sass/drupal6-reference.scss */
 html.js fieldset.collapsible legend a {
   display: block;
 }
-/* Avoid jumping around due to margins collapsing into collapsible fieldset border */
+/* line 1421, ../sass/drupal6-reference.scss */
 html.js fieldset.collapsible .fieldset-wrapper {
   overflow: auto;
 }
 
+/* Avoid jumping around due to margins collapsing into collapsible fieldset border */
 /*
 ** Resizable text areas
 */
+/* line 1430, ../sass/drupal6-reference.scss */
 .resizable-textarea {
   width: 95%;
 }
+/* line 1432, ../sass/drupal6-reference.scss */
 .resizable-textarea .grippie {
   height: 9px;
   overflow: hidden;
-  background: #eee url(../../misc/grippie.png) no-repeat center 2px;
+  background: #eeeeee url(../../misc/grippie.png) no-repeat center 2px;
   border: 1px solid #ddd;
   border-top-width: 0;
   cursor: s-resize;
 }
+
+/* line 1440, ../sass/drupal6-reference.scss */
 html.js .resizable-textarea textarea {
   margin-bottom: 0;
   width: 100%;
@@ -1535,23 +1959,31 @@ html.js .resizable-textarea textarea {
 /*
 ** Table drag and drop.
 */
+/* line 1449, ../sass/drupal6-reference.scss */
 .draggable a.tabledrag-handle {
   cursor: move;
-  float: left; /* LTR */
+  float: left;
+  /* LTR */
   height: 1.7em;
-  margin: -0.4em 0 -0.4em -0.5em; /* LTR */
-  padding: 0.42em 1.5em 0.42em 0.5em; /* LTR */
+  margin: -0.4em 0 -0.4em -0.5em;
+  /* LTR */
+  padding: 0.42em 1.5em 0.42em 0.5em;
+  /* LTR */
   text-decoration: none;
 }
+
+/* line 1462, ../sass/drupal6-reference.scss */
 a.tabledrag-handle:hover {
   text-decoration: none;
 }
+/* line 1464, ../sass/drupal6-reference.scss */
 a.tabledrag-handle .handle {
   margin-top: 4px;
   height: 13px;
   width: 13px;
   background: url(../../misc/draggable.png) no-repeat 0 0;
 }
+/* line 1469, ../sass/drupal6-reference.scss */
 a.tabledrag-handle-hover .handle {
   background-position: 0 -20px;
 }
@@ -1559,69 +1991,96 @@ a.tabledrag-handle-hover .handle {
 /*
 ** Teaser splitter
 */
+/* line 1476, ../sass/drupal6-reference.scss */
 .joined + .grippie {
   height: 5px;
   background-position: center 1px;
   margin-bottom: -2px;
 }
+
 /* Keeps inner content contained in Opera 9. */
+/* line 1483, ../sass/drupal6-reference.scss */
 .teaser-checkbox {
   padding-top: 1px;
 }
+
+/* line 1486, ../sass/drupal6-reference.scss */
 div.teaser-button-wrapper {
-  float: right; /* LTR */
-  padding-right: 5%; /* LTR */
+  float: right;
+  /* LTR */
+  padding-right: 5%;
+  /* LTR */
   margin: 0;
 }
+
+/* line 1493, ../sass/drupal6-reference.scss */
 .teaser-checkbox div.form-item {
-  float: right; /* LTR */
-  margin: 0 5% 0 0; /* LTR */
+  float: right;
+  /* LTR */
+  margin: 0 5% 0 0;
+  /* LTR */
   padding: 0;
 }
-textarea.teaser {
-  display: none;
-}
-html.js .no-js {
+
+/* line 1500, ../sass/drupal6-reference.scss */
+textarea.teaser, html.js .no-js {
   display: none;
 }
 
 /*
 ** Progressbar styles
 */
+/* line 1507, ../sass/drupal6-reference.scss */
 .progress {
   font-weight: bold;
 }
+/* line 1509, ../sass/drupal6-reference.scss */
 .progress .bar {
-  background: #fff url(../../misc/progress.gif);
+  background: white url(../../misc/progress.gif);
   border: 1px solid #00375a;
   height: 1.5em;
   margin: 0 0.2em;
 }
+/* line 1514, ../sass/drupal6-reference.scss */
 .progress .filled {
   background: #0072b9;
   height: 1em;
   border-bottom: 0.5em solid #004a73;
   width: 0%;
 }
+/* line 1519, ../sass/drupal6-reference.scss */
 .progress .percentage {
-  float: right; /* LTR */
+  float: right;
+  /* LTR */
 }
+
+/* line 1523, ../sass/drupal6-reference.scss */
 .progress-disabled {
-  float: left; /* LTR */
+  float: left;
+  /* LTR */
 }
+
+/* line 1527, ../sass/drupal6-reference.scss */
 .ahah-progress {
-  float: left; /* LTR */
+  float: left;
+  /* LTR */
 }
+/* line 1530, ../sass/drupal6-reference.scss */
 .ahah-progress .throbber {
   width: 15px;
   height: 15px;
   margin: 2px;
   background: transparent url(../../misc/throbber.gif) no-repeat 0px -18px;
-  float: left; /* LTR */
+  float: left;
+  /* LTR */
 }
+
+/* line 1538, ../sass/drupal6-reference.scss */
 tr .ahah-progress .throbber {
   margin: 0 2px;
 }
+
+/* line 1541, ../sass/drupal6-reference.scss */
 .ahah-progress-bar {
   width: 16em;
 }
@@ -1629,6 +2088,7 @@ tr .ahah-progress .throbber {
 /*
 ** Formatting for welcome page
 */
+/* line 1548, ../sass/drupal6-reference.scss */
 #first-time strong {
   display: block;
   padding: 1.5em 0 .5em;
@@ -1637,6 +2097,7 @@ tr .ahah-progress .throbber {
 /*
 ** To be used with tableselect.js
 */
+/* line 1556, ../sass/drupal6-reference.scss */
 tr.selected td {
   background: #ffc;
 }
@@ -1644,6 +2105,7 @@ tr.selected td {
 /*
 ** Floating header for tableheader.js
 */
+/* line 1563, ../sass/drupal6-reference.scss */
 table.sticky-header {
   margin-top: 0;
   background: #fff;
@@ -1652,7 +2114,8 @@ table.sticky-header {
 /*
 ** Installation clean URLs
 */
-#clean-url.install {
+/* line 1571, ../sass/drupal6-reference.scss */
+#clean-url.install, html.js .js-hide {
   display: none;
 }
 
@@ -1660,255 +2123,285 @@ table.sticky-header {
 ** For anything you want to hide on page load when JS is enabled, so
 ** that you can use the JS to control visibility and avoid flicker.
 */
-html.js .js-hide {
-  display: none;
-}
-
 /*
 ** Styles for the system modules page (admin/build/modules)
 */
-#system-modules div.incompatible {
+/* line 1583, ../sass/drupal6-reference.scss */
+#system-modules div.incompatible, #system-themes-form div.incompatible {
   font-weight: bold;
 }
 
 /*
 ** Styles for the system themes page (admin/build/themes)
 */
-#system-themes-form div.incompatible {
-  font-weight: bold;
-}
-
 /*
 ** Password strength indicator
 */
+/* line 1594, ../sass/drupal6-reference.scss */
 span.password-strength {
   visibility: hidden;
 }
+
+/* line 1597, ../sass/drupal6-reference.scss */
 input.password-field {
-  margin-right: 10px; /* LTR */
+  margin-right: 10px;
+  /* LTR */
 }
+
+/* line 1601, ../sass/drupal6-reference.scss */
 div.password-description {
   padding: 0 2px;
   margin: 4px 0 0 0;
   font-size: 0.85em;
   max-width: 500px;
 }
+/* line 1606, ../sass/drupal6-reference.scss */
 div.password-description ul {
   margin-bottom: 0;
 }
+
+/* line 1609, ../sass/drupal6-reference.scss */
 .password-parent {
   margin: 0 0 0 0;
 }
+
 /*
 ** Password confirmation checker
 */
+/* line 1616, ../sass/drupal6-reference.scss */
 input.password-confirm {
-  margin-right: 10px; /* LTR */
+  margin-right: 10px;
+  /* LTR */
 }
+
+/* line 1620, ../sass/drupal6-reference.scss */
 .confirm-parent {
   margin: 5px 0 0 0;
 }
+
+/* line 1623, ../sass/drupal6-reference.scss */
 span.password-confirm {
   visibility: hidden;
 }
+/* line 1625, ../sass/drupal6-reference.scss */
 span.password-confirm span {
   font-weight: normal;
 }
 
-
 /*
  * modules/taxonomy/taxonomy.css
  */
-
+/* line 1633, ../sass/drupal6-reference.scss */
 tr.taxonomy-term-preview {
   background-color: #EEE;
 }
+/* line 1635, ../sass/drupal6-reference.scss */
 tr.taxonomy-term-divider-top {
   border-bottom: none;
 }
+/* line 1637, ../sass/drupal6-reference.scss */
 tr.taxonomy-term-divider-bottom {
   border-top: 1px dotted #CCC;
 }
+
+/* line 1640, ../sass/drupal6-reference.scss */
 .taxonomy-term-description {
   margin: 5px 0 20px;
 }
 
-
 /*
  * modules/tracker/tracker.css
  */
-
+/* line 1648, ../sass/drupal6-reference.scss */
 #tracker td.replies {
   text-align: center;
 }
+/* line 1650, ../sass/drupal6-reference.scss */
 #tracker table {
   width: 100%;
 }
 
-
 /*
  * modules/update/update-rtl.css
  */
-
+/* line 1658, ../sass/drupal6-reference.scss */
 .update .project {
   padding-right: .25em;
 }
-
+/* line 1660, ../sass/drupal6-reference.scss */
 .update .version-status {
   float: left;
   padding-left: 10px;
 }
-
+/* line 1663, ../sass/drupal6-reference.scss */
 .update .version-status .icon {
   padding-right: .5em;
 }
-
+/* line 1666, ../sass/drupal6-reference.scss */
 .update table.version .version-title {
   padding-left: 1em;
 }
-
+/* line 1668, ../sass/drupal6-reference.scss */
 .update table.version .version-details {
   padding-left: .5em;
   direction: ltr;
 }
-
+/* line 1671, ../sass/drupal6-reference.scss */
 .update table.version .version-links {
   text-align: left;
   padding-left: 1em;
 }
-
+/* line 1674, ../sass/drupal6-reference.scss */
 .update .check-manually {
   padding-right: 1em;
 }
-
-
-/*
- * modules/update/update.css
- */
-
+/* line 1676, ../sass/drupal6-reference.scss */
 .update .project {
   font-weight: bold;
   font-size: 110%;
-  padding-left: .25em; /* LTR */
+  padding-left: .25em;
+  /* LTR */
   height: 22px;
 }
-
+/* line 1682, ../sass/drupal6-reference.scss */
 .update .version-status {
-  float: right; /* LTR */
-  padding-right: 10px; /* LTR */
+  float: right;
+  /* LTR */
+  padding-right: 10px;
+  /* LTR */
   font-size: 110%;
   height: 20px;
 }
-
+/* line 1689, ../sass/drupal6-reference.scss */
 .update .version-status .icon {
-  padding-left: .5em; /* LTR */
+  padding-left: .5em;
+  /* LTR */
 }
-
+/* line 1692, ../sass/drupal6-reference.scss */
 .update .version-date {
   white-space: nowrap;
 }
-
+/* line 1694, ../sass/drupal6-reference.scss */
 .update .info {
   margin: 0;
   padding: 1em 1em .25em 1em;
 }
-
+/* line 1698, ../sass/drupal6-reference.scss */
 .update tr td {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
-
+/* line 1701, ../sass/drupal6-reference.scss */
 .update tr.error {
   background: #fcc;
 }
-
+/* line 1703, ../sass/drupal6-reference.scss */
 .update tr.error .version-recommended {
   background: #fdd;
 }
-
+/* line 1705, ../sass/drupal6-reference.scss */
 .update tr.ok {
   background: #dfd;
 }
-
+/* line 1707, ../sass/drupal6-reference.scss */
 .update tr.warning {
   background: #ffd;
 }
-
+/* line 1709, ../sass/drupal6-reference.scss */
 .update tr.warning .version-recommended {
   background: #ffe;
 }
 
+/*
+ * modules/update/update.css
+ */
+/* line 1716, ../sass/drupal6-reference.scss */
 .current-version, .new-version {
-  direction: ltr; /* Note: version numbers should always be LTR. */
+  direction: ltr;
+  /* Note: version numbers should always be LTR. */
 }
 
+/* line 1720, ../sass/drupal6-reference.scss */
 .update tr.unknown {
   background: #ddd;
 }
 
-table.update,
-.update table.version {
+/* line 1723, ../sass/drupal6-reference.scss */
+table.update {
   width: 100%;
   margin-top: .5em;
 }
 
+/* line 1729, ../sass/drupal6-reference.scss */
+.update table.version {
+  width: 100%;
+  margin-top: .5em;
+}
+/* line 1732, ../sass/drupal6-reference.scss */
 .update table.version tbody {
   border: none;
 }
-
-.update table.version tr,
-.update table.version td {
+/* line 1734, ../sass/drupal6-reference.scss */
+.update table.version tr, .update table.version td {
   line-height: .9em;
   padding: 0;
   margin: 0;
   border: none;
 }
-
+/* line 1739, ../sass/drupal6-reference.scss */
 .update table.version .version-title {
-  padding-left: 1em; /* LTR */
+  padding-left: 1em;
+  /* LTR */
   width: 14em;
 }
-
+/* line 1743, ../sass/drupal6-reference.scss */
 .update table.version .version-details {
-  padding-right: .5em; /* LTR */
+  padding-right: .5em;
+  /* LTR */
 }
-
+/* line 1746, ../sass/drupal6-reference.scss */
 .update table.version .version-links {
-  text-align: right; /* LTR */
-  padding-right: 1em; /* LTR */
+  text-align: right;
+  /* LTR */
+  padding-right: 1em;
+  /* LTR */
 }
-
+/* line 1751, ../sass/drupal6-reference.scss */
 .update table.version-security .version-title {
   color: #970F00;
 }
-
+/* line 1753, ../sass/drupal6-reference.scss */
 .update table.version-recommended-strong .version-title {
   font-weight: bold;
 }
-
+/* line 1755, ../sass/drupal6-reference.scss */
 .update .security-error {
   font-weight: bold;
   color: #970F00;
 }
-
+/* line 1758, ../sass/drupal6-reference.scss */
 .update .check-manually {
-  padding-left: 1em; /* LTR */
+  padding-left: 1em;
+  /* LTR */
 }
-
 
 /*
  * modules/user/user-rtl.css
  */
-
+/* line 1766, ../sass/drupal6-reference.scss */
 #permissions td.permission {
   padding-left: 0;
   padding-right: 1.5em;
 }
+
+/* line 1771, ../sass/drupal6-reference.scss */
 #access-rules .access-type, #access-rules .rule-type {
   margin-right: 0;
   margin-left: 1em;
   float: right;
 }
+
+/* line 1776, ../sass/drupal6-reference.scss */
 #user-admin-buttons {
   float: right;
   margin-left: 0;
@@ -1916,70 +2409,97 @@ table.update,
   clear: left;
 }
 
+/* line 1782, ../sass/drupal6-reference.scss */
 .profile .picture {
   float: left;
   margin: 0 0 1em 1em;
 }
 
-
 /*
  * modules/user/user.css
  */
-
+/* line 1791, ../sass/drupal6-reference.scss */
 #permissions td.module {
   font-weight: bold;
 }
+/* line 1793, ../sass/drupal6-reference.scss */
 #permissions td.permission {
-  padding-left: 1.5em; /* LTR */
+  padding-left: 1.5em;
+  /* LTR */
 }
+
+/* line 1798, ../sass/drupal6-reference.scss */
 #access-rules .access-type, #access-rules .rule-type {
-  margin-right: 1em; /* LTR */
-  float: left; /* LTR */
+  margin-right: 1em;
+  /* LTR */
+  float: left;
+  /* LTR */
 }
+/* line 1803, ../sass/drupal6-reference.scss */
 #access-rules .access-type .form-item, #access-rules .rule-type .form-item {
   margin-top: 0;
 }
+/* line 1805, ../sass/drupal6-reference.scss */
 #access-rules .mask {
   clear: both;
 }
+
+/* line 1808, ../sass/drupal6-reference.scss */
 #user-login-form {
   text-align: center;
 }
+
+/* line 1811, ../sass/drupal6-reference.scss */
 #user-admin-filter ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
   width: 100%;
 }
+
+/* line 1817, ../sass/drupal6-reference.scss */
 #user-admin-buttons {
-  float: left; /* LTR */
-  margin-left: 0.5em; /* LTR */
-  clear: right; /* LTR */
+  float: left;
+  /* LTR */
+  margin-left: 0.5em;
+  /* LTR */
+  clear: right;
+  /* LTR */
 }
+
+/* line 1825, ../sass/drupal6-reference.scss */
 #user-admin-settings fieldset .description {
   font-size: 0.85em;
   padding-bottom: .5em;
 }
 
 /* Generated by user.module but used by profile.module: */
+/* line 1831, ../sass/drupal6-reference.scss */
 .profile {
   clear: both;
   margin: 1em 0;
 }
+/* line 1834, ../sass/drupal6-reference.scss */
 .profile .picture {
-  float: right; /* LTR */
-  margin: 0 1em 1em 0; /* LTR */
+  float: right;
+  /* LTR */
+  margin: 0 1em 1em 0;
+  /* LTR */
 }
+/* line 1839, ../sass/drupal6-reference.scss */
 .profile h3 {
   border-bottom: 1px solid #ccc;
 }
+/* line 1841, ../sass/drupal6-reference.scss */
 .profile dl {
   margin: 0 0 1.5em 0;
 }
+/* line 1843, ../sass/drupal6-reference.scss */
 .profile dt {
   margin: 0 0 0.2em 0;
   font-weight: bold;
 }
+/* line 1846, ../sass/drupal6-reference.scss */
 .profile dd {
   margin: 0 0 1em 0;
 }

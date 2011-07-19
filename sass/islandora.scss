@@ -1,0 +1,27 @@
+#content-fedora {
+  table {
+    margin-left: auto;
+    margin-right: auto;
+    td img {
+      text-align: center; }
+    width: 95%; }
+  .fedora_detailed_list {
+    table {
+      background: #EAEAEA;
+      width: 100%; }
+    form {
+      padding: 0 0 1.3em 0; }
+    table {
+      td, th {
+        padding: 0 1em; }
+      td {
+        border: 1px solid #bbb; }
+      border: 1px solid #bbb; } } }
+
+#fedora-repository-purge-object-form input {}
+
+.fedora_detailed_list {
+  h3 {
+    margin: 0; }
+  table td {
+    vertical-align: bottom; } }

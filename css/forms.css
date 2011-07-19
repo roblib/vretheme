@@ -1,87 +1,88 @@
 /* $Id: forms.css,v 1.3 2009/08/12 08:37:42 johnalbin Exp $ */
-
 /**
  * @file
  * Form Styling
  */
-
-
-.form-item,
-.form-checkboxes,
-.form-radios /* Wrapper for a form element (or group of form elements) and its label */ {
+/* line 8, ../sass/forms.scss */
+.form-item, .form-checkboxes, .form-radios {
   margin: 1em 0;
 }
 
-.form-item input.error,
-.form-item textarea.error,
-.form-item select.error /* Highlight the form elements that caused a form submission error */ {
+/* line 12, ../sass/forms.scss */
+.form-item input.error, .form-item textarea.error, .form-item select.error {
   border: 2px solid #c00;
 }
-
-.form-item label /* The label for a form element */ {
+/* line 14, ../sass/forms.scss */
+.form-item label {
   display: block;
   font-weight: bold;
 }
-
-.form-item label.option /* The label for a radio button or checkbox */ {
+/* line 17, ../sass/forms.scss */
+.form-item label.option {
   display: inline;
   font-weight: normal;
 }
 
-.form-required /* The part of the label that indicates a required field */ {
+/* line 21, ../sass/forms.scss */
+.form-required {
   color: #c00;
 }
 
-.form-item .description /* The descriptive help text (separate from the label) */ {
+/* line 24, ../sass/forms.scss */
+.form-item .description {
   font-size: 0.85em;
 }
 
-.form-checkboxes .form-item,
-.form-radios .form-item /* Pack groups of checkboxes and radio buttons closer together */ {
+/* line 27, ../sass/forms.scss */
+.form-checkboxes .form-item, .form-radios .form-item {
   margin: 0.4em 0;
 }
 
-.form-submit /* The submit button */ {
-}
-
-.container-inline div,
-.container-inline label /* Inline labels and form divs */ {
+/* line 33, ../sass/forms.scss */
+.container-inline div, .container-inline label {
   display: inline;
 }
-
-.tips /* Tips for Drupal's input formats */ {
-}
-
 
 /*
  * Search (search-theme-form.tpl.php)
  */
-#search-box /* Wrapper for the search form */ {
-}
-
-#edit-search-theme-form-1-wrapper label /* Label that says "Search this site:" */ {
+/* line 42, ../sass/forms.scss */
+#edit-search-theme-form-1-wrapper label {
   display: none;
 }
-
 
 /*
  * Search (search-block-form.tpl.php)
  */
-#search-block-form /* Wrapper for the search form */ {
-}
-
-#edit-search-block-form-1-wrapper label /* Label that says "Search this site:" */ {
+/* line 51, ../sass/forms.scss */
+#edit-search-block-form-1-wrapper label {
   display: none;
 }
-
 
 /*
  * Drupal's default login form block
  */
+/* line 58, ../sass/forms.scss */
 #user-login-form {
-  text-align: left; /* LTR */
+  text-align: left;
+  /* LTR */
 }
-
+/* line 61, ../sass/forms.scss */
+#user-login-form ul {
+  margin-bottom: 0;
+  /* Position OpenID's ul next to the rest of the links. */
+}
+/* line 65, ../sass/forms.scss */
+#user-login-form li.openid-link {
+  margin-top: 1em;
+  margin-left: -20px;
+  /* LTR */
+  /* Un-do some of the padding on the ul list. */
+}
+/* line 70, ../sass/forms.scss */
+#user-login-form li.user-link {
+  margin-top: 1em;
+}
 
 /*
  * OpenID
@@ -89,29 +90,16 @@
  * The default styling for the OpenID login link seems to assume Garland's
  * styling of list items.
  */
-
-#user-login-form ul /* OpenID creates a new ul above the login form's links. */ {
-  margin-bottom: 0; /* Position OpenID's ul next to the rest of the links. */
-}
-
-#user-login-form li.openid-link /* The "Log in using OpenID" link. */ {
-  margin-top: 1em;
-  margin-left: -20px; /* LTR */ /* Un-do some of the padding on the ul list. */
-}
-
-#user-login-form li.user-link /* The "Cancel OpenID login" link. */ {
-  margin-top: 1em;
-}
-
+/* line 81, ../sass/forms.scss */
 #user-login ul {
   margin: 1em 0;
 }
-
-#user-login li.openid-link,
-#user-login li.user-link /* The OpenID links on the /user form. */ {
-  margin-left: -2em; /* LTR */ /* Un-do all of the padding on the ul list. */
+/* line 84, ../sass/forms.scss */
+#user-login li.openid-link, #user-login li.user-link {
+  margin-left: -2em;
+  /* LTR */
+  /* Un-do all of the padding on the ul list. */
 }
-
 
 /*
  * Drupal admin tables
@@ -119,53 +107,49 @@
  * We overrode these styles in html-elements.css, but restore them for the admin
  * section of the site.
  */
-
+/* line 97, ../sass/forms.scss */
 form tbody {
   border-top: 1px solid #ccc;
 }
-
-form th,
-form thead th {
-  text-align: left; /* LTR */
+/* line 99, ../sass/forms.scss */
+form th, form thead th {
+  text-align: left;
+  /* LTR */
   border: 0.7px solid #D6D1D1;
   color: #000;
   font-size: 110%;
   padding: 0.3em 0.5em;
   background-color: #ececec;
 }
-
+/* line 107, ../sass/forms.scss */
 form tbody th {
   border-bottom: 1px solid #ccc;
 }
 
+/* line 110, ../sass/forms.scss */
 .form-item, .form-checkboxes, .form-radios {
-    margin: 0.5em 0;
+  margin: 0.5em 0;
 }
 
+/* line 113, ../sass/forms.scss */
 .form-select option {
-padding-top: 1px;
-padding-bottom: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
 }
 
 /* Search Block */
-
-#header #google-cse-searchbox-form .form-item,
-#header #islandora-solr-simple-search-form .form-item {
-margin: 0px;
-float: left;
+/* line 120, ../sass/forms.scss */
+#header #google-cse-searchbox-form .form-item, #header #islandora-solr-simple-search-form .form-item {
+  margin: 0px;
+  float: left;
 }
-  
-#header #google-cse-searchbox-form .form-item label,
-#header #islandora-solr-simple-search-form .form-item label,
-#header #search-box .form-item label,
-#header #search-block-form .form-item label	{ 
- color: #fff; /* Wrapper for the search form */
-}  
-  
-#header #google-cse-searchbox-form .form-item input,
-#header #islandora-solr-simple-search-form .form-item input, 
-#header #search-box .form-item input,
-#header #search-block-form .form-item input  {
+/* line 123, ../sass/forms.scss */
+#header #google-cse-searchbox-form .form-item label, #header #islandora-solr-simple-search-form .form-item label, #header #search-box .form-item label, #header #search-block-form .form-item label {
+  color: #fff;
+  /* Wrapper for the search form */
+}
+/* line 126, ../sass/forms.scss */
+#header #google-cse-searchbox-form .form-item input, #header #islandora-solr-simple-search-form .form-item input, #header #search-box .form-item input, #header #search-block-form .form-item input {
   margin: 4px 0px 0 0;
   width: 200px;
   display: inline;
@@ -178,322 +162,1027 @@ float: left;
   border-top-left: 3px;
   -webkit-border-radius: 3px;
   padding-right: 20px;
-   padding-left: 5px;
+  padding-left: 5px;
   border: 1px solid #888;
-  background: #fff url(../images/insearch-magglass.png) no-repeat right center;
+  background: white url(../images/insearch-magglass.png) no-repeat right center;
 }
-
-#header #google-cse-searchbox-form .form-item input:hover,
-#header #islandora-solr-simple-search-form .form-item input:hover, 
-#header #search-box .form-item input:hover,
-#header #search-block-form .form-item input:hover  {
-background: #fff url(../images/insearch-magglass.png) no-repeat right center;
-color: #FFFFFF;
+/* line 142, ../sass/forms.scss */
+#header #google-cse-searchbox-form .form-item input:hover, #header #islandora-solr-simple-search-form .form-item input:hover, #header #search-box .form-item input:hover, #header #search-block-form .form-item input:hover {
+  background: white url(../images/insearch-magglass.png) no-repeat right center;
+  color: #FFFFFF;
 }
-
-#header #google-cse-searchbox-form .form-item input:focus,
-#header #islandora-solr-simple-search-form .form-item input:focus, 
-#header #search-box .form-item input:focus,
-#header #search-block-form .form-item input:focus  {
--moz-box-shadow: 0 0 3px #000000;
-background:#fff url(../images/insearch-magglass.png) no-repeat right center;
-border:1px solid #EEEEEE;
-color:#333333;
-outline-color:-moz-use-text-color;
-outline-style:none;
-outline-width:medium;
-text-shadow:0 1px 0 #FFFFFF;
+/* line 145, ../sass/forms.scss */
+#header #google-cse-searchbox-form .form-item input:focus, #header #islandora-solr-simple-search-form .form-item input:focus, #header #search-box .form-item input:focus, #header #search-block-form .form-item input:focus {
+  -moz-box-shadow: 0 0 3px #000000;
+  background: white url(../images/insearch-magglass.png) no-repeat right center;
+  border: 1px solid #EEEEEE;
+  color: #333333;
+  outline-color: -moz-use-text-color;
+  outline-style: none;
+  outline-width: medium;
+  text-shadow: 0 1px 0 #FFFFFF;
 }
-
-
-#header #google-cse-searchbox-form  input.form-submit, 
-#header #islandora-solr-simple-search-form input.form-submit, 
-#header #search-form input.form-submit, 
-#header #search-box input.form-submit,
-#header #search-block-form input.form-submit {
-height: 21px;
-width: 21px;
-cursor: pointer;
-text-indent: -9999px;
-border: none;
-/* background: url(../images/mag_glass/grey-mag_glass.png) no-repeat left top;  */
-display: none;
-clear: right;
+/* line 154, ../sass/forms.scss */
+#header #google-cse-searchbox-form input.form-submit, #header #islandora-solr-simple-search-form input.form-submit, #header #search-form input.form-submit, #header #search-box input.form-submit, #header #search-block-form input.form-submit {
+  height: 21px;
+  width: 21px;
+  cursor: pointer;
+  text-indent: -9999px;
+  border: none;
+  /* background: url(../images/mag_glass/grey-mag_glass.png) no-repeat left top;  */
+  display: none;
+  clear: right;
 }
-  
-#header #google-cse-searchbox-form  .block-search .form-item  textarea:focus,
-#header #islandora-solr-simple-search-form  .block-search .form-item  textarea:focus, 
-#header #islandora-solr-simple-search-form  .block-search .form-item  textarea:focus input:focus, 
-#header #search-form  .block-search .form-item  textarea:focus, 
-#header #search-form  .block-search .form-item  textarea:focus input:focus,
-#header #search-block-form .block-search .form-item  textarea:focus,
-#header #search-block-form .block-search .form-item  textarea:focus  input:focus	
-{
+/* line 163, ../sass/forms.scss */
+#header #google-cse-searchbox-form.block-search .form-item textarea:focus {
+  border: 2px solid #2E5067;
+}
+/* line 166, ../sass/forms.scss */
+#header #islandora-solr-simple-search-form.block-search .form-item textarea:focus, #header #islandora-solr-simple-search-form.block-search .form-item textarea:focus input:focus {
+  border: 2px solid #2E5067;
+}
+/* line 169, ../sass/forms.scss */
+#header #search-form.block-search .form-item textarea:focus, #header #search-form.block-search .form-item textarea:focus input:focus {
+  border: 2px solid #2E5067;
+}
+/* line 171, ../sass/forms.scss */
+#header #search-block-form .block-search .form-item textarea:focus {
+  border: 2px solid #2E5067;
+}
+/* line 173, ../sass/forms.scss */
+#header #search-block-form .block-search .form-item textarea:focus input:focus {
   border: 2px solid #2E5067;
 }
 
+/* line 176, ../sass/forms.scss */
 #navbar-wrapper .NavbarRight form {
-padding: 2px 0;
+  padding: 2px 0;
 }
-
 
 /* ------------------------------------------
 CSS3 GITHUB Buttons for Drupal 6
 Licensed under Unlicense 
 ------------------------------------------ */
-
-
 /* ------------------------------------------------------------------------------------------------------------- form-submit */
+/* line 186, ../sass/forms.scss */
+.book_add_child a {
+  position: relative;
+  overflow: visible;
+  display: inline-block;
+  margin: 0;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #fff;
+  font-size: 94%;
+  color: #333;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #bbb;
+  background-color: #eaeaea;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
+  background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
+  background-image: -o-linear-gradient(#f2f2f2, #dddddd);
+  background-image: linear-gradient(#f2f2f2, #dddddd);
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  border-radius: 0.2em;
+  line-height: 1.25em;
+  /* IE hacks */
+  zoom: 1;
+  *display: inline;
+  padding: 0.34em 1em;
+  margin-top: 0.2em;
+}
+/* line 216, ../sass/forms.scss */
+.book_add_child a:link, .book_add_child a:visited {
+  position: relative;
+  overflow: visible;
+  display: inline-block;
+  margin: 0;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #fff;
+  font-size: 94%;
+  color: #333;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #bbb;
+  background-color: #eaeaea;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
+  background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
+  background-image: -o-linear-gradient(#f2f2f2, #dddddd);
+  background-image: linear-gradient(#f2f2f2, #dddddd);
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  border-radius: 0.2em;
+  line-height: 1.25em;
+  /* IE hacks */
+  zoom: 1;
+  *display: inline;
+  padding: 0.34em 1em;
+  margin-top: 0.2em;
+}
 
-.book_add_child a,
-.book_add_child a:link,
-.book_add_child a:visited,
-.book_printer a,
-.book_printer a:link,
-.book_printer a:visited,
-.node_read_more a,
-.node_read_more a:link,
-.node_read_more a:visited,
-.comment_add a,
-.comment_add a:link,
-.comment_add a:visited,
-.print_html a,
-.print_html a:link,
-.print_html a:visited,
-.button,
-block-admin-configure .form-submit,
-input[type=submit],
-#views-ajax-pad .form-buttons .form-submit,
-.teaser-button,
-.content-overview-links a,
-.content-overview-links a:link,
-.content-overview-links a:visited,
-.container-inline a,
-.container-inline a:link,
-.container-inline a:visited { 
-    position: relative; 
-    overflow: visible; 
-    display: inline-block; 
-    margin: 0;
-    text-decoration: none; 
-    text-shadow: 1px 1px 0 #fff; 
-    font-size: 94%;
-    color: #333; 
-    white-space: nowrap; 
-    cursor: pointer; 
-    outline: none; 
-    border: 1px solid #bbb; 
-    background-color: #eaeaea;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
-    background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
-    background-image: -o-linear-gradient(#f2f2f2, #dddddd);
-    background-image: linear-gradient(#f2f2f2, #dddddd);
-    -webkit-background-clip: padding;
-    -moz-background-clip: padding;
-    background-clip: padding-box;
-    -webkit-border-radius: 0.2em; 
-    -moz-border-radius: 0.2em; 
-    border-radius: 0.2em; 
-	  line-height: 1.25em;
-    /* IE hacks */
-    zoom: 1; 
-    *display: inline; 
-    padding: 0.34em 1em;
-    margin-top: 0.2em;
-    }
+/* line 247, ../sass/forms.scss */
+.book_printer a {
+  position: relative;
+  overflow: visible;
+  display: inline-block;
+  margin: 0;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #fff;
+  font-size: 94%;
+  color: #333;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #bbb;
+  background-color: #eaeaea;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
+  background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
+  background-image: -o-linear-gradient(#f2f2f2, #dddddd);
+  background-image: linear-gradient(#f2f2f2, #dddddd);
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  border-radius: 0.2em;
+  line-height: 1.25em;
+  /* IE hacks */
+  zoom: 1;
+  *display: inline;
+  padding: 0.34em 1em;
+  margin-top: 0.2em;
+}
+/* line 277, ../sass/forms.scss */
+.book_printer a:link, .book_printer a:visited {
+  position: relative;
+  overflow: visible;
+  display: inline-block;
+  margin: 0;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #fff;
+  font-size: 94%;
+  color: #333;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #bbb;
+  background-color: #eaeaea;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
+  background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
+  background-image: -o-linear-gradient(#f2f2f2, #dddddd);
+  background-image: linear-gradient(#f2f2f2, #dddddd);
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  border-radius: 0.2em;
+  line-height: 1.25em;
+  /* IE hacks */
+  zoom: 1;
+  *display: inline;
+  padding: 0.34em 1em;
+  margin-top: 0.2em;
+}
 
+/* line 308, ../sass/forms.scss */
+.node_read_more a {
+  position: relative;
+  overflow: visible;
+  display: inline-block;
+  margin: 0;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #fff;
+  font-size: 94%;
+  color: #333;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #bbb;
+  background-color: #eaeaea;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
+  background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
+  background-image: -o-linear-gradient(#f2f2f2, #dddddd);
+  background-image: linear-gradient(#f2f2f2, #dddddd);
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  border-radius: 0.2em;
+  line-height: 1.25em;
+  /* IE hacks */
+  zoom: 1;
+  *display: inline;
+  padding: 0.34em 1em;
+  margin-top: 0.2em;
+}
+/* line 338, ../sass/forms.scss */
+.node_read_more a:link, .node_read_more a:visited {
+  position: relative;
+  overflow: visible;
+  display: inline-block;
+  margin: 0;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #fff;
+  font-size: 94%;
+  color: #333;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #bbb;
+  background-color: #eaeaea;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
+  background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
+  background-image: -o-linear-gradient(#f2f2f2, #dddddd);
+  background-image: linear-gradient(#f2f2f2, #dddddd);
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  border-radius: 0.2em;
+  line-height: 1.25em;
+  /* IE hacks */
+  zoom: 1;
+  *display: inline;
+  padding: 0.34em 1em;
+  margin-top: 0.2em;
+}
+
+/* line 369, ../sass/forms.scss */
+.comment_add a {
+  position: relative;
+  overflow: visible;
+  display: inline-block;
+  margin: 0;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #fff;
+  font-size: 94%;
+  color: #333;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #bbb;
+  background-color: #eaeaea;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
+  background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
+  background-image: -o-linear-gradient(#f2f2f2, #dddddd);
+  background-image: linear-gradient(#f2f2f2, #dddddd);
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  border-radius: 0.2em;
+  line-height: 1.25em;
+  /* IE hacks */
+  zoom: 1;
+  *display: inline;
+  padding: 0.34em 1em;
+  margin-top: 0.2em;
+}
+/* line 399, ../sass/forms.scss */
+.comment_add a:link, .comment_add a:visited {
+  position: relative;
+  overflow: visible;
+  display: inline-block;
+  margin: 0;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #fff;
+  font-size: 94%;
+  color: #333;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #bbb;
+  background-color: #eaeaea;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
+  background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
+  background-image: -o-linear-gradient(#f2f2f2, #dddddd);
+  background-image: linear-gradient(#f2f2f2, #dddddd);
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  border-radius: 0.2em;
+  line-height: 1.25em;
+  /* IE hacks */
+  zoom: 1;
+  *display: inline;
+  padding: 0.34em 1em;
+  margin-top: 0.2em;
+}
+
+/* line 430, ../sass/forms.scss */
+.print_html a {
+  position: relative;
+  overflow: visible;
+  display: inline-block;
+  margin: 0;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #fff;
+  font-size: 94%;
+  color: #333;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #bbb;
+  background-color: #eaeaea;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
+  background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
+  background-image: -o-linear-gradient(#f2f2f2, #dddddd);
+  background-image: linear-gradient(#f2f2f2, #dddddd);
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  border-radius: 0.2em;
+  line-height: 1.25em;
+  /* IE hacks */
+  zoom: 1;
+  *display: inline;
+  padding: 0.34em 1em;
+  margin-top: 0.2em;
+}
+/* line 460, ../sass/forms.scss */
+.print_html a:link, .print_html a:visited {
+  position: relative;
+  overflow: visible;
+  display: inline-block;
+  margin: 0;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #fff;
+  font-size: 94%;
+  color: #333;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #bbb;
+  background-color: #eaeaea;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
+  background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
+  background-image: -o-linear-gradient(#f2f2f2, #dddddd);
+  background-image: linear-gradient(#f2f2f2, #dddddd);
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  border-radius: 0.2em;
+  line-height: 1.25em;
+  /* IE hacks */
+  zoom: 1;
+  *display: inline;
+  padding: 0.34em 1em;
+  margin-top: 0.2em;
+}
+
+/* line 491, ../sass/forms.scss */
+.button, block-admin-configure .form-submit, input[type=submit], #views-ajax-pad .form-buttons .form-submit, .teaser-button {
+  position: relative;
+  overflow: visible;
+  display: inline-block;
+  margin: 0;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #fff;
+  font-size: 94%;
+  color: #333;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #bbb;
+  background-color: #eaeaea;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
+  background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
+  background-image: -o-linear-gradient(#f2f2f2, #dddddd);
+  background-image: linear-gradient(#f2f2f2, #dddddd);
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  border-radius: 0.2em;
+  line-height: 1.25em;
+  /* IE hacks */
+  zoom: 1;
+  *display: inline;
+  padding: 0.34em 1em;
+  margin-top: 0.2em;
+}
+
+/* line 522, ../sass/forms.scss */
+.content-overview-links a {
+  position: relative;
+  overflow: visible;
+  display: inline-block;
+  margin: 0;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #fff;
+  font-size: 94%;
+  color: #333;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #bbb;
+  background-color: #eaeaea;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
+  background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
+  background-image: -o-linear-gradient(#f2f2f2, #dddddd);
+  background-image: linear-gradient(#f2f2f2, #dddddd);
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  border-radius: 0.2em;
+  line-height: 1.25em;
+  /* IE hacks */
+  zoom: 1;
+  *display: inline;
+  padding: 0.34em 1em;
+  margin-top: 0.2em;
+}
+/* line 552, ../sass/forms.scss */
+.content-overview-links a:link, .content-overview-links a:visited {
+  position: relative;
+  overflow: visible;
+  display: inline-block;
+  margin: 0;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #fff;
+  font-size: 94%;
+  color: #333;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #bbb;
+  background-color: #eaeaea;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
+  background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
+  background-image: -o-linear-gradient(#f2f2f2, #dddddd);
+  background-image: linear-gradient(#f2f2f2, #dddddd);
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  border-radius: 0.2em;
+  line-height: 1.25em;
+  /* IE hacks */
+  zoom: 1;
+  *display: inline;
+  padding: 0.34em 1em;
+  margin-top: 0.2em;
+}
+
+/* line 583, ../sass/forms.scss */
 .container-inline {
-line-height: 1.25em;
+  line-height: 1.25em;
+}
+/* line 584, ../sass/forms.scss */
+.container-inline a {
+  position: relative;
+  overflow: visible;
+  display: inline-block;
+  margin: 0;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #fff;
+  font-size: 94%;
+  color: #333;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #bbb;
+  background-color: #eaeaea;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
+  background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
+  background-image: -o-linear-gradient(#f2f2f2, #dddddd);
+  background-image: linear-gradient(#f2f2f2, #dddddd);
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  border-radius: 0.2em;
+  line-height: 1.25em;
+  /* IE hacks */
+  zoom: 1;
+  *display: inline;
+  padding: 0.34em 1em;
+  margin-top: 0.2em;
+}
+/* line 614, ../sass/forms.scss */
+.container-inline a:link, .container-inline a:visited {
+  position: relative;
+  overflow: visible;
+  display: inline-block;
+  margin: 0;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #fff;
+  font-size: 94%;
+  color: #333;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #bbb;
+  background-color: #eaeaea;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
+  background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
+  background-image: -o-linear-gradient(#f2f2f2, #dddddd);
+  background-image: linear-gradient(#f2f2f2, #dddddd);
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  border-radius: 0.2em;
+  line-height: 1.25em;
+  /* IE hacks */
+  zoom: 1;
+  *display: inline;
+  padding: 0.34em 1em;
+  margin-top: 0.2em;
 }
 
-#edit-delete,
+/* line 646, ../sass/forms.scss */
+#edit-delete {
+  color: #990000;
+}
+
+/* line 649, ../sass/forms.scss */
 #feeds-delete-tab-form .form-submit {
-    color: #990000;
+  color: #990000;
+}
+/* line 651, ../sass/forms.scss */
+#feeds-delete-tab-form .form-submit:hover, #feeds-delete-tab-form .form-submit:focus, #feeds-delete-tab-form .form-submit:active {
+  border-color: #B53F3A;
+  border-bottom-color: #A0302A;
+  color: #fff;
+  background-color: #5c6da3;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#da5d57), to(#b43731));
+  background-image: -moz-linear-gradient(#da5d57, #b43731);
+  background-image: -o-linear-gradient(#da5d57, #b43731);
+  background-image: linear-gradient(#da5d57, #b43731);
 }
 
-
-#feeds-delete-tab-form .form-submit:hover,
-#feeds-delete-tab-form .form-submit:focus,
-#feeds-delete-tab-form .form-submit:active,
-#edit-delete:hover,
-#edit-delete:focus,
-#edit-delete:active
-{
-    border-color: #B53F3A;
-    border-bottom-color: #A0302A;
-    color: #fff; 
-    background-color: #5c6da3;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#DA5D57), to(#B43731));
-    background-image: -moz-linear-gradient(#DA5D57, #B43731);
-    background-image: -o-linear-gradient(#DA5D57, #B43731);
-    background-image: linear-gradient(#DA5D57, #B43731);
+/* line 662, ../sass/forms.scss */
+#edit-delete:hover, #edit-delete:focus, #edit-delete:active {
+  border-color: #B53F3A;
+  border-bottom-color: #A0302A;
+  color: #fff;
+  background-color: #5c6da3;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#da5d57), to(#b43731));
+  background-image: -moz-linear-gradient(#da5d57, #b43731);
+  background-image: -o-linear-gradient(#da5d57, #b43731);
+  background-image: linear-gradient(#da5d57, #b43731);
 }
 
-input[type=submit]:hover,
-input[type=submit]:focus,
-input[type=submit]:active,
-.book_add_child a:hover,
-.book_add_child a:focus,
-.book_add_child a:active,
-.book_printer a:hover,
-.book_printer a:focus,
-.book_printer a:active,
-.node_read_more a:hover,
-.node_read_more a:focus,
-.node_read_more a:active,
-.comment_add a:hover,
-.comment_add a:focus,
-.comment_add a:active,
-.print_html a:hover,
-.print_html a:focus,
-.print_html a:active,
-.button:hover,
-.button:focus,
-.button:active,
-.form-submit:hover,
-.form-submit:focus,
-.form-submit:active,
-#views-ajax-pad .form-buttons .form-submit:hover,
-#views-ajax-pad .form-buttons .form-submit:focus,
-#views-ajax-pad .form-buttons .form-submit:active,
-.teaser-button:hover,
-.teaser-button:focus,
-.teaser-button:active,
-.container-inline a:hover,
-.container-inline a:focus,
-.container-inline a:active,
-.content-overview-links a:hover,
-.content-overview-links a:focus,
-.content-overview-links a:active
-{
-    border-color: #516A89;
-    border-bottom-color: #465C77;
-    text-decoration: none; 
-    text-shadow: -1px -1px 0 rgba(0,0,0,0.3); 
-    color: #fff; 
-    background-color: #5c6da3;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8DABF4), to(#516A89));
-    background-image: -moz-linear-gradient(#8DABF4, #516A89);
-    background-image: -o-linear-gradient(#8DABF4, #516A89);
-    background-image: linear-gradient(#8DABF4, #516A89);
+/* line 673, ../sass/forms.scss */
+input[type=submit]:hover, input[type=submit]:focus, input[type=submit]:active {
+  border-color: #516A89;
+  border-bottom-color: #465C77;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+  color: #fff;
+  background-color: #5c6da3;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8dabf4), to(#516a89));
+  background-image: -moz-linear-gradient(#8dabf4, #516a89);
+  background-image: -o-linear-gradient(#8dabf4, #516a89);
+  background-image: linear-gradient(#8dabf4, #516a89);
 }
 
-#feeds-delete-tab-form .form-submit:active,
-#feeds-delete-tab-form .form-submit.active,
-#edit-delete:active,
-#edit-delete.active {
-    border-color: #A0302A;
-    border-bottom-color: #B53F3A;
-    color: #fff; 
-    background-color: #5c6da3;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#B43731), to(#DA5D57));
-    background-image: -moz-linear-gradient(#B43731, #DA5D57);
-    background-image: -o-linear-gradient(#B43731, #DA5D57);
-    background-image: linear-gradient(#B43731, #DA5D57);
+/* line 686, ../sass/forms.scss */
+.book_add_child a:hover, .book_add_child a:focus, .book_add_child a:active {
+  border-color: #516A89;
+  border-bottom-color: #465C77;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+  color: #fff;
+  background-color: #5c6da3;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8dabf4), to(#516a89));
+  background-image: -moz-linear-gradient(#8dabf4, #516a89);
+  background-image: -o-linear-gradient(#8dabf4, #516a89);
+  background-image: linear-gradient(#8dabf4, #516a89);
 }
 
-
-input[type=submit]:active,
-.book_add_child a:active,
-.book_add_child a.active,
-.book_printer a:active,
-.book_printer a.active,
-.node_read_more a:active,
-.node_read_more a.active,
-.comment_add a:active,
-.comment_add a.active,
-.print_html a:active,
-.print_html a.active,
-.button:active,
-.button.active,
-.form-submit:active,
-.form-submit.active,
-#views-ajax-pad .form-buttons .form-submit:active,
-#views-ajax-pad .form-buttons .form-submit.active,
-.teaser-button:active,
-.teaser-button.active,
-.container-inline a:active,
-.container-inline a.active,
-.content-overview-links a:active,
-.content-overview-links a.active {
-    border-color: #465C77;
-    border-bottom-color: #516A89;
-    text-shadow: -1px -1px 0 rgba(0,0,0,0.3); 
-    color: #fff; 
-    background-color: #5c6da3;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#516A89), to(#8DABF4));
-    background-image: -moz-linear-gradient(#516A89, #8DABF4);
-    background-image: -o-linear-gradient(#516A89, #8DABF4);
-    background-image: linear-gradient(#516A89, #8DABF4);
+/* line 699, ../sass/forms.scss */
+.book_printer a:hover, .book_printer a:focus, .book_printer a:active {
+  border-color: #516A89;
+  border-bottom-color: #465C77;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+  color: #fff;
+  background-color: #5c6da3;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8dabf4), to(#516a89));
+  background-image: -moz-linear-gradient(#8dabf4, #516a89);
+  background-image: -o-linear-gradient(#8dabf4, #516a89);
+  background-image: linear-gradient(#8dabf4, #516a89);
 }
 
+/* line 712, ../sass/forms.scss */
+.node_read_more a:hover, .node_read_more a:focus, .node_read_more a:active {
+  border-color: #516A89;
+  border-bottom-color: #465C77;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+  color: #fff;
+  background-color: #5c6da3;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8dabf4), to(#516a89));
+  background-image: -moz-linear-gradient(#8dabf4, #516a89);
+  background-image: -o-linear-gradient(#8dabf4, #516a89);
+  background-image: linear-gradient(#8dabf4, #516a89);
+}
+
+/* line 725, ../sass/forms.scss */
+.comment_add a:hover, .comment_add a:focus, .comment_add a:active {
+  border-color: #516A89;
+  border-bottom-color: #465C77;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+  color: #fff;
+  background-color: #5c6da3;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8dabf4), to(#516a89));
+  background-image: -moz-linear-gradient(#8dabf4, #516a89);
+  background-image: -o-linear-gradient(#8dabf4, #516a89);
+  background-image: linear-gradient(#8dabf4, #516a89);
+}
+
+/* line 738, ../sass/forms.scss */
+.print_html a:hover, .print_html a:focus, .print_html a:active {
+  border-color: #516A89;
+  border-bottom-color: #465C77;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+  color: #fff;
+  background-color: #5c6da3;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8dabf4), to(#516a89));
+  background-image: -moz-linear-gradient(#8dabf4, #516a89);
+  background-image: -o-linear-gradient(#8dabf4, #516a89);
+  background-image: linear-gradient(#8dabf4, #516a89);
+}
+
+/* line 751, ../sass/forms.scss */
+.button:hover, .button:focus, .button:active {
+  border-color: #516A89;
+  border-bottom-color: #465C77;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+  color: #fff;
+  background-color: #5c6da3;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8dabf4), to(#516a89));
+  background-image: -moz-linear-gradient(#8dabf4, #516a89);
+  background-image: -o-linear-gradient(#8dabf4, #516a89);
+  background-image: linear-gradient(#8dabf4, #516a89);
+}
+
+/* line 764, ../sass/forms.scss */
+.form-submit:hover, .form-submit:focus, .form-submit:active {
+  border-color: #516A89;
+  border-bottom-color: #465C77;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+  color: #fff;
+  background-color: #5c6da3;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8dabf4), to(#516a89));
+  background-image: -moz-linear-gradient(#8dabf4, #516a89);
+  background-image: -o-linear-gradient(#8dabf4, #516a89);
+  background-image: linear-gradient(#8dabf4, #516a89);
+}
+
+/* line 777, ../sass/forms.scss */
+#views-ajax-pad .form-buttons .form-submit:hover, #views-ajax-pad .form-buttons .form-submit:focus, #views-ajax-pad .form-buttons .form-submit:active {
+  border-color: #516A89;
+  border-bottom-color: #465C77;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+  color: #fff;
+  background-color: #5c6da3;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8dabf4), to(#516a89));
+  background-image: -moz-linear-gradient(#8dabf4, #516a89);
+  background-image: -o-linear-gradient(#8dabf4, #516a89);
+  background-image: linear-gradient(#8dabf4, #516a89);
+}
+
+/* line 790, ../sass/forms.scss */
+.teaser-button:hover, .teaser-button:focus, .teaser-button:active {
+  border-color: #516A89;
+  border-bottom-color: #465C77;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+  color: #fff;
+  background-color: #5c6da3;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8dabf4), to(#516a89));
+  background-image: -moz-linear-gradient(#8dabf4, #516a89);
+  background-image: -o-linear-gradient(#8dabf4, #516a89);
+  background-image: linear-gradient(#8dabf4, #516a89);
+}
+
+/* line 803, ../sass/forms.scss */
+.container-inline a:hover, .container-inline a:focus, .container-inline a:active {
+  border-color: #516A89;
+  border-bottom-color: #465C77;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+  color: #fff;
+  background-color: #5c6da3;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8dabf4), to(#516a89));
+  background-image: -moz-linear-gradient(#8dabf4, #516a89);
+  background-image: -o-linear-gradient(#8dabf4, #516a89);
+  background-image: linear-gradient(#8dabf4, #516a89);
+}
+
+/* line 816, ../sass/forms.scss */
+.content-overview-links a:hover, .content-overview-links a:focus, .content-overview-links a:active {
+  border-color: #516A89;
+  border-bottom-color: #465C77;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+  color: #fff;
+  background-color: #5c6da3;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8dabf4), to(#516a89));
+  background-image: -moz-linear-gradient(#8dabf4, #516a89);
+  background-image: -o-linear-gradient(#8dabf4, #516a89);
+  background-image: linear-gradient(#8dabf4, #516a89);
+}
+
+/* line 829, ../sass/forms.scss */
+#feeds-delete-tab-form .form-submit:active, #feeds-delete-tab-form .form-submit.active {
+  border-color: #A0302A;
+  border-bottom-color: #B53F3A;
+  color: #fff;
+  background-color: #5c6da3;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#b43731), to(#da5d57));
+  background-image: -moz-linear-gradient(#b43731, #da5d57);
+  background-image: -o-linear-gradient(#b43731, #da5d57);
+  background-image: linear-gradient(#b43731, #da5d57);
+}
+
+/* line 840, ../sass/forms.scss */
+#edit-delete:active, #edit-delete.active {
+  border-color: #A0302A;
+  border-bottom-color: #B53F3A;
+  color: #fff;
+  background-color: #5c6da3;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#b43731), to(#da5d57));
+  background-image: -moz-linear-gradient(#b43731, #da5d57);
+  background-image: -o-linear-gradient(#b43731, #da5d57);
+  background-image: linear-gradient(#b43731, #da5d57);
+}
+
+/* line 850, ../sass/forms.scss */
+input[type=submit]:active {
+  border-color: #465C77;
+  border-bottom-color: #516A89;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+  color: #fff;
+  background-color: #5c6da3;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#516a89), to(#8dabf4));
+  background-image: -moz-linear-gradient(#516a89, #8dabf4);
+  background-image: -o-linear-gradient(#516a89, #8dabf4);
+  background-image: linear-gradient(#516a89, #8dabf4);
+}
+
+/* line 862, ../sass/forms.scss */
+.book_add_child a:active, .book_add_child a.active {
+  border-color: #465C77;
+  border-bottom-color: #516A89;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+  color: #fff;
+  background-color: #5c6da3;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#516a89), to(#8dabf4));
+  background-image: -moz-linear-gradient(#516a89, #8dabf4);
+  background-image: -o-linear-gradient(#516a89, #8dabf4);
+  background-image: linear-gradient(#516a89, #8dabf4);
+}
+
+/* line 874, ../sass/forms.scss */
+.book_printer a:active, .book_printer a.active {
+  border-color: #465C77;
+  border-bottom-color: #516A89;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+  color: #fff;
+  background-color: #5c6da3;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#516a89), to(#8dabf4));
+  background-image: -moz-linear-gradient(#516a89, #8dabf4);
+  background-image: -o-linear-gradient(#516a89, #8dabf4);
+  background-image: linear-gradient(#516a89, #8dabf4);
+}
+
+/* line 886, ../sass/forms.scss */
+.node_read_more a:active, .node_read_more a.active {
+  border-color: #465C77;
+  border-bottom-color: #516A89;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+  color: #fff;
+  background-color: #5c6da3;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#516a89), to(#8dabf4));
+  background-image: -moz-linear-gradient(#516a89, #8dabf4);
+  background-image: -o-linear-gradient(#516a89, #8dabf4);
+  background-image: linear-gradient(#516a89, #8dabf4);
+}
+
+/* line 898, ../sass/forms.scss */
+.comment_add a:active, .comment_add a.active {
+  border-color: #465C77;
+  border-bottom-color: #516A89;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+  color: #fff;
+  background-color: #5c6da3;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#516a89), to(#8dabf4));
+  background-image: -moz-linear-gradient(#516a89, #8dabf4);
+  background-image: -o-linear-gradient(#516a89, #8dabf4);
+  background-image: linear-gradient(#516a89, #8dabf4);
+}
+
+/* line 910, ../sass/forms.scss */
+.print_html a:active, .print_html a.active {
+  border-color: #465C77;
+  border-bottom-color: #516A89;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+  color: #fff;
+  background-color: #5c6da3;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#516a89), to(#8dabf4));
+  background-image: -moz-linear-gradient(#516a89, #8dabf4);
+  background-image: -o-linear-gradient(#516a89, #8dabf4);
+  background-image: linear-gradient(#516a89, #8dabf4);
+}
+
+/* line 922, ../sass/forms.scss */
+.button:active, .button.active {
+  border-color: #465C77;
+  border-bottom-color: #516A89;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+  color: #fff;
+  background-color: #5c6da3;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#516a89), to(#8dabf4));
+  background-image: -moz-linear-gradient(#516a89, #8dabf4);
+  background-image: -o-linear-gradient(#516a89, #8dabf4);
+  background-image: linear-gradient(#516a89, #8dabf4);
+}
+
+/* line 934, ../sass/forms.scss */
+.form-submit:active, .form-submit.active {
+  border-color: #465C77;
+  border-bottom-color: #516A89;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+  color: #fff;
+  background-color: #5c6da3;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#516a89), to(#8dabf4));
+  background-image: -moz-linear-gradient(#516a89, #8dabf4);
+  background-image: -o-linear-gradient(#516a89, #8dabf4);
+  background-image: linear-gradient(#516a89, #8dabf4);
+}
+
+/* line 946, ../sass/forms.scss */
+#views-ajax-pad .form-buttons .form-submit:active, #views-ajax-pad .form-buttons .form-submit.active {
+  border-color: #465C77;
+  border-bottom-color: #516A89;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+  color: #fff;
+  background-color: #5c6da3;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#516a89), to(#8dabf4));
+  background-image: -moz-linear-gradient(#516a89, #8dabf4);
+  background-image: -o-linear-gradient(#516a89, #8dabf4);
+  background-image: linear-gradient(#516a89, #8dabf4);
+}
+
+/* line 958, ../sass/forms.scss */
+.teaser-button:active, .teaser-button.active {
+  border-color: #465C77;
+  border-bottom-color: #516A89;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+  color: #fff;
+  background-color: #5c6da3;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#516a89), to(#8dabf4));
+  background-image: -moz-linear-gradient(#516a89, #8dabf4);
+  background-image: -o-linear-gradient(#516a89, #8dabf4);
+  background-image: linear-gradient(#516a89, #8dabf4);
+}
+
+/* line 970, ../sass/forms.scss */
+.container-inline a:active, .container-inline a.active {
+  border-color: #465C77;
+  border-bottom-color: #516A89;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+  color: #fff;
+  background-color: #5c6da3;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#516a89), to(#8dabf4));
+  background-image: -moz-linear-gradient(#516a89, #8dabf4);
+  background-image: -o-linear-gradient(#516a89, #8dabf4);
+  background-image: linear-gradient(#516a89, #8dabf4);
+}
+
+/* line 982, ../sass/forms.scss */
+.content-overview-links a:active, .content-overview-links a.active {
+  border-color: #465C77;
+  border-bottom-color: #516A89;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+  color: #fff;
+  background-color: #5c6da3;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#516a89), to(#8dabf4));
+  background-image: -moz-linear-gradient(#516a89, #8dabf4);
+  background-image: -o-linear-gradient(#516a89, #8dabf4);
+  background-image: linear-gradient(#516a89, #8dabf4);
+}
+
+/* line 993, ../sass/forms.scss */
 #header fieldset.captcha-admin-links {
-display: none
+  display: none;
 }
 
 /* overrides extra padding on form-submit elements in Firefox */
-.button::-moz-focus-inner,
-.form-submit::-moz-focus-inner,
-.teaser-button::-moz-focus-inner {
-	border: none;
+/* line 998, ../sass/forms.scss */
+.button::-moz-focus-inner, .form-submit::-moz-focus-inner, .teaser-button::-moz-focus-inner {
+  border: none;
 }
 
 /* correct teaser-button margin so it does not fall into text area */
+/* line 1003, ../sass/forms.scss */
 div.teaser-button-wrapper {
-    margin-top: -5px;
-    padding-right: 0;
+  margin-top: -5px;
+  padding-right: 0;
 }
 
 /* pulls form submit buttons closer together */
-.form-submit + .form-submit, .form-submit + .form-submit-group, .form-submit-group + .form-submit, .form-submit-group + .form-submit-group {
-    margin-left: 0;
+/* line 1010, ../sass/forms.scss */
+.form-submit + .form-submit, .form-submit + .form-submit-group {
+  margin-left: 0;
+}
+
+/* line 1014, ../sass/forms.scss */
+.form-submit-group + .form-submit, .form-submit-group + .form-submit-group {
+  margin-left: 0;
 }
 
 /* ... Icons */
-
-
-#search-form .form-submit { 
-background-image: url(../images/search-darkgrey.png),-webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
-background-image: url(../images/search-darkgrey.png),-moz-linear-gradient(#f2f2f2, #dddddd);
-background-image: url(../images/search-darkgrey.png),-o-linear-gradient(#f2f2f2, #dddddd);
-background-image: url(../images/search-darkgrey.png),linear-gradient(#f2f2f2, #dddddd);
-background-position: 0;
-padding-left: 20px;
+/* line 1019, ../sass/forms.scss */
+#search-form .form-submit {
+  background-image: url(../images/search-darkgrey.png), -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
+  background-image: url(../images/search-darkgrey.png), -moz-linear-gradient(#f2f2f2, #dddddd);
+  background-image: url(../images/search-darkgrey.png), -o-linear-gradient(#f2f2f2, #dddddd);
+  background-image: url(../images/search-darkgrey.png), linear-gradient(#f2f2f2, #dddddd);
+  background-position: 0;
+  padding-left: 20px;
 }
-
-#search-form .form-submit:hover,
-#search-form .form-submit:focus,
-#search-form .form-submit:active { 
-background-image: url(../images/search-white.png),-webkit-gradient(linear, 0 0, 0 100%, from(#8DABF4), to(#516A89));
-background-image: url(../images/search-white.png),-moz-linear-gradient(#8DABF4, #516A89);
-background-image: url(../images/search-white.png),-o-linear-gradient(#8DABF4, #516A89);
-background-image: url(../images/search-white.png),linear-gradient(#8DABF4, #516A89);
-background-position: 0;
-padding-left: 20px;
+/* line 1026, ../sass/forms.scss */
+#search-form .form-submit:hover, #search-form .form-submit:focus {
+  background-image: url(../images/search-white.png), -webkit-gradient(linear, 0 0, 0 100%, from(#8dabf4), to(#516a89));
+  background-image: url(../images/search-white.png), -moz-linear-gradient(#8dabf4, #516a89);
+  background-image: url(../images/search-white.png), -o-linear-gradient(#8dabf4, #516a89);
+  background-image: url(../images/search-white.png), linear-gradient(#8dabf4, #516a89);
+  background-position: 0;
+  padding-left: 20px;
 }
-
-#search-form .form-submit:active,
+/* line 1033, ../sass/forms.scss */
+#search-form .form-submit:active {
+  background-image: url(../images/search-white.png), -webkit-gradient(linear, 0 0, 0 100%, from(#8dabf4), to(#516a89));
+  background-image: url(../images/search-white.png), -moz-linear-gradient(#8dabf4, #516a89);
+  background-image: url(../images/search-white.png), -o-linear-gradient(#8dabf4, #516a89);
+  background-image: url(../images/search-white.png), linear-gradient(#8dabf4, #516a89);
+  background-position: 0;
+  padding-left: 20px;
+  background-image: url(../images/search-white.png), -webkit-gradient(linear, 0 0, 0 100%, from(#516a89), to(#8dabf4));
+  background-image: url(../images/search-white.png), -moz-linear-gradient(#516a89, #8dabf4);
+  background-image: url(../images/search-white.png), -o-linear-gradient(#516a89, #8dabf4);
+  background-image: url(../images/search-white.png), linear-gradient(#516a89, #8dabf4);
+  background-position: 0;
+  padding-left: 20px;
+}
+/* line 1046, ../sass/forms.scss */
 #search-form .form-submit.active {
-background-image: url(../images/search-white.png),-webkit-gradient(linear, 0 0, 0 100%, from(#516A89), to(#8DABF4));
-background-image: url(../images/search-white.png),-moz-linear-gradient(#516A89, #8DABF4);
-background-image: url(../images/search-white.png),-o-linear-gradient(#516A89, #8DABF4);
-background-image: url(../images/search-white.png),linear-gradient(#516A89, #8DABF4);
-background-position: 0;
-padding-left: 20px;
+  background-image: url(../images/search-white.png), -webkit-gradient(linear, 0 0, 0 100%, from(#516a89), to(#8dabf4));
+  background-image: url(../images/search-white.png), -moz-linear-gradient(#516a89, #8dabf4);
+  background-image: url(../images/search-white.png), -o-linear-gradient(#516a89, #8dabf4);
+  background-image: url(../images/search-white.png), linear-gradient(#516a89, #8dabf4);
+  background-position: 0;
+  padding-left: 20px;
 }
 
-#main-wrapper .form-text, #main-wrapper textarea {  
-    padding: 0.345em;
-    border: solid 1px #cccccc;  
-    outline: 0;
-    background: #FFFFFF;  
-    }  
-  
-#main-wrapper .form-text:hover, #main-wrapper textarea:hover,  
-#main-wrapper .form-text:focus, #main-wrapper textarea:focus {  
-    border-color: #C9C9C9;  
-    }  
-    
+/* line 1055, ../sass/forms.scss */
+#main-wrapper .form-text, #main-wrapper textarea {
+  padding: 0.345em;
+  border: solid 1px #cccccc;
+  outline: 0;
+  background: #FFFFFF;
+}
+/* line 1060, ../sass/forms.scss */
+#main-wrapper .form-text:hover, #main-wrapper textarea:hover, #main-wrapper .form-text:focus, #main-wrapper textarea:focus {
+  border-color: #C9C9C9;
+}
+
+/* line 1063, ../sass/forms.scss */
 .resizable-textarea {
-    width: 98%;
-}    
+  width: 98%;
+}

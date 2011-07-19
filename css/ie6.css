@@ -1,541 +1,475 @@
 /* $Id: ie6.css,v 1.6 2009/11/04 20:16:50 johnalbin Exp $ */
-
 /**
  * @file
  * CSS targeted specifically for Internet Explorer 5 and 6 for Windows.
  *
  * Any CSS in this file will override the rules specified in the ie.css file.
  */
-
-
 /*
  * Layout CSS
  */
- 
+/* line 14, ../sass/ie6.scss */
 body {
-  text-align: center; /* 1st part of IE5/IE6quirks centering hack */
-  width:expression(document.documentElement.clientWidth < 1011 ? "1011px" : "auto");
+  text-align: center;
+  /* 1st part of IE5/IE6quirks centering hack */
+  width: expression(document.documentElement.clientWidth < 1011 ? "1011px" : "auto");
 }
 
+/* line 19, ../sass/ie6.scss */
 #page {
-  text-align: left; /* LTR */ /* 2nd part of IE5/IE6quirks centering hack */
+  text-align: left;
+  /* LTR */
+  /* 2nd part of IE5/IE6quirks centering hack */
 }
 
-#main-wrapper, 
-#footer-wrapper { 
-  zoom: 1; /* Otherwise with a liquid layout, sidebars disappear when resizing the windows in IE6 */
+/* line 24, ../sass/ie6.scss */
+#main-wrapper, #footer-wrapper {
+  zoom: 1;
+  /* Otherwise with a liquid layout, sidebars disappear when resizing the windows in IE6 */
 }
 
-#content,
-.region-sidebar-first,
-.region-sidebar-second /* Floating divs */ {
-  display: inline; /* display inline or double your floated margin! [1] */
-  overflow: hidden; /* in ie6, overflow auto is broken [2] and so is overflow visible [3] */
+/* line 28, ../sass/ie6.scss */
+#content, .region-sidebar-first, .region-sidebar-second {
+  display: inline;
+  /* display inline or double your floated margin! [1] */
+  overflow: hidden;
+  /* in ie6, overflow auto is broken [2] and so is overflow visible [3] */
   overflow-y: visible;
 }
 
+/* line 35, ../sass/ie6.scss */
 #navigation {
   overflow: visible;
 }
-
+/* line 37, ../sass/ie6.scss */
 #navigation .section {
   overflow: visible;
 }
 
-
 /*
  * Tabs
  */
-
-ul.primary li a,
-ul.primary li a .tab,
-ul.secondary li a,
-ul.secondary li a .tab {
-  display: inline-block; /* Otherwise the blocks mistakenly get 100% width in IE6 */
+/* line 45, ../sass/ie6.scss */
+ul.primary li a, ul.secondary li a {
+  display: inline-block;
+  /* Otherwise the blocks mistakenly get 100% width in IE6 */
   cursor: pointer;
 }
-
+/* line 49, ../sass/ie6.scss */
+ul.primary li a .tab, ul.secondary li a .tab {
+  display: inline-block;
+  /* Otherwise the blocks mistakenly get 100% width in IE6 */
+  cursor: pointer;
+}
 
 /*
  * Messages - IE 5 and 6 don't support PNGs with alpha transparency.
  */
-
-div.messages,
-div.status,
-div.warning,
-div.error /* Important messages (status, warning, and error) for the user */ {
+/* line 59, ../sass/ie6.scss */
+div.messages, div.status, div.warning, div.error {
   background-image: url(../images/messages-status-ie6.png);
 }
-
-div.warning /* Medium priority messages */ {
+/* line 61, ../sass/ie6.scss */
+div.warning {
   background-image: url(../images/messages-warning-ie6.png);
 }
-
-div.error /* High priority messages. See also the .error declaration below. */ {
+/* line 63, ../sass/ie6.scss */
+div.error {
   background-image: url(../images/messages-error-ie6.png);
 }
 
 /* Topbar region
 -------------------------------------------------------------- */
-
+/* line 70, ../sass/ie6.scss */
 #topbar-wrapper.tb1 .column {
-width: 98%;
-margin-right: 1%;
-margin-left: 1%;
-padding-top: 0;
-padding-bottom: 0;
+  width: 98%;
+  margin-right: 1%;
+  margin-left: 1%;
+  padding-top: 0;
+  padding-bottom: 0;
 }
-
+/* line 76, ../sass/ie6.scss */
 #topbar-wrapper.tb2 .column {
-width: 45.65%;
-margin-right: 1%;
-margin-left: 1%;
-padding-top: 0;
-padding-bottom: 0;
+  width: 45.65%;
+  margin-right: 1%;
+  margin-left: 1%;
+  padding-top: 0;
+  padding-bottom: 0;
 }
-
+/* line 82, ../sass/ie6.scss */
 #topbar-wrapper .block {
-padding-left:0px;
-padding-right:0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 /* Header region
 -------------------------------------------------------------- */
-
-#headercontent-wrapper.hf1 .HeaderLeft,
-#headercontent-wrapper.hf2 .HeaderLeft,
-#headercontent-wrapper.hf3 .HeaderLeft,
-#headercontent-wrapper.hf4 .HeaderLeft{
-width: 65.65%;
-margin-right: 1%;
-margin-left: 1%;
+/* line 90, ../sass/ie6.scss */
+#headercontent-wrapper.hf1 .HeaderLeft, #headercontent-wrapper.hf2 .HeaderLeft, #headercontent-wrapper.hf3 .HeaderLeft, #headercontent-wrapper.hf4 .HeaderLeft {
+  width: 65.65%;
+  margin-right: 1%;
+  margin-left: 1%;
 }
-
-#headercontent-wrapper.hf1.hs1 .HeaderRight,
-#headercontent-wrapper.hf2.hs1 .HeaderRight,
-#headercontent-wrapper.hf3.hs1 .HeaderRight,
-#headercontent-wrapper.hf4.hs1 .HeaderRight {
-width: 25.65%;
-margin-right: 1%;
-margin-left: 1%;
+/* line 94, ../sass/ie6.scss */
+#headercontent-wrapper.hf1.hs1 .HeaderRight, #headercontent-wrapper.hf2.hs1 .HeaderRight, #headercontent-wrapper.hf3.hs1 .HeaderRight, #headercontent-wrapper.hf4.hs1 .HeaderRight {
+  width: 25.65%;
+  margin-right: 1%;
+  margin-left: 1%;
 }
-
-#headercontent-wrapper.hf1.hs0 .HeaderLeft,
-#headercontent-wrapper.hf2.hs0 .HeaderLeft,
-#headercontent-wrapper.hf3.hs0 .HeaderLeft,
-#headercontent-wrapper.hf4.hs0 .HeaderLeft {
-width: 98%;
-margin-right: 1%;
-margin-left: 1%;
+/* line 98, ../sass/ie6.scss */
+#headercontent-wrapper.hf1.hs0 .HeaderLeft, #headercontent-wrapper.hf2.hs0 .HeaderLeft, #headercontent-wrapper.hf3.hs0 .HeaderLeft, #headercontent-wrapper.hf4.hs0 .HeaderLeft {
+  width: 98%;
+  margin-right: 1%;
+  margin-left: 1%;
 }
-
+/* line 102, ../sass/ie6.scss */
 #headercontent-wrapper .block {
-padding-left:0px;
-padding-right:0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
-
 
 /* Navbar region
 -------------------------------------------------------------- */
-
-#navbar-wrapper.nbl1.nbr1 .NavbarLeft,
-#navbar-wrapper.nbl2.nbr1 .NavbarLeft,
-#navbar-wrapper.nbl3.nbr1 .NavbarLeft,
-#navbar-wrapper.nbl4.nbr1 .NavbarLeft,
-#navbar-wrapper.nbl1.nbr2 .NavbarLeft,
-#navbar-wrapper.nbl2.nbr2 .NavbarLeft,
-#navbar-wrapper.nbl3.nbr2 .NavbarLeft,
-#navbar-wrapper.nbl4.nbr2 .NavbarLeft{
-width: 70%;
-margin-right: 1%;
-margin-left: 1%;
+/* line 110, ../sass/ie6.scss */
+#navbar-wrapper.nbl1.nbr1 .NavbarLeft, #navbar-wrapper.nbl2.nbr1 .NavbarLeft, #navbar-wrapper.nbl3.nbr1 .NavbarLeft, #navbar-wrapper.nbl4.nbr1 .NavbarLeft, #navbar-wrapper.nbl1.nbr2 .NavbarLeft, #navbar-wrapper.nbl2.nbr2 .NavbarLeft, #navbar-wrapper.nbl3.nbr2 .NavbarLeft, #navbar-wrapper.nbl4.nbr2 .NavbarLeft {
+  width: 70%;
+  margin-right: 1%;
+  margin-left: 1%;
 }
-
-#navbar-wrapper.nbl1.nbr1 .NavbarRight,
-#navbar-wrapper.nbl2.nbr1 .NavbarRight,
-#navbar-wrapper.nbl3.nbr1 .NavbarRight,
-#navbar-wrapper.nbl4.nbr1 .NavbarRight,
-#navbar-wrapper.nbl1.nbr2 .NavbarRight,
-#navbar-wrapper.nbl2.nbr2 .NavbarRight,
-#navbar-wrapper.nbl3.nbr2 .NavbarRight,
-#navbar-wrapper.nbl4.nbr2 .NavbarRight {
-width: 22.65%;
-margin-right: 1%;
-margin-left: 0;
-padding-top: 0;
-padding-bottom: 0;
-margin-top: 0;
-margin-bottom: 0;
+/* line 114, ../sass/ie6.scss */
+#navbar-wrapper.nbl1.nbr1 .NavbarRight, #navbar-wrapper.nbl2.nbr1 .NavbarRight, #navbar-wrapper.nbl3.nbr1 .NavbarRight, #navbar-wrapper.nbl4.nbr1 .NavbarRight, #navbar-wrapper.nbl1.nbr2 .NavbarRight, #navbar-wrapper.nbl2.nbr2 .NavbarRight, #navbar-wrapper.nbl3.nbr2 .NavbarRight, #navbar-wrapper.nbl4.nbr2 .NavbarRight {
+  width: 22.65%;
+  margin-right: 1%;
+  margin-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
-
-#navbar-wrapper.nbl1.nbr0 .column,
-#navbar-wrapper.nbl2.nbr0 .column,
-#navbar-wrapper.nbl3.nbr0 .column,
-#navbar-wrapper.nbl4.nbr0 .column {
-width: 98%;
-margin-right: 1%;
-margin-left: 1%;
-padding-top: 0;
-padding-bottom: 0;
-margin-top: 0;
-margin-bottom: 0;
+/* line 122, ../sass/ie6.scss */
+#navbar-wrapper.nbl1.nbr0 .column, #navbar-wrapper.nbl2.nbr0 .column, #navbar-wrapper.nbl3.nbr0 .column, #navbar-wrapper.nbl4.nbr0 .column {
+  width: 98%;
+  margin-right: 1%;
+  margin-left: 1%;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
-
-
+/* line 130, ../sass/ie6.scss */
 #navbar-wrapper .block {
-padding-left:0px;
-padding-right:0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
-
-
 
 /* Preface region
 -------------------------------------------------------------- */
-
-
+/* line 137, ../sass/ie6.scss */
 #preface-wrapper {
-padding-top:5px;
+  padding-top: 5px;
 }
-
+/* line 139, ../sass/ie6.scss */
 #preface-wrapper .column {
-float: left;
+  float: left;
 }
-
+/* line 141, ../sass/ie6.scss */
 #preface-wrapper.in1 .column {
-width: 98%;
-margin-right: 1%;
-margin-left: 1%;
-padding-top: 5px;
-padding-bottom: 5px;
+  width: 98%;
+  margin-right: 1%;
+  margin-left: 1%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-
+/* line 147, ../sass/ie6.scss */
 #preface-wrapper.in2 .column {
-width: 45.65%;
-margin-right: 1%;
-margin-left: 1%;
-padding-top: 5px;
-padding-bottom: 5px;
+  width: 45.65%;
+  margin-right: 1%;
+  margin-left: 1%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-
+/* line 153, ../sass/ie6.scss */
 #preface-wrapper.in3 .column {
-width: 29%;
-margin-right: 1%;
-margin-left: 1%;
-padding-top: 5px;
-padding-bottom: 5px;
+  width: 29%;
+  margin-right: 1%;
+  margin-left: 1%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-
+/* line 159, ../sass/ie6.scss */
 #preface-wrapper.in4 .column {
-width: 21%;
-margin-right: 1%;
-margin-left: 1%;
-padding-top: 5px;
-padding-bottom: 5px;
+  width: 21%;
+  margin-right: 1%;
+  margin-left: 1%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-
+/* line 165, ../sass/ie6.scss */
 #preface-wrapper .block {
-padding-left: 0px;
-padding-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
-
 
 /* Preface region
 -------------------------------------------------------------- */
-
-
+/* line 172, ../sass/ie6.scss */
 #feature-wrapper {
-padding-top:5px;
+  padding-top: 5px;
 }
-
+/* line 174, ../sass/ie6.scss */
 #feature-wrapper .column {
-float: left;
+  float: left;
 }
-
+/* line 176, ../sass/ie6.scss */
 #feature-wrapper.in1 .column {
-width: 98%;
-margin-right: 1%;
-margin-left: 1%;
-padding-top: 5px;
-padding-bottom: 5px;
+  width: 98%;
+  margin-right: 1%;
+  margin-left: 1%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-
+/* line 182, ../sass/ie6.scss */
 #feature-wrapper.in2 .column {
-width: 45.65%;
-margin-right: 1%;
-margin-left: 1%;
-padding-top: 5px;
-padding-bottom: 5px;
+  width: 45.65%;
+  margin-right: 1%;
+  margin-left: 1%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-
+/* line 188, ../sass/ie6.scss */
 #feature-wrapper .block {
-padding-left: 0px;
-padding-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
-
 
 /* Content Top region
 -------------------------------------------------------------- */
-
-#content-top-wrapper {
-padding-top:5px;
+/* line 195, ../sass/ie6.scss */
+#content-top-wrapper, #content-bottom-wrapper {
+  padding-top: 5px;
 }
-
-#content-top-wrapper .column {
-float: left;
+/* line 197, ../sass/ie6.scss */
+#content-top-wrapper .column, #content-bottom-wrapper .column {
+  float: left;
 }
-
-#content-top-wrapper.in1 .column {
-width: 98%;
-margin-right: 1%;
-margin-left: 1%;
-padding-top: 5px;
-padding-bottom: 5px;
+/* line 199, ../sass/ie6.scss */
+#content-top-wrapper.in1 .column, #content-bottom-wrapper.in1 .column {
+  width: 98%;
+  margin-right: 1%;
+  margin-left: 1%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-
-#content-top-wrapper.in2 .column {
-width: 45.65%;
-margin-right: 1%;
-margin-left: 1%;
-padding-top: 5px;
-padding-bottom: 5px;
+/* line 205, ../sass/ie6.scss */
+#content-top-wrapper.in2 .column, #content-bottom-wrapper.in2 .column {
+  width: 45.65%;
+  margin-right: 1%;
+  margin-left: 1%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-
-#content-top-wrapper .block {
-padding-left:0;
-padding-right:0;
+/* line 211, ../sass/ie6.scss */
+#content-top-wrapper .block, #content-bottom-wrapper .block {
+  padding-left: 0;
+  padding-right: 0;
 }
-
 
 /* Content Bottom region
 -------------------------------------------------------------- */
-
-#content-bottom-wrapper {
-padding-top:5px;
-}
-
-#content-bottom-wrapper .column {
-float: left;
-}
-
-#content-bottom-wrapper.in1 .column {
-width: 98%;
-margin-right: 1%;
-margin-left: 1%;
-padding-top: 5px;
-padding-bottom: 5px;
-}
-
-#content-bottom-wrapper.in2 .column {
-width: 45.65%;
-margin-right: 1%;
-margin-left: 1%;
-padding-top: 5px;
-padding-bottom: 5px;
-}
-
-#content-bottom-wrapper .block {
-padding-left:0;
-padding-right:0;
-}
-
-
 /* Bottom region
 -------------------------------------------------------------- */
-
+/* line 221, ../sass/ie6.scss */
 #bottomcontent-wrapper {
-padding-top:5px;
+  padding-top: 5px;
 }
-
+/* line 223, ../sass/ie6.scss */
 #bottomcontent-wrapper .column {
-float: left;
+  float: left;
 }
-
+/* line 225, ../sass/ie6.scss */
 #bottomcontent-wrapper.in1 .column {
-width: 98%;
-margin-right: 1%;
-margin-left: 1%;
-padding-top: 5px;
-padding-bottom: 5px;
+  width: 98%;
+  margin-right: 1%;
+  margin-left: 1%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-
+/* line 231, ../sass/ie6.scss */
 #bottomcontent-wrapper.in2 .column {
-width: 45.65%;
-margin-right: 1%;
-margin-left: 1%;
-padding-top: 5px;
-padding-bottom: 5px;
+  width: 45.65%;
+  margin-right: 1%;
+  margin-left: 1%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-
+/* line 237, ../sass/ie6.scss */
 #bottomcontent-wrapper.in3 .column {
-width: 29%;
-margin-right: 1%;
-margin-left: 1%;
-padding-top: 5px;
-padding-bottom: 5px;
+  width: 29%;
+  margin-right: 1%;
+  margin-left: 1%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-
+/* line 243, ../sass/ie6.scss */
 #bottomcontent-wrapper.in4 .column {
-width: 21.5%;
-margin-right: 1%;
-margin-left: 1%;
-padding-top: 5px;
-padding-bottom: 5px;
+  width: 21.5%;
+  margin-right: 1%;
+  margin-left: 1%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-
+/* line 249, ../sass/ie6.scss */
 #bottomcontent-wrapper.in5 .column {
-width: 17.5%;
-margin-right: 1%;
-margin-left: 1%;
-padding-top: 5px;
-padding-bottom: 5px;
+  width: 17.5%;
+  margin-right: 1%;
+  margin-left: 1%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-
+/* line 255, ../sass/ie6.scss */
 #bottomcontent-wrapper.in6 .column {
-width: 13.5%;
-margin-right: 1%;
-margin-left: 1%;
-padding-top: 5px;
-padding-bottom: 5px;
+  width: 13.5%;
+  margin-right: 1%;
+  margin-left: 1%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-
+/* line 261, ../sass/ie6.scss */
 #bottomcontent-wrapper .block {
-padding-left:0;
-padding-right:0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /* Main Bottom region
 -------------------------------------------------------------- */
-
+/* line 268, ../sass/ie6.scss */
 #mainbottom-wrapper {
-padding-top:5px;
+  padding-top: 5px;
 }
-
+/* line 270, ../sass/ie6.scss */
 #mainbottom-wrapper .column {
-float: left;
+  float: left;
 }
-
+/* line 272, ../sass/ie6.scss */
 #mainbottom-wrapper.in1 .column {
-width: 98%;
-margin-right: 1%;
-margin-left: 1%;
-padding-top: 5px;
-padding-bottom: 5px;
+  width: 98%;
+  margin-right: 1%;
+  margin-left: 1%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-
+/* line 278, ../sass/ie6.scss */
 #mainbottom-wrapper.in2 .column {
-width: 45.65%;
-margin-right: 1%;
-margin-left: 1%;
-padding-top: 5px;
-padding-bottom: 5px;
+  width: 45.65%;
+  margin-right: 1%;
+  margin-left: 1%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-
+/* line 284, ../sass/ie6.scss */
 #mainbottom-wrapper.in3 .column {
-width: 29.7%;
-margin-right: 1%;
-margin-left: 1%;
-padding-top: 5px;
-padding-bottom: 5px;
+  width: 29.7%;
+  margin-right: 1%;
+  margin-left: 1%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-
+/* line 290, ../sass/ie6.scss */
 #mainbottom-wrapper.in4 .column {
-width: 21%;
-margin-right: 1%;
-margin-left: 1%;
-padding-top: 5px;
-padding-bottom: 5px;
+  width: 21%;
+  margin-right: 1%;
+  margin-left: 1%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-
+/* line 296, ../sass/ie6.scss */
 #mainbottom-wrapper .block {
-padding-left: 0px;
-padding-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
-
 
 /* Footer region
 -------------------------------------------------------------- */
-
-#footer-content,
-.column.FooterSidebar .footersidebar /* Floating divs */ {
-  display: inline; /* display inline or double your floated margin! [1] */
-  overflow: visible; /* in ie6, overflow auto is broken [2] and so is overflow visible [3] */
+/* line 303, ../sass/ie6.scss */
+#footer-content, .column.FooterSidebar .footersidebar {
+  display: inline;
+  /* display inline or double your floated margin! [1] */
+  overflow: visible;
+  /* in ie6, overflow auto is broken [2] and so is overflow visible [3] */
   overflow-y: visible;
 }
 
 /* Footer Preface region
 -------------------------------------------------------------- */
-
-
+/* line 313, ../sass/ie6.scss */
 #footer-preface-wrapper {
-padding-top:5px;
+  padding-top: 5px;
 }
-
+/* line 315, ../sass/ie6.scss */
 #footer-preface-wrapper .column {
-float: left;
+  float: left;
 }
-
+/* line 317, ../sass/ie6.scss */
 #footer-preface-wrapper.in1 .column {
-width: 98%;
-margin-right: 1%;
-margin-left: 1%;
-padding-top: 5px;
-padding-bottom: 5px;
+  width: 98%;
+  margin-right: 1%;
+  margin-left: 1%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-
+/* line 323, ../sass/ie6.scss */
 #footer-preface-wrapper.in2 .column {
-width: 45.65%;
-margin-right: 1%;
-margin-left: 1%;
-padding-top: 5px;
-padding-bottom: 5px;
+  width: 45.65%;
+  margin-right: 1%;
+  margin-left: 1%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-
+/* line 329, ../sass/ie6.scss */
 #footer-preface-wrapper.in3 .column {
-width: 29%;
-margin-right: 1%;
-margin-left: 1%;
-padding-top: 5px;
-padding-bottom: 5px;
+  width: 29%;
+  margin-right: 1%;
+  margin-left: 1%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-
+/* line 335, ../sass/ie6.scss */
 #footer-preface-wrapper.in4 .column {
-width: 21.5%;
-margin-right: 1%;
-margin-left: 1%;
-padding-top: 5px;
-padding-bottom: 5px;
+  width: 21.5%;
+  margin-right: 1%;
+  margin-left: 1%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-
+/* line 341, ../sass/ie6.scss */
 #footer-preface-wrapper .block {
-padding-left:0;
-padding-right:0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /* Footer Content Bottom region
 -------------------------------------------------------------- */
-
+/* line 348, ../sass/ie6.scss */
 #footer-content-bottom-wrapper {
-padding-top:5px;
+  padding-top: 5px;
 }
-
+/* line 350, ../sass/ie6.scss */
 #footer-content-bottom-wrapper .column {
-float: left;
+  float: left;
 }
-
+/* line 352, ../sass/ie6.scss */
 #footer-content-bottom-wrapper.in1 .column {
-width: 98%;
-margin-right: 1%;
-margin-left: 1%;
-padding-top: 5px;
-padding-bottom: 5px;
+  width: 98%;
+  margin-right: 1%;
+  margin-left: 1%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-
+/* line 358, ../sass/ie6.scss */
 #footer-content-bottom-wrapper .block {
-padding-left:0;
-padding-right:0;
+  padding-left: 0;
+  padding-right: 0;
 }
-
-
 
 /*
  * REFERENCES
@@ -548,14 +482,7 @@ padding-right:0;
 
  *
  */
-
-
+/* line 374, ../sass/ie6.scss */
 #superfish .menu {
-float:none;
+  float: none;
 }
-
-
-#navigation .section {
-
-}
-

@@ -1,0 +1,142 @@
+/* $Id: jcarousel-default.css,v 1.1.2.1 2010/11/26 22:04:31 quicksketch Exp $ */
+
+/**
+ * A simple sample carousel skin.
+ *
+ * This skin includes a sample arrows.svg file that may be edited with the free
+ * illustration application InkScape (http://inkscape.org).
+ *
+ * CSS and icons by Nathan Haug.
+ */
+
+.jcarousel-container-horizontal {
+  width: 440px;
+  height: 102px;
+  padding: 20px 40px;
+  margin: auto; }
+
+.jcarouselwide .jcarousel-container-horizontal {
+  width: 880px;
+  height: 102px;
+  padding: 20px 40px;
+  margin: auto; }
+
+.jcarousel-container-vertical {
+  width: 102px;
+  height: 440px;
+  padding: 40px 20px;
+  margin: auto; }
+
+.jcarousel-clip-horizontal {
+  width: 440px; }
+
+.jcarouselwide .jcarousel-clip-horizontal {
+  width: 880px; }
+
+.jcarousel-clip-vertical {
+  height: 440px; }
+
+.jcarousel-item {
+  padding: 0;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border: 1px solid #CCC;
+  list-style: none;
+  background: #fff none; }
+
+.jcarousel-item-horizontal {
+  margin: 0 4px; }
+
+.jcarousel-item-vertical {
+  margin: 4px 0; }
+
+.jcarousel-item-placeholder {
+  background: white url(throbber.gif) no-repeat center center;
+  color: #000; }
+
+/**
+ * Buttons
+ */
+
+.jcarousel-next, .jcarousel-prev {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url(../images/arrows.png); }
+
+/**
+ *  Horizontal Buttons
+ */
+
+.jcarousel-prev-horizontal {
+  position: absolute;
+  top: 55px;
+  left: 10px;
+  background-position: 0 0;
+  &:hover {
+    background-position: -32px 0; }
+  &:active {
+    background-position: -64px 0; } }
+
+.jcarousel-prev-disabled-horizontal {
+  cursor: default;
+  background-position: -96px 0;
+  &:hover, &:active {
+    cursor: default;
+    background-position: -96px 0; } }
+
+.jcarousel-next-horizontal {
+  position: absolute;
+  top: 55px;
+  right: 10px;
+  background-position: 0 -32px;
+  &:hover {
+    background-position: -32px -32px; }
+  &:active {
+    background-position: -64px -32px; } }
+
+.jcarousel-next-disabled-horizontal {
+  cursor: default;
+  background-position: -96px -32px;
+  &:hover, &:active {
+    cursor: default;
+    background-position: -96px -32px; } }
+
+/**
+ *  Vertical Buttons
+ */
+
+.jcarousel-prev-vertical {
+  position: absolute;
+  top: 10px;
+  left: 55px;
+  background-position: 0 -64px;
+  &:hover {
+    background-position: -32px -64px; }
+  &:active {
+    background-position: -64px -64px; } }
+
+.jcarousel-prev-disabled-vertical {
+  cursor: default;
+  background-position: -96px -64px;
+  &:hover, &:active {
+    cursor: default;
+    background-position: -96px -64px; } }
+
+.jcarousel-next-vertical {
+  position: absolute;
+  bottom: 10px;
+  left: 55px;
+  background-position: 0 -96px;
+  &:hover {
+    background-position: -32px -96px; }
+  &:active {
+    background-position: -64px -96px; } }
+
+.jcarousel-next-disabled-vertical {
+  cursor: default;
+  background-position: -96px -96px;
+  &:hover, &:active {
+    cursor: default;
+    background-position: -96px -96px; } }

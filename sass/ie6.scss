@@ -1,0 +1,377 @@
+/* $Id: ie6.css,v 1.6 2009/11/04 20:16:50 johnalbin Exp $ */
+
+/**
+ * @file
+ * CSS targeted specifically for Internet Explorer 5 and 6 for Windows.
+ *
+ * Any CSS in this file will override the rules specified in the ie.css file.
+ */
+
+/*
+ * Layout CSS
+ */
+
+body {
+  text-align: center;
+  /* 1st part of IE5/IE6quirks centering hack */
+  width: expression(document.documentElement.clientWidth < 1011 ? "1011px" : "auto"); }
+
+#page {
+  text-align: left;
+  /* LTR */
+  /* 2nd part of IE5/IE6quirks centering hack */ }
+
+#main-wrapper, #footer-wrapper {
+  zoom: 1;
+  /* Otherwise with a liquid layout, sidebars disappear when resizing the windows in IE6 */ }
+
+#content, .region-sidebar-first, .region-sidebar-second {
+  display: inline;
+  /* display inline or double your floated margin! [1] */
+  overflow: hidden;
+  /* in ie6, overflow auto is broken [2] and so is overflow visible [3] */
+  overflow-y: visible; }
+
+#navigation {
+  overflow: visible;
+  .section {
+    overflow: visible; } }
+
+/*
+ * Tabs
+ */
+
+ul {
+  &.primary li a, &.secondary li a {
+    display: inline-block;
+    /* Otherwise the blocks mistakenly get 100% width in IE6 */
+    cursor: pointer;
+    .tab {
+      display: inline-block;
+      /* Otherwise the blocks mistakenly get 100% width in IE6 */
+      cursor: pointer; } } }
+
+/*
+ * Messages - IE 5 and 6 don't support PNGs with alpha transparency.
+ */
+
+div {
+  &.messages, &.status, &.warning, &.error {
+    background-image: url(../images/messages-status-ie6.png); }
+  &.warning {
+    background-image: url(../images/messages-warning-ie6.png); }
+  &.error {
+    background-image: url(../images/messages-error-ie6.png); } }
+
+/* Topbar region
+-------------------------------------------------------------- */
+
+#topbar-wrapper {
+  &.tb1 .column {
+    width: 98%;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding-top: 0;
+    padding-bottom: 0; }
+  &.tb2 .column {
+    width: 45.65%;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding-top: 0;
+    padding-bottom: 0; }
+  .block {
+    padding-left: 0px;
+    padding-right: 0px; } }
+
+/* Header region
+-------------------------------------------------------------- */
+
+#headercontent-wrapper {
+  &.hf1 .HeaderLeft, &.hf2 .HeaderLeft, &.hf3 .HeaderLeft, &.hf4 .HeaderLeft {
+    width: 65.65%;
+    margin-right: 1%;
+    margin-left: 1%; }
+  &.hf1.hs1 .HeaderRight, &.hf2.hs1 .HeaderRight, &.hf3.hs1 .HeaderRight, &.hf4.hs1 .HeaderRight {
+    width: 25.65%;
+    margin-right: 1%;
+    margin-left: 1%; }
+  &.hf1.hs0 .HeaderLeft, &.hf2.hs0 .HeaderLeft, &.hf3.hs0 .HeaderLeft, &.hf4.hs0 .HeaderLeft {
+    width: 98%;
+    margin-right: 1%;
+    margin-left: 1%; }
+  .block {
+    padding-left: 0px;
+    padding-right: 0px; } }
+
+/* Navbar region
+-------------------------------------------------------------- */
+
+#navbar-wrapper {
+  &.nbl1.nbr1 .NavbarLeft, &.nbl2.nbr1 .NavbarLeft, &.nbl3.nbr1 .NavbarLeft, &.nbl4.nbr1 .NavbarLeft, &.nbl1.nbr2 .NavbarLeft, &.nbl2.nbr2 .NavbarLeft, &.nbl3.nbr2 .NavbarLeft, &.nbl4.nbr2 .NavbarLeft {
+    width: 70%;
+    margin-right: 1%;
+    margin-left: 1%; }
+  &.nbl1.nbr1 .NavbarRight, &.nbl2.nbr1 .NavbarRight, &.nbl3.nbr1 .NavbarRight, &.nbl4.nbr1 .NavbarRight, &.nbl1.nbr2 .NavbarRight, &.nbl2.nbr2 .NavbarRight, &.nbl3.nbr2 .NavbarRight, &.nbl4.nbr2 .NavbarRight {
+    width: 22.65%;
+    margin-right: 1%;
+    margin-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0; }
+  &.nbl1.nbr0 .column, &.nbl2.nbr0 .column, &.nbl3.nbr0 .column, &.nbl4.nbr0 .column {
+    width: 98%;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0; }
+  .block {
+    padding-left: 0px;
+    padding-right: 0px; } }
+
+/* Preface region
+-------------------------------------------------------------- */
+
+#preface-wrapper {
+  padding-top: 5px;
+  .column {
+    float: left; }
+  &.in1 .column {
+    width: 98%;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  &.in2 .column {
+    width: 45.65%;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  &.in3 .column {
+    width: 29%;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  &.in4 .column {
+    width: 21%;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  .block {
+    padding-left: 0px;
+    padding-right: 0px; } }
+
+/* Preface region
+-------------------------------------------------------------- */
+
+#feature-wrapper {
+  padding-top: 5px;
+  .column {
+    float: left; }
+  &.in1 .column {
+    width: 98%;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  &.in2 .column {
+    width: 45.65%;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  .block {
+    padding-left: 0px;
+    padding-right: 0px; } }
+
+/* Content Top region
+-------------------------------------------------------------- */
+
+#content-top-wrapper, #content-bottom-wrapper {
+  padding-top: 5px;
+  .column {
+    float: left; }
+  &.in1 .column {
+    width: 98%;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  &.in2 .column {
+    width: 45.65%;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  .block {
+    padding-left: 0;
+    padding-right: 0; } }
+
+/* Content Bottom region
+-------------------------------------------------------------- */
+
+/* Bottom region
+-------------------------------------------------------------- */
+
+#bottomcontent-wrapper {
+  padding-top: 5px;
+  .column {
+    float: left; }
+  &.in1 .column {
+    width: 98%;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  &.in2 .column {
+    width: 45.65%;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  &.in3 .column {
+    width: 29%;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  &.in4 .column {
+    width: 21.5%;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  &.in5 .column {
+    width: 17.5%;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  &.in6 .column {
+    width: 13.5%;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  .block {
+    padding-left: 0;
+    padding-right: 0; } }
+
+/* Main Bottom region
+-------------------------------------------------------------- */
+
+#mainbottom-wrapper {
+  padding-top: 5px;
+  .column {
+    float: left; }
+  &.in1 .column {
+    width: 98%;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  &.in2 .column {
+    width: 45.65%;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  &.in3 .column {
+    width: 29.7%;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  &.in4 .column {
+    width: 21%;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  .block {
+    padding-left: 0px;
+    padding-right: 0px; } }
+
+/* Footer region
+-------------------------------------------------------------- */
+
+#footer-content, .column.FooterSidebar .footersidebar {
+  display: inline;
+  /* display inline or double your floated margin! [1] */
+  overflow: visible;
+  /* in ie6, overflow auto is broken [2] and so is overflow visible [3] */
+  overflow-y: visible; }
+
+/* Footer Preface region
+-------------------------------------------------------------- */
+
+#footer-preface-wrapper {
+  padding-top: 5px;
+  .column {
+    float: left; }
+  &.in1 .column {
+    width: 98%;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  &.in2 .column {
+    width: 45.65%;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  &.in3 .column {
+    width: 29%;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  &.in4 .column {
+    width: 21.5%;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  .block {
+    padding-left: 0;
+    padding-right: 0; } }
+
+/* Footer Content Bottom region
+-------------------------------------------------------------- */
+
+#footer-content-bottom-wrapper {
+  padding-top: 5px;
+  .column {
+    float: left; }
+  &.in1 .column {
+    width: 98%;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  .block {
+    padding-left: 0;
+    padding-right: 0; } }
+
+/*
+ * REFERENCES
+ *
+
+1. http://www.positioniseverything.net/explorer/doubled-margin.html
+2. http://browservulsel.blogspot.com/2005/04/ie-overflow-auto-scrollbar-overlap.html
+3. http://www.howtocreate.co.uk/wrongWithIE/?chapter=overflow%3Avisible%3B
+4. http://www.ryanbrill.com/archives/multiple-classes-in-ie
+
+ *
+ */
+
+#superfish .menu {
+  float: none; }
+
+#navigation .section {}
