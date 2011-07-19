@@ -66,6 +66,10 @@ function drush_vretheme($name = NULL, $machine_name = NULL) {
   // Make a fresh copy of the original starter kit.
   drush_op('vretheme_copy', $vretheme_path . '/STARTERKIT', $subtheme_path);
 
+  // Rename the .css file.
+  $style_css_file = $subtheme_path . '/css/' . $machine_name . '.css';
+  drush_op('rename', $subtheme_path . '/css/STARTERKIT.css', $style_css_file);
+
   // Replace all occurrences of 'STARTERKIT' with the machine name of our sub theme.
   drush_op('vretheme_file_str_replace', $subtheme_path . '/STARTERKIT.info.txt', 'STARTERKIT', $machine_name);  
 
