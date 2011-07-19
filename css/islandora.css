@@ -41,3 +41,7 @@
 .fedora_detailed_list table td {
       vertical-align: bottom;
 }
+
+.fedora_detailed_list select {
+width: 100px;
+}
