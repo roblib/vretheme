@@ -5,13 +5,13 @@
  *
  * Add wireframes to the basic layout elements.
  */
-/* line 11, ../sass/wireframes.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/wireframes\.scss}line{font-family:\0000311}}
 .with-wireframes #header .section, .with-wireframes #content .section, .with-wireframes #navigation .section, .with-wireframes .region-sidebar-first .section, .with-wireframes .region-sidebar-second .section, .with-wireframes #footer .section {
   margin: 1px;
   padding: 2px;
   border: 1px solid #ccc;
 }
-/* line 15, ../sass/wireframes.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/wireframes\.scss}line{font-family:\0000315}}
 .with-wireframes .region-page-closure {
   margin-top: 1px;
   padding: 2px;

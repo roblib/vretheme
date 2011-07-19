@@ -6,7 +6,7 @@
 /*
  * Layout CSS
  */
-/* line 12, ../sass/ie6-rtl.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/ie6-rtl\.scss}line{font-family:\0000312}}
 #page {
   text-align: right;
   /* 2nd part of IE5/IE6quirks centering hack */

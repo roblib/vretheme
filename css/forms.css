@@ -1,44 +1,43 @@
-/* $Id: forms.css,v 1.3 2009/08/12 08:37:42 johnalbin Exp $ */
 /**
  * @file
  * Form Styling
  */
-/* line 8, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\000039}}
 .form-item, .form-checkboxes, .form-radios {
   margin: 1em 0;
 }
 
-/* line 12, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\0000313}}
 .form-item input.error, .form-item textarea.error, .form-item select.error {
   border: 2px solid #c00;
 }
-/* line 14, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\0000315}}
 .form-item label {
   display: block;
   font-weight: bold;
 }
-/* line 17, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\0000318}}
 .form-item label.option {
   display: inline;
   font-weight: normal;
 }
 
-/* line 21, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\0000322}}
 .form-required {
   color: #c00;
 }
 
-/* line 24, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\0000325}}
 .form-item .description {
   font-size: 0.85em;
 }
 
-/* line 27, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\0000328}}
 .form-checkboxes .form-item, .form-radios .form-item {
   margin: 0.4em 0;
 }
 
-/* line 33, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\0000334}}
 .container-inline div, .container-inline label {
   display: inline;
 }
@@ -46,7 +45,7 @@
 /*
  * Search (search-theme-form.tpl.php)
  */
-/* line 42, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\0000343}}
 #edit-search-theme-form-1-wrapper label {
   display: none;
 }
@@ -54,7 +53,7 @@
 /*
  * Search (search-block-form.tpl.php)
  */
-/* line 51, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\0000352}}
 #edit-search-block-form-1-wrapper label {
   display: none;
 }
@@ -62,24 +61,24 @@
 /*
  * Drupal's default login form block
  */
-/* line 58, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\0000359}}
 #user-login-form {
   text-align: left;
   /* LTR */
 }
-/* line 61, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\0000362}}
 #user-login-form ul {
   margin-bottom: 0;
   /* Position OpenID's ul next to the rest of the links. */
 }
-/* line 65, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\0000366}}
 #user-login-form li.openid-link {
   margin-top: 1em;
   margin-left: -20px;
   /* LTR */
   /* Un-do some of the padding on the ul list. */
 }
-/* line 70, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\0000371}}
 #user-login-form li.user-link {
   margin-top: 1em;
 }
@@ -90,11 +89,11 @@
  * The default styling for the OpenID login link seems to assume Garland's
  * styling of list items.
  */
-/* line 81, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\0000382}}
 #user-login ul {
   margin: 1em 0;
 }
-/* line 84, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\0000385}}
 #user-login li.openid-link, #user-login li.user-link {
   margin-left: -2em;
   /* LTR */
@@ -107,11 +106,11 @@
  * We overrode these styles in html-elements.css, but restore them for the admin
  * section of the site.
  */
-/* line 97, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\0000398}}
 form tbody {
   border-top: 1px solid #ccc;
 }
-/* line 99, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003100}}
 form th, form thead th {
   text-align: left;
   /* LTR */
@@ -121,57 +120,58 @@ form th, form thead th {
   padding: 0.3em 0.5em;
   background-color: #ececec;
 }
-/* line 107, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003108}}
 form tbody th {
   border-bottom: 1px solid #ccc;
 }
 
-/* line 110, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003111}}
 .form-item, .form-checkboxes, .form-radios {
   margin: 0.5em 0;
 }
 
-/* line 113, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003114}}
 .form-select option {
   padding-top: 1px;
   padding-bottom: 1px;
 }
 
 /* Search Block */
-/* line 120, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003121}}
 #header #google-cse-searchbox-form .form-item, #header #islandora-solr-simple-search-form .form-item {
   margin: 0px;
   float: left;
 }
-/* line 123, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003124}}
 #header #google-cse-searchbox-form .form-item label, #header #islandora-solr-simple-search-form .form-item label, #header #search-box .form-item label, #header #search-block-form .form-item label {
   color: #fff;
   /* Wrapper for the search form */
 }
-/* line 126, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003127}}
 #header #google-cse-searchbox-form .form-item input, #header #islandora-solr-simple-search-form .form-item input, #header #search-box .form-item input, #header #search-block-form .form-item input {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
   margin: 4px 0px 0 0;
   width: 200px;
   display: inline;
   height: 17px;
   font-size: 9.5pt;
   color: #CCC;
-  -moz-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-top-right: 3px;
-  border-top-left: 3px;
-  -webkit-border-radius: 3px;
   padding-right: 20px;
   padding-left: 5px;
   border: 1px solid #888;
   background: white url(../images/insearch-magglass.png) no-repeat right center;
 }
-/* line 142, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003139}}
 #header #google-cse-searchbox-form .form-item input:hover, #header #islandora-solr-simple-search-form .form-item input:hover, #header #search-box .form-item input:hover, #header #search-block-form .form-item input:hover {
   background: white url(../images/insearch-magglass.png) no-repeat right center;
   color: #FFFFFF;
 }
-/* line 145, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003142}}
 #header #google-cse-searchbox-form .form-item input:focus, #header #islandora-solr-simple-search-form .form-item input:focus, #header #search-box .form-item input:focus, #header #search-block-form .form-item input:focus {
   -moz-box-shadow: 0 0 3px #000000;
   background: white url(../images/insearch-magglass.png) no-repeat right center;
@@ -182,7 +182,7 @@ form tbody th {
   outline-width: medium;
   text-shadow: 0 1px 0 #FFFFFF;
 }
-/* line 154, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003151}}
 #header #google-cse-searchbox-form input.form-submit, #header #islandora-solr-simple-search-form input.form-submit, #header #search-form input.form-submit, #header #search-box input.form-submit, #header #search-block-form input.form-submit {
   height: 21px;
   width: 21px;
@@ -193,28 +193,28 @@ form tbody th {
   display: none;
   clear: right;
 }
-/* line 163, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003160}}
 #header #google-cse-searchbox-form.block-search .form-item textarea:focus {
   border: 2px solid #2E5067;
 }
-/* line 166, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003163}}
 #header #islandora-solr-simple-search-form.block-search .form-item textarea:focus, #header #islandora-solr-simple-search-form.block-search .form-item textarea:focus input:focus {
   border: 2px solid #2E5067;
 }
-/* line 169, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003166}}
 #header #search-form.block-search .form-item textarea:focus, #header #search-form.block-search .form-item textarea:focus input:focus {
   border: 2px solid #2E5067;
 }
-/* line 171, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003168}}
 #header #search-block-form .block-search .form-item textarea:focus {
   border: 2px solid #2E5067;
 }
-/* line 173, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003170}}
 #header #search-block-form .block-search .form-item textarea:focus input:focus {
   border: 2px solid #2E5067;
 }
 
-/* line 176, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003173}}
 #navbar-wrapper .NavbarRight form {
   padding: 2px 0;
 }
@@ -224,8 +224,25 @@ CSS3 GITHUB Buttons for Drupal 6
 Licensed under Unlicense 
 ------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------------------- form-submit */
-/* line 186, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003188}}
+.content-overview-links a,
+.print_html a,
+.comment_add a,
+.node_read_more a,
+.book_printer a,
 .book_add_child a {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f2f2f2), color-stop(100%, #dddddd));
+  background-image: -webkit-linear-gradient(top, #f2f2f2, #dddddd);
+  background-image: -moz-linear-gradient(top, #f2f2f2, #dddddd);
+  background-image: -o-linear-gradient(top, #f2f2f2, #dddddd);
+  background-image: -ms-linear-gradient(top, #f2f2f2, #dddddd);
+  background-image: linear-gradient(top, #f2f2f2, #dddddd);
   position: relative;
   overflow: visible;
   display: inline-block;
@@ -239,16 +256,9 @@ Licensed under Unlicense
   outline: none;
   border: 1px solid #bbb;
   background-color: #eaeaea;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
-  background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
-  background-image: -o-linear-gradient(#f2f2f2, #dddddd);
-  background-image: linear-gradient(#f2f2f2, #dddddd);
   -webkit-background-clip: padding;
   -moz-background-clip: padding;
   background-clip: padding-box;
-  -webkit-border-radius: 0.2em;
-  -moz-border-radius: 0.2em;
-  border-radius: 0.2em;
   line-height: 1.25em;
   /* IE hacks */
   zoom: 1;
@@ -256,8 +266,24 @@ Licensed under Unlicense
   padding: 0.34em 1em;
   margin-top: 0.2em;
 }
-/* line 216, ../sass/forms.scss */
-.book_add_child a:link, .book_add_child a:visited {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003213}}
+.content-overview-links a:link, .content-overview-links a:visited,
+.print_html a:link,
+.print_html a:visited,
+.comment_add a:link,
+.comment_add a:visited,
+.node_read_more a:link,
+.node_read_more a:visited,
+.book_printer a:link,
+.book_printer a:visited,
+.book_add_child a:link,
+.book_add_child a:visited {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
   position: relative;
   overflow: visible;
   display: inline-block;
@@ -271,81 +297,15 @@ Licensed under Unlicense
   outline: none;
   border: 1px solid #bbb;
   background-color: #eaeaea;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
-  background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
-  background-image: -o-linear-gradient(#f2f2f2, #dddddd);
-  background-image: linear-gradient(#f2f2f2, #dddddd);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f2f2f2), color-stop(100%, #dddddd));
+  background-image: -webkit-linear-gradient(top, #f2f2f2, #dddddd);
+  background-image: -moz-linear-gradient(top, #f2f2f2, #dddddd);
+  background-image: -o-linear-gradient(top, #f2f2f2, #dddddd);
+  background-image: -ms-linear-gradient(top, #f2f2f2, #dddddd);
+  background-image: linear-gradient(top, #f2f2f2, #dddddd);
   -webkit-background-clip: padding;
   -moz-background-clip: padding;
   background-clip: padding-box;
-  -webkit-border-radius: 0.2em;
-  -moz-border-radius: 0.2em;
-  border-radius: 0.2em;
-  line-height: 1.25em;
-  /* IE hacks */
-  zoom: 1;
-  *display: inline;
-  padding: 0.34em 1em;
-  margin-top: 0.2em;
-}
-
-/* line 247, ../sass/forms.scss */
-.book_printer a {
-  position: relative;
-  overflow: visible;
-  display: inline-block;
-  margin: 0;
-  text-decoration: none;
-  text-shadow: 1px 1px 0 #fff;
-  font-size: 94%;
-  color: #333;
-  white-space: nowrap;
-  cursor: pointer;
-  outline: none;
-  border: 1px solid #bbb;
-  background-color: #eaeaea;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
-  background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
-  background-image: -o-linear-gradient(#f2f2f2, #dddddd);
-  background-image: linear-gradient(#f2f2f2, #dddddd);
-  -webkit-background-clip: padding;
-  -moz-background-clip: padding;
-  background-clip: padding-box;
-  -webkit-border-radius: 0.2em;
-  -moz-border-radius: 0.2em;
-  border-radius: 0.2em;
-  line-height: 1.25em;
-  /* IE hacks */
-  zoom: 1;
-  *display: inline;
-  padding: 0.34em 1em;
-  margin-top: 0.2em;
-}
-/* line 277, ../sass/forms.scss */
-.book_printer a:link, .book_printer a:visited {
-  position: relative;
-  overflow: visible;
-  display: inline-block;
-  margin: 0;
-  text-decoration: none;
-  text-shadow: 1px 1px 0 #fff;
-  font-size: 94%;
-  color: #333;
-  white-space: nowrap;
-  cursor: pointer;
-  outline: none;
-  border: 1px solid #bbb;
-  background-color: #eaeaea;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
-  background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
-  background-image: -o-linear-gradient(#f2f2f2, #dddddd);
-  background-image: linear-gradient(#f2f2f2, #dddddd);
-  -webkit-background-clip: padding;
-  -moz-background-clip: padding;
-  background-clip: padding-box;
-  -webkit-border-radius: 0.2em;
-  -moz-border-radius: 0.2em;
-  border-radius: 0.2em;
   line-height: 1.25em;
   /* IE hacks */
   zoom: 1;
@@ -354,202 +314,7 @@ Licensed under Unlicense
   margin-top: 0.2em;
 }
 
-/* line 308, ../sass/forms.scss */
-.node_read_more a {
-  position: relative;
-  overflow: visible;
-  display: inline-block;
-  margin: 0;
-  text-decoration: none;
-  text-shadow: 1px 1px 0 #fff;
-  font-size: 94%;
-  color: #333;
-  white-space: nowrap;
-  cursor: pointer;
-  outline: none;
-  border: 1px solid #bbb;
-  background-color: #eaeaea;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
-  background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
-  background-image: -o-linear-gradient(#f2f2f2, #dddddd);
-  background-image: linear-gradient(#f2f2f2, #dddddd);
-  -webkit-background-clip: padding;
-  -moz-background-clip: padding;
-  background-clip: padding-box;
-  -webkit-border-radius: 0.2em;
-  -moz-border-radius: 0.2em;
-  border-radius: 0.2em;
-  line-height: 1.25em;
-  /* IE hacks */
-  zoom: 1;
-  *display: inline;
-  padding: 0.34em 1em;
-  margin-top: 0.2em;
-}
-/* line 338, ../sass/forms.scss */
-.node_read_more a:link, .node_read_more a:visited {
-  position: relative;
-  overflow: visible;
-  display: inline-block;
-  margin: 0;
-  text-decoration: none;
-  text-shadow: 1px 1px 0 #fff;
-  font-size: 94%;
-  color: #333;
-  white-space: nowrap;
-  cursor: pointer;
-  outline: none;
-  border: 1px solid #bbb;
-  background-color: #eaeaea;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
-  background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
-  background-image: -o-linear-gradient(#f2f2f2, #dddddd);
-  background-image: linear-gradient(#f2f2f2, #dddddd);
-  -webkit-background-clip: padding;
-  -moz-background-clip: padding;
-  background-clip: padding-box;
-  -webkit-border-radius: 0.2em;
-  -moz-border-radius: 0.2em;
-  border-radius: 0.2em;
-  line-height: 1.25em;
-  /* IE hacks */
-  zoom: 1;
-  *display: inline;
-  padding: 0.34em 1em;
-  margin-top: 0.2em;
-}
-
-/* line 369, ../sass/forms.scss */
-.comment_add a {
-  position: relative;
-  overflow: visible;
-  display: inline-block;
-  margin: 0;
-  text-decoration: none;
-  text-shadow: 1px 1px 0 #fff;
-  font-size: 94%;
-  color: #333;
-  white-space: nowrap;
-  cursor: pointer;
-  outline: none;
-  border: 1px solid #bbb;
-  background-color: #eaeaea;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
-  background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
-  background-image: -o-linear-gradient(#f2f2f2, #dddddd);
-  background-image: linear-gradient(#f2f2f2, #dddddd);
-  -webkit-background-clip: padding;
-  -moz-background-clip: padding;
-  background-clip: padding-box;
-  -webkit-border-radius: 0.2em;
-  -moz-border-radius: 0.2em;
-  border-radius: 0.2em;
-  line-height: 1.25em;
-  /* IE hacks */
-  zoom: 1;
-  *display: inline;
-  padding: 0.34em 1em;
-  margin-top: 0.2em;
-}
-/* line 399, ../sass/forms.scss */
-.comment_add a:link, .comment_add a:visited {
-  position: relative;
-  overflow: visible;
-  display: inline-block;
-  margin: 0;
-  text-decoration: none;
-  text-shadow: 1px 1px 0 #fff;
-  font-size: 94%;
-  color: #333;
-  white-space: nowrap;
-  cursor: pointer;
-  outline: none;
-  border: 1px solid #bbb;
-  background-color: #eaeaea;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
-  background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
-  background-image: -o-linear-gradient(#f2f2f2, #dddddd);
-  background-image: linear-gradient(#f2f2f2, #dddddd);
-  -webkit-background-clip: padding;
-  -moz-background-clip: padding;
-  background-clip: padding-box;
-  -webkit-border-radius: 0.2em;
-  -moz-border-radius: 0.2em;
-  border-radius: 0.2em;
-  line-height: 1.25em;
-  /* IE hacks */
-  zoom: 1;
-  *display: inline;
-  padding: 0.34em 1em;
-  margin-top: 0.2em;
-}
-
-/* line 430, ../sass/forms.scss */
-.print_html a {
-  position: relative;
-  overflow: visible;
-  display: inline-block;
-  margin: 0;
-  text-decoration: none;
-  text-shadow: 1px 1px 0 #fff;
-  font-size: 94%;
-  color: #333;
-  white-space: nowrap;
-  cursor: pointer;
-  outline: none;
-  border: 1px solid #bbb;
-  background-color: #eaeaea;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
-  background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
-  background-image: -o-linear-gradient(#f2f2f2, #dddddd);
-  background-image: linear-gradient(#f2f2f2, #dddddd);
-  -webkit-background-clip: padding;
-  -moz-background-clip: padding;
-  background-clip: padding-box;
-  -webkit-border-radius: 0.2em;
-  -moz-border-radius: 0.2em;
-  border-radius: 0.2em;
-  line-height: 1.25em;
-  /* IE hacks */
-  zoom: 1;
-  *display: inline;
-  padding: 0.34em 1em;
-  margin-top: 0.2em;
-}
-/* line 460, ../sass/forms.scss */
-.print_html a:link, .print_html a:visited {
-  position: relative;
-  overflow: visible;
-  display: inline-block;
-  margin: 0;
-  text-decoration: none;
-  text-shadow: 1px 1px 0 #fff;
-  font-size: 94%;
-  color: #333;
-  white-space: nowrap;
-  cursor: pointer;
-  outline: none;
-  border: 1px solid #bbb;
-  background-color: #eaeaea;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
-  background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
-  background-image: -o-linear-gradient(#f2f2f2, #dddddd);
-  background-image: linear-gradient(#f2f2f2, #dddddd);
-  -webkit-background-clip: padding;
-  -moz-background-clip: padding;
-  background-clip: padding-box;
-  -webkit-border-radius: 0.2em;
-  -moz-border-radius: 0.2em;
-  border-radius: 0.2em;
-  line-height: 1.25em;
-  /* IE hacks */
-  zoom: 1;
-  *display: inline;
-  padding: 0.34em 1em;
-  margin-top: 0.2em;
-}
-
-/* line 491, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003239}}
 .button, block-admin-configure .form-submit, input[type=submit], #views-ajax-pad .form-buttons .form-submit, .teaser-button {
   position: relative;
   overflow: visible;
@@ -564,16 +329,21 @@ Licensed under Unlicense
   outline: none;
   border: 1px solid #bbb;
   background-color: #eaeaea;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
-  background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
-  background-image: -o-linear-gradient(#f2f2f2, #dddddd);
-  background-image: linear-gradient(#f2f2f2, #dddddd);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f2f2f2), color-stop(100%, #dddddd));
+  background-image: -webkit-linear-gradient(top, #f2f2f2, #dddddd);
+  background-image: -moz-linear-gradient(top, #f2f2f2, #dddddd);
+  background-image: -o-linear-gradient(top, #f2f2f2, #dddddd);
+  background-image: -ms-linear-gradient(top, #f2f2f2, #dddddd);
+  background-image: linear-gradient(top, #f2f2f2, #dddddd);
   -webkit-background-clip: padding;
   -moz-background-clip: padding;
   background-clip: padding-box;
-  -webkit-border-radius: 0.2em;
-  -moz-border-radius: 0.2em;
-  border-radius: 0.2em;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
   line-height: 1.25em;
   /* IE hacks */
   zoom: 1;
@@ -582,76 +352,11 @@ Licensed under Unlicense
   margin-top: 0.2em;
 }
 
-/* line 522, ../sass/forms.scss */
-.content-overview-links a {
-  position: relative;
-  overflow: visible;
-  display: inline-block;
-  margin: 0;
-  text-decoration: none;
-  text-shadow: 1px 1px 0 #fff;
-  font-size: 94%;
-  color: #333;
-  white-space: nowrap;
-  cursor: pointer;
-  outline: none;
-  border: 1px solid #bbb;
-  background-color: #eaeaea;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
-  background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
-  background-image: -o-linear-gradient(#f2f2f2, #dddddd);
-  background-image: linear-gradient(#f2f2f2, #dddddd);
-  -webkit-background-clip: padding;
-  -moz-background-clip: padding;
-  background-clip: padding-box;
-  -webkit-border-radius: 0.2em;
-  -moz-border-radius: 0.2em;
-  border-radius: 0.2em;
-  line-height: 1.25em;
-  /* IE hacks */
-  zoom: 1;
-  *display: inline;
-  padding: 0.34em 1em;
-  margin-top: 0.2em;
-}
-/* line 552, ../sass/forms.scss */
-.content-overview-links a:link, .content-overview-links a:visited {
-  position: relative;
-  overflow: visible;
-  display: inline-block;
-  margin: 0;
-  text-decoration: none;
-  text-shadow: 1px 1px 0 #fff;
-  font-size: 94%;
-  color: #333;
-  white-space: nowrap;
-  cursor: pointer;
-  outline: none;
-  border: 1px solid #bbb;
-  background-color: #eaeaea;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
-  background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
-  background-image: -o-linear-gradient(#f2f2f2, #dddddd);
-  background-image: linear-gradient(#f2f2f2, #dddddd);
-  -webkit-background-clip: padding;
-  -moz-background-clip: padding;
-  background-clip: padding-box;
-  -webkit-border-radius: 0.2em;
-  -moz-border-radius: 0.2em;
-  border-radius: 0.2em;
-  line-height: 1.25em;
-  /* IE hacks */
-  zoom: 1;
-  *display: inline;
-  padding: 0.34em 1em;
-  margin-top: 0.2em;
-}
-
-/* line 583, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003265}}
 .container-inline {
   line-height: 1.25em;
 }
-/* line 584, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003266}}
 .container-inline a {
   position: relative;
   overflow: visible;
@@ -666,16 +371,21 @@ Licensed under Unlicense
   outline: none;
   border: 1px solid #bbb;
   background-color: #eaeaea;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
-  background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
-  background-image: -o-linear-gradient(#f2f2f2, #dddddd);
-  background-image: linear-gradient(#f2f2f2, #dddddd);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f2f2f2), color-stop(100%, #dddddd));
+  background-image: -webkit-linear-gradient(top, #f2f2f2, #dddddd);
+  background-image: -moz-linear-gradient(top, #f2f2f2, #dddddd);
+  background-image: -o-linear-gradient(top, #f2f2f2, #dddddd);
+  background-image: -ms-linear-gradient(top, #f2f2f2, #dddddd);
+  background-image: linear-gradient(top, #f2f2f2, #dddddd);
   -webkit-background-clip: padding;
   -moz-background-clip: padding;
   background-clip: padding-box;
-  -webkit-border-radius: 0.2em;
-  -moz-border-radius: 0.2em;
-  border-radius: 0.2em;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
   line-height: 1.25em;
   /* IE hacks */
   zoom: 1;
@@ -683,7 +393,7 @@ Licensed under Unlicense
   padding: 0.34em 1em;
   margin-top: 0.2em;
 }
-/* line 614, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003291}}
 .container-inline a:link, .container-inline a:visited {
   position: relative;
   overflow: visible;
@@ -698,10 +408,12 @@ Licensed under Unlicense
   outline: none;
   border: 1px solid #bbb;
   background-color: #eaeaea;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
-  background-image: -moz-linear-gradient(#f2f2f2, #dddddd);
-  background-image: -o-linear-gradient(#f2f2f2, #dddddd);
-  background-image: linear-gradient(#f2f2f2, #dddddd);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f2f2f2), color-stop(100%, #dddddd));
+  background-image: -webkit-linear-gradient(top, #f2f2f2, #dddddd);
+  background-image: -moz-linear-gradient(top, #f2f2f2, #dddddd);
+  background-image: -o-linear-gradient(top, #f2f2f2, #dddddd);
+  background-image: -ms-linear-gradient(top, #f2f2f2, #dddddd);
+  background-image: linear-gradient(top, #f2f2f2, #dddddd);
   -webkit-background-clip: padding;
   -moz-background-clip: padding;
   background-clip: padding-box;
@@ -716,418 +428,182 @@ Licensed under Unlicense
   margin-top: 0.2em;
 }
 
-/* line 646, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003320}}
 #edit-delete {
   color: #990000;
 }
 
-/* line 649, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003323}}
 #feeds-delete-tab-form .form-submit {
   color: #990000;
 }
-/* line 651, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003325}}
 #feeds-delete-tab-form .form-submit:hover, #feeds-delete-tab-form .form-submit:focus, #feeds-delete-tab-form .form-submit:active {
   border-color: #B53F3A;
   border-bottom-color: #A0302A;
   color: #fff;
   background-color: #5c6da3;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#da5d57), to(#b43731));
-  background-image: -moz-linear-gradient(#da5d57, #b43731);
-  background-image: -o-linear-gradient(#da5d57, #b43731);
-  background-image: linear-gradient(#da5d57, #b43731);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #da5d57), color-stop(100%, #b43731));
+  background-image: -webkit-linear-gradient(top, #da5d57, #b43731);
+  background-image: -moz-linear-gradient(top, #da5d57, #b43731);
+  background-image: -o-linear-gradient(top, #da5d57, #b43731);
+  background-image: -ms-linear-gradient(top, #da5d57, #b43731);
+  background-image: linear-gradient(top, #da5d57, #b43731);
 }
 
-/* line 662, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003333}}
 #edit-delete:hover, #edit-delete:focus, #edit-delete:active {
   border-color: #B53F3A;
   border-bottom-color: #A0302A;
   color: #fff;
   background-color: #5c6da3;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#da5d57), to(#b43731));
-  background-image: -moz-linear-gradient(#da5d57, #b43731);
-  background-image: -o-linear-gradient(#da5d57, #b43731);
-  background-image: linear-gradient(#da5d57, #b43731);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #da5d57), color-stop(100%, #b43731));
+  background-image: -webkit-linear-gradient(top, #da5d57, #b43731);
+  background-image: -moz-linear-gradient(top, #da5d57, #b43731);
+  background-image: -o-linear-gradient(top, #da5d57, #b43731);
+  background-image: -ms-linear-gradient(top, #da5d57, #b43731);
+  background-image: linear-gradient(top, #da5d57, #b43731);
 }
 
-/* line 673, ../sass/forms.scss */
-input[type=submit]:hover, input[type=submit]:focus, input[type=submit]:active {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003351}}
+input[type=submit]:hover, input[type=submit]:focus, input[type=submit]:active,
+.book_add_child a:hover,
+.book_add_child a:focus,
+.book_add_child a:active,
+.book_printer a:hover,
+.book_printer a:focus,
+.book_printer a:active,
+.node_read_more a:hover,
+.node_read_more a:focus,
+.node_read_more a:active,
+.comment_add a:hover,
+.comment_add a:focus,
+.comment_add a:active,
+.print_html a:hover,
+.print_html a:focus,
+.print_html a:active,
+.button:hover,
+.button:focus,
+.button:active,
+.form-submit:hover,
+.form-submit:focus,
+.form-submit:active,
+.teaser-button:hover,
+.teaser-button:focus,
+.teaser-button:active,
+.container-inline a:hover,
+.container-inline a:focus,
+.container-inline a:active,
+.content-overview-links a:hover,
+.content-overview-links a:focus,
+.content-overview-links a:active {
   border-color: #516A89;
   border-bottom-color: #465C77;
   text-decoration: none;
   text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
   color: #fff;
   background-color: #5c6da3;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8dabf4), to(#516a89));
-  background-image: -moz-linear-gradient(#8dabf4, #516a89);
-  background-image: -o-linear-gradient(#8dabf4, #516a89);
-  background-image: linear-gradient(#8dabf4, #516a89);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #8dabf4), color-stop(100%, #516a89));
+  background-image: -webkit-linear-gradient(top, #8dabf4, #516a89);
+  background-image: -moz-linear-gradient(top, #8dabf4, #516a89);
+  background-image: -o-linear-gradient(top, #8dabf4, #516a89);
+  background-image: -ms-linear-gradient(top, #8dabf4, #516a89);
+  background-image: linear-gradient(top, #8dabf4, #516a89);
 }
 
-/* line 686, ../sass/forms.scss */
-.book_add_child a:hover, .book_add_child a:focus, .book_add_child a:active {
-  border-color: #516A89;
-  border-bottom-color: #465C77;
-  text-decoration: none;
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
-  color: #fff;
-  background-color: #5c6da3;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8dabf4), to(#516a89));
-  background-image: -moz-linear-gradient(#8dabf4, #516a89);
-  background-image: -o-linear-gradient(#8dabf4, #516a89);
-  background-image: linear-gradient(#8dabf4, #516a89);
-}
-
-/* line 699, ../sass/forms.scss */
-.book_printer a:hover, .book_printer a:focus, .book_printer a:active {
-  border-color: #516A89;
-  border-bottom-color: #465C77;
-  text-decoration: none;
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
-  color: #fff;
-  background-color: #5c6da3;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8dabf4), to(#516a89));
-  background-image: -moz-linear-gradient(#8dabf4, #516a89);
-  background-image: -o-linear-gradient(#8dabf4, #516a89);
-  background-image: linear-gradient(#8dabf4, #516a89);
-}
-
-/* line 712, ../sass/forms.scss */
-.node_read_more a:hover, .node_read_more a:focus, .node_read_more a:active {
-  border-color: #516A89;
-  border-bottom-color: #465C77;
-  text-decoration: none;
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
-  color: #fff;
-  background-color: #5c6da3;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8dabf4), to(#516a89));
-  background-image: -moz-linear-gradient(#8dabf4, #516a89);
-  background-image: -o-linear-gradient(#8dabf4, #516a89);
-  background-image: linear-gradient(#8dabf4, #516a89);
-}
-
-/* line 725, ../sass/forms.scss */
-.comment_add a:hover, .comment_add a:focus, .comment_add a:active {
-  border-color: #516A89;
-  border-bottom-color: #465C77;
-  text-decoration: none;
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
-  color: #fff;
-  background-color: #5c6da3;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8dabf4), to(#516a89));
-  background-image: -moz-linear-gradient(#8dabf4, #516a89);
-  background-image: -o-linear-gradient(#8dabf4, #516a89);
-  background-image: linear-gradient(#8dabf4, #516a89);
-}
-
-/* line 738, ../sass/forms.scss */
-.print_html a:hover, .print_html a:focus, .print_html a:active {
-  border-color: #516A89;
-  border-bottom-color: #465C77;
-  text-decoration: none;
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
-  color: #fff;
-  background-color: #5c6da3;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8dabf4), to(#516a89));
-  background-image: -moz-linear-gradient(#8dabf4, #516a89);
-  background-image: -o-linear-gradient(#8dabf4, #516a89);
-  background-image: linear-gradient(#8dabf4, #516a89);
-}
-
-/* line 751, ../sass/forms.scss */
-.button:hover, .button:focus, .button:active {
-  border-color: #516A89;
-  border-bottom-color: #465C77;
-  text-decoration: none;
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
-  color: #fff;
-  background-color: #5c6da3;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8dabf4), to(#516a89));
-  background-image: -moz-linear-gradient(#8dabf4, #516a89);
-  background-image: -o-linear-gradient(#8dabf4, #516a89);
-  background-image: linear-gradient(#8dabf4, #516a89);
-}
-
-/* line 764, ../sass/forms.scss */
-.form-submit:hover, .form-submit:focus, .form-submit:active {
-  border-color: #516A89;
-  border-bottom-color: #465C77;
-  text-decoration: none;
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
-  color: #fff;
-  background-color: #5c6da3;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8dabf4), to(#516a89));
-  background-image: -moz-linear-gradient(#8dabf4, #516a89);
-  background-image: -o-linear-gradient(#8dabf4, #516a89);
-  background-image: linear-gradient(#8dabf4, #516a89);
-}
-
-/* line 777, ../sass/forms.scss */
-#views-ajax-pad .form-buttons .form-submit:hover, #views-ajax-pad .form-buttons .form-submit:focus, #views-ajax-pad .form-buttons .form-submit:active {
-  border-color: #516A89;
-  border-bottom-color: #465C77;
-  text-decoration: none;
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
-  color: #fff;
-  background-color: #5c6da3;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8dabf4), to(#516a89));
-  background-image: -moz-linear-gradient(#8dabf4, #516a89);
-  background-image: -o-linear-gradient(#8dabf4, #516a89);
-  background-image: linear-gradient(#8dabf4, #516a89);
-}
-
-/* line 790, ../sass/forms.scss */
-.teaser-button:hover, .teaser-button:focus, .teaser-button:active {
-  border-color: #516A89;
-  border-bottom-color: #465C77;
-  text-decoration: none;
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
-  color: #fff;
-  background-color: #5c6da3;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8dabf4), to(#516a89));
-  background-image: -moz-linear-gradient(#8dabf4, #516a89);
-  background-image: -o-linear-gradient(#8dabf4, #516a89);
-  background-image: linear-gradient(#8dabf4, #516a89);
-}
-
-/* line 803, ../sass/forms.scss */
-.container-inline a:hover, .container-inline a:focus, .container-inline a:active {
-  border-color: #516A89;
-  border-bottom-color: #465C77;
-  text-decoration: none;
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
-  color: #fff;
-  background-color: #5c6da3;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8dabf4), to(#516a89));
-  background-image: -moz-linear-gradient(#8dabf4, #516a89);
-  background-image: -o-linear-gradient(#8dabf4, #516a89);
-  background-image: linear-gradient(#8dabf4, #516a89);
-}
-
-/* line 816, ../sass/forms.scss */
-.content-overview-links a:hover, .content-overview-links a:focus, .content-overview-links a:active {
-  border-color: #516A89;
-  border-bottom-color: #465C77;
-  text-decoration: none;
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
-  color: #fff;
-  background-color: #5c6da3;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8dabf4), to(#516a89));
-  background-image: -moz-linear-gradient(#8dabf4, #516a89);
-  background-image: -o-linear-gradient(#8dabf4, #516a89);
-  background-image: linear-gradient(#8dabf4, #516a89);
-}
-
-/* line 829, ../sass/forms.scss */
-#feeds-delete-tab-form .form-submit:active, #feeds-delete-tab-form .form-submit.active {
-  border-color: #A0302A;
-  border-bottom-color: #B53F3A;
-  color: #fff;
-  background-color: #5c6da3;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#b43731), to(#da5d57));
-  background-image: -moz-linear-gradient(#b43731, #da5d57);
-  background-image: -o-linear-gradient(#b43731, #da5d57);
-  background-image: linear-gradient(#b43731, #da5d57);
-}
-
-/* line 840, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003361}}
 #edit-delete:active, #edit-delete.active {
   border-color: #A0302A;
   border-bottom-color: #B53F3A;
   color: #fff;
   background-color: #5c6da3;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#b43731), to(#da5d57));
-  background-image: -moz-linear-gradient(#b43731, #da5d57);
-  background-image: -o-linear-gradient(#b43731, #da5d57);
-  background-image: linear-gradient(#b43731, #da5d57);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #b43731), color-stop(100%, #da5d57));
+  background-image: -webkit-linear-gradient(top, #b43731, #da5d57);
+  background-image: -moz-linear-gradient(top, #b43731, #da5d57);
+  background-image: -o-linear-gradient(top, #b43731, #da5d57);
+  background-image: -ms-linear-gradient(top, #b43731, #da5d57);
+  background-image: linear-gradient(top, #b43731, #da5d57);
 }
 
-/* line 850, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003368}}
 input[type=submit]:active {
   border-color: #465C77;
   border-bottom-color: #516A89;
   text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
   color: #fff;
   background-color: #5c6da3;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#516a89), to(#8dabf4));
-  background-image: -moz-linear-gradient(#516a89, #8dabf4);
-  background-image: -o-linear-gradient(#516a89, #8dabf4);
-  background-image: linear-gradient(#516a89, #8dabf4);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #516a89), color-stop(100%, #8dabf4));
+  background-image: -webkit-linear-gradient(top, #516a89, #8dabf4);
+  background-image: -moz-linear-gradient(top, #516a89, #8dabf4);
+  background-image: -o-linear-gradient(top, #516a89, #8dabf4);
+  background-image: -ms-linear-gradient(top, #516a89, #8dabf4);
+  background-image: linear-gradient(top, #516a89, #8dabf4);
 }
 
-/* line 862, ../sass/forms.scss */
-.book_add_child a:active, .book_add_child a.active {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003386}}
+.book_add_child a:active, .book_add_child a.active,
+.book_printer a:active,
+.book_printer a.active,
+.node_read_more a:active,
+.node_read_more a.active,
+.comment_add a:active,
+.comment_add a.active,
+.print_html a:active,
+.print_html a.active,
+.button:active,
+.button.active,
+.form-submit:active,
+.form-submit.active,
+.teaser-button:active,
+.teaser-button.active,
+.container-inline a:active,
+.container-inline a.active,
+.content-overview-links a:active,
+.content-overview-links a.active {
   border-color: #465C77;
   border-bottom-color: #516A89;
   text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
   color: #fff;
   background-color: #5c6da3;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#516a89), to(#8dabf4));
-  background-image: -moz-linear-gradient(#516a89, #8dabf4);
-  background-image: -o-linear-gradient(#516a89, #8dabf4);
-  background-image: linear-gradient(#516a89, #8dabf4);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #516a89), color-stop(100%, #8dabf4));
+  background-image: -webkit-linear-gradient(top, #516a89, #8dabf4);
+  background-image: -moz-linear-gradient(top, #516a89, #8dabf4);
+  background-image: -o-linear-gradient(top, #516a89, #8dabf4);
+  background-image: -ms-linear-gradient(top, #516a89, #8dabf4);
+  background-image: linear-gradient(top, #516a89, #8dabf4);
 }
 
-/* line 874, ../sass/forms.scss */
-.book_printer a:active, .book_printer a.active {
-  border-color: #465C77;
-  border-bottom-color: #516A89;
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
-  color: #fff;
-  background-color: #5c6da3;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#516a89), to(#8dabf4));
-  background-image: -moz-linear-gradient(#516a89, #8dabf4);
-  background-image: -o-linear-gradient(#516a89, #8dabf4);
-  background-image: linear-gradient(#516a89, #8dabf4);
-}
-
-/* line 886, ../sass/forms.scss */
-.node_read_more a:active, .node_read_more a.active {
-  border-color: #465C77;
-  border-bottom-color: #516A89;
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
-  color: #fff;
-  background-color: #5c6da3;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#516a89), to(#8dabf4));
-  background-image: -moz-linear-gradient(#516a89, #8dabf4);
-  background-image: -o-linear-gradient(#516a89, #8dabf4);
-  background-image: linear-gradient(#516a89, #8dabf4);
-}
-
-/* line 898, ../sass/forms.scss */
-.comment_add a:active, .comment_add a.active {
-  border-color: #465C77;
-  border-bottom-color: #516A89;
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
-  color: #fff;
-  background-color: #5c6da3;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#516a89), to(#8dabf4));
-  background-image: -moz-linear-gradient(#516a89, #8dabf4);
-  background-image: -o-linear-gradient(#516a89, #8dabf4);
-  background-image: linear-gradient(#516a89, #8dabf4);
-}
-
-/* line 910, ../sass/forms.scss */
-.print_html a:active, .print_html a.active {
-  border-color: #465C77;
-  border-bottom-color: #516A89;
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
-  color: #fff;
-  background-color: #5c6da3;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#516a89), to(#8dabf4));
-  background-image: -moz-linear-gradient(#516a89, #8dabf4);
-  background-image: -o-linear-gradient(#516a89, #8dabf4);
-  background-image: linear-gradient(#516a89, #8dabf4);
-}
-
-/* line 922, ../sass/forms.scss */
-.button:active, .button.active {
-  border-color: #465C77;
-  border-bottom-color: #516A89;
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
-  color: #fff;
-  background-color: #5c6da3;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#516a89), to(#8dabf4));
-  background-image: -moz-linear-gradient(#516a89, #8dabf4);
-  background-image: -o-linear-gradient(#516a89, #8dabf4);
-  background-image: linear-gradient(#516a89, #8dabf4);
-}
-
-/* line 934, ../sass/forms.scss */
-.form-submit:active, .form-submit.active {
-  border-color: #465C77;
-  border-bottom-color: #516A89;
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
-  color: #fff;
-  background-color: #5c6da3;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#516a89), to(#8dabf4));
-  background-image: -moz-linear-gradient(#516a89, #8dabf4);
-  background-image: -o-linear-gradient(#516a89, #8dabf4);
-  background-image: linear-gradient(#516a89, #8dabf4);
-}
-
-/* line 946, ../sass/forms.scss */
-#views-ajax-pad .form-buttons .form-submit:active, #views-ajax-pad .form-buttons .form-submit.active {
-  border-color: #465C77;
-  border-bottom-color: #516A89;
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
-  color: #fff;
-  background-color: #5c6da3;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#516a89), to(#8dabf4));
-  background-image: -moz-linear-gradient(#516a89, #8dabf4);
-  background-image: -o-linear-gradient(#516a89, #8dabf4);
-  background-image: linear-gradient(#516a89, #8dabf4);
-}
-
-/* line 958, ../sass/forms.scss */
-.teaser-button:active, .teaser-button.active {
-  border-color: #465C77;
-  border-bottom-color: #516A89;
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
-  color: #fff;
-  background-color: #5c6da3;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#516a89), to(#8dabf4));
-  background-image: -moz-linear-gradient(#516a89, #8dabf4);
-  background-image: -o-linear-gradient(#516a89, #8dabf4);
-  background-image: linear-gradient(#516a89, #8dabf4);
-}
-
-/* line 970, ../sass/forms.scss */
-.container-inline a:active, .container-inline a.active {
-  border-color: #465C77;
-  border-bottom-color: #516A89;
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
-  color: #fff;
-  background-color: #5c6da3;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#516a89), to(#8dabf4));
-  background-image: -moz-linear-gradient(#516a89, #8dabf4);
-  background-image: -o-linear-gradient(#516a89, #8dabf4);
-  background-image: linear-gradient(#516a89, #8dabf4);
-}
-
-/* line 982, ../sass/forms.scss */
-.content-overview-links a:active, .content-overview-links a.active {
-  border-color: #465C77;
-  border-bottom-color: #516A89;
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
-  color: #fff;
-  background-color: #5c6da3;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#516a89), to(#8dabf4));
-  background-image: -moz-linear-gradient(#516a89, #8dabf4);
-  background-image: -o-linear-gradient(#516a89, #8dabf4);
-  background-image: linear-gradient(#516a89, #8dabf4);
-}
-
-/* line 993, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003395}}
 #header fieldset.captcha-admin-links {
   display: none;
 }
 
 /* overrides extra padding on form-submit elements in Firefox */
-/* line 998, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003400}}
 .button::-moz-focus-inner, .form-submit::-moz-focus-inner, .teaser-button::-moz-focus-inner {
   border: none;
 }
 
 /* correct teaser-button margin so it does not fall into text area */
-/* line 1003, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003405}}
 div.teaser-button-wrapper {
   margin-top: -5px;
   padding-right: 0;
 }
 
 /* pulls form submit buttons closer together */
-/* line 1010, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003412}}
 .form-submit + .form-submit, .form-submit + .form-submit-group {
   margin-left: 0;
 }
 
-/* line 1014, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003416}}
 .form-submit-group + .form-submit, .form-submit-group + .form-submit-group {
   margin-left: 0;
 }
 
 /* ... Icons */
-/* line 1019, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003421}}
 #search-form .form-submit {
   background-image: url(../images/search-darkgrey.png), -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#dddddd));
   background-image: url(../images/search-darkgrey.png), -moz-linear-gradient(#f2f2f2, #dddddd);
@@ -1136,7 +612,7 @@ div.teaser-button-wrapper {
   background-position: 0;
   padding-left: 20px;
 }
-/* line 1026, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003428}}
 #search-form .form-submit:hover, #search-form .form-submit:focus {
   background-image: url(../images/search-white.png), -webkit-gradient(linear, 0 0, 0 100%, from(#8dabf4), to(#516a89));
   background-image: url(../images/search-white.png), -moz-linear-gradient(#8dabf4, #516a89);
@@ -1145,7 +621,7 @@ div.teaser-button-wrapper {
   background-position: 0;
   padding-left: 20px;
 }
-/* line 1033, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003435}}
 #search-form .form-submit:active {
   background-image: url(../images/search-white.png), -webkit-gradient(linear, 0 0, 0 100%, from(#8dabf4), to(#516a89));
   background-image: url(../images/search-white.png), -moz-linear-gradient(#8dabf4, #516a89);
@@ -1160,7 +636,7 @@ div.teaser-button-wrapper {
   background-position: 0;
   padding-left: 20px;
 }
-/* line 1046, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003448}}
 #search-form .form-submit.active {
   background-image: url(../images/search-white.png), -webkit-gradient(linear, 0 0, 0 100%, from(#516a89), to(#8dabf4));
   background-image: url(../images/search-white.png), -moz-linear-gradient(#516a89, #8dabf4);
@@ -1170,19 +646,19 @@ div.teaser-button-wrapper {
   padding-left: 20px;
 }
 
-/* line 1055, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003457}}
 #main-wrapper .form-text, #main-wrapper textarea {
   padding: 0.345em;
   border: solid 1px #cccccc;
   outline: 0;
   background: #FFFFFF;
 }
-/* line 1060, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003462}}
 #main-wrapper .form-text:hover, #main-wrapper textarea:hover, #main-wrapper .form-text:focus, #main-wrapper textarea:focus {
   border-color: #C9C9C9;
 }
 
-/* line 1063, ../sass/forms.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms\.scss}line{font-family:\00003465}}
 .resizable-textarea {
   width: 98%;
 }

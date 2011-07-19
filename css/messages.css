@@ -5,7 +5,7 @@
  *
  * Sensible styling for Drupal's error/warning/status messages.
  */
-/* line 11, ../sass/messages.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/messages\.scss}line{font-family:\0000311}}
 div.messages, div.status, div.warning, div.error {
   min-height: 21px;
   margin: 0 1em 5px 1em;
@@ -19,7 +19,7 @@ div.messages, div.status, div.warning, div.error {
   background-position: 5px 5px;
   /* LTR */
 }
-/* line 24, ../sass/messages.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/messages\.scss}line{font-family:\0000324}}
 div.warning {
   border-color: #fc0;
   background-image: url(../images/messages-warning.png);
@@ -28,14 +28,14 @@ div.warning {
   background-color: #ffc;
 }
 
-/* line 31, ../sass/messages.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/messages\.scss}line{font-family:\0000331}}
 tr.warning {
   color: #000;
   /* Drupal core uses #220 */
   background-color: #ffc;
 }
 
-/* line 36, ../sass/messages.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/messages\.scss}line{font-family:\0000336}}
 div.error {
   /* border: 1px solid #d77; */
   /* Drupal core uses: 1px solid #d77 */
@@ -46,14 +46,14 @@ div.error {
   background-color: #fee;
 }
 
-/* line 45, ../sass/messages.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/messages\.scss}line{font-family:\0000345}}
 tr.error {
   color: #900;
   /* Drupal core uses #200 */
   background-color: #fee;
 }
 
-/* line 50, ../sass/messages.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/messages\.scss}line{font-family:\0000350}}
 div.messages ul {
   margin-top: 0;
   margin-bottom: 0;

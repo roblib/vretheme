@@ -3,7 +3,7 @@
  * @file
  * RTL companion for the block-editing.css file.
  */
-/* line 8, ../sass/blocks-rtl.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/blocks-rtl\.scss}line{font-family:\000038}}
 div.block.with-block-editing div.edit {
   left: 0;
 }

@@ -8,18 +8,18 @@
  *
  * We need to standardize the list item indentation.
  */
-/* line 14, ../sass/html-reset-rtl.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/html-reset-rtl\.scss}line{font-family:\0000314}}
 ul, ol {
   padding-left: 0;
   padding-right: 2em;
 }
 
-/* line 18, ../sass/html-reset-rtl.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/html-reset-rtl\.scss}line{font-family:\0000318}}
 .block ul, .item-list ul {
   padding: 0 2em 0 0;
 }
 
-/* line 21, ../sass/html-reset-rtl.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/html-reset-rtl\.scss}line{font-family:\0000321}}
 dd {
   margin: 0 2em 0 0;
 }
@@ -30,7 +30,7 @@ dd {
  * Drupal provides table styling which is only useful for its admin section
  * forms, so we override this default CSS. (We set it back in forms.css.)
  */
-/* line 31, ../sass/html-reset-rtl.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/html-reset-rtl\.scss}line{font-family:\0000331}}
 th, thead th, tbody th {
   text-align: right;
 }

@@ -3,7 +3,7 @@
  * @file
  * RTL companion for the messages.css file.
  */
-/* line 9, ../sass/messages-rtl.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/messages-rtl\.scss}line{font-family:\000039}}
 div.messages, div.status, div.warning, div.error {
   padding: 5px 35px 5px 5px;
   background-position: 99.5% 5px;

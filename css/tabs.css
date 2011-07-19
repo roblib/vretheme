@@ -8,7 +8,7 @@
  * Compare this with default CSS found in the system module's stylesheet (a copy
  * of which is in drupal6-reference.css, line 510.)
  */
-/* line 13, ../sass/tabs.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/tabs\.scss}line{font-family:\0000313}}
 .drupal-tabs ul.primary a, .tabs ul.primary a {
   position: relative;
   overflow: visible;
@@ -47,7 +47,7 @@
   *display: inline;
 }
 
-/* line 51, ../sass/tabs.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/tabs\.scss}line{font-family:\0000351}}
 .drupal-tabs ul.primary a:hover, .drupal-tabs ul.primary a:focus, .drupal-tabs ul.primary a:active {
   border-bottom-color: #2a65a0;
   text-decoration: none;
@@ -62,7 +62,7 @@
   background-image: linear-gradient(#f7f7f7, #e7e7e7);
 }
 
-/* line 65, ../sass/tabs.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/tabs\.scss}line{font-family:\0000365}}
 .tabs ul.primary a:hover, .tabs ul.primary a:focus, .tabs ul.primary a:active {
   border-bottom-color: #2a65a0;
   text-decoration: none;
@@ -77,7 +77,7 @@
   background-image: linear-gradient(#f7f7f7, #e7e7e7);
 }
 
-/* line 78, ../sass/tabs.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/tabs\.scss}line{font-family:\0000378}}
 .drupal-tabs ul.primary li.ui-tabs-selected a {
   text-shadow: -1px -1px 0 white;
   border-top: 1px solid #cccccc;
@@ -89,7 +89,7 @@
   background-image: -o-linear-gradient(white, white);
   background-image: linear-gradient(#ffffff, #ffffff);
 }
-/* line 88, ../sass/tabs.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/tabs\.scss}line{font-family:\0000388}}
 .drupal-tabs ul.primary li.ui-tabs-selected a:hover, .drupal-tabs ul.primary li.ui-tabs-selected a:focus, .drupal-tabs ul.primary li.ui-tabs-selected a:active, .drupal-tabs ul.primary li.ui-tabs-selected a.active {
   text-shadow: -1px -1px 0 white;
   border-top: 1px solid #cccccc;
@@ -102,7 +102,7 @@
   background-image: linear-gradient(#ffffff, #ffffff);
 }
 
-/* line 100, ../sass/tabs.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/tabs\.scss}line{font-family:\00003100}}
 .tabs ul.primary li:active a {
   text-shadow: -1px -1px 0 white;
   border-top: 1px solid #cccccc;
@@ -114,7 +114,7 @@
   background-image: -o-linear-gradient(white, white);
   background-image: linear-gradient(#ffffff, #ffffff);
 }
-/* line 110, ../sass/tabs.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/tabs\.scss}line{font-family:\00003110}}
 .tabs ul.primary li.active a {
   text-shadow: -1px -1px 0 white;
   border-top: 1px solid #cccccc;
@@ -126,7 +126,7 @@
   background-image: -o-linear-gradient(white, white);
   background-image: linear-gradient(#ffffff, #ffffff);
 }
-/* line 120, ../sass/tabs.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/tabs\.scss}line{font-family:\00003120}}
 .tabs ul.primary li.active a:hover, .tabs ul.primary li.active a:focus, .tabs ul.primary li.active a:active, .tabs ul.primary li.active a.active {
   text-shadow: -1px -1px 0 white;
   border-top: 1px solid #cccccc;
@@ -139,17 +139,17 @@
   background-image: linear-gradient(#ffffff, #ffffff);
 }
 
-/* line 131, ../sass/tabs.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/tabs\.scss}line{font-family:\00003131}}
 .drupal-tabs, div.tabs {
   width: 100%;
 }
 
-/* line 134, ../sass/tabs.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/tabs\.scss}line{font-family:\00003134}}
 .tab::-moz-focus-inner, #tabs-tabset::-moz-focus-inner {
   border: none;
 }
 
-/* line 137, ../sass/tabs.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/tabs\.scss}line{font-family:\00003137}}
 ul.primary {
   margin: 0;
   padding: 0;
@@ -159,7 +159,7 @@ ul.primary {
   display: block;
   width: 100%;
 }
-/* line 145, ../sass/tabs.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/tabs\.scss}line{font-family:\00003145}}
 ul.primary li a {
   background-color: transparent;
   border-width: 0px;
@@ -168,20 +168,20 @@ ul.primary li a {
   text-decoration: none;
 }
 
-/* line 152, ../sass/tabs.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/tabs\.scss}line{font-family:\00003152}}
 .drupal-tabs, .tabs {
   margin-top: 1.5em;
   margin-bottom: 0em;
 }
 
-/* line 156, ../sass/tabs.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/tabs\.scss}line{font-family:\00003156}}
 ul.primary .tabs li {
   float: left;
   padding: 0;
   margin: 0;
 }
 
-/* line 161, ../sass/tabs.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/tabs\.scss}line{font-family:\00003161}}
 .drupal-tabs ul.primary a, .tabs ul.primary a {
   float: left;
   position: relative;
@@ -189,7 +189,7 @@ ul.primary .tabs li {
   margin-left: 3px;
 }
 
-/* line 167, ../sass/tabs.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/tabs\.scss}line{font-family:\00003167}}
 .drupal-tabs > ul.primary a:active, .tabs > ul.primary a:active {
   background-color: #EFEFEF;
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e7e7e7), to(#f7f7f7));

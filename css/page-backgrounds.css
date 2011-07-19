@@ -9,17 +9,17 @@
  * ALA article:
  *   http://www.alistapart.com/articles/fauxcolumns/
  */
-/* line 15, ../sass/page-backgrounds.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/page-backgrounds\.scss}line{font-family:\0000315}}
 body.front, body.not-front {
   background-color: #ffeff;
 }
 
-/* line 20, ../sass/page-backgrounds.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/page-backgrounds\.scss}line{font-family:\0000320}}
 #header {
   border-top: 4px solid #8b1f04;
 }
 
-/* line 23, ../sass/page-backgrounds.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/page-backgrounds\.scss}line{font-family:\0000323}}
 #headercontent-wrapper .column.HeaderRight #secondary-menu {
   background: #8b1f04;
 }

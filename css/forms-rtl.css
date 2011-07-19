@@ -6,11 +6,11 @@
 /*
  * Drupal's default login form block
  */
-/* line 12, ../sass/forms-rtl.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms-rtl\.scss}line{font-family:\0000312}}
 #user-login-form {
   text-align: right;
 }
-/* line 14, ../sass/forms-rtl.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms-rtl\.scss}line{font-family:\0000314}}
 #user-login-form li.openid-link {
   margin-left: 0;
   margin-right: -20px;
@@ -23,7 +23,7 @@
  * The default styling for the OpenID login link seems to assume Garland's
  * styling of list items.
  */
-/* line 27, ../sass/forms-rtl.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms-rtl\.scss}line{font-family:\0000327}}
 #user-login li.openid-link, #user-login li.user-link {
   margin-left: 0;
   margin-right: -2em;
@@ -36,7 +36,7 @@
  * We overrode these styles in html-elements.css, but restore them for the admin
  * section of the site.
  */
-/* line 40, ../sass/forms-rtl.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/forms-rtl\.scss}line{font-family:\0000340}}
 form th, form thead th {
   text-align: right;
   padding-left: 1em;

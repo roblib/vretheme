@@ -1,40 +1,40 @@
-/* line 2, ../sass/islandora.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/islandora\.scss}line{font-family:\000032}}
 #content-fedora table {
   margin-left: auto;
   margin-right: auto;
   width: 95%;
 }
-/* line 5, ../sass/islandora.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/islandora\.scss}line{font-family:\000035}}
 #content-fedora table td img {
   text-align: center;
 }
-/* line 9, ../sass/islandora.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/islandora\.scss}line{font-family:\000039}}
 #content-fedora .fedora_detailed_list table {
   background: #EAEAEA;
   width: 100%;
 }
-/* line 12, ../sass/islandora.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/islandora\.scss}line{font-family:\0000312}}
 #content-fedora .fedora_detailed_list form {
   padding: 0 0 1.3em 0;
 }
-/* line 14, ../sass/islandora.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/islandora\.scss}line{font-family:\0000314}}
 #content-fedora .fedora_detailed_list table {
   border: 1px solid #bbb;
 }
-/* line 15, ../sass/islandora.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/islandora\.scss}line{font-family:\0000315}}
 #content-fedora .fedora_detailed_list table td, #content-fedora .fedora_detailed_list table th {
   padding: 0 1em;
 }
-/* line 17, ../sass/islandora.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/islandora\.scss}line{font-family:\0000317}}
 #content-fedora .fedora_detailed_list table td {
   border: 1px solid #bbb;
 }
 
-/* line 24, ../sass/islandora.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/islandora\.scss}line{font-family:\0000324}}
 .fedora_detailed_list h3 {
   margin: 0;
 }
-/* line 26, ../sass/islandora.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/islandora\.scss}line{font-family:\0000326}}
 .fedora_detailed_list table td {
   vertical-align: bottom;
 }

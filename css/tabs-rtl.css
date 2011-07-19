@@ -3,19 +3,19 @@
  * @file
  * RTL companion for the tabs.css file.
  */
-/* line 9, ../sass/tabs-rtl.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/tabs-rtl\.scss}line{font-family:\000039}}
 ul.primary {
   padding: 0 10px 0 0;
 }
-/* line 11, ../sass/tabs-rtl.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/tabs-rtl\.scss}line{font-family:\0000311}}
 ul.primary li {
   float: right;
 }
-/* line 13, ../sass/tabs-rtl.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/tabs-rtl\.scss}line{font-family:\0000313}}
 ul.secondary {
   padding: 0 5px 0 0;
 }
-/* line 15, ../sass/tabs-rtl.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/tabs-rtl\.scss}line{font-family:\0000315}}
 ul.secondary li {
   float: right;
   border-left: none;

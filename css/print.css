@@ -6,32 +6,32 @@
  * We provide some sane print styling for Drupal using Zen's layout method.
  */
 /* underline all links */
-/* line 13, ../sass/print.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/print\.scss}line{font-family:\0000313}}
 a:link, a:visited {
   text-decoration: underline !important;
 }
 
 /* Don't underline header */
-/* line 19, ../sass/print.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/print\.scss}line{font-family:\0000319}}
 #site-name a:link, #site-name a:visited {
   text-decoration: none !important;
 }
 
 /* CSS2 selector to add visible href after links */
-/* line 24, ../sass/print.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/print\.scss}line{font-family:\0000324}}
 #content {
   float: none;
   width: 100%;
   margin: 0 !important;
   padding: 0 !important;
 }
-/* line 26, ../sass/print.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/print\.scss}line{font-family:\0000326}}
 #content a:link:after, #content a:visited:after {
   content: " (" attr(href) ") ";
   font-size: 0.8em;
   font-weight: normal;
 }
-/* line 34, ../sass/print.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/print\.scss}line{font-family:\0000334}}
 #content .section {
   float: none;
   width: 100%;
@@ -41,20 +41,20 @@ a:link, a:visited {
 
 /* Un-float the content */
 /* Turn off any background colors or images */
-/* line 44, ../sass/print.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/print\.scss}line{font-family:\0000344}}
 body, #page-wrapper, #page, #main-wrapper, #main {
   color: #000;
   background-color: transparent !important;
   background-image: none !important;
 }
 
-/* line 49, ../sass/print.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/print\.scss}line{font-family:\0000349}}
 #content {
   color: #000;
   background-color: transparent !important;
   background-image: none !important;
 }
-/* line 53, ../sass/print.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/print\.scss}line{font-family:\0000353}}
 #content .section {
   color: #000;
   background-color: transparent !important;
@@ -62,7 +62,7 @@ body, #page-wrapper, #page, #main-wrapper, #main {
 }
 
 /* Hide sidebars and nav elements */
-/* line 60, ../sass/print.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/print\.scss}line{font-family:\0000360}}
 #skip-link, #navigation, .region-sidebar-first, .region-sidebar-second, #footer, .breadcrumb, div.tabs, .links, .taxonomy, .book-navigation, .forum-topic-navigation, .pager, .feed-icons {
   visibility: hidden;
   display: none;
@@ -70,7 +70,7 @@ body, #page-wrapper, #page, #main-wrapper, #main {
 
 /* If you un-comment the "page { overflow-y: hidden; }" ruleset, Firefox clips
    the content after the first page. */
-/* line 67, ../sass/print.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kgbulman\/bulmandropbox\/Dropbox\/drupal-6\.22\/sites\/all\/themes\/vretheme\/sass\/print\.scss}line{font-family:\0000367}}
 #page-wrapper {
   overflow-y: visible;
 }
