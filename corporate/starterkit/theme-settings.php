@@ -27,20 +27,6 @@ function STARTERKIT_settings($saved_settings) {
   $form = array();
 
 
-  $form['corporate_design'] = array(
-    '#type'          => 'radios',
-    '#title'         => t('Color Scheme'),
-    '#default_value' => $settings['corporate_design'],
-    '#options'       => array(
-      '0' => t('None (default grey)'),
-      '1' => t('Dark Blue'),      
-      '2' => t('Green'),
-      '3' => t('Orange'),
-     ),
-    '#description'   => t('Select an option above if you wish to use a pre-designed color scheme.'),
-    
-  );
-
   // Add the base theme's settings.
   $form += corporate_settings($saved_settings, $defaults);
 

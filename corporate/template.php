@@ -62,6 +62,27 @@
  *   and http://drupal.org/node/190815#template-suggestions
  */
 
+// Optionally add CSS files for the user-selected color design.
+
+$design = theme_get_setting('corporate_design');
+switch ($design) {
+  case '0':
+    // Default Grey
+    break;
+  case '1':
+    drupal_add_css(drupal_get_path('theme', 'corporate') . '/colors/blue.css', 'theme', 'all');
+    break;    
+  case '2':
+    drupal_add_css(drupal_get_path('theme', 'corporate') . '/colors/green.css', 'theme', 'all');
+    break;
+  case '3':
+    drupal_add_css(drupal_get_path('theme', 'corporate') . '/colors/orange.css', 'theme', 'all');
+    break;
+  case '4':
+    drupal_add_css(drupal_get_path('theme', 'corporate') . '/colors/whiteblue.css', 'theme', 'all');
+    break;    
+}
+
 
 /**
  * Implementation of HOOK_theme().

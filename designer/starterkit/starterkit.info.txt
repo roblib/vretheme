@@ -1,12 +1,19 @@
-; $Id: designer.info.txt,v 1.16.2.2 2010/06/26 16:05:31 johnalbin Exp $
+; Drupal's .info files allow themers to easily specify some of the static
+; properties of your theme. Properties such as its name, stylesheets,
+; javascripts, and block regions.
+;
+; Drupal 6 stores a cache of the data in this .info files. If you modify any
+; lines in this file, you MUST refresh Drupal 6's cache by simply visiting the
+; Appearance page at admin/appearance.
 
 
-  ; The name and description of the theme used on the admin/build/themes page.
-name        = VRE Theme - starterkit
-description = This is a fixed width theme, with selectable color themes. NOTE: When enabling this theme, assure to enable css caching in admin/settings/performance.
 
-  ; The screenshot used on the admin/build/themes page.
-screenshot = screenshot.png
+; The name, description and screenshot used for this theme on the Appearance
+; page at admin/appearance.
+
+screenshot  = screenshot.png
+name        = Designer Sub-theme Starter Kit
+description = Read the <a href="http://drupal.org/node/873778">online docs</a> or the included README.txt on how to create a theme with Zen.
 
   ; "core" specifies the version of Drupal that this theme is compatible with.
   ; "base theme" specifies that this is a theme that uses the "zen" theme as its
@@ -48,7 +55,7 @@ base theme = designer
 ; stylesheets[all][]   = css/fields.css
 ; stylesheets[print][] = css/print.css
 ; stylesheets[all][]   = css/superfish.css
-stylesheets[all][]   = css/starterkit.css
+stylesheets[all][]   = css/STARTERKIT.css
 ; stylesheets[all][]   = css/elegant.css
 ; stylesheets[all][]   = css/islandvoices.css
 ; stylesheets[all][]   = css/designer.css

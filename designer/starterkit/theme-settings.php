@@ -13,10 +13,10 @@ include_once './' . drupal_get_path('theme', 'designer') . '/theme-settings.php'
  * @return
  *   A form array.
  */
-function starterkit_settings($saved_settings) {
+function STARTERKIT_settings($saved_settings) {
 
   // Get the default values from the .info file.
-  $defaults = zen_theme_get_default_settings('starterkit');
+  $defaults = zen_theme_get_default_settings('STARTERKIT');
 
   // Merge the saved variables and their default values.
   $settings = array_merge($defaults, $saved_settings);

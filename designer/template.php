@@ -62,6 +62,7 @@
  *   and http://drupal.org/node/190815#template-suggestions
  */
 
+// Optionally add CSS files for the user-selected color design.
 
 /**
  * Implementation of HOOK_theme().

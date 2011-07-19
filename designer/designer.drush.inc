@@ -7,11 +7,11 @@
 /**
  * Implementation of hook_drush_command().
  */
-function corporate_drush_command() {
+function designer_drush_command() {
   $items = array();
 
-  $items['corporate'] = array(
-    'description' => 'Create a theme using corporate.',
+  $items['designer'] = array(
+    'description' => 'Create a theme using designer.',
     'arguments' => array(
       'name'         => 'A name for your theme.',
       'machine_name' => '[optional] A machine-readable name for your theme.',
@@ -26,8 +26,8 @@ function corporate_drush_command() {
       // 'layout'       => '[fixed,fluid,960gs] Choose the page layout method.',
     ),
     'examples' => array(
-      'drush corporate "My theme name"' => 'Create a sub-theme, using the default options.',
-      'drush corporate "My theme name" my_theme' => 'Create a sub-theme with a specific machine name.',
+      'drush designer "My theme name"' => 'Create a sub-theme, using the default options.',
+      'drush designer "My theme name" my_theme' => 'Create a sub-theme with a specific machine name.',
     ),
   );
 
@@ -35,9 +35,9 @@ function corporate_drush_command() {
 }
 
 /**
- * Create a corporate sub-theme using the starter kit.
+ * Create a designer sub-theme using the starter kit.
  */
-function drush_corporate($name = NULL, $machine_name = NULL) {
+function drush_designer($name = NULL, $machine_name = NULL) {
   // Determine the theme name.
   if (!isset($name)) {
     $name = drush_get_option('name');
@@ -59,20 +59,20 @@ function drush_corporate($name = NULL, $machine_name = NULL) {
 
   // Determine the path to the new subtheme by finding the path to vretheme.
   $vretheme_path = drush_locate_root() . '/' . drupal_get_path('theme', 'vretheme');
-  $corporate_path = drush_locate_root() . '/' . drupal_get_path('theme', 'corporate');
+  $designer_path = drush_locate_root() . '/' . drupal_get_path('theme', 'designer');
   $subtheme_path = explode('/', $vretheme_path);
   array_pop($subtheme_path);
   $subtheme_path = implode('/', $subtheme_path) . '/' . str_replace('_', '-', $machine_name);
 
   // Make a fresh copy of the original starter kit.
-  drush_op('corporate_copy', $corporate_path . '/STARTERKIT', $subtheme_path);
+  drush_op('designer_copy', $designer_path . '/STARTERKIT', $subtheme_path);
 
   // Rename the .css file.
   $style_css_file = $subtheme_path . '/css/' . $machine_name . '.css';
   drush_op('rename', $subtheme_path . '/css/STARTERKIT.css', $style_css_file);
 
    // Replace all occurrences of 'STARTERKIT' with the machine name of our sub theme.
-  drush_op('corporate_file_str_replace', $subtheme_path . '/STARTERKIT.info.txt', 'STARTERKIT', $machine_name);
+  drush_op('designer_file_str_replace', $subtheme_path . '/STARTERKIT.info.txt', 'STARTERKIT', $machine_name);
 
   // Rename the .info file.
   $subtheme_info_file = $subtheme_path . '/' . $machine_name . '.info';
@@ -80,26 +80,26 @@ function drush_corporate($name = NULL, $machine_name = NULL) {
 
   // Alter the contents of the .info file based on the command options.
   $alterations = array(
-    '= Corporate Sub-theme Starter Kit' => '= ' . $name,
+    '= Designer Sub-theme Starter Kit' => '= ' . $name,
   );
   if ($description = drush_get_option('description')) {
     $alterations['Read the <a href="http://drupal.org/node/873778">online docs</a> or the included README.txt on how to create a theme with Zen.'] = $description;
   }
-  drush_op('corporate_file_str_replace', $subtheme_info_file, array_keys($alterations), $alterations);
+  drush_op('designer_file_str_replace', $subtheme_info_file, array_keys($alterations), $alterations);
 
   // Replace all occurrences of 'STARTERKIT' with the machine name of our sub theme.
-  drush_op('corporate_file_str_replace', $subtheme_path . '/theme-settings.php', 'STARTERKIT', $machine_name);
-  drush_op('corporate_file_str_replace', $subtheme_path . '/template.php', 'STARTERKIT', $machine_name);
+  drush_op('designer_file_str_replace', $subtheme_path . '/theme-settings.php', 'STARTERKIT', $machine_name);
+  drush_op('designer_file_str_replace', $subtheme_path . '/template.php', 'STARTERKIT', $machine_name);
 
   // Remove all RTL stylesheets.
   if ($without_rtl = drush_get_option('without-rtl')) {
     foreach (array('forms', 'html-reset', 'layout-fixed', 'layout-liquid', 'navigation', 'pages', 'tabs') as $file) {
       // Remove the RTL stylesheet.
       drush_op('unlink', $subtheme_path . '/css/' . $file . '-rtl.css');
-      drush_op('corporate_file_str_replace', $subtheme_path . '/css/' . $file . '.css', ' /* LTR */', '');
+      drush_op('designer_file_str_replace', $subtheme_path . '/css/' . $file . '.css', ' /* LTR */', '');
       // Remove the RTL sass file.
       drush_op('unlink', $subtheme_path . '/sass/' . $file . '-rtl.scss');
-      drush_op('corporate_file_str_replace', $subtheme_path . '/sass/' . $file . '.scss', ' // LTR', '');
+      drush_op('designer_file_str_replace', $subtheme_path . '/sass/' . $file . '.scss', ' // LTR', '');
     }
   }
 
@@ -113,7 +113,7 @@ function drush_corporate($name = NULL, $machine_name = NULL) {
 /**
  * Copy a directory recursively.
  */
-function corporate_copy($source_dir, $target_dir, $ignore = '/^(\.(\.)?|CVS|\.svn|\.git|\.DS_Store)$/') {
+function designer_copy($source_dir, $target_dir, $ignore = '/^(\.(\.)?|CVS|\.svn|\.git|\.DS_Store)$/') {
   if (!is_dir($source_dir)) {
     drush_die(dt('The directory "!directory" was not found.', array('!directory' => $source_dir)));
   }
@@ -122,7 +122,7 @@ function corporate_copy($source_dir, $target_dir, $ignore = '/^(\.(\.)?|CVS|\.sv
   while($file = readdir($dir)) {
     if (!preg_match($ignore, $file)) {
       if (is_dir($source_dir . '/' . $file)) {
-        corporate_copy($source_dir . '/' . $file, $target_dir . '/' . $file, $ignore);
+        designer_copy($source_dir . '/' . $file, $target_dir . '/' . $file, $ignore);
       }
       else {
         copy($source_dir . '/' . $file, $target_dir . '/' . $file);
@@ -135,7 +135,7 @@ function corporate_copy($source_dir, $target_dir, $ignore = '/^(\.(\.)?|CVS|\.sv
 /**
  * Replace strings in a file.
  */
-function corporate_file_str_replace($file_path, $find, $replace) {
+function designer_file_str_replace($file_path, $find, $replace) {
   $file_contents = file_get_contents($file_path);
   $file_contents = str_replace($find, $replace, $file_contents);
   file_put_contents($file_path, $file_contents);
