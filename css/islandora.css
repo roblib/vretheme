@@ -45,3 +45,10 @@
 .fedora_detailed_list select {
 width: 100px;
 }
+
+.islandora-solr-detail td img,
+.mapgrid img {
+    border-color: #EAEAEA #AAAAAA #AAAAAA #EAEAEA;
+    border-style: solid;
+    border-width: 1px;
+}
