@@ -1,0 +1,871 @@
+/* $Id: layout-fixed.css,v 1.17 2009/11/05 12:09:53 johnalbin Exp $ */
+
+/**
+ * @file
+ * Layout Styling (DIV Positioning)
+ *
+ * Define CSS classes to create a table-free, 3-column, 2-column, or single
+ * column layout depending on whether blocks are enabled in the left or right
+ * columns.
+ *
+ * This layout is based on the Zen Columns layout method.
+ *   http://drupal.org/node/201428
+ *
+ * Only CSS that affects the layout (positioning) of major elements should be
+ * listed here.  Such as:
+ *   display, position, float, clear, width, height, min-width, min-height
+ *   margin, border, padding, overflow
+ */
+
+
+/*
+ * Body
+ */
+#page-wrapper,
+.region-page-closure {
+  min-width: 980px; /* Don't allow the browser to make the site unreadable. */
+}
+
+
+#page-wrapper,
+.region-page-closure {
+  /*
+   * If you want to make the page a fixed width and centered in the viewport,
+   * this is the standards-compliant way to do that. See also the ie6.css file
+   * for the necessary IE5/IE6quirks hack to center a div.
+   */
+}
+
+#page {
+}
+
+
+#page-wrapper {
+
+}
+
+.region-topbar-top, #topbar, #headercontent-wrapper div.section, #feature div.section, 
+#breadcrumb-wrapper, #preface-wrapper div.section, #navigation div.section, 
+#featured div.section, #messages, #sitecontent, #main, #mainbottom-wrapper div.section, 
+#bottom, #bottomcontent-wrapper, #footer-wrapper,  #closure {
+margin-left:auto;
+margin-right:auto;
+width:960px;
+}
+
+
+/*
+ * Header
+ */
+#header {
+color: #fff;
+}
+
+#header .section {
+}
+
+#headercontent-wrapper {
+}
+
+#search-box {
+}
+
+.region-header {
+  clear: both; /* Clear the logo */
+}
+
+#headercontent-wrapper .column.HeaderRight #secondary-menu {
+    line-height: 2em;
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+
+#headercontent-wrapper .column.HeaderRight .block-menu {
+    line-height: 2em;
+    margin-bottom: 0;
+    margin-right: 0px;
+}
+
+
+/*
+ * Main (container for everything else)
+ */
+#main-wrapper {
+  position: relative;
+}
+
+#sitecontent {
+  min-height:500px;
+  height:auto !important;
+  height:500px;
+  padding: 0;
+}
+
+/*
+ * Content
+ */
+#content,
+.no-sidebars #content {
+  float: left; /* LTR */
+  width: 960px;
+  margin-left: 0; /* LTR */
+  margin-right: -960px; /* LTR */ /* Negative value of #content's width + left margin. */
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to #content .section. */
+}
+
+.sidebar-first #content {
+  width: 720px;
+  margin-left: 240px; /* LTR */ /* The width of .region-sidebar-first. */
+  margin-right: -960px; /* LTR */ /* Negative value of #content's width + left margin. */
+}
+
+.sidebar-second #content {
+  width: 720px;
+  margin-left: 0; /* LTR */
+  margin-right: -720px; /* LTR */ /* Negative value of #content's width + left margin. */
+}
+
+.two-sidebars #content {
+  width: 480px;
+  margin-left: 240px; /* LTR */ /* The width of .region-sidebar-first */
+  margin-right: -720px; /* LTR */ /* Negative value of #content's width + left margin. */
+}
+
+#content .section {
+margin:10px;
+padding:0;
+}
+
+
+/*
+ * Navigation
+ */
+#navigation {
+  /* float: left; /* LTR */
+  /* width: 100%; */
+  /* margin-left: 0; /* LTR */
+  /* margin-right: -100%; /* LTR */ /* Negative value of #navigation's width + left margin. */
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to #navigation .section. */
+  /* height: 3.8em; The navigation can have any arbritrary height. We picked one
+                    that is the line-height plus 1em: 1.3 + 1 = 2.3
+                    Set this to the same value as the margin-top below. */
+}
+
+
+.with-navigation.with-preface #content,
+.with-navigation.with-preface .region-sidebar-first,
+.with-navigation.with-preface .region-sidebar-second {
+  margin-top: 0em; /* Set this to the same value as the navigation height above. */
+}
+
+
+#navigation .section {
+
+}
+
+#navbar-wrapper {
+background-color: transparent;
+display: inline-block;
+width: 100%;
+}
+
+#navbar-wrapper .NavbarRight .block {
+padding-right: 10px;
+}
+
+#navigation ul /* Primary and secondary links */ {
+  margin: 0;
+  padding: 0;
+  text-align: left; /* LTR */
+}
+
+#navigation li /* A simple method to get navigation links to appear in one line. */ {
+  float: left; /* LTR */
+  padding: 0 10px 0 0; /* LTR */
+}
+
+/* Navigation Bar + Navbar Right
+-------------------------------------------------------------- */
+
+#navbar-wrapper .column.NavbarLeft {
+float: left;
+}
+
+#navbar-wrapper .column.NavbarRight {
+text-align: right;
+float: right;
+}
+
+#navbar-wrapper .column.NavbarRight .block {
+float: right;
+}
+
+#navbar-wrapper.nbl1.nbr1 .NavbarLeft,
+#navbar-wrapper.nbl2.nbr1 .NavbarLeft,
+#navbar-wrapper.nbl3.nbr1 .NavbarLeft,
+#navbar-wrapper.nbl4.nbr1 .NavbarLeft,
+#navbar-wrapper.nbl1.nbr2 .NavbarLeft,
+#navbar-wrapper.nbl2.nbr2 .NavbarLeft,
+#navbar-wrapper.nbl3.nbr2 .NavbarLeft,
+#navbar-wrapper.nbl4.nbr2 .NavbarLeft {
+width: 75%;
+}
+
+#navbar-wrapper.nbl1.nbr1 .NavbarRight,
+#navbar-wrapper.nbl2.nbr1 .NavbarRight,
+#navbar-wrapper.nbl3.nbr1 .NavbarRight,
+#navbar-wrapper.nbl4.nbr1 .NavbarRight,
+#navbar-wrapper.nbl1.nbr2 .NavbarRight,
+#navbar-wrapper.nbl2.nbr2 .NavbarRight,
+#navbar-wrapper.nbl3.nbr2 .NavbarRight,
+#navbar-wrapper.nbl4.nbr2 .NavbarRight {
+width: 25%;
+}
+
+#navbar-wrapper.nbl1.nbr0 .column,
+#navbar-wrapper.nbl2.nbr0 .column,
+#navbar-wrapper.nbl3.nbr0 .column,
+#navbar-wrapper.nbl4.nbr0 .column {
+width: 100%;
+}
+
+#navbar-wrapper .block {
+padding-left:0px;
+margin-bottom: 0;
+}
+
+#navbar-wrapper #nav, 	#navbar-wrapper #search {
+padding-left:0;
+padding-right:0px;
+}
+
+#navbar-wrapper #search-box {
+padding: 0 10px 0 0;
+margin: 0;
+}
+
+
+
+
+/*
+ * First sidebar
+ */
+.region-sidebar-first {
+  float: left; /* LTR */
+  width: 240px;
+  margin-left: 0; /* LTR */
+  margin-right: -240px; /* LTR */ /* Negative value of .region-sidebar-first's width + left margin. */
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to .region-sidebar-first .section. */
+}
+
+.region-sidebar-first .section {
+margin:10px;
+padding:0;
+}
+
+/*
+ * Second sidebar
+ */
+.region-sidebar-second {
+  float: left; /* LTR */
+  width: 240px;
+  margin-left: 720px; /* LTR */ /* Width of content + sidebar-first. */
+  margin-right: -960px; /* LTR */ /* Negative value of .region-sidebar-second's width + left margin. */
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to .region-sidebar-second .section. */
+}
+
+.region-sidebar-second .section {
+  margin: 10px; /* LTR */
+  padding: 0;
+}
+
+/*
+ * Footer
+ */
+#footer {
+}
+
+#footer .section {
+}
+
+/*
+ * Closure
+ */
+.region-page-closure /* See also the #page-wrapper declaration above that this div shares. */ {
+}
+
+/*
+ * Prevent overflowing content
+ */
+
+
+.region-sidebar-first,
+.region-sidebar-second,
+#footer,
+.region-page-closure {
+  overflow: hidden;
+  word-wrap: break-word; /* A very nice CSS3 property */
+}
+
+#content {
+overflow: visible;
+}
+
+#header, #navigation {
+  overflow: visible; /* May need to be removed if using a dynamic drop-down menu */
+}
+
+/*
+ * If a div.clearfix doesn't have any content after it and its bottom edge
+ * touches the bottom of the viewport, Firefox and Safari will mistakenly
+ * place several pixels worth of space between the bottom of the div and the
+ * bottom of the viewport. Uncomment this CSS property to fix this.
+ * Note: with some over-large content, this property might cause scrollbars
+ * to appear on the #page-wrapper div.
+ */
+/*
+#page-wrapper {
+  overflow-y: hidden;
+}
+*/
+
+/* Topbar first + Topbar last regions */
+
+#topbar-wrapper {
+font-size:90%;
+line-height: 2em;
+border-top: 4px solid #000000;
+}
+
+#topbar-wrapper .column {
+float: left;
+
+}
+
+#topbar-wrapper.tb1 .column {
+width: 100%;
+}
+
+#topbar-wrapper.tb2 .column {
+width: 50%;
+}
+
+#topbar-wrapper .column.TopbarRight {
+text-align:right;
+float: right;
+}
+
+#topbar-wrapper .column.TopbarRight .menu {
+text-align:right;
+
+}
+
+#topbar-wrapper .column.TopbarLeft .block {
+float: left;
+display: inline;
+}
+
+#topbar .block {
+padding: 0px 10px 0 10px; 
+margin-bottom:0;
+}
+
+
+#topbar .form-item {
+display:inline;
+margin-right: 0.5em;
+}
+
+#topbar .form-item label {
+display:inline;
+}
+
+#topbar #user-login-form .item-list {
+display: none;
+}
+
+
+/*
+ * Topbar Navigation
+ */
+
+#topbar-wrapper h2.title {
+display: none;
+}
+
+#topbar-wrapper ul {
+padding:0; 
+margin:0;
+}
+
+#topbar-wrapper li {
+list-style-type: none;
+display:inline; 
+padding:0; 
+margin:0;
+}
+
+#topbar-wrapper ul.menu li {
+}
+
+#topbar-wrapper .block-menu .content {
+}
+
+
+#topbar .block {
+padding-left:15px;
+padding-right:15px;
+}
+
+
+/* Feature */
+
+#feature-wrapper {
+padding-top: 0px;
+}
+
+#feature-wrapper .column {
+float: left;
+}
+
+#feature-wrapper.in1 .column {
+width: 100%;
+float: none;
+}
+
+#feature-wrapper.in2 .column {
+width: 50%;
+}
+
+#feature-wrapper .block {
+padding-left:10px;
+padding-right:10px;
+}
+
+
+
+/* Header Left + Header Right
+-------------------------------------------------------------- */
+
+#headercontent-inner {
+padding-right: 0;
+}
+
+#headercontent-wrapper {
+position:relative;
+}
+
+#headercontent-wrapper .column.HeaderLeft {
+float: left;
+}
+
+#headercontent-wrapper .column.HeaderRight {
+text-align: right;
+float: right;
+}
+
+#headercontent-wrapper.hf1 .column.HeaderLeft,
+#headercontent-wrapper.hf2 .column.HeaderLeft,
+#headercontent-wrapper.hf3 .column.HeaderLeft,
+#headercontent-wrapper.hf4 .column.HeaderLeft {
+width: 75%;
+}
+
+#headercontent-wrapper.hf1.hs1 .column.HeaderRight,
+#headercontent-wrapper.hf2.hs1 .column.HeaderRight,
+#headercontent-wrapper.hf3.hs1 .column.HeaderRight,
+#headercontent-wrapper.hf4.hs1 .column.HeaderRight {
+width: 25%;
+}
+
+#headercontent-wrapper.hf1.hs0 .column,
+#headercontent-wrapper.hf2.hs0 .column,
+#headercontent-wrapper.hf3.hs0 .column,
+#headercontent-wrapper.hf4.hs0 .column {
+width: 100%;
+}
+
+#headercontent-wrapper .block {
+padding-left:10px;
+padding-right:10px;
+}
+
+#headercontent-wrapper .HeaderLeft {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#headercontent-wrapper.hf0  .HeaderLeft {
+	padding: 0
+}
+
+/* Breadcrumb */
+.breadcrumb {
+padding-top: 0.2em;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+
+/* Preface first + Preface second + Preface third +  Preface fourth regions
+-------------------------------------------------------------- */
+
+#preface-wrapper {
+padding-top: 10px;
+}
+
+#preface-wrapper .column {
+float: left;
+}
+
+#preface-wrapper.in1 .column {
+width: 100%;
+float: none;
+}
+
+#preface-wrapper.in2 .column {
+width: 50%;
+}
+
+#preface-wrapper.in3 .column {
+width: 33.3%;
+}
+
+#preface-wrapper.in4 .column {
+width: 25%;
+}
+
+#preface-wrapper .block {
+padding-left:10px;
+padding-right:10px;
+}
+
+
+
+
+/*
+ * Content Top
+ */
+ 
+.no-sidebars #content-top-wrapper {
+  width: 100%;
+  margin-left: 0;
+}
+
+.sidebar-first #content-top-wrapper {
+  width: 100%;
+  margin-left: 0;
+}
+
+.sidebar-second #content-top-wrapper {
+  width: 100%;
+  margin-left: 0;
+}
+
+.two-sidebars #content-top-wrapper {
+  width: 100%;
+  margin-left: 0;
+}
+
+
+
+/* Content Top 1 + Content Top 2
+-------------------------------------------------------------- */
+
+#content #content-top-wrapper .section {
+margin:0;
+}
+
+
+#content-top-wrapper {
+margin: 0 auto;
+}
+
+#content-top-wrapper .column {
+float: left;
+}
+
+#content-top-wrapper.in1 .column {
+width: 100%;
+}
+
+#content-top-wrapper.in2 .column {
+width: 50%;
+}
+
+#content-top-wrapper .block {
+}
+
+#content-top-wrapper.in2 .column.ContentTop2 .block {
+padding-right: 0px;
+}
+
+#content-top-wrapper.in2 .column.ContentTop1 .block {
+padding-left: 0px;
+}
+
+/*
+ * Content Bottom
+ */
+ 
+.no-sidebars #content-bottom-wrapper {
+  width: 100%;
+  margin-left: 0;
+}
+
+.sidebar-first #content-bottom-wrapper {
+  width: 100%;
+  margin-left: 0;
+}
+
+.sidebar-second #content-bottom-wrapper {
+  width: 100%;
+  margin-left: 0;
+}
+
+.two-sidebars #content-bottom-wrapper {
+  width: 100%;
+  margin-left: 0;
+}
+
+
+
+/* Content Bottom 1 + Content Bottom 2
+-------------------------------------------------------------- */
+
+#content #content-bottom-wrapper .section {
+margin:0;
+}
+
+#content-bottom-wrapper {
+margin: 0 auto;
+}
+
+#content-bottom-wrapper .column {
+float: left;
+}
+
+#content-bottom-wrapper.in1 .column {
+width: 100%;
+}
+
+#content-bottom-wrapper.in2 .column {
+width: 50%;
+}
+
+#content-bottom-wrapper .block {
+}
+
+
+
+
+/* Bottom first + Bottom second + Bottom third +  Bottom fourth regions
+-------------------------------------------------------------- */
+
+#mainbottom-wrapper {
+padding-bottom: 15px;
+}
+
+#mainbottom-wrapper .column {
+float: left;
+}
+
+#mainbottom-wrapper.in1 .column {
+width: 100%;
+}
+
+#mainbottom-wrapper.in2 .column {
+width: 50%;
+}
+
+#mainbottom-wrapper.in3 .column {
+width: 33.3%;
+}
+
+#mainbottom-wrapper.in4 .column {
+width: 25%;
+}
+
+#mainbottom-wrapper .block {
+padding-left:10px;
+padding-right:10px;
+}
+
+
+
+/* Bottom */
+
+#bottom .section {
+}
+
+/* Bottom first + Bottom second + Bottom third +  Bottom fourth +  Bottom fifth +  Bottom sixth regions
+-------------------------------------------------------------- */
+
+#bottomcontent-wrapper {
+}
+
+#bottomcontent-wrapper .column {
+float: left;
+}
+
+#bottomcontent-wrapper.in1 .column {
+width: 100%;
+}
+
+#bottomcontent-wrapper.in2 .column {
+width: 50%;
+}
+
+#bottomcontent-wrapper.in3 .column {
+width: 33.3%;
+}
+
+#bottomcontent-wrapper.in4 .column {
+width: 25%;
+}
+
+#bottomcontent-wrapper.in5 .column {
+width: 20%;
+}
+
+#bottomcontent-wrapper.in6 .column {
+width: 16.66%;
+}
+
+#bottomcontent-wrapper .block {
+padding-left:10px;
+padding-right:10px;
+}
+
+/*
+ * Footer Content
+ */
+
+.with-sidebar-footer #footer-content {
+    margin-left: 300px;
+    margin-right: -960px;
+    padding-left: 0px;
+    width: 650px;
+}
+
+#footer-content {
+margin-top: 0px;
+float:left;
+margin-left:0;
+margin-right:-960px;
+padding:0;
+width:960px;
+}
+
+#footer-content .section {
+  margin: 0px 0 0 0;
+  padding: 0;
+}
+
+#footer-wrapper {
+  position: relative;
+}
+
+#footer {
+padding-bottom: 1em;
+}
+
+/* Preface first + Preface second + Preface third +  Preface fourth regions
+-------------------------------------------------------------- */
+
+.with-sidebar-footer #footer-preface-wrapper {
+margin: 0;
+}
+
+#footer-preface-wrapper {
+margin: 0;
+}
+
+#footer-preface-wrapper .column {
+float: left;
+}
+
+#footer-preface-wrapper.in1 .column {
+width: 100%;
+float: none;
+} 
+
+#footer-preface-wrapper.in2 .column {
+width: 50%;
+}
+
+#footer-preface-wrapper.in3 .column {
+width: 33.3%;
+}
+
+#footer-preface-wrapper.in4 .column {
+width: 24.6%;
+}
+
+
+#footer-preface-wrapper .block {
+    padding-left: 10px;
+    padding-right: 10px;
+margin-bottom: 0;
+}
+
+#footer-content-bottom-wrapper.with-footer-preface .block {
+    border-top: 1px solid #ccc;
+}
+
+/* Footer Bottom 1 + Footer Bottom 2
+-------------------------------------------------------------- */
+
+#footer-content-bottom-wrapper {
+margin: 10px 0 0 0;
+}
+
+
+#footer-content-bottom-wrapper .column {
+float:left;
+}
+
+#footer-content-bottom-wrapper.in1 .column {
+width:100%;
+}
+
+#footer-content-bottom-wrapper .block {
+padding-left:10px;
+padding-right:10px;
+}
+
+
+/*
+ * First sidebar footer
+ */
+ 
+.SidebarFooter {
+    background: none repeat-y scroll right top transparent;
+    border-right: 0 solid #111111;
+}
+
+.SidebarFooter {
+    background: none repeat-y scroll right top transparent;
+    border-right: 0 solid #2B2B2B;
+    float: left;
+    height: 80%;
+    margin: 15px -650px 15px 0;
+    padding: 0 0 0 20px;
+    width: 280px;
+}
+
+.SidebarFooter .footersidebar {
+margin:0;
+padding:0;
+}
+
+.SidebarFooter .footersidebar .block {
+margin-bottom:0;
+}
+
+.SidebarFooter .footersidebar .section, .footersidebar #secondary-menu {
+margin: 0 ;
+z-index:99;
+}
+
+

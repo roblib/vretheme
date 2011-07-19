@@ -1,0 +1,223 @@
+/* colors */
+
+
+
+/* this is the inset look you see on the menu items */ 
+
+#superfish .menu li li {
+top: -1px;
+}
+
+#superfish .menu li li li {
+top: -1px;
+}
+
+#nav .block, #superfish .block {
+margin-bottom: 0px;
+}
+
+#nav, #superfish {
+margin: 0 auto;
+padding: 0px;
+float: left;
+/* border-bottom: 1px solid #346b96; */
+position: relative;
+z-index:10000;
+}
+
+#header .column.W #superfish {
+float: left;
+bottom: 0;
+position: absolute;
+}
+
+
+#header #superfish {
+}
+
+.roundify
+{
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+
+
+/* border seperator */ 
+
+#nav li, #superfish li {
+float:left;
+word-wrap: normal;
+white-space: normal;
+padding:0 1px 0 0;
+}
+
+#navigation #nav, #navigation #superfish { 
+width: 100%;
+}
+
+#nav .menu a, #nav .menu a:visited, #superfish .menu a, #superfish .menu a:visited  {
+text-decoration:none;
+padding-top:5px;
+}
+
+#nav li a, #superfish li a{
+text-decoration:none;
+padding:6px 29px 0 29px;
+}
+
+
+#nav h2, #superfish h2 {
+height: 0;
+overflow: hidden;
+position: absolute;
+}
+
+#nav .menu a, #superfish .menu a {
+padding: 6px 1em;
+text-decoration:none;
+}
+
+
+
+#nav .menu, #nav .menu *, #superfish .menu, #superfish .menu * {
+margin:0;
+padding:0;
+list-style:none;
+}
+
+#nav .menu, #superfish .menu {
+line-height:1.3em;
+}
+
+#superfish .menu ul {
+position:absolute;
+top:-999em;
+min-width:13em;
+width:13em;
+max-width:17em;
+}
+
+#superfish .menu ul li {
+width:100%;
+}
+
+#superfish .menu li:hover {
+visibility:inherit;
+}
+
+#superfish .menu li {
+float:left;
+position:relative;
+}
+
+#nav .menu a,
+#superfish .menu a {
+display:block;
+position:relative;
+}
+
+#superfish .menu li:hover ul,
+#superfish .menu li.sfHover ul {
+left:0;
+top:24px;
+z-index:99;
+}
+
+#superfish ul.menu li:hover li ul,
+#superfish ul.menu li.sfHover li ul {
+top:-999em;
+}
+
+#superfish ul.menu li li:hover ul,
+#superfish ul.menu li li.sfHover ul {
+left:13em;
+top:0;
+}
+
+#superfish ul.menu li li:hover li ul,
+#superfish ul.menu li li.sfHover li ul {
+top:-999em;
+}
+
+#superfish ul.menu li li li:hover ul,
+#superfish ul.menu li li li.sfHover ul {
+left:13em;
+top:0;
+}
+
+#superfish .menu {
+
+}
+
+#superfish .menu a.sf-with-ul {
+padding-right:2.25em;
+min-width:1px;
+}
+
+
+#superfish .menu li {
+background: transparent;
+}
+
+
+
+#superfish .menu li:hover, #superfish .menu li.sfHover,
+#superfish .menu a:focus, #superfish .menu a:hover, #superfish .menu a:active {
+outline:0;
+}
+
+#superfish .menu li:hover, 
+#superfish .menu li.sfHover,
+#superfish .menu a:focus, 
+#superfish .menu a:hover, 
+#superfish .menu a:active,
+#superfish .menu a {
+z-index:20;
+}
+
+.sf-sub-indicator {
+position:absolute;
+display:block;
+right:.75em;
+top:0.6em;
+width:10px;
+height:10px;
+text-indent:-999em;
+overflow:hidden;
+background:url(../images/arrows-ffffff.png) no-repeat -10px -100px;
+}
+a > .sf-sub-indicator { 
+background-position: 0 -100px;
+}
+
+a:focus > .sf-sub-indicator,
+a:hover > .sf-sub-indicator,
+a:active > .sf-sub-indicator,
+li:hover > a > .sf-sub-indicator,
+li.sfHover > a > .sf-sub-indicator {
+background-position: -10px -100px;
+}
+
+#superfish .menu ul .sf-sub-indicator { background-position:  -10px 0; }
+#superfish .menu ul a > .sf-sub-indicator { background-position:  0 0; }
+#superfish .menu ul a:focus > .sf-sub-indicator,
+#superfish .menu ul a:hover > .sf-sub-indicator,
+#superfish .menu ul a:active > .sf-sub-indicator,
+#superfish .menu ul li:hover > a > .sf-sub-indicator,
+#superfish .menu ul li.sfHover > a > .sf-sub-indicator {
+background-position: -10px 0;
+}
+
+#superfish .sf-shadow ul {
+background:	url(../images/shadow.png) no-repeat bottom right;
+padding: 0 8px 9px 0;
+-moz-border-radius-bottomleft: 17px;
+-moz-border-radius-topright: 17px;
+-webkit-border-top-right-radius: 17px;
+-webkit-border-bottom-left-radius: 17px;
+}
+
+#superfish .sf-shadow ul.sf-shadow-off {
+background: transparent;
+}

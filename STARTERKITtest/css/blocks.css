@@ -1,0 +1,244 @@
+/* $Id: blocks.css,v 1.4 2009/11/05 11:05:39 johnalbin Exp $ */
+
+/**
+ * @file
+ * Block Styling
+ */
+
+
+.block-region {
+color: #000; 
+}
+
+.block /* Block wrapper */ {
+  margin-bottom: 1em;
+}
+
+#feature .block-region, #feature .block {
+margin: 0;
+}
+
+.block.region-odd /* Zebra striping for each block in the region */ {
+}
+
+.block.region-even /* Zebra striping for each block in the region */ {
+}
+
+.block.odd /* Zebra striping independent of each region */ {
+}
+
+.block.even /* Zebra striping independent of each region */ {
+}
+
+.region-count-1 /* Incremental count for each block in the region */ {
+}
+
+.count-1 /* Incremental count independent of each region */ {
+}
+
+.block h2.title /* Block title */ {
+padding-top: 0.667em;
+margin-bottom: 0.667em;
+}
+
+.block .content /* Block's content wrapper */ {
+}
+
+#block-aggregator-category-1 /* Block for the latest news items in the first category */ {
+}
+
+#block-aggregator-feed-1 /* Block for the latest news items in the first feed */ {
+}
+
+#block-block-1 /* First administrator-defined block */ {
+}
+
+#block-blog-0 /* "Recent blog posts" block */ {
+}
+
+#block-book-0 /* "Book navigation" block for the current book's table of contents */ {
+}
+
+#block-comment-0 /* "Recent comments" block */ {
+}
+
+#block-forum-0 /* "Active forum topics" block */ {
+}
+
+#block-forum-1 /* "New forum topics" block */ {
+}
+
+#block-menu-primary-links /* "Primary links" block */ {
+}
+
+#block-menu-secondary-links /* "Secondary links" block */ {
+}
+
+#block-node-0 /* "Syndicate" block for primary RSS feed */ {
+}
+
+#block-poll-0 /* "Most recent poll" block */ {
+}
+
+#block-profile-0 /* "Author information" block for the profile of the page's author */ {
+}
+
+#block-search-0 /* "Search form" block */ {
+}
+
+#block-statistics-0 /* "Popular content" block */ {
+}
+
+#block-user-0 /* "User login form" block */ {
+}
+
+#block-user-1 /* "Navigation" block for Drupal navigation menu */ {
+}
+
+#block-user-2 /* "Who's new" block for a list of the newest users */ {
+}
+
+#block-user-3 /* "Who's online" block for a list of the online users */ {
+}
+
+#headercontent-wrapper .column.HeaderRight #secondary-menu {
+    font-size: 90%;
+    line-height: 2em;
+    margin-bottom: 0;
+}
+
+#headercontent-wrapper .column.HeaderRight #secondary-menu {
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+    float: right;
+    padding: 0 0.4em 0.1em;
+    margin-top: 0;
+}
+
+#headercontent-wrapper #secondary-menu li {
+    margin: 0 0.25em;
+    padding: 0;
+}
+
+#search-box {
+text-align: right;
+top: 0;
+}
+
+/* Sidebar blocks */
+
+.region-sidebar-first .block, .region-sidebar-second .block {
+margin-bottom:15px;
+}
+
+#feature .block h2.title, 
+.region-sidebar-first .block h2.title, 
+.region-sidebar-second .block h2.title, 
+div.admin-panel h3, 
+#mainbottom-wrapper .block h2.title, 
+#preface-wrapper .block h2.title, 
+.region-content-top .block h2.title, 
+#content-top-wrapper .block h2.title, 
+.region-content-bottom .block h2.title, 
+#content-bottom-wrapper .block h2.title {
+    border-bottom: 1px dotted #DEDEDF;
+    padding: 0 10px 8px 0;
+}
+
+#feature .block {
+padding-top: 15px;
+padding-bottom: 10px;
+}
+
+.region-sidebar-first .block .content, .region-sidebar-second .block .content {
+margin:0;
+padding: 0 15px 15px 0;
+}
+
+.region-sidebar-first .block .content .menu, 
+.region-sidebar-second .block .content .menu {
+padding-left: 15px;
+}
+
+.region-sidebar-first .block .content .item-list,
+.region-sidebar-second .block .content .item-list {
+padding-left: 10px;
+}
+
+#content-top-wrapper.in2 .ContentTop1 .block {
+padding-right: 10px;
+}
+
+#content-top-wrapper.in2 .ContentTop2 .block {
+padding-left: 10px;
+}
+
+#content-bottom-wrapper.in2 .ContentBottom1 .block {
+padding-right: 10px;
+}
+
+#content-bottom-wrapper.in2 .ContentBottom2 .block {
+padding-left: 10px;
+}
+
+
+/* Highlight Blocks */
+.region-highlight .block {
+background-color:#F4F4F4;
+border-color:#DDDDDD #BBBBBB #BBBBBB #DDDDDD;
+border-style:solid;
+border-width:1px;
+margin:0 0 1.5em;
+padding: 0.1em 1.2em 0.5em;
+}
+
+div.admin .left {
+margin-left:0.2em;
+width:48%;
+}
+
+div.admin .right {
+margin-right:0.2em;
+width:48%;
+}
+
+/* $Id: block-editing.css,v 1.3 2009/11/05 14:01:26 johnalbin Exp $ */
+
+/**
+ * @file
+ * Zen's rollover edit links for blocks.
+ */
+
+
+#topbar div.block.with-block-editing div.edit  {
+  margin-top: 15px;
+}
+
+div.block.with-block-editing {
+  position: relative;
+}
+
+div.block.with-block-editing div.edit {
+  display: none;
+  position: absolute;
+  right: 0; /* LTR */
+  top: 0;
+  z-index: 40;
+  border: 1px solid #eee;
+  padding: 0 2px; 
+  font-size: 0.75em;
+  background-color: #a5a5a5;
+}
+
+div.block.with-block-editing:hover div.edit {
+  display: block;
+}
+
+div.block-book ul {
+    margin: 0.15em 0 0.15em 0em;
+}
+
