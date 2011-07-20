@@ -37,6 +37,7 @@ function corporate_settings($saved_settings) {
       '2' => t('Green'),
       '3' => t('Orange'),
       '4' => t('White and Blue'),
+      '5' => t('Islandora Colors'),      
      ),
     '#description'   => t('Select an option above if you wish to use a pre-designed color scheme.'),
     

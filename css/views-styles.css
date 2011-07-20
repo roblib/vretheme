@@ -123,8 +123,126 @@ font-family: "Trebuchet MS","Lucida Grande","Lucida Sans","Lucida Sans Unicode",
 text-decoration: none;
 }
 
-.views_slideshow_singleframe_slide {
+.featureslideshow .views_slideshow_singleframe_slide {
 height: 300px;
+}
+
+.campslideshow .imagecache-960pxwidescreen {
+    border-color: #333 #000 #000 #333;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.campslideshow {
+    position: relative;
+}
+
+.campslideshow .views-slideshow-controls-bottom {
+    top: 20px;
+    color: #FFFFFF;
+    left: 30px;
+    position: absolute;
+    z-index: 100;
+    display: inline;
+}
+
+.campslideshow #campslideshowcontent {
+  	position: absolute;
+  	bottom: 37px;
+  	left: 30px;
+  	padding-right: 10px;
+  	color: #fff;
+}
+
+.campslideshow .campslideshowtitle {
+    color: #efefef;
+    font-weight: bold;
+    font-size: 2.7em;
+    margin-bottom: 4px;
+    font-family: "Trebuchet MS","Lucida Grande","Lucida Sans","Lucida Sans Unicode",Tahoma,Helvetica,sans-serif;
+    text-shadow: 0 1px 4px #000000;
+}
+
+.campslideshow .campslideshowcolllink{
+    margin-top: 20px;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+#feature .campslideshow .campslideshowcolllink a:link,
+#feature .campslideshow .campslideshowcolllink a:visited {
+    text-decoration: none;
+    padding: 5px;
+    background: #888;
+	  -webkit-border-radius: 2px;
+	  -khtml-border-radius: 2px;	
+	  -moz-border-radius: 2px;
+	  border-radius: 2px;
+	  filter: alpha(opacity=75); /* internet explorer */
+	  -khtml-opacity: 0.75;      /* khtml, old safari */
+	  -moz-opacity: 0.75;       /* mozilla, netscape */
+	  opacity: 0.75;           /* fx, safari, opera */	  
+}
+
+#feature .campslideshow .campslideshowcolllink a:hover,
+#feature .campslideshow .campslideshowcolllink a:active,
+#feature .campslideshow .campslideshowcolllink a:focus {
+    background: #ccc;
+    color: #000;    
+	  filter: alpha(opacity=100); /* internet explorer */
+	  -khtml-opacity: 1;      /* khtml, old safari */
+	  -moz-opacity: 1;       /* mozilla, netscape */
+	  opacity: 1;           /* fx, safari, opera */	  
+	}
+
+
+.campslideshow  .views_slideshow_thumbnailhover_div_breakout_teaser {
+    float: left;
+    margin-right: 3px;
+    cursor: pointer;
+    background: #888;
+    padding: 1px 6px;
+	filter: alpha(opacity=80); /* internet explorer */
+	-khtml-opacity: 0.8;      /* khtml, old safari */
+	-moz-opacity: 0.8;       /* mozilla, netscape */
+	opacity: 0.8;           /* fx, safari, opera */
+	-webkit-border-radius: 2px;
+	-khtml-border-radius: 2px;	
+	-moz-border-radius: 2px;
+	border-radius: 2px;	
+	font-weight: bold;
+}
+
+.campslideshow  .views_slideshow_thumbnailhover_div_breakout_teaser.activeSlide{
+    color: #000;
+    background: #ccc;    
+	filter: alpha(opacity=1); /* internet explorer */
+	-khtml-opacity: 1;      /* khtml, old safari */
+	-moz-opacity: 1;       /* mozilla, netscape */
+	opacity: 1;           /* fx, safari, opera */
+	-webkit-border-radius: 2px;
+	-khtml-border-radius: 2px;	
+	-moz-border-radius: 2px;
+	border-radius: 2px;	
+}
+
+.islandoracampfeed .views-row {
+    margin-bottom: 10px;
+}
+
+.campblogthumb {
+float: left;
+padding-right: 10px;
+}
+
+.campblogteaser {
+clear: both;
+height: 50px;
+}
+
+.campwelcome .node ul.links li.node_read_more {
+float: right;
 }
 
 .slideshowtext {

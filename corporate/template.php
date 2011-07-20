@@ -80,7 +80,10 @@ switch ($design) {
     break;
   case '4':
     drupal_add_css(drupal_get_path('theme', 'corporate') . '/colors/whiteblue.css', 'theme', 'all');
-    break;    
+    break;  
+  case '5':
+    drupal_add_css(drupal_get_path('theme', 'corporate') . '/colors/islandoracolors.css', 'theme', 'all');
+    break;        
 }
 
 
