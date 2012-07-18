@@ -1,6 +1,9 @@
 # OS generated files #
 ######################
 .DS_Store?
+STARTERKIT/templates/.DS_Store
+templates/.DS_Store
+.DS_Store
 ehthumbs.db
 Icon?
 Thumbs.db
